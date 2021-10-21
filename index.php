@@ -190,6 +190,37 @@
 
             <!-- 푸터 시작 --------------------------------------------------------------->
             <footer id="footer">
+            <div class="inner_footer">
+                    <h2 class="tit_cc">고객행복센터</h2>
+                    <div class="cc_view cc_call">
+                        <h3>
+                            <spam class="tit">1644-1107</spam>
+                        </h3>
+                        <dl class="list">
+                            <dt>365고객센터</dt>
+                            <dd>오전 7시 - 오후 7시</dd>
+                        </dl>
+                    </div>
+                    <div class="cc_view cc_kakao">
+                        <h3>
+                            <a href="#none" class="tit">카카오톡 문의</a>
+                        </h3>
+                        <dl class="list">
+                            <dt>365고객센터</dt>
+                            <dd>오전 7시 - 오후 7시</dd>
+                        </dl>
+                    </div>
+                    <div class="cc_view cc_qna">
+                        <h3>
+                            <a href="#none" class= "tit">1:1 문의</a>
+                        </h3>
+                        <dl class="list">
+                            <dt>24시간 접수 가능</dt>
+                            <dd>고객센터 운영시간에 순차적으러 답변해드리겠습니다.</dd>
+                        </dl>
+                    </div>
+                </div>
+
 
             </footer>
             <!-- 푸터 끝 ----------------------------------------------------------------->
