@@ -117,7 +117,7 @@ header > #userMenu > .listMenu .menu {
     top: 16px;
     width: 8px;
     height: 5px;
-    background: url(./img/ico_down_8x5.png) no-repeat 0 0;
+    background: url(../img/ico_down_8x5.png) no-repeat 0 0;
 }
 
 header > #userMenu > .listMenu> li > .linkMenu{
@@ -264,7 +264,7 @@ header > #gnb > #gnbMenu {
     width: 36px;
     height: 36px;
     border: 0 none;
-    background: url(./img/ico_search_del.sgv) no-repeat 50% 50%;
+    background: url(../img/ico_search_del.sgv) no-repeat 50% 50%;
     background-size: 12px 12px;
     font-size: 0;
     line-height: 0;
@@ -272,7 +272,20 @@ header > #gnb > #gnbMenu {
     opacity: 0;
 }
 
+#gnb .btn_location.on {
+    background-image: url(../img/ico_delivery_setting.svg);
+}
 
+#gnb .cart_count {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+}
+
+#gnb .cart_count .inner_cartcount {
+    text-align: center;
+    font-weight: 400;
+}
 
 /* 바디 -------------------------------------------------*/
 
@@ -296,8 +309,35 @@ header > #gnb > #gnbMenu {
     transition: top 0.2s;
 }
 
+
+#qnb .bnr_qnb {
+    padding-bottom: 7px;
+}
+
+#qnb .bnr_qnb .thumb {
+    width: 80px;
+    height: 120px;
+    vertical-align: top;
+}
+
 .page_main {
     overflow: hidden;
     width: 100%;
     margin: 0;
+}
+
+div .bnr_main1 {
+    width: 1050px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(../img/bnr_main1.png);
+    background-size: contain;
+}
+
+div .bnr_main2 {
+    width: 1050px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(../img/bnr_main2.png);
+    background-size: contain;
 }

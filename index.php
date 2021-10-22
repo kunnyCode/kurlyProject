@@ -658,29 +658,619 @@
             <main id="main">
                 <section id="content">
                     <!--사이드 퀵메뉴-->
-                    <div id="quick"></div>
-                    <!-- 메인 대형 롤링배너 -->
-                    <div class="main_type1"> <!--메인 좌우롤링, 대형배너형식 main_type1-->
-                        
+                    <div id="qnb" class="quick-navigation" style="top:516px;">
+                        <div id="brnQuick" class="bnr_qnb">
+                            <a href="#" id="brnQuickObj">
+                                <img src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송" class="thumb">
+                            </a>
+                        </div>
+                        <div class="side_menu" style="display:none">
+                            <a href="#" class="link_menu">등급별 혜택</a>
+                            <a href="#" class="link_menu">레시피</a>
+                            <a href="#" class="link_menu">베스트 후기</a>
+                        </div>
+                        <div class="side_recent" style="display:none">
+                            <strong class="tit">최근 본 상품</strong>
+                            <div class="list_goods" style="height:0px;">
+                                <ul class="list"></ul>
+                            </div>
+                            <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
+                            <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
+                        </div>
                     </div>
-                    <!--↓↓↓↓반복되는 주제별 상품 블록↓↓↓↓↓↓-------->                    
-                    <div><!--사이즈 맞추기용 div -->
-                        <div class="main_type2"></div> <!-- 좌우롤링, 상품명가격있는형식 main_type2 -->
+                    <!--사이드 퀵메뉴 끝-->
+                    
+                    <div id="mainNotice">
+                        <div id="mainNoticePop">
+
+                        </div>
                     </div>
-                    <div>
-                        <div class="main_type3"></div><!--좌우롤링, 이벤트상품 가격표기x main_type3-->
-                    </div>             
-                    <div>
-                        <div class="main_type2"></div>
+                    
+                    <!-- 메인 ---------------------------------------------------------------------------------------->
+                    <div id="kurlyMain" class="page_article page_main">
+                        <h2 class="screen out">마켓컬리 메인</h2>
+                        <!-- 롤링베너 시작---------------------------------------------------------------------------------------->
+                            <div>
+                                <div class="main_type1">
+                                    <div class="list_goods">
+                                        <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+                                            <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;">
+                                                <!-- ↓↓↓↓↓↓ ul 태그 계속바뀜 (메인배너에 마우스 오버하면 안넘어감) -->
+                                                <ul data-section="main_banner" class="list" style= "width: 1315%; position: relative; transition-timing-function: ease-in-out; transition-duration: 0.5s; transform: translate3d(-1255px, 0px, 0px);">
+                                                    <li data-index="11" style="float: left; list-style: none; position: relative; width: 1255px;" class="bx-clone" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./main_bnr_img/pc_img_1633501694.webp);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="1" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="2" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="3" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="4" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="5" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="6" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="7" style="float: left; list-style: none;position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="8" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="9" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="10" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="11" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                    <li data-index="1" style="float: left; list-style: none; position: relative; width: 1255px;" class="bx-clone" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
+                                                <div class="bx-controls-direction">
+                                                    <a href="#" class="bx-prev">Prev</a>
+                                                    <a href="#" class="bx-prev">Next</a>
+                                                </div>
+                                                <div class="bx-has-controls-auto">
+                                                    <div class="box-controls-auto-item">
+                                                        <a href="#" class="bx-start active">Start</a>
+                                                    </div>
+                                                    <div class="box-controls-auto-item">
+                                                        <a href="#" class="bx-stop">Stop</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--롤링베너 끝 --------------------------------------------------------------------------------->
+                                <div>
+                                    <div class="main_type2">
+                                        <div class="product_list">
+                                            <div class="tit_goods">
+                                                <h3 class="tit">
+                                                    <span class="name">"이 상품 어때요?"</span>
+                                                </h3>
+                                            </div>
+                                            <div class="list_goods">
+                                                <div class="bx-wrapper" style="max-width: 1050px; margin: 0 auto;">
+                                                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                                        <ul data-title="이 상품 어때요?" data-section="today_recommendation" class="list" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                            <li data-index="1" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <!--↓↓↓↓ <img> 홈페이지에서는 249px에 320px로 렌더가 되는데 여기는 왜 실제 크기인 109px에 145px로 나올까요오?!? -->
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1610084740375l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[폰티] 선드라이드 토마토</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">25%</span>"6,375원"
+                                                                    </span>
+                                                                    <span class="cost">8,500원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="2" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/big/201510/523_shop1_340515.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">맥시코 생 라임 1개</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">15%</span>"1,147원"
+                                                                    </span>
+                                                                    <span class="cost">1,350원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="3" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="4" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1464056216521l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[조선호텔김치] 오이소박이</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        "26,900원"
+                                                                    </span>
+
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="5" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="6" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="7" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="8" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="9" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="10" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="11" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="12" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="13" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="14" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="15" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="16" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="17" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="18" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="19" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                            <li data-index="20" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                                <a class="thumb_goods">
+                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                </a>
+                                                                <div class="info_goods">
+                                                                    <span class="name">
+                                                                        <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                                    </span>
+                                                                    <span class="price">
+                                                                        <span class="dc">13%</span>"27,650원"
+                                                                    </span>
+                                                                    <span class="cost">32,000원</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bx-controls bx-has-controls-direction">
+                                                        <div class="bx-controls-direction">
+                                                            <a href="#" class="bx-prev disabled">Prev</a>
+                                                            <a href="#" class="bx-next">Next</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <!-- 이상품 어때요 끝 -->
+                            <!--특가/혜택 시작 ----------------------------------------------------------------------------->
+                            <div>
+                                <!--↓↓↓↓좌우롤링, 이벤트상품 가격표기x 백그라운드색O main_type3-->
+                                <div class="main_type3 bg">
+                                    <div class="main_event">
+                                        <div class="tit_goods">
+                                            <h3 class="tit">
+                                                <a href="#" class="name">
+                                                    <span class="ico">특가혜택</span>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="list_goods">
+                                            <ul data-title="특가/혜택" data-selection="event" class="list">
+                                                <li data-index="1">
+                                                    <a class="thumb_goods">
+                                                        <!-- 338px * 338px -->
+                                                        <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634111654.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">건강 빵집 최대 20% 할인</a>
+                                                            </span>
+                                                            <span class="desc">
+                                                                <a class="txt">밀가루가 부담스럽다면</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2">
+                                                    <a class="thumb_goods">
+                                                        <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281327.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">최대 20% 할인 + 10% 추가 쿠폰</a>
+                                                            </span>
+                                                            <span class="desc">
+                                                                <a class="txt">엘지생활건강 생필품 BEST</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3">
+                                                    <a class="thumb_goods">
+                                                        <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281330.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">프레그런스 최대 60% 할인</a>
+                                                            </span>
+                                                            <span class="desc">
+                                                                <a class="txt">나만의 향기가 주는 편안함</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>            
+                            <!--특가혜택 끝---------------------------------------------------------------------------------------->
+
+                            <!--놓치면 후회할 가격 시작-------------------------------------------------------------------------- -->
+                            <div>
+                            <div class="main_type2">
+                                <div class="product_list">
+                                    <div class="tit_goods">
+                                        <h3 class="tit">
+                                            <a class="name">
+                                                <span class="ico">놓치면 후회할 가격</span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="list_goods">
+                                        <div class="bx-wrapper" style="max-width: 1050px; margin: 0 auto;">
+                                            <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                                <ul data-title="놓치면 후회할 가격" data-section="today_recommendation" class="list" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                    <li data-index="1" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                        <a class="thumb_goods">
+                                                            <span class="global_sticker">
+                                                                <span class="inner_sticker">
+                                                                    <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;"></span>
+                                                                    <span class="txt_sticker">
+                                                                        <span>
+                                                                            <span class="emph_sticker">+30%쿠폰</span>
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                            <img src=" " alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1621593044686l0.jpg);">
+                                                        </a>
+                                                        <div class="info_goods">
+                                                            <span class="name">
+                                                                <a class="txt">[설화수] [한정수량] 탄력에센셜3종 세트(윤조에센스30ml+12종사은품추가증정)</a>
+                                                            </span>
+                                                            <span class="price">
+                                                                <span class="dc">10%</span>"144,000원"
+                                                            </span>
+                                                            <span class="cost">160,000원</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-index="2" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                        <a class="thumb_goods">
+                                                            <img src=" " alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1622101306785l0.jpg);">
+                                                        </a>
+                                                        <div class="info_goods">
+                                                            <span class="name">
+                                                                <a class="txt">[라콩비에트] 플뢰르 드 셀 버터(15gx30개입)</a>
+                                                            </span>
+                                                            <span class="price">
+                                                                <span class="dc">25%</span>"26,250원"
+                                                            </span>
+                                                            <span class="cost">35,000원</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-index="3" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                        <a class="thumb_goods">
+                                                            <img src=" " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1623201851712l0.jpg&quot;);">
+                                                        </a>
+                                                        <div class="info_goods">
+                                                            <span class="name">
+                                                                <a class="txt">[Better me] 냉장 닭가슴살 5종</a>
+                                                            </span>
+                                                            <span class="price">
+                                                                <span class="dc">5%</span>"1,710원"
+                                                            </span>
+                                                            <span class="cost">1,800원</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-index="4" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                        <a class="thumb_goods">
+                                                            <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/163348880463l0.jpg);">
+                                                        </a>
+                                                        <div class="info_goods">
+                                                            <span class="name">
+                                                                <a class="txt">[르크루제] 한식 2인조 세트 (8pcs 세트)</a>
+                                                            <span class="price">
+                                                                <span class="dc">45%</span>"1671,700원"
+                                                            </span>
+                                                            <span class="cost">294,000원</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-index="5" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                        <a class="thumb_goods">
+                                                            <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                        </a>
+                                                        <div class="info_goods">
+                                                            <span class="name">
+                                                                <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                            </span>
+                                                            <span class="price">
+                                                                <span class="dc">13%</span>"27,650원"
+                                                            </span>
+                                                            <span class="cost">32,000원</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-index="6" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                        <a class="thumb_goods">
+                                                            <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                        </a>
+                                                        <div class="info_goods">
+                                                            <span class="name">
+                                                                <a class="txt">[한애가] 담금초 사자발쑥 350ml</a>
+                                                            </span>
+                                                            <span class="price">
+                                                                <span class="dc">13%</span>"27,650원"
+                                                            </span>
+                                                            <span class="cost">32,000원</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="bx-controls bx-has-controls-direction">
+                                                <div class="bx-controls-direction">
+                                                    <a href="#" class="bx-prev disabled">bx-prev</a>
+                                                    <a href="#" class="bx-next">Next</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--놓치면 후회할 가격 끝-------------------------------------------------------------------------- -->
+
+                            <!--bnr_main 이벤트 배너 시작------------------------------------------------------------------------->
+                            <div>
+                            <!--↓↓↓↓이벤트배너 bnr_main-->
+                            <div class="bnr_main1" alt="할로윈 간식,소품 최대 30%할인">
+                                <a class="link">
+                                    <span class="inner_link">
+                                        <img src="">
+                                    </span> 
+                                </a>
+                            </div>
+                            <!--bnr_main 이벤트 배너 끝------------------------------------------------------------------------->
+
+                        </div>
                     </div>
-                    <div>
-                        <div class="bnr_main" alt="할로윈 간식,소품 최대 30%할인"></div>
-                    </div>
+
+                    <!--MD의 추천------------------------------------------------------------------------------>
                     <div>
                         <div class="main_type2">
                             <div class="category_type">
                                 <div class="tit_goods"><h3 class="title">MD의 추천</h3></div>
-                            </div>                            <div class="category">
+                            </div>                           
+                            <div class="category">
                                 <ul class="list_category">
                                     <li><a href="#" class="menu">채소</a></li>
                                     <li><a href="#" class="menu">과일·견과·쌀</a></li>
@@ -702,16 +1292,101 @@
                                     <li><a href="#" class="menu">반려동물</a></li>
                                 </ul>
                             </div>
-                            <div class="list_goods">
+                        <div class="list_goods">
+                            <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 462px;">
+                                    <ul data-title="MD의 추천" data-section="md-choice" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <li data-index="1" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                            <a class="thumb_goods">
+                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1605512383246l0.jpg&quot;);">
+                                            </a> 
+                                            <div class="info_goods">
+                                                <span class="name">
+                                                    <a class="txt">나주 영산포 '햇' 꿀 밤고구마 3kg</a>
+                                                </span> 
+                                                <span class="price">
+                                                    <span class="dc">13%</span>19,923원       </span> 
+                                                <span class="cost">22,900원</span>
+                                            </div>
+                                        </li>
+                                        <li data-index="2" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                            <a class="thumb_goods">
+                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1608528305940l0.jpg&quot;);">
+                                            </a> 
+                                            <div class="info_goods">
+                                                <span class="name">
+                                                    <a class="txt">양파 3kg</a>
+                                                </span> 
+                                                <span class="price">5,690원</span>
+                                            </div>
+                                        </li>
+                                        <li data-index="3" class="cut" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                            <a class="thumb_goods">
+                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1593568688351l0.jpg&quot;);">
+                                            </a> 
+                                            <div class="info_goods">
+                                                <span class="name">
+                                                    <a class="txt">[KF365] 흙대파 1단</a>
+                                                </span> 
+                                                <span class="price">2,480원</span>
+                                            </div>
+                                        </li>
+                                        <li data-index="4" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                            <a class="thumb_goods">
+                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1491876649273l0.jpg&quot;);">
+                                            </a> 
+                                            <div class="info_goods">
+                                                <span class="name">
+                                                    <a class="txt">친환경 채소믹스 500g</a>
+                                                </span> 
+                                                <span class="price">5,900원</span> 
+                                            </div>
+                                        </li>
+                                        <li data-index="5" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                            <a class="thumb_goods"> 
+                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1609141186826l0.jpg&quot;);">
+                                            </a> 
+                                            <div class="info_goods">
+                                                <span class="name">
+                                                    <a class="txt">친환경 당근 500g</a>
+                                                </span> 
+                                                <span class="price">2,990원</span> 
+                                            </div>
+                                        </li>
+                                        <li data-index="6" class="cut" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                            <a class="thumb_goods"> 
+                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1613703436357l0.jpg&quot;);">
+                                            </a> 
+                                            <div class="info_goods">
+                                                <span class="name">
+                                                    <a class="txt">[KF365] 깐마늘 200g</a>
+                                                </span> 
+                                                <span class="price">2,660원</span> 
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                                        <div class="bx-controls bx-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev">Prev</a>
+                                                <a class="bx-next disabled">Next</a>
+                                            </div>
+                                        </div>
+                        </div>
                             <!--↓↓↓↓↓↓md추천의 카테고리를 누르면 버튼의 텍스트가 해당카테고리 이름으로 변함↓↓↓↓-->
-                            <div class="link_cate">
+                        <div class="link_cate">
 
-                            </div>
                         </div>
                     </div>
+                    
+                    <!--MD의 추천 끝------------------------------------------------------------------------------>
+
+                    <!---->
                     <div>
-                        <div class="bnr_main"><img src="#" alt="무제한적립금,참여만해도 적립금 1천원"></div>
+                        <div class="bnr_main2">
+                            <img src="#" alt="무제한적립금,참여만해도 적립금 1천원">
+<                       </div>
                     </div>
                     <div>
                         <div class="main_type2">
