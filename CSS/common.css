@@ -1,0 +1,513 @@
+
+/* 공통 부분 ---------------------------------------------------------------------------*/
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+}
+body, input, select, textarea, button {
+    font-family: noto sans,malgun gothic,AppleGothic,dotum;
+    line-height: 1;
+    letter-spacing: -.05em;
+    color: #4c4c4c;
+    font-size: 12px;
+    max-width: 100%;
+}
+
+header, #container, #content {
+    position: relative;
+}
+
+h1,h2, h3, h4, h5, h6 {
+    font-weight: normal; font-size: inherit;
+}
+
+
+
+
+ul, ol, li { list-style: none; }
+
+a { text-decoration: none; }
+a:link { color: #444; }
+a:visited { color: #444; }
+a:hover { color: #444; }
+a:focus { color: #444; }
+
+.clear::after { content: ""; display: block; clear: both; }
+
+img, a, fieldset { border: none; }
+
+input::-webkit-input-placeholder { color: #999; }
+textarea::-webkit-input-placeholder { color: #999; }
+
+table, thead, tbody, tfoot { border-collapse: collapse; border-spacing: 0; border: none; }
+
+
+/*
+    웹 접근성을 위한 skipnavi
+    https://nuli.navercorp.com/community/article/1132804 
+*/
+.screen_out {
+    position: absolute;
+    left: 0; top: -50px; text-indent: -9999px; font-size: 0; width: 100%; z-index: 999;
+}
+
+
+
+/* 메인페이지(index.php) ----------------------------------------------------------------- */
+
+
+/* header */
+
+header{
+    width: 100%;
+    height:156px;
+    justify-content: center;
+}
+header > #userMenu{
+    width: 1050px;
+    height:37px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-weight: 400;
+    letter-spacing: -.3px;
+
+}
+
+header > #userMenu:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+
+header > #userMenu > .listMenu {
+    float: right;
+    display:list-item;
+    line-height: 35px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+header > #userMenu > .listMenu .menu {
+    float:left;
+    z-index: 400;
+}
+
+#userMenu .menu:after {
+    content: "";
+    float: right;
+    width: 1px;
+    height: 13px;
+    margin-top: 12px;
+    background-color: #d8d8d8;
+}
+
+#userMenu .menu.lst::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background: url(../img/ico_down_8x5.png) no-repeat 0 0;
+}
+
+header > #userMenu > .listMenu> li > .linkMenu{
+    float: left;
+    height: 37px;
+    padding: 0 22px 0 10px;
+    color: #333;
+    line-height: 35px;
+    white-space: nowrap;
+}
+
+
+#userMenu .lst .sub {
+    left: auto;
+    right: 0;
+}
+#userMenu .sub {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    width: 102px;
+    padding: 3px 9px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+header > #headerLogo{
+    position: relative;
+    width: 1050px;
+    height:63px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+header > #headerLogo > .bnr_delivery{
+    position: absolute;
+    left: -1px;
+    top: -28px;
+    margin: auto;
+    height: 22px;
+}
+
+header > #headerLogo .logo {
+    width: 103px;
+    height: 79px;
+    margin: 0 auto;
+}
+header > #headerLogo > .logo > a > span > img{
+    width: 103px;
+    height: 79px;
+}
+
+header > #headerLogo > .bnr_delivery > img{
+    width: 121px;
+    aspect-ratio: auto 121 / 22;
+    height: 22px;
+}
+
+
+header > #gnb {
+    height:56px;
+}
+
+header > #gnb .gnb_main{
+    overflow:hidden;
+    width:1050px;
+    margin:0 auto;
+}
+
+header  .gnb_main .gnb a {
+    overflow: hidden;
+    float: left;
+    width: 124px;
+    height: 55px;
+    /* padding: 16px 0 0; */
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+header > #gnb .inner_gnbkurly {
+    position: relative;
+    width: 1050px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+header > #gnb > .gnb_kurly {
+    content: "";
+    position: absolute;
+    z-index: 299;
+    left: 0;
+    top: 56px;
+    width: 100%;
+    height: 9px;
+}
+
+header > #gnb > .gnb_main{ 
+    width: 1050px;
+    height: inherit;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+header > #gnb > .gnb_main .gnb{ 
+    float:left;
+    width: 100%;
+}
+
+header > #gnb > .inner_gnbKurly{
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#gnb .gnb_main .gnb > li {
+    float: left;   
+}
+
+#gnb .gnb_main .gnb > li > a {
+    padding-top: 16px;  
+}
+
+header > #gnb > #gnbMenu {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    min-width: 1050px;
+    z-index: 300;
+    background-color:#fff;
+}
+
+
+#gnb .gnb_search {
+    position: absolute;
+    right: 108px;
+    top: 10px;
+    width: 242px;
+}
+
+#gnb .gnb_search .inp_search {
+    width: 242px;
+    height: 36px;
+    /* padding: 0 60px 0 14px; */
+    border: 1px solid #f7f7f6;
+    border-radius: 18px;
+    background-color: #f7f7f7;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    outline: none;
+}
+
+#gnb .gnb_search .btn_search {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.gnb_search .init .btn_delete {
+    overflow: hidden;
+    position: absolute;
+    left: 170px;
+    top: -36px;
+    width: 36px;
+    height: 36px;
+    border: 0 none;
+    background: url(../img/ico_search_del.sgv) no-repeat 50% 50%;
+    background-size: 12px 12px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    opacity: 0;
+}
+
+#gnb .btn_location {
+    overflow: hidden;
+    position: absolute;
+    right: 51px;
+    top: 10px;
+    width: 36px;
+    height: 36px;
+    border: 0 none;
+    background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting_done.svg) no-repeat 50% 50%;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+#gnb .btn_location.on {
+    background-image: url(../img/ico_delivery_setting.svg);
+}
+
+#gnb .cart_count {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+}
+
+#gnb .cart_count .btn_cart {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+#gnb .cart_count .inner_cartcount {
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/* 바디 -------------------------------------------------*/
+
+#main {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+#content {
+    padding-bottom: 0;
+}
+
+#qnb {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 70px;
+    width: 80px;
+    font: normal 12px/16px "Noto Sans";
+    color: #333;
+    letter-spacing: -0.3px;
+    transition: top 0.2s;
+}
+
+
+#qnb .bnr_qnb {
+    padding-bottom: 7px;
+}
+
+#qnb .bnr_qnb .thumb {
+    width: 80px;
+    height: 120px;
+    vertical-align: top;
+}
+
+.bx-wrapper>.bx-viewport>.list>li{
+    width: 100%;
+    height:370px;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+
+.page_main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+.page_main .tit_goods {
+    padding: 79px 0 35px;
+}
+
+.page_main .tit_goods .tit {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+.main_type1 .list_goods .thumb_goods {
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto auto;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+
+div .bnr_main1 {
+    width: 1050px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(../img/bnr_main1.png);
+    background-size: contain;
+}
+
+div .bnr_main2 {
+    width: 1050px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(../img/bnr_main2.png);
+    background-size: contain;
+}
+
+
+
+.main_type2 .global_sticker .inner_sticker{left:0;top:0}
+.main_type2 .list_goods{width:1050px;height:506px;margin:0 auto}
+.main_type2 .list_goods .list{width:99999px}
+.main_type2 .list_goods li{float:left;width:249px;height:506px;margin-right:18px}
+.main_type2 .list_goods .thumb_goods{position:relative;background-color:#eee}
+.main_type2 .list_goods .ico{position:absolute;left:0;top:0;width:62px;height:54px}
+.main_type2 .list_goods .thumb{width:249px;height:320px}
+.main_type2 .list_goods .name{
+    display:block; overflow:hidden; max-height:50px; margin-top:12px;
+    text-overflow:ellipsis; display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+    word-wrap:break-word
+}
+.main_type2 .list_goods .txt{font-size:16px;line-height:23px}
+
+.main_type2 .list_goods .price{
+    display:block;
+    padding-top:9px;
+    font-weight:800;
+    font-size:16px;
+    line-height:20px
+}
+
+.main_type2 .list_goods .dc{padding-right:8px;font-weight:800;font-size:16px;color:#fa622f;line-height:20px}
+
+.main_type2 .list_goods .cost{
+    display:block;
+    padding-top:5px;
+    font-size:14px;
+    color:#999;
+    line-height:18px;
+    text-decoration:line-through
+}
+
+.main_event .list_goods {
+    overflow: hidden;
+    height: 538px;
+}
+
+.main_type3 .list_goods {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.main_event .list_goods .list {
+    width: 1068px;
+}
+
+.main_type3 .list_goods li {
+    float: left;
+    width: 338px;
+    margin-right: 18px;
+}
+
+/* .main_type3 .list_goods .thumb_goods {
+    display: block;
+    position: relative;
+} */
+
+.page_main .list_goods .thumb_goods .thumb {
+    width: 338px;
+    height: 338px;
+    display: block;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main_event .list_goods .name {
+    max-height: 54px;
+    margin-top: 17px;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.main_event .list_goods .desc {
+    padding-top: 8px;
+}
+
+.main_type3 .list_goods .desc {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
