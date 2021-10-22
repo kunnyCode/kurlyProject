@@ -20,7 +20,7 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="#" class="linkMenu">고객센터</a>
+                            <a href="./img/ico_down_8x5.png" class="linkMenu">고객센터</a>
                             <ul class="sub">
                                 <li><a href="#" onClick="">공지사항</a></li>
                                 <li><a href="#" onClick="">자주하는 질문</a></li>
@@ -76,7 +76,7 @@
                                         <input type="hidden" name="hid_link_url" value>
                                         <input type="hidden" id="edit" name="edit" value>
                                         <input type="sword" type="text" id="sword" value required="required" label="검색어" placeholder="검색어를 입력해주세요." class="inp_search">
-                                        <input type="image" src="#" class="btn_search">
+                                        <input type="image" src="./img/ico_search_x2.png" class="btn_search">
                                         <div class="init"><button type="button" id="searchInit" class="btn_delete">검색어 삭제하기</button></div>
                                     </form>
                                 </div>
@@ -661,7 +661,7 @@
                     <div id="quick"></div>
                     <!-- 메인 대형 롤링배너 -->
                     <div class="main_type1"> <!--메인 좌우롤링, 대형배너형식 main_type1-->
-
+                        
                     </div>
                     <!--↓↓↓↓반복되는 주제별 상품 블록↓↓↓↓↓↓-------->                    
                     <div><!--사이즈 맞추기용 div -->

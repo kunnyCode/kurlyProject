@@ -5,10 +5,13 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    font-family: 'Noto Sans KR', sans-serif;
+body, input, select, textarea, button {
+    font-family: noto sans,malgun gothic,AppleGothic,dotum;
+    line-height: 1;
+    letter-spacing: -.05em;
+    color: #4c4c4c;
     font-size: 12px;
+    max-width: 100%;
 }
 
 header, #container, #content {
@@ -98,6 +101,25 @@ header > #userMenu > .listMenu .menu {
     z-index: 400;
 }
 
+#userMenu .menu:after {
+    content: "";
+    float: right;
+    width: 1px;
+    height: 13px;
+    margin-top: 12px;
+    background-color: #d8d8d8;
+}
+
+#userMenu .menu.lst::before {
+    content: "";
+    position: absolute;
+    right: 11px; 
+    top: 16px;
+    width: 8px;
+    height: 5px;
+    background: url(./img/ico_down_8x5.png) no-repeat 0 0;
+}
+
 header > #userMenu > .listMenu> li > .linkMenu{
     float: left;
     height: 37px;
@@ -106,6 +128,8 @@ header > #userMenu > .listMenu> li > .linkMenu{
     line-height: 35px;
     white-space: nowrap;
 }
+
+
 
 #userMenu .lst .sub {
     left: auto;
@@ -207,4 +231,73 @@ header > #gnb > #gnbMenu {
     min-width: 1050px;
     z-index: 300;
     background-color:#fff;
+}
+
+#gnb .gnb_search .inp_search {
+    width: 242px;
+    height: 36px;
+    /* padding: 0 60px 0 14px; */
+    border: 1px solid #f7f7f6;
+    border-radius: 18px;
+    background-color: #f7f7f7;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    outline: none;
+}
+
+#gnb .gnb_search .btn_search {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.gnb_search .init .btn_delete {
+    overflow: hidden;
+    position: absolute;
+    left: 170px;
+    top: -36px;
+    width: 36px;
+    height: 36px;
+    border: 0 none;
+    background: url(./img/ico_search_del.sgv) no-repeat 50% 50%;
+    background-size: 12px 12px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    opacity: 0;
+}
+
+
+
+/* 바디 -------------------------------------------------*/
+
+#main {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+#content {
+    padding-bottom: 0;
+}
+
+#qnb {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 70px;
+    width: 80px;
+    font: normal 12px/16px "Noto Sans";
+    color: #333;
+    letter-spacing: -0.3px;
+    transition: top 0.2s;
+}
+
+.page_main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
 }
