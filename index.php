@@ -1070,7 +1070,7 @@
                                                 <li data-index="1">
                                                     <a class="thumb_goods">
                                                         <!-- 338px * 338px -->
-                                                        <img src="./img/bread.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634111654.jpg);">
+                                                        <img src="./img/bread.jpg" alt="상품이미지" class="thumb" style="object-fit:cover;">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1085,7 +1085,7 @@
                                                 </li>
                                                 <li data-index="2">
                                                     <a class="thumb_goods">
-                                                        <img src="./img/lg.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281327.jpg);">
+                                                        <img src="./img/lg.jpg" alt="상품이미지" class="thumb" style="object-fit:cover;">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1100,7 +1100,7 @@
                                                 </li>
                                                 <li data-index="3">
                                                     <a class="thumb_goods">
-                                                        <img src="./img/perfume.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281330.jpg);">
+                                                        <img src="./img/perfume.jpg" alt="상품이미지" class="thumb" style="object-fit:cover;">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">

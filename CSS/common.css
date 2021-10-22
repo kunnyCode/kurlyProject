@@ -478,6 +478,8 @@ div .bnr_main2 {
 } */
 
 .page_main .list_goods .thumb_goods .thumb {
+    width: 338px;
+    height: 338px;
     display: block;
     margin: 0 auto;
     background-position: 50% 50%;
