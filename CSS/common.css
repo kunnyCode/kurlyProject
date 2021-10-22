@@ -113,8 +113,6 @@ header > #userMenu > .listMenu .menu {
 #userMenu .menu.lst::before {
     content: "";
     position: absolute;
-    right: 11px; 
-    top: 16px;
     width: 8px;
     height: 5px;
     background: url(../img/ico_down_8x5.png) no-repeat 0 0;
@@ -128,7 +126,6 @@ header > #userMenu > .listMenu> li > .linkMenu{
     line-height: 35px;
     white-space: nowrap;
 }
-
 
 
 #userMenu .lst .sub {
@@ -177,12 +174,23 @@ header > #headerLogo > .bnr_delivery > img{
     height: 22px;
 }
 
+
+header > #gnb {
+    height:56px;
+}
+
+header > #gnb .gnb_main{
+    overflow:hidden;
+    width:1050px;
+    margin:0 auto;
+}
+
 header  .gnb_main .gnb a {
     overflow: hidden;
     float: left;
     width: 124px;
     height: 55px;
-    padding: 16px 0 0;
+    /* padding: 16px 0 0; */
     font-size: 16px;
     color: #333;
     line-height: 20px;
@@ -211,7 +219,6 @@ header > #gnb > .gnb_main{
     width: 1050px;
     height: inherit;
     overflow: hidden;
-    background-color:darkkhaki;
     margin: 0 auto;
 }
 
@@ -225,12 +232,29 @@ header > #gnb > .inner_gnbKurly{
     background-color: #fff;
 }
 
+#gnb .gnb_main .gnb > li {
+    float: left;   
+}
+
+#gnb .gnb_main .gnb > li > a {
+    padding-top: 16px;  
+}
+
 header > #gnb > #gnbMenu {
     position: relative;
     width: 100%;
+    height: 56px;
     min-width: 1050px;
     z-index: 300;
     background-color:#fff;
+}
+
+
+#gnb .gnb_search {
+    position: absolute;
+    right: 108px;
+    top: 10px;
+    width: 242px;
 }
 
 #gnb .gnb_search .inp_search {
@@ -272,6 +296,19 @@ header > #gnb > #gnbMenu {
     opacity: 0;
 }
 
+#gnb .btn_location {
+    overflow: hidden;
+    position: absolute;
+    right: 51px;
+    top: 10px;
+    width: 36px;
+    height: 36px;
+    border: 0 none;
+    background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting_done.svg) no-repeat 50% 50%;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
 #gnb .btn_location.on {
     background-image: url(../img/ico_delivery_setting.svg);
 }
@@ -282,10 +319,16 @@ header > #gnb > #gnbMenu {
     top: 10px;
 }
 
+#gnb .cart_count .btn_cart {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
 #gnb .cart_count .inner_cartcount {
     text-align: center;
     font-weight: 400;
 }
+
 
 /* 바디 -------------------------------------------------*/
 
@@ -320,11 +363,43 @@ header > #gnb > #gnbMenu {
     vertical-align: top;
 }
 
+.bx-wrapper>.bx-viewport>.list>li{
+    width: 100%;
+    height:370px;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+
 .page_main {
     overflow: hidden;
     width: 100%;
     margin: 0;
 }
+.page_main .tit_goods {
+    padding: 79px 0 35px;
+}
+
+.page_main .tit_goods .tit {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+.main_type1 .list_goods .thumb_goods {
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto auto;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 
 div .bnr_main1 {
     width: 1050px;
@@ -340,4 +415,97 @@ div .bnr_main2 {
     margin: 0 auto;
     background-image: url(../img/bnr_main2.png);
     background-size: contain;
+}
+
+
+
+.main_type2 .global_sticker .inner_sticker{left:0;top:0}
+.main_type2 .list_goods{width:1050px;height:506px;margin:0 auto}
+.main_type2 .list_goods .list{width:99999px}
+.main_type2 .list_goods li{float:left;width:249px;height:506px;margin-right:18px}
+.main_type2 .list_goods .thumb_goods{position:relative;background-color:#eee}
+.main_type2 .list_goods .ico{position:absolute;left:0;top:0;width:62px;height:54px}
+.main_type2 .list_goods .thumb{width:249px;height:320px}
+.main_type2 .list_goods .name{
+    display:block; overflow:hidden; max-height:50px; margin-top:12px;
+    text-overflow:ellipsis; display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+    word-wrap:break-word
+}
+.main_type2 .list_goods .txt{font-size:16px;line-height:23px}
+
+.main_type2 .list_goods .price{
+    display:block;
+    padding-top:9px;
+    font-weight:800;
+    font-size:16px;
+    line-height:20px
+}
+
+.main_type2 .list_goods .dc{padding-right:8px;font-weight:800;font-size:16px;color:#fa622f;line-height:20px}
+
+.main_type2 .list_goods .cost{
+    display:block;
+    padding-top:5px;
+    font-size:14px;
+    color:#999;
+    line-height:18px;
+    text-decoration:line-through
+}
+
+.main_event .list_goods {
+    overflow: hidden;
+    height: 538px;
+}
+
+.main_type3 .list_goods {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.main_event .list_goods .list {
+    width: 1068px;
+}
+
+.main_type3 .list_goods li {
+    float: left;
+    width: 338px;
+    margin-right: 18px;
+}
+
+/* .main_type3 .list_goods .thumb_goods {
+    display: block;
+    position: relative;
+} */
+
+.page_main .list_goods .thumb_goods .thumb {
+    display: block;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main_event .list_goods .name {
+    max-height: 54px;
+    margin-top: 17px;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.main_event .list_goods .desc {
+    padding-top: 8px;
+}
+
+.main_type3 .list_goods .desc {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

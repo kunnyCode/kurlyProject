@@ -47,7 +47,7 @@
                 <!-- 카테고리 시작 --------------------------------------------------------------------------->
                 <div id="gnb">
                     <h2 class="screen_out">메뉴</h2>
-                    <nav id="gnbMenu" class="gnb_kurly">
+                    <div id="gnbMenu" class="gnb_kurly">
                         <div class="inner_gnbkurly">
                             <div class="gnb_main">
                                 <ul class="gnb">
@@ -90,7 +90,7 @@
                                     <div id="addMsgCart" class="msg_cart">
                                         <span class="point"></span>
                                         <div class="inner_msgcart">
-                                            <img src="#" alt="#" class="thumb">
+                                            <img src="./img/ico_cart.png" alt="#" class="thumb">
                                             <p id="msgReaddedItem" class="desc">
                                                 <span class="tit"></span>
                                                 <span class="txt">
@@ -649,7 +649,7 @@
                                 </div>
                             </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </header>
             <!-- 헤더 끝-------------------------------------------------------------------->
@@ -697,45 +697,38 @@
                                             <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;">
                                                 <!-- ↓↓↓↓↓↓ ul 태그 계속바뀜 (메인배너에 마우스 오버하면 안넘어감) -->
                                                 <ul data-section="main_banner" class="list" style= "width: 1315%; position: relative; transition-timing-function: ease-in-out; transition-duration: 0.5s; transform: translate3d(-1255px, 0px, 0px);">
-                                                    <li data-index="11" style="float: left; list-style: none; position: relative; width: 1255px;" class="bx-clone" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./main_bnr_img/pc_img_1633501694.webp);">메인배너</a>
+                                                    <li data-index="11" class="bx-clone" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1583112495.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="1" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="1" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1621561009.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="2" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="2" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1628583839.png);">
+                                                        <img src="./img/pc_img_1628583839.png" alt="">
+                                                        메인배너</a>
                                                     </li>
-                                                    <li data-index="3" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="3" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1633501694.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="4" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="4"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634285707.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="5" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="5"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634523002.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="6" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="6" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634640525.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="7" style="float: left; list-style: none;position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="7" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634640530.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="8" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
+                                                    <li data-index="8"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634775416.png);">메인배너</a>
                                                     </li>
-                                                    <li data-index="9" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
-                                                    </li>
-                                                    <li data-index="10" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
-                                                    </li>
-                                                    <li data-index="11" style="float: left; list-style: none; position: relative; width: 1255px;"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
-                                                    </li>
-                                                    <li data-index="1" style="float: left; list-style: none; position: relative; width: 1255px;" class="bx-clone" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(https://);">메인배너</a>
-                                                    </li>
+                                                    <li data-index="9"  data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634805265.png);">메인배너</a>
+                                                    </li>               
                                                 </ul>
                                             </div>
                                             <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
@@ -759,7 +752,7 @@
                                         <div class="product_list">
                                             <div class="tit_goods">
                                                 <h3 class="tit">
-                                                    <span class="name">"이 상품 어때요?"</span>
+                                                    <span class="name">이 상품 어때요?</span>
                                                 </h3>
                                             </div>
                                             <div class="list_goods">
@@ -769,7 +762,7 @@
                                                             <li data-index="1" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
                                                                     <!--↓↓↓↓ <img> 홈페이지에서는 249px에 320px로 렌더가 되는데 여기는 왜 실제 크기인 109px에 145px로 나올까요오?!? -->
-                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1610084740375l0.jpg);">
+                                                                    <img src="./img/tomato.jpg" alt="상품이미지" class="thumb">
                                                                 </a>
                                                                 <div class="info_goods">
                                                                     <span class="name">
@@ -783,8 +776,7 @@
                                                             </li>
                                                             <li data-index="2" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
-                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/big/201510/523_shop1_340515.jpg);">
-                                                                </a>
+                                                                    <img src="./img/lime.png" alt="상품이미지" class="thumb">
                                                                 <div class="info_goods">
                                                                     <span class="name">
                                                                         <a class="txt">맥시코 생 라임 1개</a>
@@ -797,7 +789,7 @@
                                                             </li>
                                                             <li data-index="3" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
-                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                    <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb">
                                                                 </a>
                                                                 <div class="info_goods">
                                                                     <span class="name">
@@ -811,7 +803,7 @@
                                                             </li>
                                                             <li data-index="4" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
-                                                                    <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1464056216521l0.jpg);">
+                                                                    <img src="./img/cucumber.jpg" alt="상품이미지" class="thumb">
                                                                 </a>
                                                                 <div class="info_goods">
                                                                     <span class="name">
@@ -1078,7 +1070,7 @@
                                                 <li data-index="1">
                                                     <a class="thumb_goods">
                                                         <!-- 338px * 338px -->
-                                                        <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634111654.jpg);">
+                                                        <img src="./img/bread.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634111654.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1093,7 +1085,7 @@
                                                 </li>
                                                 <li data-index="2">
                                                     <a class="thumb_goods">
-                                                        <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281327.jpg);">
+                                                        <img src="./img/lg.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281327.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1108,7 +1100,7 @@
                                                 </li>
                                                 <li data-index="3">
                                                     <a class="thumb_goods">
-                                                        <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281330.jpg);">
+                                                        <img src="./img/perfume.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/main/3/pc_img_1634281330.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1155,7 +1147,7 @@
                                                                     </span>
                                                                 </span>
                                                             </span>
-                                                            <img src=" " alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1621593044686l0.jpg);">
+                                                            <img src="./img/face.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1621593044686l0.jpg);">
                                                         </a>
                                                         <div class="info_goods">
                                                             <span class="name">
@@ -1169,7 +1161,7 @@
                                                     </li>
                                                     <li data-index="2" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                         <a class="thumb_goods">
-                                                            <img src=" " alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1622101306785l0.jpg);">
+                                                            <img src="./img/butter.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1622101306785l0.jpg);">
                                                         </a>
                                                         <div class="info_goods">
                                                             <span class="name">
@@ -1183,7 +1175,7 @@
                                                     </li>
                                                     <li data-index="3" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                         <a class="thumb_goods">
-                                                            <img src=" " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1623201851712l0.jpg&quot;);">
+                                                            <img src="./img/chicken.jpg" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1623201851712l0.jpg&quot;);">
                                                         </a>
                                                         <div class="info_goods">
                                                             <span class="name">
@@ -1197,7 +1189,7 @@
                                                     </li>
                                                     <li data-index="4" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                         <a class="thumb_goods">
-                                                            <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/163348880463l0.jpg);">
+                                                            <img src="./img/dish.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/163348880463l0.jpg);">
                                                         </a>
                                                         <div class="info_goods">
                                                             <span class="name">
@@ -1298,20 +1290,20 @@
                                     <ul data-title="MD의 추천" data-section="md-choice" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                         <li data-index="1" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                             <a class="thumb_goods">
-                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1605512383246l0.jpg&quot;);">
+                                                <img src="./img/sweetp.jpg" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1605512383246l0.jpg&quot;);">
                                             </a> 
                                             <div class="info_goods">
                                                 <span class="name">
                                                     <a class="txt">나주 영산포 '햇' 꿀 밤고구마 3kg</a>
                                                 </span> 
                                                 <span class="price">
-                                                    <span class="dc">13%</span>19,923원       </span> 
+                                                    <span class="dc">13%</span>19,923원</span> 
                                                 <span class="cost">22,900원</span>
                                             </div>
                                         </li>
                                         <li data-index="2" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                             <a class="thumb_goods">
-                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1608528305940l0.jpg&quot;);">
+                                                <img src="./img/onion.jpg" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1608528305940l0.jpg&quot;);">
                                             </a> 
                                             <div class="info_goods">
                                                 <span class="name">
@@ -1322,7 +1314,7 @@
                                         </li>
                                         <li data-index="3" class="cut" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                             <a class="thumb_goods">
-                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1593568688351l0.jpg&quot;);">
+                                                <img src="./img/greenonion.jpg" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1593568688351l0.jpg&quot;);">
                                             </a> 
                                             <div class="info_goods">
                                                 <span class="name">
@@ -1333,7 +1325,7 @@
                                         </li>
                                         <li data-index="4" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                             <a class="thumb_goods">
-                                                <img src="  " alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1491876649273l0.jpg&quot;);">
+                                                <img src="./img/vegemix.png" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1491876649273l0.jpg&quot;);">
                                             </a> 
                                             <div class="info_goods">
                                                 <span class="name">
