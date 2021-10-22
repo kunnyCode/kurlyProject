@@ -191,41 +191,28 @@
             <!-- 푸터 시작 --------------------------------------------------------------->
             <footer id="footer">
             <div class="inner_footer">
-                    <h2 class="tit_cc">고객행복센터</h2>
-                    <div class="cc_view cc_call">
-                        <h3>
-                            <spam class="tit">1644-1107</spam>
-                        </h3>
-                        <dl class="list">
-                            <dt>365고객센터</dt>
-                            <dd>오전 7시 - 오후 7시</dd>
-                        </dl>
-                    </div>
-                    <div class="cc_view cc_kakao">
-                        <h3>
-                            <a href="#none" class="tit">카카오톡 문의</a>
-                        </h3>
-                        <dl class="list">
-                            <dt>365고객센터</dt>
-                            <dd>오전 7시 - 오후 7시</dd>
-                        </dl>
-                    </div>
-                    <div class="cc_view cc_qna">
-                        <h3>
-                            <a href="#none" class= "tit">1:1 문의</a>
-                        </h3>
-                        <dl class="list">
-                            <dt>24시간 접수 가능</dt>
-                            <dd>고객센터 운영시간에 순차적으러 답변해드리겠습니다.</dd>
-                        </dl>
-                    </div>
-                    <div class="cc_view cc_bulkorder">
-                        <h3>
-                            <a href="#" class="tit">대량주문 문의</a>
-                        </h3>
-                        <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
-                    </div>
-            </div>
+                <div class="company">
+                    <ul class="list">
+                        <li>
+                            <a class-"link" href="/shop/introduce/about_kurly.php">컬리소게</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&showinfo=0&wmode=opaque&enablejsapi=1" class="link">컬리소개영상</a>
+                        </li>
+                        <li>
+                            <a href="https://marketkurly.recruiter.co.kr/appsite/company/index" class="class">인재채용</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kurly.com/shop/service/agreement.php" class="class">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kurly.com/shop/service/private.php" class="link emph">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kurly.com/shop/service/guide.php" class="link">이용안내</a>
+                        </li>
+                    </ul>
+                </div>
 
 
             </footer>
