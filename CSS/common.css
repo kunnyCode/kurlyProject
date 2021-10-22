@@ -1,12 +1,26 @@
-* { margin: 0; padding: 0; }
+
+/* 공통 부분 ---------------------------------------------------------------------------*/
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+header, #container, #content {
+    position: relative;
+}
+
+h1,h2, h3, h4, h5, h6 {
     font-weight: normal; font-size: inherit;
 }
+
+
+
 
 ul, ol, li { list-style: none; }
 
@@ -20,3 +34,177 @@ a:focus { color: #444; }
 
 img, a, fieldset { border: none; }
 
+input::-webkit-input-placeholder { color: #999; }
+textarea::-webkit-input-placeholder { color: #999; }
+
+table, thead, tbody, tfoot { border-collapse: collapse; border-spacing: 0; border: none; }
+
+
+/*
+    웹 접근성을 위한 skipnavi
+    https://nuli.navercorp.com/community/article/1132804 
+*/
+.screen_out {
+    position: absolute;
+    left: 0; top: -50px; text-indent: -9999px; font-size: 0; width: 100%; z-index: 999;
+}
+
+
+
+/* 메인페이지(index.php) ----------------------------------------------------------------- */
+
+
+/* header */
+
+header{
+    width: 100%;
+    height:156px;
+    justify-content: center;
+}
+header > #userMenu{
+    width: 1050px;
+    height:37px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-weight: 400;
+    letter-spacing: -.3px;
+
+}
+
+header > #userMenu:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+
+header > #userMenu > .listMenu {
+    float: right;
+    display:list-item;
+    line-height: 35px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+header > #userMenu > .listMenu .menu {
+    float:left;
+    z-index: 400;
+}
+
+header > #userMenu > .listMenu> li > .linkMenu{
+    float: left;
+    height: 37px;
+    padding: 0 22px 0 10px;
+    color: #333;
+    line-height: 35px;
+    white-space: nowrap;
+}
+
+#userMenu .lst .sub {
+    left: auto;
+    right: 0;
+}
+#userMenu .sub {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    width: 102px;
+    padding: 3px 9px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+header > #headerLogo{
+    position: relative;
+    width: 1050px;
+    height:63px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+header > #headerLogo > .bnr_delivery{
+    position: absolute;
+    left: -1px;
+    top: -28px;
+    margin: auto;
+    height: 22px;
+}
+
+header > #headerLogo .logo {
+    width: 103px;
+    height: 79px;
+    margin: 0 auto;
+}
+header > #headerLogo > .logo > a > span > img{
+    width: 103px;
+    height: 79px;
+}
+
+header > #headerLogo > .bnr_delivery > img{
+    width: 121px;
+    aspect-ratio: auto 121 / 22;
+    height: 22px;
+}
+
+header  .gnb_main .gnb a {
+    overflow: hidden;
+    float: left;
+    width: 124px;
+    height: 55px;
+    padding: 16px 0 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+header > #gnb .inner_gnbkurly {
+    position: relative;
+    width: 1050px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+header > #gnb > .gnb_kurly {
+    content: "";
+    position: absolute;
+    z-index: 299;
+    left: 0;
+    top: 56px;
+    width: 100%;
+    height: 9px;
+}
+
+header > #gnb > .gnb_main{ 
+    width: 1050px;
+    height: inherit;
+    overflow: hidden;
+    background-color:darkkhaki;
+    margin: 0 auto;
+}
+
+header > #gnb > .gnb_main .gnb{ 
+    float:left;
+    width: 100%;
+}
+
+header > #gnb > .inner_gnbKurly{
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header > #gnb > #gnbMenu {
+    position: relative;
+    width: 100%;
+    min-width: 1050px;
+    z-index: 300;
+    background-color:#fff;
+}

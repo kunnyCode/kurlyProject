@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./CSS/common.css">
     <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 </head>
 <body>
@@ -36,12 +36,12 @@
                     <h1 class="logo">
                         <a href="#" class="link_main">
                             <span id="gnbLogoContainer">
-                                <img src="#" alt="마켓컬리 로고">
+                                <img src="./img/kurlyLogo_x2.png" alt="마켓컬리 로고">
                             </span>
                         </a>
                     </h1>
                     <a href="#" onclick="" class="bnr_delivery">
-                        <img src="#" alt="샛별, 택배 배송안내">
+                        <img src="./img/delivery.png" alt="샛별, 택배 배송안내">
                     </a>
                 </div>
                 <!-- 카테고리 시작 --------------------------------------------------------------------------->
