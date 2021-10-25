@@ -7,7 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <!-- <script src="/js/jquery.bxslider.min.js"></script> -->
+    <!-- bxSlider CSS file -->
+    <!-- <link href="/lib/jquery.bxslider.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./CSS/common.css">
+    <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
     <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 </head>
 <body>
@@ -687,51 +697,46 @@
                     </div>
                     
                     <!-- 메인 ---------------------------------------------------------------------------------------->
-                    <div id="kurlyMain" class="page_article page_main">
+                    <div id="kurlyMain" class="page_article page_main" style="opacity:1;">
                         <h2 class="screen out">마켓컬리 메인</h2>
                         <!-- 롤링베너 시작---------------------------------------------------------------------------------------->
                             <div>
                                 <div class="main_type1">
-                                    <div class="list_goods">
-                                        <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
-                                            <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;">
-                                                <!-- ↓↓↓↓↓↓ ul 태그 계속바뀜 (메인배너에 마우스 오버하면 안넘어감) -->
-                                                <ul data-section="main_banner" class="list" style= "width: 1315%; position: relative; transition-timing-function: ease-in-out; transition-duration: 0.5s; transform: translate3d(-1255px, 0px, 0px);">
+                                    <div class="list_goods">                                        
+                                                <ul class="bxslider">
                                                     <li data-index="11" class="bx-clone" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1583112495.png);">메인배너</a>
+                                                        <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
                                                     </li>
                                                     <li data-index="1" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1621561009.png);">메인배너</a>
+                                                        <img src ="./img/pc_img_1621561009.png" class="thumb_goods">메인배너</a>
                                                     </li>
-                                                    <li data-index="2" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1628583839.png);">
-                                                        <img src="./img/pc_img_1628583839.png" alt="">
-                                                        메인배너</a>
+                                                    <li data-index="2" data-name="main_banner">                                                
+                                                        <img src="./img/pc_img_1628583839.png" class="thumb_goods" alt="">메인배너</a>
                                                     </li>
                                                     <li data-index="3" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1633501694.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1633501694.png" class="thumb_goods">메인배너</a>
                                                     </li>
                                                     <li data-index="4"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634285707.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1634285707.png" class="thumb_goods" >메인배너</a>
                                                     </li>
                                                     <li data-index="5"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634523002.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1634523002.png" class="thumb_goods" >메인배너</a>
                                                     </li>
                                                     <li data-index="6" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634640525.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1634640525.png" class="thumb_goods">메인배너</a>
                                                     </li>
                                                     <li data-index="7" data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634640530.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1634640530.png" class="thumb_goods">메인배너</a>
                                                     </li>
                                                     <li data-index="8"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634775416.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1634775416.png" class="thumb_goods" >메인배너</a>
                                                     </li>
                                                     <li data-index="9"  data-name="main_banner">
-                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634805265.png);">메인배너</a>
+                                                        <img src="./img/pc_img_1634805265.png" class="thumb_goods">메인배너</a>
                                                     </li>               
                                                 </ul>
                                             </div>
-                                            <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
+                                            <!-- <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
                                                 <div class="bx-controls-direction">
                                                     <a href="#" class="bx-prev">Prev</a>
                                                     <a href="#" class="bx-prev">Next</a>
@@ -744,7 +749,7 @@
                                                         <a href="#" class="bx-stop">Stop</a>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <!--롤링베너 끝 --------------------------------------------------------------------------------->
                                 <div>
@@ -762,7 +767,7 @@
                                                             <li data-index="1" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
                                                                     <!--↓↓↓↓ <img> 홈페이지에서는 249px에 320px로 렌더가 되는데 여기는 왜 실제 크기인 109px에 145px로 나올까요오?!? -->
-                                                                    <img src="./img/tomato.jpg" alt="상품이미지" class="thumb">
+                                                                    <img src="./img/tomato.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                                 </a>
                                                                 <div class="info_goods">
                                                                     <span class="name">
@@ -776,7 +781,7 @@
                                                             </li>
                                                             <li data-index="2" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
-                                                                    <img src="./img/lime.png" alt="상품이미지" class="thumb">
+                                                                    <img src="./img/lime.png" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                                 <div class="info_goods">
                                                                     <span class="name">
                                                                         <a class="txt">맥시코 생 라임 1개</a>
@@ -789,7 +794,7 @@
                                                             </li>
                                                             <li data-index="3" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
-                                                                    <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb">
+                                                                    <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                                 </a>
                                                                 <div class="info_goods">
                                                                     <span class="name">
@@ -803,7 +808,7 @@
                                                             </li>
                                                             <li data-index="4" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                                 <a class="thumb_goods">
-                                                                    <img src="./img/cucumber.jpg" alt="상품이미지" class="thumb">
+                                                                    <img src="./img/cucumber.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                                 </a>
                                                                 <div class="info_goods">
                                                                     <span class="name">
@@ -1070,7 +1075,7 @@
                                                 <li data-index="1">
                                                     <a class="thumb_goods">
                                                         <!-- 338px * 338px -->
-                                                        <img src="./img/bread.jpg" alt="상품이미지" class="thumb" style="object-fit:cover;">
+                                                        <img src="./img/bread.jpg" alt="상품이미지" class="thumb">
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1085,7 +1090,7 @@
                                                 </li>
                                                 <li data-index="2">
                                                     <a class="thumb_goods">
-                                                        <img src="./img/lg.jpg" alt="상품이미지" class="thumb" style="object-fit:cover;">
+                                                        <img src="./img/lg.jpg" alt="상품이미지" class="thumb" >
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1100,7 +1105,7 @@
                                                 </li>
                                                 <li data-index="3">
                                                     <a class="thumb_goods">
-                                                        <img src="./img/perfume.jpg" alt="상품이미지" class="thumb" style="object-fit:cover;">
+                                                        <img src="./img/perfume.jpg" alt="상품이미지" class="thumb" >
                                                     </a>
                                                     <div class="info_goods">
                                                         <div class="inner_info">
@@ -1439,5 +1444,22 @@
             <!-- 푸터 끝 ----------------------------------------------------------------->
         </div>
     </div>
+
+    <script>
+        $(document).ready(function(){ $('.bxslider').bxSlider( { mode: 'horizontal',// 가로 방향 수평 슬라이드
+            speed: 500, // 이동 속도를 설정
+            pager: false, // 현재 위치 페이징 표시 여부 설정
+            moveSlides: 1, // 슬라이드 이동시 개수
+            slideWidth: 1900, // 슬라이드 너비
+            minSlides: 4, // 최소 노출 개수
+            maxSlides: 4, // 최대 노출 개수
+            slideMargin: 5, // 슬라이드간의 간격
+            auto: true, // 자동 실행 여부
+            autoHover: true, // 마우스 호버시 정지 여부
+            controls: true // 이전 다음 버튼 노출 여부 
+            });
+        });
+    </script>
+
 </body>
 </html>

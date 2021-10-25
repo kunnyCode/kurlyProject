@@ -61,9 +61,16 @@ table, thead, tbody, tfoot { border-collapse: collapse; border-spacing: 0; borde
 
 header{
     width: 100%;
-    height:156px;
+    height:198px;
     justify-content: center;
 }
+
+#userMenu * {
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: -.3px;
+}
+
 header > #userMenu{
     width: 1050px;
     height:37px;
@@ -96,9 +103,10 @@ header > #userMenu > .listMenu {
     padding-inline-start: 40px;
 }
 
-header > #userMenu > .listMenu .menu {
-    float:left;
+#userMenu .menu {
+    position: relative;
     z-index: 400;
+    float: left;
 }
 
 #userMenu .menu:after {
@@ -110,18 +118,38 @@ header > #userMenu > .listMenu .menu {
     background-color: #d8d8d8;
 }
 
-#userMenu .menu.lst::before {
+
+#userMenu .menu_login .link_menu {
+    padding: 0 16px 0 15px;
+}
+
+#userMenu .menu.lst:before {
+    top: 16px;
+    right: 0;
     content: "";
     position: absolute;
     width: 8px;
     height: 5px;
     background: url(../img/ico_down_8x5.png) no-repeat 0 0;
 }
+/* #userMenu .menu:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background: url(../img/ico_down_8x5.png) no-repeat 0 0;
+} */
+
+
+
+#userMenu .list_menu {
+    float: right;
+}
 
 header > #userMenu > .listMenu> li > .linkMenu{
     float: left;
     height: 37px;
-    padding: 0 22px 0 10px;
+    padding: 0 10px 0 10px;
     color: #333;
     line-height: 35px;
     white-space: nowrap;
@@ -254,13 +282,12 @@ header > #gnb > #gnbMenu {
     position: absolute;
     right: 108px;
     top: 10px;
-    width: 242px;
 }
 
 #gnb .gnb_search .inp_search {
     width: 242px;
     height: 36px;
-    /* padding: 0 60px 0 14px; */
+    padding: 0 0 0 14px;
     border: 1px solid #f7f7f6;
     border-radius: 18px;
     background-color: #f7f7f7;
@@ -323,16 +350,44 @@ header > #gnb > #gnbMenu {
     display: block;
     width: 36px;
     height: 36px;
+    background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%;
+
 }
 #gnb .cart_count .inner_cartcount {
     text-align: center;
     font-weight: 400;
 }
 
+#gnb .cart_count .inner_msgcart {
+    display: block;
+    overflow: hidden;
+    /* padding: 20px 0 20px 20px; */
+}
 
+#gnb .cart_count .msg_cart .desc {
+    float: left;
+    width: 260px;
+    padding: 8px 0 0 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#gnb .gnb_main .menu1 a {
+    width: 168px;
+}
+
+#gnb .gnb_main .menu1 .ico {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 5px 14px 0 0;
+    background: url(../img/ico_gnb_all_off.png) no-repeat;
+}
 /* 바디 -------------------------------------------------*/
 
 #main {
+    height: 7995px;
     border-bottom: 1px solid #f7f7f7;
 }
 
@@ -363,14 +418,79 @@ header > #gnb > #gnbMenu {
     vertical-align: top;
 }
 
-.bx-wrapper>.bx-viewport>.list>li{
+#mainNotice {
+    position: relative;
+    z-index: 5000;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.bxslider > li {
+    width: 1900px;
+}
+.bx-viewport {
     width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 370px;
+}
+
+
+
+/* .bx-viewport {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 370px;
+}
+
+.bx-wrapper>.bx-viewport>.list>li{
+    width: 2543px;
     height:370px;
     float: left;
     list-style: none;
     position: relative;
+} */
+
+
+#gnb .gnb_main .gnb a{
+font-size: 16px;
+color: #333;
+line-height: 20px;
+text-align: center;
 }
 
+#gnb .gnb_main .gnb a .txt {
+    font-weight: 700;
+}
+
+#gnb .layer_location {
+    display: none;
+    position: absolute;
+    z-index: 300;
+    right: 41px;
+    top: 56px;
+    width: 315px;
+    padding: 18px 18px 19px 20px;
+    border: 1px
+ solid #ddd;
+    background-color: #fff;
+}
+
+#gnb .cart_count .msg_cart {
+    display: none;
+    position: absolute;
+    right: -7px;
+    top: 61px;
+    width: 348px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    /* opacity: 0; */
+}
+
+.page_main * {
+    color: #333;
+}
 
 .page_main {
     overflow: hidden;
@@ -390,8 +510,8 @@ header > #gnb > #gnbMenu {
 }
 
 .main_type1 .list_goods .thumb_goods {
-    width: 100%;
-    height: 370px;
+    /* width: 100%;
+    height: 370px; */
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: auto auto;
@@ -510,4 +630,12 @@ div .bnr_main2 {
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+
+/* footer */
+
+footer{
+    width: 1050px;
+    height: 379px;
 }
