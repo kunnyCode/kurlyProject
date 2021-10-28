@@ -1409,8 +1409,104 @@
                     <div></div>
                     <div></div>
                     <div></div>
-                    <div></div>
-                    <div></div>
+                    <!-- 인스타그램 고객 후기 시작 -->
+                    <div>
+                        <div class="main_type4">
+                            <div class="tit_goods">
+                                <h3 class="tit">인스타그램 고객 후기</h3>
+                            </div>
+                            <div class="list_goods">
+                                <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                    <div class="bx-viewport" style="width: 100%; height: 175px; overflow: hidden; position: relative; ">
+                                        <ul data-title="인스타그램 고객 후기" data-section="instagram" class="list" style="width: 2715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                            <li data-index="1" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list1.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="2" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list2.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="3" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list3.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="4" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list4.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="5" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list5.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="6" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list6.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="7" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list7.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="8" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list8.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="9" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list9.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="10" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list10.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="11" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list11.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                            <li data-index="12" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
+                                                <a target="_blank" class="thumb_goods">
+                                                    <img src="./img/insta_list12.jpg" alt="상품이미지" class="thumb">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bx-controls bx-has-controls-direction">
+                                        <div class="bx-controls-direction">
+                                            <a class="bx-prev disabled" href>Prev</a>
+                                            <a class="bx-next" href>Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bnr">
+                                <span class="txt">더 많은 고객 후기가 궁금하다면?</span>
+                                <a href="https://www.instagram.com/marketkurly_regram/" target="_blank">@marketkurly_regram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 인스타그램 고객 후기 끝 -->
+                    <!-- 샛별 택배 배송안내 보기 시작 -->
+                    <div>
+                        <div class="bnr_main3">
+                            <a class="link" style="background-image: url(https://img-cf.kurly.com/shop/data/main/15/pc_img_1629447526.jpg);">
+                                <span class="inner_link">
+                                    <img src="./img/bnr_main3.png">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 샛별 택배 배송안내 보기 끝 -->
 
                 </section>
             </main>
