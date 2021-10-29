@@ -667,28 +667,28 @@
             <!-- 바디 시작 ----------------------------------------------------------------->
             <main id="main">
                 <section id="content">
-                    <!--사이드 퀵메뉴-->
-                    <div id="qnb" class="quick-navigation" style="top:516px;">
-                        <div id="brnQuick" class="bnr_qnb">
-                            <a href="#" id="brnQuickObj">
-                                <img src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송" class="thumb">
+                    <!-- 사이드 퀵 메뉴 시작 -->
+                    <div id="qnb" class="quick-navigation" style="top: 70px;">
+                        <div class="bnr_qnb" id="brnQuick">
+                            <a href="/shop/board/view.php?id=notice&no=64" id="brnQuickObj">
+                                <img class="thumb" src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송">
                             </a>
                         </div>
-                        <div class="side_menu" style="display:none">
-                            <a href="#" class="link_menu">등급별 혜택</a>
-                            <a href="#" class="link_menu">레시피</a>
-                            <a href="#" class="link_menu">베스트 후기</a>
+                        <div class="side_menu">
+                            <a href="/shop/board/html.php?htmid=event/kurly.htm&name=lovers" class="link_menu">등급별 혜택</a>
+                            <a href="/shop/board/list.php?id=recipe" class="link_menu">레시피</a>
+                            <a href="/shop/goods/goods_review_best.php">베스트 후기</a>
                         </div>
-                        <div class="side_recent" style="display:none">
+                        <div class="side_recent" style="display: none;">
                             <strong class="tit">최근 본 상품</strong>
-                            <div class="list_goods" style="height:0px;">
+                            <div class="list_goods" data-height="209" style="height: 0px;">
                                 <ul class="list"></ul>
                             </div>
                             <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
                             <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
                         </div>
                     </div>
-                    <!--사이드 퀵메뉴 끝-->
+                    <!-- 사이드 퀵 메뉴 끝 -->
                     
                     <div id="mainNotice">
                         <div id="mainNoticePop">
