@@ -663,7 +663,7 @@
                 </div>
             </header>
             <!-- 헤더 끝-------------------------------------------------------------------->
-         
+
             <!-- 바디 시작 ----------------------------------------------------------------->
             <main id="main">
                 <section id="content">
@@ -702,39 +702,47 @@
                         <!-- 롤링베너 시작---------------------------------------------------------------------------------------->
                             <div>
                                 <div class="main_type1">
-                                    <div class="list_goods">                                        
-                                        <ul class="bxslider">
-                                            <li data-index="11" class="bx-clone" data-name="main_banner">
-                                                <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
-                                            </li>
-                                            <li data-index="1" data-name="main_banner">
-                                                <img src ="./img/pc_img_1621561009.png" class="thumb_goods">메인배너</a>
-                                            </li>
-                                            <li data-index="2" data-name="main_banner">                                                
-                                                <img src="./img/pc_img_1628583839.png" class="thumb_goods" alt="">메인배너</a>
-                                            </li>
-                                            <li data-index="3" data-name="main_banner">
-                                                <img src="./img/pc_img_1633501694.png" class="thumb_goods">메인배너</a>
-                                            </li>
-                                            <li data-index="4"  data-name="main_banner">
-                                                <img src="./img/pc_img_1634285707.png" class="thumb_goods" >메인배너</a>
-                                            </li>
-                                            <li data-index="5"  data-name="main_banner">
-                                                <img src="./img/pc_img_1634523002.png" class="thumb_goods" >메인배너</a>
-                                            </li>
-                                            <li data-index="6" data-name="main_banner">
-                                                <img src="./img/pc_img_1634640525.png" class="thumb_goods">메인배너</a>
-                                            </li>
-                                            <li data-index="7" data-name="main_banner">
-                                                <img src="./img/pc_img_1634640530.png" class="thumb_goods">메인배너</a>
-                                            </li>
-                                            <li data-index="8"  data-name="main_banner">
-                                                <img src="./img/pc_img_1634775416.png" class="thumb_goods" >메인배너</a>
-                                            </li>
-                                            <li data-index="9"  data-name="main_banner">
-                                                <img src="./img/pc_img_1634805265.png" class="thumb_goods">메인배너</a>
-                                            </li>               
-                                        </ul>
+                                    <div class="list_goods">
+                                        <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+                                            <!-- bx-viewport를 만들었어니 메인배너 모아짐 -->
+                                            <div class="bx-viewport">
+                                                <!-- bxslider는 일단 원래 페이지에는 없는 클래스명으로 보입니다 -->
+                                                <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다. -->
+                                                <ul class="bxslider list" style="width: 1440px; margin: 0px auto;">
+                                                    <!-- 이미지 비율 때문에 overflow: hidden 값 비활성화 : 여건 -->
+                                                    <li data-index="11" class="bx-clone" data-name="main_banner" style="float: left; list-style: none; position: relative; width: 1440px; margin: 0 auto; overflow: hidden;">
+                                                        <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
+                                                    </li>
+                                                    <li data-index="1" data-name="main_banner">
+                                                        <img src ="./img/pc_img_1621561009.png" class="thumb_goods">메인배너</a>
+                                                    </li>
+                                                    <li data-index="2" data-name="main_banner">
+                                                        <img src="./img/pc_img_1628583839.png" class="thumb_goods" alt="">메인배너</a>
+                                                    </li>
+                                                    <li data-index="3" data-name="main_banner">
+                                                        <img src="./img/pc_img_1633501694.png" class="thumb_goods">메인배너</a>
+                                                    </li>
+                                                    <li data-index="4"  data-name="main_banner">
+                                                        <img src="./img/pc_img_1634285707.png" class="thumb_goods" >메인배너</a>
+                                                    </li>
+                                                    <li data-index="5"  data-name="main_banner">
+                                                        <img src="./img/pc_img_1634523002.png" class="thumb_goods" >메인배너</a>
+                                                    </li>
+                                                    <li data-index="6" data-name="main_banner">
+                                                        <img src="./img/pc_img_1634640525.png" class="thumb_goods">메인배너</a>
+                                                    </li>
+                                                    <li data-index="7" data-name="main_banner">
+                                                        <img src="./img/pc_img_1634640530.png" class="thumb_goods">메인배너</a>
+                                                    </li>
+                                                    <li data-index="8"  data-name="main_banner">
+                                                        <img src="./img/pc_img_1634775416.png" class="thumb_goods" >메인배너</a>
+                                                    </li>
+                                                    <li data-index="9"  data-name="main_banner">
+                                                        <img src="./img/pc_img_1634805265.png" class="thumb_goods">메인배너</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
                                         <div class="bx-controls-direction">
@@ -784,6 +792,7 @@
                                                         <li data-index="2" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
                                                                 <img src="./img/lime.png" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                            </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
                                                                     <a class="txt">맥시코 생 라임 1개</a>
@@ -1068,7 +1077,7 @@
                                         <div class="tit_goods">
                                             <h3 class="tit">
                                                 <a href="#" class="name">
-                                                    <span class="ico">특가혜택</span>
+                                                    <span class="ico">특가/혜택</span>
                                                 </a>
                                             </h3>
                                         </div>
