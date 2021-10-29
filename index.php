@@ -1499,10 +1499,8 @@
                     <!-- 샛별 택배 배송안내 보기 시작 -->
                     <div>
                         <div class="bnr_main3">
-                            <a class="link" style="background-image: url(https://img-cf.kurly.com/shop/data/main/15/pc_img_1629447526.jpg);">
-                                <span class="inner_link">
-                                    <img src="./img/bnr_main3.png">
-                                </span>
+                            <a class="link">
+                                <span class="inner_link"></span>
                             </a>
                         </div>
                     </div>
@@ -1615,7 +1613,7 @@
                         " 팩스 : 070 - 7500 - 6098 "
                         <span class="bar">|</span>
                         " 이메일 : "
-                        <a href="mailto:help@kurlycorp.com">help@kurlycorp.com</a>
+                        <a href="mailto:help@kurlycorp.com" class="link">help@kurlycorp.com</a>
                         <br>
                         " 대량주문 문의 : "
                         <a href="mailto:kurlygift@kurlycorp.com" class="link">kurlygift@kurlycorp.com</a>

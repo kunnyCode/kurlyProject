@@ -537,7 +537,13 @@ div .bnr_main2 {
     background-size: contain;
 }
 
-
+div .bnr_main3 {
+    width: 1050px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(../img/bnr_main3.png);
+    background-size: contain;
+}
 
 .main_type2 .global_sticker .inner_sticker{left:0;top:0}
 .main_type2 .list_goods{width:1050px;height:506px;margin:0 auto}
@@ -635,7 +641,189 @@ div .bnr_main2 {
 
 /* footer */
 
-footer{
+#footer {
     width: 1050px;
-    height: 379px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    font-weight: 400;
+    letter-spacing: -.2px;
+}
+
+#footer .inner_footer {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#footer .footer_cc {
+    float: left;
+    width: 534px;
+}
+
+#footer .tit_cc {
+    padding: 29px 0 2px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    line-height: 24px;
+}
+
+#footer .cc_view {
+    overflow: hidden;
+    padding-top: 16px;
+}
+
+#footer .cc_view .tit {
+    float: left;
+    width: 140px;
+    margin-right: 16px;
+}
+
+#footer .cc_call {
+    padding-top: 20px;
+}
+
+#footer .cc_call .tit {
+    padding-top: 4px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #333;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+}
+
+#footer .cc_bulkorder .tit, .cc_kakao .tit, .cc_qna .tit {
+    height: 40px;
+    padding-top: 7px;
+    margin-top: 3px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    text-align: center;
+}
+
+#footer .cc_bulkorder .txt, .footer_cc .list {
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -.2px;
+}
+
+#footer .footer_cc .list dt {
+    display: block;
+}
+
+#footer .footer_cc .list dd {
+    color: #999;
+}
+
+#footer .cc_bulkorder .txt {
+    padding-top: 9px;
+    color: #999;
+}
+
+#footer .company {
+    float: left;
+    padding-top: 29px;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+
+#footer .company .bar {
+    padding: 0 4px 0 3px;
+}
+
+#footer .company .link {
+    color: #5f0080;
+}
+
+#footer .company .copy {
+    display: block;
+    padding-top: 16px;
+    font-style: normal;
+    font-size: 10px;
+    color: #949296;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+
+#footer .company .list {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 29px;
+}
+
+#footer .company .list li {
+    float: left;
+    padding-right: 16px;
+}
+
+#footer .company .list .link {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+}
+
+#footer .company .list .emph { font-weight: 700; }
+
+#footer .footer_link {
+    overflow: hidden;
+    padding-top: 19px;
+    border-top: 1px solid #eee;
+    letter-spacing: 0;
+}
+
+#footer .list_sns { 
+    float: left;
+    padding-top: 16px;
+}
+
+#footer .list_sns li { float: left; }
+
+#footer .list_sns .link_sns {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+#footer .list_sns .lst { margin-right: 0; }
+
+#footer .authentication {
+    float: left;
+    padding-top: 3px;
+}
+
+#footer .mark .logo {
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+#footer .mark .txt {
+    float: left;
+    padding-top: 1px;
+    font-size: 10px;
+    color: #999;
+    line-height: 16px;
+    letter-spacing: -.5px;
+    white-space: nowrap;
+}
+
+#footer .mark .emph {
+    padding-left: 2px;
+    color: #5f0080;
+}
+
+#footer .lguplus { width: 428px; }
+
+#footer .lguplus .logo {
+    width: 102px;
+    height: 34px;
 }
