@@ -1588,34 +1588,34 @@
                                 <a class="link" href="/shop/service/guide.php">이용안내</a>
                             </li>
                         </ul>
-                        " 법인명 (상호) : 주식회사 컬리 "
+                        법인명 (상호) : 주식회사 컬리
                         <span class="bar">|</span>
-                        " 사업자등록번호 : 261-81-23567 "
+                        사업자등록번호 : 261-81-23567
                         <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&apv_perm_no=" target="_blank" class="link">사업자정보 확인</a>
                         <br>
-                        " 통신판매업 : 제 2018-서울강남-01646 호 "
+                        통신판매업 : 제 2018-서울강남-01646 호
                         <span class="bar">|</span>
-                        " 개인정보보호책임자 : 이원준 "
+                        개인정보보호책임자 : 이원준
                         <br>
-                        " 주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) "
+                        주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
                         <span class="bar">|</span>
-                        " 대표이사 : 김슬아 "
+                        대표이사 : 김슬아
                         <br>
-                        " 입점문의 : "
+                        입점문의 : 
                         <a href="https://forms.gle/oKMAe1SaicqMX3SC9" target="_blank" class="link">입점문의하기</a>
                         <span class="bar">|</span>
-                        " 제휴문의 : "
+                        제휴문의 : 
                         <a href="mailto:business@kurlycorp.com" class="link">business@kurlycorp.com</a>
                         <br>
-                        " 채용문의 : "
+                        채용문의 : 
                         <a href="mailto:recruit@kurlycorp.com" class="link">recruit@kurlycorp.com</a>
                         <br>
-                        " 팩스 : 070 - 7500 - 6098 "
+                        팩스 : 070 - 7500 - 6098
                         <span class="bar">|</span>
-                        " 이메일 : "
+                        이메일 : 
                         <a href="mailto:help@kurlycorp.com" class="link">help@kurlycorp.com</a>
                         <br>
-                        " 대량주문 문의 : "
+                        대량주문 문의 : 
                         <a href="mailto:kurlygift@kurlycorp.com" class="link">kurlygift@kurlycorp.com</a>
                         <em class="copy">© KURLY CORP. ALL RIGHTS RESERVED</em>
                         <ul class="list_sns">
@@ -1652,25 +1652,25 @@
                         <a href="#none" onclick="popup('https://res.kurly.com/pc/img/1909/img_isms.jpg',550,700);return false;" class="mark" target="_blank">
                             <img src="./img/logo_isms.png" alt="isms 로고" class="logo">
                             <p class="txt">
-                                " [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영 "
+                                [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영
                                 <br>
-                                " [유효기간] 2019.04.01 ~ 2022.03.31 "
+                                [유효기간] 2019.04.01 ~ 2022.03.31
                             </p>
                         </a>
                         <a href="#none" onclick="popup('https://www.eprivary.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&certNum=2021-EP-R003',527,720);return false;" class="mark" target="_blank">
                             <img src="./img/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
                             <p class="txt">
-                                " 개인정보보호 우수 웹사이트 · "
+                                개인정보보호 우수 웹사이트 · 
                                 <br>
-                                " 개인정보처리시스템 인증 (ePRIVACY PLUS) "
+                                개인정보처리시스템 인증 (ePRIVACY PLUS)
                             </p>
                         </a>
                         <a href="#none" onclick="popup('http://pgweb.uplus.co.kr/ms/escrow/s_escrowYn.do?mertid=go_thefarmers',460,550);return false;" class="mark lguplus" target="_blank">
                             <img src="./img/logo_payments.png" alt="payments 로고" class="logo">
                             <p class="txt">
-                                " 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 "
+                                고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
                                 <br>
-                                " 토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다. "
+                                토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
                             </p>
                         </a>
                     </div>

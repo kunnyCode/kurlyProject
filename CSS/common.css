@@ -646,8 +646,13 @@ div .bnr_main3 {
     margin: 0 auto;
     padding-bottom: 60px;
     font-weight: 400;
-    letter-spacing: -.2px;
+    letter-spacing: 0;
+    font-family: noto sans;
 }
+
+#footer strong { font-weight: 700; }
+
+#footer strong.emph { color: #5f0080; }
 
 #footer .inner_footer {
     overflow: hidden;
@@ -692,8 +697,8 @@ div .bnr_main3 {
     white-space: nowrap;
 }
 
-#footer .cc_bulkorder .tit, .cc_kakao .tit, .cc_qna .tit {
-    height: 40px;
+#footer .cc_bulkorder .tit, #footer .cc_kakao .tit, #footer .cc_qna .tit {
+    height: 30px;
     padding-top: 7px;
     margin-top: 3px;
     border: 1px solid #e3e3e3;
@@ -705,7 +710,7 @@ div .bnr_main3 {
     text-align: center;
 }
 
-#footer .cc_bulkorder .txt, .footer_cc .list {
+#footer .cc_bulkorder .txt, #footer .footer_cc .list {
     font-size: 14px;
     color: #333;
     line-height: 22px;
@@ -745,7 +750,7 @@ div .bnr_main3 {
     display: block;
     padding-top: 16px;
     font-style: normal;
-    font-size: 10px;
+    font-size: 11px;
     color: #949296;
     line-height: 22px;
     letter-spacing: 0;
@@ -785,11 +790,15 @@ div .bnr_main3 {
 #footer .list_sns li { float: left; }
 
 #footer .list_sns .link_sns {
-    display: block;
     width: 30px;
     height: 30px;
     margin-right: 10px;
     vertical-align: top;
+}
+
+#footer .link_sns img {
+    width: 30px;
+    height: 30px;
 }
 
 #footer .list_sns .lst { margin-right: 0; }
@@ -797,6 +806,11 @@ div .bnr_main3 {
 #footer .authentication {
     float: left;
     padding-top: 3px;
+}
+
+#footer .mark {
+    float: left;
+    width: 267px;
 }
 
 #footer .mark .logo {
