@@ -6,7 +6,7 @@
     padding: 0;
 }
 body, input, select, textarea, button {
-    font-family: noto sans,malgun gothic,AppleGothic,dotum;
+    font-family: noto sans, malgun gothic,AppleGothic, dotum;
     line-height: 1;
     letter-spacing: -.05em;
     color: #4c4c4c;
@@ -22,8 +22,11 @@ h1,h2, h3, h4, h5, h6 {
     font-weight: normal; font-size: inherit;
 }
 
-
-
+/* 여건작성 {*/
+div, th, td, li, dt, dd, p {
+    word-break: break-all;
+}
+/* } */
 
 ul, ol, li { list-style: none; }
 
@@ -425,9 +428,9 @@ header > #gnb > #gnbMenu {
     margin: 0 auto;
 }
 
-.bxslider > li {
+/* .bxslider > li {
     width: 1900px;
-}
+} */
 .bx-viewport {
     width: 100%;
     overflow: hidden;
@@ -509,9 +512,48 @@ text-align: center;
     text-align: center;
 }
 
+/* 여건작성 {*/
+/* '이 상품 어떄요?' 이동버튼 제작 */
+.page_main .bx-controls-direction {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.page_main .bx-controls-direction .bx-next, .page_main .bx-controls-direction .bx-prev {
+    overflow: hidden;
+    position: absolute;
+    bottom: 316px;
+    width: 60px;
+    height: 60px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    transition: 0.5s;
+}
+
+.page_main .bx-controls-direction .bx-prev {
+    left: -30px;
+    background: url(../img/btn_prev_default.webp) no-repeat 50% 50%;
+    transition: background 0.5s;
+}
+
+.page_main .bx-controls-direction .bx-next {
+    right: -30px;
+    background: url(../img/btn_next_default.webp) no-repeat 50% 50%;
+    transition: background 0.5s;
+}
+
+.page_main .bx-controls-direction .disabled {
+    opacity: 0;
+}
+/* } */
+
 .main_type1 .list_goods .thumb_goods {
-    /* width: 100%;
-    height: 370px; */
+    /* 이미지 비율 때문에 width값 비활성화 : 여건 */
+    /* width: 100%; */
+    height: 370px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: auto auto;
@@ -538,8 +580,52 @@ div .bnr_main2 {
 }
 
 
+/* 여건 수정 { */
+/* 스티커 수정 */
+.global_sticker .inner_sticker{
+    overflow: hidden;
+    position: absolute;
+    left:0;
+    top:0;
+    height: 32px;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap;
+}
 
-.main_type2 .global_sticker .inner_sticker{left:0;top:0}
+.global_sticker .txt_sticker {
+    position: relative;
+    z-index: 1;
+}
+
+.global_sticker .bg_sticker {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 32px;
+    background-color: #bd76ff;
+    opacity: 0;
+}
+
+.global_sticker .txt_sticker span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: top;
+    font-size: 0;
+}
+
+.global_sticker .txt_sticker .emph_sticker {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+}
+/* } */
 .main_type2 .list_goods{width:1050px;height:506px;margin:0 auto}
 .main_type2 .list_goods .list{width:99999px}
 .main_type2 .list_goods li{float:left;width:249px;height:506px;margin-right:18px}
@@ -597,9 +683,21 @@ div .bnr_main2 {
     position: relative;
 } */
 
+/* ↓↓↓↓↓↓↓특가/혜택 파트 이미지 사이즈 조절  */
+/* 여건작성 {*/
+    .main_type3 .list_goods .thumb {
+        width: 338px;
+    }
+
+    .main_event .list_goods .thumb {
+        height: 338px;
+    }
+/* } */
+
 .page_main .list_goods .thumb_goods .thumb {
-    width: 338px;
-    height: 338px;
+    /* 이 상품 어때요? 파트 이미지 사이즈 맟추기 위해 width, height 비활성화 :여건 */
+    /* width: 338px;
+    height: 338px; */
     display: block;
     margin: 0 auto;
     background-position: 50% 50%;
@@ -608,6 +706,30 @@ div .bnr_main2 {
     transition: all 0.3s ease-in-out;
 }
 
+/* 여건작성 {*/
+page_main .list_goods a {
+    cursor: pointer;
+}
+
+/* 배경색으로 파티션 나눈 거 구현 */
+.page_main .bg {
+    background-color: #f7f7f7;
+}
+
+/* 메인 배너 왼쪽 치우침 및 넘치는거 해결 */
+.page_main .list_goods .thumb_goods {
+    display: block;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+/* 특가/혜택 옆 > 모양 삽입 */
+.page_main .tit_goods .name .ico {
+    padding: 0 31px;
+    background: url(../img/ico_title_link_x1.webp) no-repeat 100% 50%;
+    font-weight: 700;;
+}
+/* } */
 
 .main_event .list_goods .name {
     max-height: 54px;
@@ -619,6 +741,15 @@ div .bnr_main2 {
     -webkit-box-orient: vertical;
     word-wrap: break-word;
 }
+
+/* 여건작성 {*/
+.main_event .list_goods .name .txt {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+}
+/* } */
 
 .main_event .list_goods .desc {
     padding-top: 8px;
@@ -632,6 +763,17 @@ div .bnr_main2 {
     text-overflow: ellipsis;
 }
 
+/* 여건작성 {*/
+/* 제품 설명 폰트 색 및 크기 */
+.main_type3 .list_goods .desc .txt {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main_event .list_goods .desc .txt {
+    color: #999;
+}
+/* } */
 
 /* footer */
 
