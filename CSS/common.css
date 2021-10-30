@@ -782,7 +782,106 @@ page_main .list_goods a {
 }
 /* } */
 
-/* footer */
+
+/* 사이드 퀵 메뉴 : 현이 작성 */
+
+@media all and (max-width: 1250px){
+    #qnb{display:none}
+}
+
+#qnb .bnr_qnb { padding-bottom: 7px; }
+
+#qnb .bnr_qnb .thumb {
+    width: 80px;
+    height: 120px;
+    vertical-align: top;
+}
+
+#qnb .link_menu {
+    display: block;
+    height: 21.5px;
+    padding-top: 7px;
+    border: 1px solid #ddd;
+    border-top: none;
+    text-align: center;
+    background-color: #fff;
+}
+
+#qnb .link_menu:first-child { border-top: 1px solid #ddd;;}
+
+#qnb .link_menu:hover,
+#qnb .link_menu.on { color: #5f0080; }
+
+/* 최근 본 상품 시작 : 현이 작업 
+#qnb .side_recent {
+    position: relative;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#qnb .side_recent .tit {
+    display: block;
+    padding: 22px 0 6px;
+    text-align: center;
+}
+
+#qnb .side_recent .list_goods {
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+}
+
+#qnb .side_recent .list {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#qnb .side_recent .link_goods {
+    display: block;
+    overflow: hidden;
+    width: 60px;
+    height: 80px;
+    padding: 1px 0 2px;
+}
+
+#qnb .side_recent .btn {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 17px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+#qnb .side_recent .btn_up {
+    position:absolute;
+    left:0;
+    top:0;
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover.png) no-repeat 50% 50%
+}
+
+#qnb .side_recent .btn_up.off {
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up.png) no-repeat 50% 50%
+}
+
+#qnb .side_recent .btn_down {
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover.png) no-repeat 50% 0
+}
+
+#qnb .side_recent .btn_down.off {
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0
+}
+최근 본 상품 끝 : 현이 작업 */
+
+
+
+
+/* footer : 현이 작성*/
 
 #footer {
     width: 1050px;
