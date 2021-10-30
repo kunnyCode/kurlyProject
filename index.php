@@ -1679,10 +1679,232 @@
                         </div>
                     </div>
                     <!-- 추위가 두렵지 않도록, 계절 가전 끝 -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <!-- 365일 최저가 도전 시작 -->
+                    <div>
+                        <div class="main_tyep_2 bg" style="background-color: rgb(247, 247, 247);">
+                            <div class="product_list">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">365일 최저가 도전</span>
+                                            <span class="tit_desc">최저가 도전, 365일 언제나 알뜰하게</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="365일 최저가 도전" data-section="theme_goods_11" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/salmon.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1576818398674l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[은하수산] 노르웨이 생연어회 120g (냉장)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">20%</span>
+                                                            8,800원
+                                                        </span>
+                                                        <span class="cost">11,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/abalone.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1591679368159l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[바븐] 완도 전복 260g 내외 (5마리) (생물)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">15%</span>
+                                                            12,750원
+                                                        </span>
+                                                        <span class="cost">15,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/bagel.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1626076681146l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[밀크앤허니] 간편한 베이글 3종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            1,300원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/radish.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1629785470976l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[KF365] 무 1통</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            1,680원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/garlic.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1613703436357l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[KF365] 깐마늘 200g</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            2,660원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/socks.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634796251205l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[KF365] 벗겨지지 않는 페이크삭스 양말 6종(10개입)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">33%</span>
+                                                            9,900원
+                                                        </span>
+                                                        <span class="cost">14,000원</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                <a class="bx-next" href>Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 365일 최저가 도전 끝 -->
+                    <!-- 오프라인 맛집 시작 -->
+                    <div>
+                        <div class="main_type2">
+                            <div class="product_list">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">오프라인 맛집</span>
+                                            <span class="tit_desc">유명 맛집의 그 맛을 집에서 그대로 편안하게</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="오프라인 맛집" data-section="theme_goods_12" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/brownie_cookie.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1630564157943l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[노티드] 브라우니 2종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            5,200원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/coffee_beans.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1603946084400l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[노티드] 브라우니 2종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            16,000원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/dumpling.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1573458950506l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[창화당] 호호 불어먹는 고기왕만두</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            <span class="dc">8%</span>
+                                                            7,268원                           
+                                                        </span> 
+                                                        <span class="cost">7,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class="" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/red_fish_cake" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1627441344214l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[제천빨간오뎅] 빨간오뎅 세트</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            6,900원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class="" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/strong_noodles.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1625711479454l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[쮸즈] 탄탄면</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            <span class="dc">10%</span>
+                                                            6,210원                            
+                                                        </span> 
+                                                        <span class="cost">6,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/blend_beans.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1631767904882l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[블루보틀: Fall Poetry] 리컬렉션 블렌드 원두</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            29,000원                            
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev" href="">Prev</a>
+                                                <a class="bx-next disabled" href="">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 오프라인 맛집 끝 -->
                     <!-- 인스타그램 고객 후기 시작 -->
                     <div>
                         <div class="main_type4">
