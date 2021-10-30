@@ -1679,6 +1679,7 @@
                         </div>
                     </div>
                     <!-- 추위가 두렵지 않도록, 계절 가전 끝 -->
+<<<<<<< HEAD
                     <!-- 365일 최저가 도전 시작 -->
                     <div>
                         <div class="main_tyep_2 bg" style="background-color: rgb(247, 247, 247);">
@@ -1688,11 +1689,25 @@
                                         <a class="name">
                                             <span class="ico">365일 최저가 도전</span>
                                             <span class="tit_desc">최저가 도전, 365일 언제나 알뜰하게</span>
+=======
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!-- 컬리의 레시피 시작 -->
+                    <div>
+                        <div class="main_type3">
+                            <div class="main_recipe">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">컬리의 레시피</span>
+>>>>>>> 0dd3dfaa3b82dac4270c78f85a12cae9db752ee5
                                         </a>
                                     </h3>
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+<<<<<<< HEAD
                                         <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
                                             <ul data-title="365일 최저가 도전" data-section="theme_goods_11" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
@@ -1777,6 +1792,68 @@
                                                             9,900원
                                                         </span>
                                                         <span class="cost">14,000원</span>
+=======
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
+                                            <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list" style="width: 715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_1.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">시나몬 배 조림 & 카나페</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_2.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">쏨땀</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_3.png" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">굴 크림 스튜</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_4.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">과일 버터 2종</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_5.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">베이컨 체커보드 토스트</a>
+                                                            </span>
+                                                        </div>
+>>>>>>> 0dd3dfaa3b82dac4270c78f85a12cae9db752ee5
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1792,6 +1869,7 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <!-- 365일 최저가 도전 끝 -->
                     <!-- 오프라인 맛집 시작 -->
                     <div>
@@ -1905,6 +1983,9 @@
                         </div>
                     </div>
                     <!-- 오프라인 맛집 끝 -->
+=======
+                    <!-- 컬리의 레시피 끝 -->
+>>>>>>> 0dd3dfaa3b82dac4270c78f85a12cae9db752ee5
                     <!-- 인스타그램 고객 후기 시작 -->
                     <div>
                         <div class="main_type4">
