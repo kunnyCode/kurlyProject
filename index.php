@@ -693,7 +693,7 @@
                         <div class="side_menu">
                             <a href="/shop/board/html.php?htmid=event/kurly.htm&name=lovers" class="link_menu">등급별 혜택</a>
                             <a href="/shop/board/list.php?id=recipe" class="link_menu">레시피</a>
-                            <a href="/shop/goods/goods_review_best.php">베스트 후기</a>
+                            <a href="/shop/goods/goods_review_best.php" class="link_menu">베스트 후기</a>
                         </div>
                         <div class="side_recent" style="display: none;">
                             <strong class="tit">최근 본 상품</strong>
