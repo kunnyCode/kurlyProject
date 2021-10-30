@@ -4,6 +4,7 @@
 *, *:after, *:before{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body, input, select, textarea, button {
     font-family: noto sans, malgun gothic,AppleGothic, dotum;
@@ -776,6 +777,12 @@ page_main .list_goods a {
     margin: 0px auto;
 }
 
+/* MD 추천 제목  */
+.page_main .tit_goods .name {
+    position: relative;
+    font-weight: 700;
+}
+
 /* 특가/혜택 옆 > 모양 삽입 */
 .page_main .tit_goods .name .ico {
     padding: 0 31px;
@@ -825,6 +832,83 @@ page_main .list_goods a {
 
 .main_event .list_goods .desc .txt {
     color: #999;
+}
+/* } */
+
+
+/* 여건작성 {*/
+/* MD추천 */
+.category_type {
+    padding-bottom: 100px;
+}
+
+.category_type .category .list_category {
+    width: 1050px;
+    max-width: 1050px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.category_type .category .list_category li {
+    display: inline-block;
+    padding: 0 5px 20px;
+}
+
+.category_type .category .list_category .menu {
+    display: inline-block;
+    height: 40px;
+    padding: 9px 20px 0 19px;
+    border: 1px solid #f7f7f6;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.category_type .category .list_category .on:hover, .category_type .category .list_category .on {
+    border: 1px solid #5f0081;
+    background-color: #5f0080;
+    font-weight: 700;
+    color: #fff;
+}
+
+.category_type .category .list_category .cut::before {
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+
+.category_type .list_goods {
+    height: 462px;
+}
+
+.category_type .link_cate {
+    width: 516px;
+    margin: 0 auto;
+}
+
+.category_type .link_cate .link {
+    display: block;
+    overflow: hidden;
+    height: 56px;
+    padding-top: 16px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+}
+
+.category_type .link_cate .ico {
+    padding: 0 18px;
+    background: url(../img/ico_more_link_x1.webp) no-repeat 100% -1.5px;
+    /* 원래 100% 옆에 -1.5px대신 3px 있었지요.. 아마 폰트 때문에 안 맞는 걸로 보임니당 */
 }
 /* } */
 

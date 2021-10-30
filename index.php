@@ -1293,29 +1293,35 @@
                             <div>
                                 <div class="main_type2">
                                     <div class="category_type">
-                                        <div class="tit_goods"><h3 class="title">MD의 추천</h3>
+                                        <div class="tit_goods"><h3 class="tit">MD의 추천</h3>
                                         </div>
-                                        <div class="category">
-                                            <ul class="list_category">
-                                                <li><a href="#" class="menu">채소</a></li>
-                                                <li><a href="#" class="menu">과일·견과·쌀</a></li>
-                                                <li><a href="#" class="menu">수산·해산·건어물</a></li>
-                                                <li><a href="#" class="menu">정육·계란</a></li>
-                                                <li><a href="#" class="menu">국·반찬·메인요리</a></li>
-                                                <li><a href="#" class="menu">샐러드·간편식</a></li>
-                                                <li><a href="#" class="menu">면·양념·오일</a></li>
-                                                <li><a href="#" class="menu">생수·음료·우유·커피</a></li>
-                                                <li><a href="#" class="menu">간식·과자·떡</a></li>
-                                                <li><a href="#" class="menu">베이커리·치즈·델리</a></li>
-                                                <li><a href="#" class="menu">건강식품</a></li>
-                                                <li><a href="#" class="menu">생활용품·리빙·캠핑</a></li>
-                                                <li><a href="#" class="menu">스킨케어·메이크업</a></li>
-                                                <li><a href="#" class="menu">헤어·바디·구강</a></li>
-                                                <li><a href="#" class="menu">주방용품</a></li>
-                                                <li><a href="#" class="menu">가전제품</a></li>
-                                                <li><a href="#" class="menu">베이비·키즈</a></li>
-                                                <li><a href="#" class="menu">반려동물</a></li>
-                                            </ul>
+                                        <div class="category_menu">
+                                            <div class="bg_category">
+                                                <span class="bg_shadow shadow_bofore"></span>
+                                                <span class="bg_shadow shadow_after"></span>
+                                            </div>
+                                            <div class="category">
+                                                <ul class="list_category">
+                                                    <li data-start="33" data-end="75"><a data-no="907" href="#" class="menu">채소</a></li>
+                                                    <li data-start="100" data-end="188"><a data-no="908" href="#" class="menu">과일·견과·쌀</a></li>
+                                                    <li data-start="213" data-end="327"><a data-no="909" href="#" class="menu">수산·해산·건어물</a></li>
+                                                    <li data-start="353" data-end="424"><a data-no="910" href="#" class="menu">정육·계란</a></li>
+                                                    <li data-start="449" data-end="563"><a data-no="911" href="#" class="menu">국·반찬·메인요리</a></li>
+                                                    <li data-start="588" data-end="685"><a data-no="912" href="#" class="menu">샐러드·간편식</a></li>
+                                                    <li data-start="710" data-end="798"><a data-no="913" href="#" class="menu">면·양념·오일</a></li>
+                                                    <li data-start="823" data-end="954"><a data-no="914" href="#" class="menu cut">생수·음료·우유·커피</a></li>
+                                                    <li data-start="979" data-end="1067"><a data-no="249" href="#" class="menu">간식·과자·떡</a></li>
+                                                    <li data-start="1092" data-end="1219"><a data-no="915" href="#" class="menu">베이커리·치즈·델리</a></li>
+                                                    <li data-start="1243" data-end="1311"><a data-no="032" href="#" class="menu">건강식품</a></li>
+                                                    <li data-start="1336" data-end="1463"><a data-no="918" href="#" class="menu">생활용품·리빙·캠핑</a></li>
+                                                    <li data-start="1488" data-end="1611"><a data-no="233" href="#" class="menu">스킨케어·메이크업</a></li>
+                                                    <li data-start="1636" data-end="1737"><a data-no="012" href="#" class="menu">헤어·바디·구강</a></li>
+                                                    <li data-start="1762" data-end="1830"><a data-no="916" href="#" class="menu">주방용품</a></li>
+                                                    <li data-start="1854" data-end="1922"><a data-no="085" href="#" class="menu">가전제품</a></li>
+                                                    <li data-start="1947" data-end="2031"><a data-no="919" href="#" class="menu">베이비·키즈</a></li>
+                                                    <li data-start="2056" data-end="2124"><a data-no="991" href="#" class="menu">반려동물</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div class="list_goods">
                                             <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
@@ -1391,17 +1397,19 @@
                                                         </li>
                                                     </ul>
                                                 </div>
+                                                <div class="bx-controls bx-controls-direction">
+                                                    <div class="bx-controls-direction">
+                                                        <a class="bx-prev">Prev</a>
+                                                        <a class="bx-next disabled">Next</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                                        <div class="bx-controls bx-controls-direction">
-                                                            <div class="bx-controls-direction">
-                                                                <a class="bx-prev">Prev</a>
-                                                                <a class="bx-next disabled">Next</a>
-                                                            </div>
-                                                        </div>
                                         </div>
                                     <!--↓↓↓↓↓↓md추천의 카테고리를 누르면 버튼의 텍스트가 해당카테고리 이름으로 변함↓↓↓↓-->
                                         <div class="link_cate">
-
+                                            <a class="link">
+                                                <span class="ico">채소</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
