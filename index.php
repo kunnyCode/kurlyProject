@@ -1916,7 +1916,9 @@
                                         </a>
                                     </h3>
                                 </div>
-                                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
                                             <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list" style="width: 715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                 <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
                                                     <a class="thumb_goods">

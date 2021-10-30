@@ -913,8 +913,6 @@ page_main .list_goods a {
 /* } */
 
 
-<<<<<<< HEAD
-=======
 /* 컬리의 레시피 : 현이 작성 */
 
 .page_main .list_goods .thumb_goods:hover .thumb {
@@ -938,15 +936,11 @@ page_main .list_goods a {
 .main_recipe .list_goods .txt {
     font-size: 16px;
     line-height: 45px;
-    
+
 }
 
 .main_recipe .bx-controls-direction .bx-next,
 .main_recipe .bx-has-controls-direction .bx-prev { bottom: 160px; }
-
-
->>>>>>> 0dd3dfaa3b82dac4270c78f85a12cae9db752ee5
-
 /* 인스타그램 고객 후기 : 현이 작성 */
 
 .main_type4 .list_goods {
