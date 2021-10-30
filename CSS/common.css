@@ -81,8 +81,14 @@ header > #userMenu{
     margin: 0 auto;
     font-weight: 400;
     letter-spacing: -.3px;
-
 }
+
+/* DK */
+header > #userMenu> .link_menu {
+    color:#333
+}
+
+
 
 header > #userMenu:after {
     content: "";
@@ -104,6 +110,13 @@ header > #userMenu > .listMenu {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+}
+
+/* 드롭다운바 */
+header > #userMenu> .listMenu {
+        font-size: 12px;  
+        line-height: 24px;
+        color: #333;          
 }
 
 #userMenu .menu {
@@ -135,6 +148,7 @@ header > #userMenu > .listMenu {
     height: 5px;
     background: url(../img/ico_down_8x5.png) no-repeat 0 0;
 }
+
 /* #userMenu .menu:before {
     content: "";
     position: absolute;
@@ -144,11 +158,6 @@ header > #userMenu > .listMenu {
 } */
 
 
-
-#userMenu .list_menu {
-    float: right;
-}
-
 header > #userMenu > .listMenu> li > .linkMenu{
     float: left;
     height: 37px;
@@ -157,6 +166,10 @@ header > #userMenu > .listMenu> li > .linkMenu{
     line-height: 35px;
     white-space: nowrap;
 }
+
+/* header > #userMenu > .listMenu> li >.회원가입 { 
+    color: #5f0080;
+/* } */
 
 
 #userMenu .lst .sub {
@@ -226,6 +239,26 @@ header  .gnb_main .gnb a {
     color: #333;
     line-height: 20px;
     text-align: center;
+}
+
+
+/* DK */
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+span.ico:hover{
+    color: #5f0080;
+}
+
+.menu1, .menu2:hover{
+    color: #5f0080;
+}
+
+.menu3, .menu4, .menu5:hover{
+    color: #5f0080;
 }
 
 
@@ -326,6 +359,11 @@ header > #gnb > #gnbMenu {
     opacity: 0;
 }
 
+/* DK */
+#gnb .gnb_search .btn_search:hover {
+    color: #5f0080;
+}
+
 #gnb .btn_location {
     overflow: hidden;
     position: absolute;
@@ -341,6 +379,10 @@ header > #gnb > #gnbMenu {
 
 #gnb .btn_location.on {
     background-image: url(../img/ico_delivery_setting.svg);
+}
+
+#gnb .gnb_location.on:hover {
+    color: #5f0080;
 }
 
 #gnb .cart_count {
@@ -374,6 +416,10 @@ header > #gnb > #gnbMenu {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
+}
+
+#gnb .cart_count:hover {
+    color: #5f0080;
 }
 
 #gnb .gnb_main .menu1 a {

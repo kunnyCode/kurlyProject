@@ -42,6 +42,21 @@
                         </li>
                     </ul>
                 </div>
+                <style>
+                        /*  회원가입 폰트 색상*/
+                        /* #listMenu ul li {
+                            color: #5f0080;
+                        } */
+                        
+                        /* 고객센터 드롭다운바 */
+                        #userMenu ul li:hover ul {
+                            font-size:12px;
+                            display: block;
+                            width:90px;
+                            height: 150px;
+                            color: #333;
+                        }
+                </style>
                 <div id="headerLogo" class="layout-wrapper">
                     <h1 class="logo">
                         <a href="#" class="link_main">
@@ -54,6 +69,7 @@
                         <img src="./img/delivery.png" alt="샛별, 택배 배송안내">
                     </a>
                 </div>
+
                 <!-- 카테고리 시작 --------------------------------------------------------------------------->
                 <div id="gnb">
                     <h2 class="screen_out">메뉴</h2>
