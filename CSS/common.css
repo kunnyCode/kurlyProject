@@ -913,6 +913,37 @@ page_main .list_goods a {
 /* } */
 
 
+/* 컬리의 레시피 : 현이 작성 */
+
+.page_main .list_goods .thumb_goods:hover .thumb {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.main_recipe .list_goods { height: 303px; }
+
+.main_recipe .list_goods li { height: 303px; }
+
+.main_recipe .list_goods .thumb { height: 225px; }
+
+.main_recipe .list_goods .name {
+    padding-top: 12px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main_recipe .list_goods .txt {
+    font-size: 16px;
+    line-height: 45px;
+    
+}
+
+.main_recipe .bx-controls-direction .bx-next,
+.main_recipe .bx-has-controls-direction .bx-prev { bottom: 160px; }
+
+
+
 /* 인스타그램 고객 후기 : 현이 작성 */
 
 .main_type4 .list_goods {
