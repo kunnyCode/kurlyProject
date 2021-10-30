@@ -1446,26 +1446,22 @@
                                             <ul data-title="추위가 두렵지 않도록, 계절 가전" data-section="theme_goods_9" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);" >
                                                 <li data-index="1" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
-                                                        <img src="./air_purifier.jpg" alt="상품이미지" class="thumb" style="background-image: url("https://img-cf.kurly.com/shop/data/goods/1586421154704l0.jpg");">
+                                                        <img src="./img/air_purifier.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1586421154704l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
                                                             <a class="txt">[아이큐에어] 헬스프로 공기청정기 2종 (HP100/HP250)</a>
                                                         </span>
                                                         <span class="price">
-                                                            <span class="price">
-                                                                <span class="dc">5%</span>
-                                                                "1,188,450원"
-                                                            </span>
-                                                            <span class="price">
-                                                                <span class="cost">1,251,000원</span>
-                                                            </span>
+                                                            <span class="dc">5%</span>
+                                                            1,188,450원 
                                                         </span>
+                                                        <span class="cost">1,251,000원</span>
                                                     </div>
                                                 </li>
                                                 <li data-index="2" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
-                                                        <img src="./humidifier.jpg" alt="상품이미지" class="thumb" style="background-image: url("https://img-cf.kurly.com/shop/data/goods/1604380767765l0.jpg");">
+                                                        <img src="./img/humidifier.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1604380767765l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
@@ -1473,14 +1469,14 @@
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">10%</span>
-                                                            "26,820원"
+                                                            26,820원
                                                         </span>
                                                         <span class="cost">29,800원</span>
                                                     </div>
                                                 </li>
                                                 <li data-index="3" class="cut" data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
-                                                        <img src="./hot_water_mat.jpg" alt="상품이미지" class="thumb" style="background-image: url("https://img-cf.kurly.com/shop/data/goods/1632987091414l0.jpg");">
+                                                        <img src="./img/hot_water_mat.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1632987091414l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
@@ -1488,14 +1484,14 @@
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">3%</span>
-                                                            "354,050원"
+                                                            354,050원
                                                         </span>
                                                         <span class="cost">365,000원</span>
                                                     </div>
                                                 </li>
                                                 <li data-index="4" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
-                                                        <img src="./kettle.jpg" alt="상품이미지" class="thumb" style="background-image: url("https://img-cf.kurly.com/shop/data/goods/1610589625936l0.jpg");">
+                                                        <img src="./img/kettle.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1610589625936l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
@@ -1503,14 +1499,14 @@
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">5%<span>
-                                                            "75,050원"
+                                                            75,050원
                                                         </span>
                                                         <span class="cost">79,000원</span>
                                                     </div>
                                                 </li>
                                                 <li data-index="5" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
-                                                        <img src="./electricity.jpg" alt="상품이미지" class="thumb" style="background-image: url("https://img-cf.kurly.com/shop/data/goods/1602051645978l0.jpg");">
+                                                        <img src="./img/electricity.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1602051645978l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
@@ -1518,14 +1514,14 @@
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">5%<span>
-                                                            "84,550원"
+                                                            84,550원
                                                         </span>
                                                         <span class="cost">89,000원</span>
                                                     </div>
                                                 </li>
                                                 <li data-index="6" class="cut" data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
-                                                        <img src="./heater.jpg" alt="상품이미지" class="thumb" style="background-image: url("https://img-cf.kurly.com/shop/data/goods/1634569529317l0.jpg");">
+                                                        <img src="./img/heater.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634569529317l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
@@ -1533,7 +1529,7 @@
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">5%<span>
-                                                            "61,750원"
+                                                            61,750원
                                                         </span>
                                                         <span class="cost">65,000원</span>
                                                     </div>
@@ -1542,8 +1538,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev" href>Prev</a>
-                                                <a class="bx-next disabled" href>Next</a>
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                    <a class="bx-next" href>Next</a>
                                             </div>
                                         </div>
                                     </div>
