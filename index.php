@@ -146,15 +146,15 @@
                                 </div>
                             </div>
 
-                            <div class="gnb_sub" style="display:none; width:219px;"><!--mouseover했을때 드롭다운, 기본은 숨김-->
+                            <div class="gnb_sub"; width:219px;"><!--mouseover했을때 드롭다운, 기본은 숨김-->
                                 <div class="inner_sub">
                                     <ul class="gnb_menu" style="height:auto;"> <!-- ul에 data속성 들어있었음.-->
                                     <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                         <li>
                                             <a class="menu">
                                                 <span class="icon">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">채소</span>
@@ -177,8 +177,8 @@
                                         <li>
                                             <a class="menu">
                                                 <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/2.fruit_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/2.fruit.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">과일·견과·쌀</span>
@@ -201,8 +201,8 @@
                                         <li>
                                             <a class="menu">
                                                 <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/3.fish_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/3.fish.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">수산·해산·건어물</span>
@@ -226,8 +226,8 @@
                                         <li>
                                             <a class="menu">
                                                 <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/4.meat_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/4.meat.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">정육·계란</span>
@@ -249,8 +249,8 @@
                                         <li>
                                             <a class="menu">
                                                 <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/5.soup_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/5.soup.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">국·반찬·메인요리</span>
@@ -271,8 +271,8 @@
                                         <li>
                                             <a class="menu">
                                                 <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/6.salad_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/6.salad.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">샐러드·간편식</span>
@@ -295,8 +295,8 @@
                                         <li>
                                             <a class="menu">
                                                 <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
+                                                    <img src="./img/8.sources_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                    <img src="./img/8.sources.png" alt="카테고리 아이콘" class="ico_on">
                                                 </span>
                                                 <span class="tit">
                                                     <span class="txt">면·양념·오일</span>
