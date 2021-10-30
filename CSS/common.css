@@ -135,6 +135,7 @@ header > #userMenu> .listMenu {
 }
 
 
+
 #userMenu .menu_login .link_menu {
     padding: 0 16px 0 15px;
 }
@@ -149,6 +150,7 @@ header > #userMenu> .listMenu {
     background: url(../img/ico_down_8x5.png) no-repeat 0 0;
 }
 
+
 /* #userMenu .menu:before {
     content: "";
     position: absolute;
@@ -158,6 +160,7 @@ header > #userMenu> .listMenu {
 } */
 
 
+/* 고객센터 글씨 */
 header > #userMenu > .listMenu> li > .linkMenu{
     float: left;
     height: 37px;
@@ -167,9 +170,10 @@ header > #userMenu > .listMenu> li > .linkMenu{
     white-space: nowrap;
 }
 
-/* header > #userMenu > .listMenu> li >.회원가입 { 
+/* 회원가입 부분글씨색 변경
+#userMenu .menu .link_menu {
     color: #5f0080;
-/* } */
+} */
 
 
 #userMenu .lst .sub {
@@ -186,6 +190,7 @@ header > #userMenu > .listMenu> li > .linkMenu{
     border: 1px solid #ddd;
     background-color: #fff;
 }
+/* 드롭다운바 끝 */
 
 header > #headerLogo{
     position: relative;
@@ -207,6 +212,7 @@ header > #headerLogo .logo {
     height: 79px;
     margin: 0 auto;
 }
+/* 새벽배송 */
 header > #headerLogo > .logo > a > span > img{
     width: 103px;
     height: 79px;
@@ -218,11 +224,13 @@ header > #headerLogo > .bnr_delivery > img{
     height: 22px;
 }
 
+/* headerLogo 끝 */
 
 header > #gnb {
     height:56px;
 }
 
+/* main */
 header > #gnb .gnb_main{
     overflow:hidden;
     width:1050px;
@@ -236,29 +244,18 @@ header  .gnb_main .gnb a {
     height: 55px;
     /* padding: 16px 0 0; */
     font-size: 16px;
-    color: #333;
+    color:#333;
     line-height: 20px;
     text-align: center;
 }
 
+/* 상단바 */
 
-/* DK */
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
-
-span.ico:hover{
+#gnb .gnb_main .gnb a:hover {
+    font-size: 16px;
     color: #5f0080;
-}
-
-.menu1, .menu2:hover{
-    color: #5f0080;
-}
-
-.menu3, .menu4, .menu5:hover{
-    color: #5f0080;
+    line-height: 20px;
+    text-align: center;
 }
 
 
@@ -359,10 +356,7 @@ header > #gnb > #gnbMenu {
     opacity: 0;
 }
 
-/* DK */
-#gnb .gnb_search .btn_search:hover {
-    color: #5f0080;
-}
+
 
 #gnb .btn_location {
     overflow: hidden;
@@ -381,8 +375,15 @@ header > #gnb > #gnbMenu {
     background-image: url(../img/ico_delivery_setting.svg);
 }
 
-#gnb .gnb_location.on:hover {
-    color: #5f0080;
+
+#gnb .btn_location.on:hover {
+    background-image: url(../img/ico_delivery_setting.svg);
+    filter: invert(14%) sepia(25%) saturate(7147%) hue-rotate(272deg) brightness(57%) contrast(127%);
+}
+
+#gnb .gnb_sub:hover{
+    box-sizing: border-box;
+    
 }
 
 #gnb .cart_count {
@@ -398,6 +399,12 @@ header > #gnb > #gnbMenu {
     background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%;
 
 }
+
+#gnb .cart_count .btn_cart:hover {
+    background-image: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg);
+    filter: invert(14%) sepia(25%) saturate(7147%) hue-rotate(272deg) brightness(57%) contrast(127%);
+}
+
 #gnb .cart_count .inner_cartcount {
     text-align: center;
     font-weight: 400;
@@ -432,6 +439,11 @@ header > #gnb > #gnbMenu {
     height: 14px;
     margin: 5px 14px 0 0;
     background: url(../img/ico_gnb_all_off.png) no-repeat;
+}
+
+#gnb .gnb_main .menu1 .ico:hover {
+    background-image: url(../img/ico_gnb_all_off.png);
+    filter: invert(14%) sepia(25%) saturate(7147%) hue-rotate(272deg) brightness(57%) contrast(127%);
 }
 /* 바디 -------------------------------------------------*/
 
@@ -522,7 +534,7 @@ text-align: center;
     width: 315px;
     padding: 18px 18px 19px 20px;
     border: 1px
- solid #ddd;
+solid #ddd;
     background-color: #fff;
 }
 
