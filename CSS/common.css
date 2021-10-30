@@ -913,6 +913,56 @@ page_main .list_goods a {
 /* } */
 
 
+/* 인스타그램 고객 후기 : 현이 작성 */
+
+.main_type4 .list_goods {
+    width: 1050px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+.main_type4 .list_goods .list { width: 99999px; }
+
+.main_type4 .list_goods li {
+    float: left;
+    width: 175px;
+    height: 175px;
+}
+
+.main_type4 .list_goods .thumb {
+    width: 175px;
+    height: 175px;
+}
+
+.main_type4 .list_goods .thumb_goods:hover .thumb { transform: scale(1);}
+
+.main_type4 .bnr {
+    padding: 39px 0 100px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.main_type4 .bnr .txt {
+    display: block;
+    font-weight: 400;
+    color: #999;
+}
+
+.main_type4 .bnr a { font-weight: 700;  color: #333; }
+
+.main_type4 .bx-has-controls-direction .bx-next,
+.main_type4 .bx-has-controls-direction .bx-prev { bottom: 58px; }
+
+.main_type4 .bx-controls-auto {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+
 /* 사이드 퀵 메뉴 : 현이 작성 */
 
 @media all and (max-width: 1250px){
@@ -942,7 +992,7 @@ page_main .list_goods a {
 #qnb .link_menu:hover,
 #qnb .link_menu.on { color: #5f0080; }
 
-/* 최근 본 상품 시작 : 현이 작업 
+/* 최근 본 상품 시작 : 현이 작성
 #qnb .side_recent {
     position: relative;
     margin-top: 6px;
@@ -1006,7 +1056,7 @@ page_main .list_goods a {
 #qnb .side_recent .btn_down.off {
     background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0
 }
-최근 본 상품 끝 : 현이 작업 */
+최근 본 상품 끝 : 현이 작성 */
 
 
 
