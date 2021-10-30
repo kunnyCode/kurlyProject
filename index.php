@@ -1428,10 +1428,133 @@
                         <div class="main_type2">
                             <div class="product_list">
                                 <div class="tit_goods">
-                                    <h3><a href="#" class="name"><span class="ico">지금 가장 핫한 상품</span> </a></h3>
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">지금 가장 핫한 상품</span>
+                                        </a>
+                                    </h3>
                                 </div>
                                 <div class="list_goods">
-
+                                    <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="지금 가장 핫한 상품" ata-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <span class="global_sticker">
+                                                            <span class="inner_sticker">
+                                                                <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;">
+                                                                <span class="txt_sticker">
+                                                                    <span>
+                                                                        <span class="emph_sticker">최초특가</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <img src="./img/bean_curd.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634887936221l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[최초특가][종가집] 국산콩 두부 반모 200g (부침/찌개 겸용)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">30%</span>
+                                                            1,540원
+                                                        </span>
+                                                        <span class="cost">2,200원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <span class="global_sticker">
+                                                            <span class="inner_sticker">
+                                                                <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;">
+                                                                <span class="txt_sticker">
+                                                                    <span>
+                                                                        <span class="emph_sticker">최초특가</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <img src="./img/fish_cake_soup.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634878670787l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[최초특가][와카메] 어묵탕 모듬세트</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">35%</span>
+                                                            5,135원
+                                                        </span>
+                                                        <span class="cost">7,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/goosedown.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1632974139245l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[더 조선호텔] 헝가리 사계절 구스다운 3종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">5%</span>
+                                                            817,000원
+                                                        </span>
+                                                        <span class="cost">860,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/rib.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1592281489516l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[한일관 X 백년가게] 순살갈비</a>
+                                                        </span>
+                                                        <span class="price">                                                            
+                                                            29,000원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class data-name="theme_goods_21 "style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/tangerine.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634620472411l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">'햇' 조생 노지 감귤 2.5kg</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">16%</span>
+                                                            9,912원
+                                                        </span>
+                                                        <span class="cost">11,800원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/fish_roe_soup.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1629180148342l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[프레시지] 연안식당 알폭탄 알탕</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">17%</span>
+                                                            15,590원
+                                                        </span>
+                                                        <span class="cost">18,900원</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev" href>Prev</a>
+                                                <a class="bx-next disabled" href>Next</a>                                            
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
