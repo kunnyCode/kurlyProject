@@ -1559,7 +1559,95 @@
                     <div></div>
                     <div></div>
                     <div></div>
-                    <div></div>
+                    <!-- 컬리의 레시피 시작 -->
+                    <div>
+                        <div class="main_type3">
+                            <div class="main_recipe">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">컬리의 레시피</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
+                                            <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list" style="width: 715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_1.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">시나몬 배 조림 & 카나페</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_2.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">쏨땀</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_3.png" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">굴 크림 스튜</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_4.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">과일 버터 2종</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_5.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">베이컨 체커보드 토스트</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                <a class="bx-next" href>Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 컬리의 레시피 끝 -->
                     <!-- 인스타그램 고객 후기 시작 -->
                     <div>
                         <div class="main_type4">
