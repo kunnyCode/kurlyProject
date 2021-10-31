@@ -79,13 +79,13 @@
                                 <ul class="gnb">
                                     <li class="menu1 hover">
                                         <a href="#" class="link"><span class="ico"></span><span class="txt">전체 카테고리</span></a>
-                                        <div class="gnb_sub"; style="width:219px; display: none"><!--mouseover했을때 드롭다운, 기본은 숨김-->
+                                        <div class="gnb_sub"; style="width:200px;"><!--mouseover했을때 드롭다운, 기본은 숨김-->
                                             <div class="inner_sub">
-                                                <ul class="gnb_menu" style="height:auto;"> <!-- ul에 data속성 들어있었음.-->
+                                                <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
                                                         <a class="menu">
-                                                            <span class="icon">
+                                                            <span class="icon" style="margin-left: 7px">
                                                                 <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
