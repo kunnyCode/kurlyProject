@@ -254,15 +254,6 @@ span.ico:hover{
     color: #5f0080;
 }
 
-.menu1, .menu2:hover{
-    color: #5f0080;
-}
-
-.menu3, .menu4, .menu5:hover{
-    color: #5f0080;
-}
-
-
 header > #gnb .inner_gnbkurly {
     position: relative;
     width: 1050px;
@@ -314,11 +305,30 @@ header > #gnb > #gnbMenu {
     background-color:#fff;
 }
 
+/* 예린 */
+.icon > img {
+    height: 25px;
+}
 
-#gnb .gnb_search {
-    position: absolute;
-    right: 108px;
-    top: 10px;
+.ico_on {
+    display: none;
+}
+
+.sub_menu {
+    display: none;
+}
+
+#gnb .gnb_main .gnb a .menu {
+    text-align: left;
+}
+
+#gnb .gnb_main .hover a:hover {
+    color: #5f0080;
+    text-decoration: underline;
+}
+
+#gnb .gnb_main .menu1 a:hover .gnb_sub{
+    display: inline-block;
 }
 
 #gnb .gnb_search .inp_search {
@@ -423,10 +433,6 @@ header > #gnb > #gnbMenu {
     color: #5f0080;
 }
 
-#gnb .gnb_main .menu1 a {
-    width: 168px;
-}
-
 #gnb .gnb_main .menu1 .ico {
     float: left;
     width: 16px;
@@ -508,6 +514,13 @@ font-size: 16px;
 color: #333;
 line-height: 20px;
 text-align: center;
+}
+
+/* 예린 */
+#gnb .gnb_main .menu1 a {
+    width: 168px;
+    text-align: left;
+    margin-left: 5px;
 }
 
 #gnb .gnb_main .gnb a .txt {
