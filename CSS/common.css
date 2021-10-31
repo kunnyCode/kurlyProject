@@ -4,6 +4,7 @@
 *, *:after, *:before{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body, input, select, textarea, button {
     font-family: noto sans, malgun gothic,AppleGothic, dotum;
@@ -251,6 +252,7 @@ header  .gnb_main .gnb a {
 
 /* 상단바 */
 
+/* <<<<<<< HEAD */
 #gnb .gnb_main .gnb a:hover {
     font-size: 16px;
     color: #5f0080;
@@ -258,6 +260,18 @@ header  .gnb_main .gnb a {
     text-align: center;
 }
 
+
+/* DK */
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+span.ico:hover{
+    color: #5f0080;
+}
+/* >>>>>>> main */
 
 header > #gnb .inner_gnbkurly {
     position: relative;
@@ -310,11 +324,50 @@ header > #gnb > #gnbMenu {
     background-color:#fff;
 }
 
+/* 예린 */
+.icon > img {
+    height: 25px;
+}
 
-#gnb .gnb_search {
-    position: absolute;
-    right: 108px;
-    top: 10px;
+.ico_on {
+    display: none;
+}
+
+.sub_menu {
+    display: none;
+}
+
+#gnb .gnb_main .gnb a .menu {
+    text-align: left;
+}
+
+#gnb .gnb_main .hover>a:hover {
+    color: #5f0080;
+    text-decoration: underline;
+}
+
+#gnb .gnb_main .menu1 .gnb_sub{
+    display: none
+}
+
+#gnb .gnb_main .menu1 a:hover+div{
+    display: block;
+}
+
+#gnb .gnb_main .menu1 a+div:hover{
+    display: block;
+}
+
+.tit {
+    font-size: 13px;
+}
+
+.icon {
+    margin-left: 7px;
+}
+
+.menu {
+    background-color: aquamarine;
 }
 
 #gnb .gnb_search .inp_search {
@@ -429,10 +482,6 @@ header > #gnb > #gnbMenu {
     color: #5f0080;
 }
 
-#gnb .gnb_main .menu1 a {
-    width: 168px;
-}
-
 #gnb .gnb_main .menu1 .ico {
     float: left;
     width: 16px;
@@ -521,6 +570,17 @@ line-height: 20px;
 text-align: center;
 }
 
+/* 예린 */
+#gnb .gnb_main .menu1 a {
+    width: 200px;
+    text-align: left;
+    background: #fff;
+}
+
+#gnb .gnb_main .menu1 a:hover {
+    background: #d8d8d8;
+}
+
 #gnb .gnb_main .gnb a .txt {
     font-weight: 700;
 }
@@ -534,7 +594,12 @@ text-align: center;
     width: 315px;
     padding: 18px 18px 19px 20px;
     border: 1px
+
+/* <<<<<<< HEAD */
 solid #ddd;
+
+    /* solid #ddd; */
+/* >>>>>>> main */
     background-color: #fff;
 }
 
@@ -788,6 +853,12 @@ page_main .list_goods a {
     margin: 0px auto;
 }
 
+/* MD 추천 제목  */
+.page_main .tit_goods .name {
+    position: relative;
+    font-weight: 700;
+}
+
 /* 특가/혜택 옆 > 모양 삽입 */
 .page_main .tit_goods .name .ico {
     padding: 0 31px;
@@ -840,7 +911,265 @@ page_main .list_goods a {
 }
 /* } */
 
+/* <<<<<<< HEAD */
 /* footer */
+
+
+/* 여건작성 {*/
+/* MD추천 */
+.category_type {
+    padding-bottom: 100px;
+}
+
+.category_type .category .list_category {
+    width: 1050px;
+    max-width: 1050px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.category_type .category .list_category li {
+    display: inline-block;
+    padding: 0 5px 20px;
+}
+
+.category_type .category .list_category .menu {
+    display: inline-block;
+    height: 40px;
+    padding: 9px 20px 0 19px;
+    border: 1px solid #f7f7f6;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.category_type .category .list_category .on:hover, .category_type .category .list_category .on {
+    border: 1px solid #5f0081;
+    background-color: #5f0080;
+    font-weight: 700;
+    color: #fff;
+}
+
+.category_type .category .list_category .cut::before {
+    content: "";
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+
+.category_type .list_goods {
+    height: 462px;
+}
+
+.category_type .link_cate {
+    width: 516px;
+    margin: 0 auto;
+}
+
+.category_type .link_cate .link {
+    display: block;
+    overflow: hidden;
+    height: 56px;
+    padding-top: 16px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+}
+
+.category_type .link_cate .ico {
+    padding: 0 18px;
+    background: url(../img/ico_more_link_x1.webp) no-repeat 100% -1.5px;
+    /* 원래 100% 옆에 -1.5px대신 3px 있었지요.. 아마 폰트 때문에 안 맞는 걸로 보임니당 */
+}
+/* } */
+
+
+/* 컬리의 레시피 : 현이 작성 */
+
+.page_main .list_goods .thumb_goods:hover .thumb {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.main_recipe .list_goods { height: 303px; }
+
+.main_recipe .list_goods li { height: 303px; }
+
+.main_recipe .list_goods .thumb { height: 225px; }
+
+.main_recipe .list_goods .name {
+    padding-top: 12px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main_recipe .list_goods .txt {
+    font-size: 16px;
+    line-height: 45px;
+
+}
+
+.main_recipe .bx-controls-direction .bx-next,
+.main_recipe .bx-has-controls-direction .bx-prev { bottom: 160px; }
+/* 인스타그램 고객 후기 : 현이 작성 */
+
+.main_type4 .list_goods {
+    width: 1050px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+.main_type4 .list_goods .list { width: 99999px; }
+
+.main_type4 .list_goods li {
+    float: left;
+    width: 175px;
+    height: 175px;
+}
+
+.main_type4 .list_goods .thumb {
+    width: 175px;
+    height: 175px;
+}
+
+.main_type4 .list_goods .thumb_goods:hover .thumb { transform: scale(1);}
+
+.main_type4 .bnr {
+    padding: 39px 0 100px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.main_type4 .bnr .txt {
+    display: block;
+    font-weight: 400;
+    color: #999;
+}
+
+.main_type4 .bnr a { font-weight: 700;  color: #333; }
+
+.main_type4 .bx-has-controls-direction .bx-next,
+.main_type4 .bx-has-controls-direction .bx-prev { bottom: 58px; }
+
+.main_type4 .bx-controls-auto {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+
+/* 사이드 퀵 메뉴 : 현이 작성 */
+
+@media all and (max-width: 1250px){
+    #qnb{display:none}
+}
+
+#qnb .bnr_qnb { padding-bottom: 7px; }
+
+#qnb .bnr_qnb .thumb {
+    width: 80px;
+    height: 120px;
+    vertical-align: top;
+}
+
+#qnb .link_menu {
+    display: block;
+    height: 21.5px;
+    padding-top: 7px;
+    border: 1px solid #ddd;
+    border-top: none;
+    text-align: center;
+    background-color: #fff;
+}
+
+#qnb .link_menu:first-child { border-top: 1px solid #ddd;;}
+
+#qnb .link_menu:hover,
+#qnb .link_menu.on { color: #5f0080; }
+
+/* 최근 본 상품 시작 : 현이 작성
+#qnb .side_recent {
+    position: relative;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#qnb .side_recent .tit {
+    display: block;
+    padding: 22px 0 6px;
+    text-align: center;
+}
+
+#qnb .side_recent .list_goods {
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+}
+
+#qnb .side_recent .list {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#qnb .side_recent .link_goods {
+    display: block;
+    overflow: hidden;
+    width: 60px;
+    height: 80px;
+    padding: 1px 0 2px;
+}
+
+#qnb .side_recent .btn {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 17px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+#qnb .side_recent .btn_up {
+    position:absolute;
+    left:0;
+    top:0;
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover.png) no-repeat 50% 50%
+}
+
+#qnb .side_recent .btn_up.off {
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up.png) no-repeat 50% 50%
+}
+
+#qnb .side_recent .btn_down {
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover.png) no-repeat 50% 0
+}
+
+#qnb .side_recent .btn_down.off {
+    background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0
+}
+최근 본 상품 끝 : 현이 작성 */
+
+
+
+
+/* footer : 현이 작성*/
+/* >>>>>>> main */
 
 #footer {
     width: 1050px;

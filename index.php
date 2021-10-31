@@ -70,26 +70,554 @@
                     </a>
                 </div>
 
-                <!-- 카테고리 시작 --------------------------------------------------------------------------->
+                <!-- 카테고리 시작 --------------------------------------------------------------------------->       
                 <div id="gnb">
                     <h2 class="screen_out">메뉴</h2>
                     <div id="gnbMenu" class="gnb_kurly">
                         <div class="inner_gnbkurly">
                             <div class="gnb_main">
                                 <ul class="gnb">
-                                    <li class="menu1">
+                                    <li class="menu1 hover">
                                         <a href="#" class="link"><span class="ico"></span><span class="txt">전체 카테고리</span></a>
+                                        <div class="gnb_sub"; style="width:200px;"><!--mouseover했을때 드롭다운, 기본은 숨김-->
+                                            <div class="inner_sub">
+                                                <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
+                                                <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon" style="margin-left: 7px">
+                                                                <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">채소</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">친환경</span></a></li>
+                                                            <li><a class="sub"><span class="name">고구마·감자·당근</span></a></li>
+                                                            <li><a class="sub"><span class="name">치금치·쌈채소·나물</span></a></li>
+                                                            <li><a class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
+                                                            <li><a class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
+                                                            <li><a class="sub"><span class="name">오이·호박·고추</span></a></li>                                                
+                                                            <li><a class="sub"><span class="name">냉동·이색·간편채소</span></a></li>
+                                                            <li><a class="sub"><span class="name">콩나물·버섯</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 채소 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 과일,견과,쌀 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/2.fruit_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/2.fruit.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">과일·견과·쌀</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">친환경</span></a></li>
+                                                            <li><a class="sub"><span class="name">제철과일</span></a></li>
+                                                            <li><a class="sub"><span class="name">국산과일</span></a></li>
+                                                            <li><a class="sub"><span class="name">수입과일</span></a></li>
+                                                            <li><a class="sub"><span class="name">간편과일</span></a></li>
+                                                            <li><a class="sub"><span class="name">냉동·건과일</span></a></li>
+                                                            <li><a class="sub"><span class="name">견과류</span></a></li>
+                                                            <li><a class="sub"><span class="name">쌀·잡곡</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 과일,견과,쌀 카테고리 ㄴ끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 수산,해산,건어물 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/3.fish_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/3.fish.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">수산·해산·건어물</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">제철수산</span></a></li>
+                                                            <li><a class="sub"><span class="name">생선류</span></a></li>
+                                                            <li><a class="sub"><span class="name">굴비·반건류</span></a></li>
+                                                            <li><a class="sub"><span class="name">오징어·낙지·문어</span></a></li>
+                                                            <li><a class="sub"><span class="name">새우·게·랍스터</span></a></li>
+                                                            <li><a class="sub"><span class="name">해산물·조개</span></a></li>
+                                                            <li><a class="sub"><span class="name">수산가공품</span></a></li>
+                                                            <li><a class="sub"><span class="name">김·미역·해조류</span></a></li>
+                                                            <li><a class="sub"><span class="name">건어물·다시팩</span></a></li>                                                
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 수산,해산,건어물 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 정육,계란 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/4.meat_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/4.meat.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">정육·계란</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">국내산 소고기</span></a></li>
+                                                            <li><a class="sub"><span class="name">수입산 소고기</span></a></li>
+                                                            <li><a class="sub"><span class="name">돼지고기</span></a></li>
+                                                            <li><a class="sub"><span class="name">계란류</span></a></li>
+                                                            <li><a class="sub"><span class="name">닭·오리고기</span></a></li>
+                                                            <li><a class="sub"><span class="name">양념육·돈까스</span></a></li>
+                                                            <li><a class="sub"><span class="name">양고기</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 정육,계란 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 국,반찬,메인요리 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/5.soup_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/5.soup.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">국·반찬·메인요리</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">국·탕·찌개</span></a></li>
+                                                            <li><a class="sub"><span class="name">밀키트·메인요리</span></a></li>
+                                                            <li><a class="sub"><span class="name">밑반찬</span></a></li>
+                                                            <li><a class="sub"><span class="name">김치·젓갈·장류</span></a></li>
+                                                            <li><a class="sub"><span class="name">두부·어묵·부침개</span></a></li>
+                                                            <li><a class="sub"><span class="name">베이컨·햄·통조림</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 국,반찬,메인요리 카테고리 끝--------------------------------------------------------------------------->
+
+                                                    <!-- 샐러드,간편식 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/6.salad_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/6.salad.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">샐러드·간편식</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">샐러드·닭가슴살</span></a></li>
+                                                            <li><a class="sub"><span class="name">도시락·밥류</span></a></li>
+                                                            <li><a class="sub"><span class="name">파스타·면류</span></a></li>
+                                                            <li><a class="sub"><span class="name">떡볶이·튀김·순대</span></a></li>
+                                                            <li><a class="sub"><span class="name">피자·핫도그·만두</span></a></li>
+                                                            <li><a class="sub"><span class="name">폭립·떡갈비·안주</span></a></li>
+                                                            <li><a class="sub"><span class="name">죽·스프·카레</span></a></li>
+                                                            <li><a class="sub"><span class="name">선식·시리얼</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 샐러드,간편식 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 면,양념,오일 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/8.sources_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/8.sources.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">면·양념·오일</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">파스타·면류</span></a></li>
+                                                            <li><a class="sub"><span class="name">식초·소스·드레싱</span></a></li>
+                                                            <li><a class="sub"><span class="name">양념·액젓·장</span></a></li>
+                                                            <li><a class="sub"><span class="name">식용유·참기름·오일</span></a></li>
+                                                            <li><a class="sub"><span class="name">소금·설탕·향신료</span></a></li>
+                                                            <li><a class="sub"><span class="name">밀가루·가루·믹스</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 면,양념,오일 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 생수,음료,우유,커피 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/7.beverage_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/7.beverage.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">생수·음료·우유·커피</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">생수·탄산수</span></a></li>
+                                                            <li><a class="sub"><span class="name">음료·주스</span></a></li>
+                                                            <li><a class="sub"><span class="name">우유·두유·요거트</span></a></li>
+                                                            <li><a class="sub"><span class="name">커피</span></a></li>
+                                                            <li><a class="sub"><span class="name">차</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 생수,음료,우유,커피 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 간식,과자,떡 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/9.snack_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/9.snack.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">간식·과자·떡</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">과자·스낵·쿠키</span></a></li>
+                                                            <li><a class="sub"><span class="name">초콜릿·젤리·캔디</span></a></li>
+                                                            <li><a class="sub"><span class="name">떡·한과</span></a></li>
+                                                            <li><a class="sub"><span class="name">아이스크림</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 간식,과자,떡 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 베이커리,치즈,델리 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/10.bakery_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/10.bakery.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">베이커리·치즈·델리</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">식빵·빵류</span></a></li>
+                                                            <li><a class="sub"><span class="name">잼·버터·스프레드</span></a></li>
+                                                            <li><a class="sub"><span class="name">케이크·파이·디저트</span></a></li>
+                                                            <li><a class="sub"><span class="name">치즈</span></a></li>
+                                                            <li><a class="sub"><span class="name">델리</span></a></li>
+                                                            <li><a class="sub"><span class="name">올리브·피클</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 베이커리,치즈,델리 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 건강식품 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/11.healthyfood_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/11.healthyfood.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">건강식품</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">영양제</span></a></li>
+                                                            <li><a class="sub"><span class="name">유산균</span></a></li>
+                                                            <li><a class="sub"><span class="name">홍삼·인삼·꿀</span></a></li>
+                                                            <li><a class="sub"><span class="name">건강즙·건강음료</span></a></li>
+                                                            <li><a class="sub"><span class="name">건강분말·건강환</span></a></li>
+                                                            <li><a class="sub"><span class="name">다이어트·이너뷰티</span></a></li>
+                                                            <li><a class="sub"><span class="name">유아동</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 건강식품 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 생활용품,리빙,캠핑 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/12.softener_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/12.softener.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">생활용품·리빙·캠핑</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">휴지·티슈</span></a></li>
+                                                            <li><a class="sub"><span class="name">여성·위생용품</span></a></li>
+                                                            <li><a class="sub"><span class="name">세제·정소용품</span></a></li>
+                                                            <li><a class="sub"><span class="name">화훼·인테리어소품</span></a></li>
+                                                            <li><a class="sub"><span class="name">의약외품·마스크</span></a></li>
+                                                            <li><a class="sub"><span class="name">생활잡화·문구</span></a></li>
+                                                            <li><a class="sub"><span class="name">캠핑용품</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 생활용품,리빙,캠핑 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 스킨케어,메이크업 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/13.makeup_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/13.makeup.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">스킨케어·메이크업</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">스킨·미스트·패드</span></a></li>
+                                                            <li><a class="sub"><span class="name">에센스·앰플·로션</span></a></li>
+                                                            <li><a class="sub"><span class="name">크림·오일</span></a></li>
+                                                            <li><a class="sub"><span class="name">클렌징</span></a></li>
+                                                            <li><a class="sub"><span class="name">마스크팩</span></a></li>
+                                                            <li><a class="sub"><span class="name">선케어</span></a></li>
+                                                            <li><a class="sub"><span class="name">메이크업</span></a></li>
+                                                            <li><a class="sub"><span class="name">뷰티소품·기기</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 스킨케어,메이크업 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 헤어,바디,구강 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/14.hair.body.tooth_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/14.hair.body.tooth.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">헤어·바디·구강</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">구강·면도</span></a></li>
+                                                            <li><a class="sub"><span class="name">샴푸·컨디셔너</span></a></li>
+                                                            <li><a class="sub"><span class="name">트리트먼트·팩</span></a></li>
+                                                            <li><a class="sub"><span class="name">헤어에센스·염모</span></a></li>
+                                                            <li><a class="sub"><span class="name">바디워시·스크럽</span></a></li>
+                                                            <li><a class="sub"><span class="name">바디로션·크림</span></a></li>
+                                                            <li><a class="sub"><span class="name">핸드·립·데오</span></a></li>
+                                                            <li><a class="sub"><span class="name">향수·디퓨저</span></a></li>
+                                                            <li><a class="sub"><span class="name">헤어·바디소품</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 헤어,바디,구강 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 주방용품 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/15.kitchen_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/15.kitchen.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">주방용품</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">주방소모품·잡화</span></a></li>
+                                                            <li><a class="sub"><span class="name">주방·조리도구</span></a></li>
+                                                            <li><a class="sub"><span class="name">냄비·팬·솥</span></a></li>
+                                                            <li><a class="sub"><span class="name">보관용기·텀블러</span></a></li>
+                                                            <li><a class="sub"><span class="name">식기·테이블웨어</span></a></li>
+                                                            <li><a class="sub"><span class="name">컵·잔·커피도구</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 주방용품 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 가전제품 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/16.home appliances_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/16.home appliances.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">가전제품</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">주방가전</span></a></li>
+                                                            <li><a class="sub"><span class="name">생활가전</span></a></li>
+                                                            <li><a class="sub"><span class="name">계절가전</span></a></li>
+                                                            <li><a class="sub"><span class="name">디지털·PC</span></a></li>
+                                                            <li><a class="sub"><span class="name">대형·설치가전</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 가전제품 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 베이비,키즈 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/17.feeding-bottle_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/17.feeding-bottle_b.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">베이비·키즈</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">분유·간편 이유식</span></a></li>
+                                                            <li><a class="sub"><span class="name">이유식 재료</span></a></li>
+                                                            <li><a class="sub"><span class="name">간식·음식·음료</span></a></li>
+                                                            <li><a class="sub"><span class="name">건강식품</span></a></li>
+                                                            <li><a class="sub"><span class="name">이유·수유용품</span></a></li>
+                                                            <li><a class="sub"><span class="name">기저귀·물티슈</span></a></li>
+                                                            <li><a class="sub"><span class="name">세제·위생용품</span></a></li>
+                                                            <li><a class="sub"><span class="name">스킨·구강케어</span></a></li>
+                                                            <li><a class="sub"><span class="name">완구·잡화류</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 베이비,키즈 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 반려동물 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/18.pet-food_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/18.pet-food.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">반려동물</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu">
+                                                            <li><a class="sub"><span class="name">강아지 간식</span></a></li>
+                                                            <li><a class="sub"><span class="name">강아지 주식</span></a></li>
+                                                            <li><a class="sub"><span class="name">고양이 간식</span></a></li>
+                                                            <li><a class="sub"><span class="name">고양이 주식</span></a></li>
+                                                            <li><a class="sub"><span class="name">반려동물 용품</span></a></li>
+                                                            <li><a class="sub"><span class="name">배변·위생</span></a></li>
+                                                            <li><a class="sub"><span class="name">소용량·샘플</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 반려동물 카테고리 끝--------------------------------------------------------------------------->
+                                                    
+                                                    <!-- 컬리의 추천 카테고리 시작--------------------------------------------------------------------------->
+                                                    <li>
+                                                        <a class="menu">
+                                                            <span class="icon">
+                                                                <img src="./img/19.best_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="./img/19.best.png" alt="카테고리 아이콘" class="ico_on">
+                                                            </span>
+                                                            <span class="tit">
+                                                                <span class="txt">컬리의 추천</span>
+                                                            </span>
+                                                        </a>
+                                                        <ul class="sub_menu recommend">
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">호텔 예약</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">홈캉스</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">식단관리</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">간편한 아침식사</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">재구매 BEST</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">3천원의 행복</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">컬리마트</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">대용량 상품</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">캠핑</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">1인 가구</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">비건</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">오프라인 맛집</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">컬리가 만든 상품</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">Kurly Only</span>
+                                                                </a>
+                                                            </li><li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">KF365</span>
+                                                                </a>
+                                                            </li><li>
+                                                                <a class="sub">
+                                                                    <span class="thumb" style="background-image:url(#);"><img src="#"></span>
+                                                                    <span class="name">1% Table</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- 컬리의 추천 카테고리 끝--------------------------------------------------------------------------->
+                                                </ul>
+                                            </div>
+                                        </div>                  
                                     </li>
-                                    <li class="menu2">
+                                    <li class="menu2 hover">
                                         <a href="#" class="link"><span class="txt">신상품</span></a>
                                     </li>
-                                    <li class="menu3">
+                                    <li class="menu3 hover">
                                         <a href="#" class="link"><span class="txt">베스트</span></a>
                                     </li>
-                                    <li class="menu4">
+                                    <li class="menu4 hover">
                                         <a href="#" class="link"><span class="txt">알뜰 쇼핑</span></a>
                                     </li>
-                                    <li class="menu5">
+                                    <li class="menu5 hover">
                                         <a href="#" class="link"><span class="txt">특가/혜택</span></a>
                                     </li>
                                 </ul>
@@ -146,534 +674,7 @@
                                 </div>
                             </div>
 
-                            <div class="gnb_sub" style="display:none; width:219px;"><!--mouseover했을때 드롭다운, 기본은 숨김-->
-                                <div class="inner_sub">
-                                    <ul class="gnb_menu" style="height:auto;"> <!-- ul에 data속성 들어있었음.-->
-                                    <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="icon">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">채소</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">친환경</span></a></li>
-                                                <li><a href="" class="sub"><span class="name">고구마·감자·당근</span></a></li>
-                                                <li><a class="sub"><span class="name">치금치·쌈채소·나물</span></a></li>
-                                                <li><a class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
-                                                <li><a class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
-                                                <li><a class="sub"><span class="name">오이·호박·고추</span></a></li>                                                
-                                                <li><a class="sub"><span class="name">냉동·이색·간편채소</span></a></li>
-                                                <li><a class="sub"><span class="name">콩나물·버섯</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 채소 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 과일,견과,쌀 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">과일·견과·쌀</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">친환경</span></a></li>
-                                                <li><a class="sub"><span class="name">제철과일</span></a></li>
-                                                <li><a class="sub"><span class="name">국산과일</span></a></li>
-                                                <li><a class="sub"><span class="name">수입과일</span></a></li>
-                                                <li><a class="sub"><span class="name">간편과일</span></a></li>
-                                                <li><a class="sub"><span class="name">냉동·건과일</span></a></li>
-                                                <li><a class="sub"><span class="name">견과류</span></a></li>
-                                                <li><a class="sub"><span class="name">쌀·잡곡</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 과일,견과,쌀 카테고리 ㄴ끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 수산,해산,건어물 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">수산·해산·건어물</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">제철수산</span></a></li>
-                                                <li><a class="sub"><span class="name">생선류</span></a></li>
-                                                <li><a class="sub"><span class="name">굴비·반건류</span></a></li>
-                                                <li><a class="sub"><span class="name">오징어·낙지·문어</span></a></li>
-                                                <li><a class="sub"><span class="name">새우·게·랍스터</span></a></li>
-                                                <li><a class="sub"><span class="name">해산물·조개</span></a></li>
-                                                <li><a class="sub"><span class="name">수산가공품</span></a></li>
-                                                <li><a class="sub"><span class="name">김·미역·해조류</span></a></li>
-                                                <li><a class="sub"><span class="name">건어물·다시팩</span></a></li>                                                
-                                            </ul>
-                                        </li>
-                                        <!-- 수산,해산,건어물 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 정육,계란 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">정육·계란</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">국내산 소고기</span></a></li>
-                                                <li><a class="sub"><span class="name">수입산 소고기</span></a></li>
-                                                <li><a class="sub"><span class="name">돼지고기</span></a></li>
-                                                <li><a class="sub"><span class="name">계란류</span></a></li>
-                                                <li><a class="sub"><span class="name">닭·오리고기</span></a></li>
-                                                <li><a class="sub"><span class="name">양념육·돈까스</span></a></li>
-                                                <li><a class="sub"><span class="name">양고기</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 정육,계란 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 국,반찬,메인요리 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">국·반찬·메인요리</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">국·탕·찌개</span></a></li>
-                                                <li><a class="sub"><span class="name">밀키트·메인요리</span></a></li>
-                                                <li><a class="sub"><span class="name">밑반찬</span></a></li>
-                                                <li><a class="sub"><span class="name">김치·젓갈·장류</span></a></li>
-                                                <li><a class="sub"><span class="name">두부·어묵·부침개</span></a></li>
-                                                <li><a class="sub"><span class="name">베이컨·햄·통조림</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 국,반찬,메인요리 카테고리 끝--------------------------------------------------------------------------->
-
-                                        <!-- 샐러드,간편식 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">샐러드·간편식</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">샐러드·닭가슴살</span></a></li>
-                                                <li><a class="sub"><span class="name">도시락·밥류</span></a></li>
-                                                <li><a class="sub"><span class="name">파스타·면류</span></a></li>
-                                                <li><a class="sub"><span class="name">떡볶이·튀김·순대</span></a></li>
-                                                <li><a class="sub"><span class="name">피자·핫도그·만두</span></a></li>
-                                                <li><a class="sub"><span class="name">폭립·떡갈비·안주</span></a></li>
-                                                <li><a class="sub"><span class="name">죽·스프·카레</span></a></li>
-                                                <li><a class="sub"><span class="name">선식·시리얼</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 샐러드,간편식 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 면,양념,오일 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">면·양념·오일</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">파스타·면류</span></a></li>
-                                                <li><a class="sub"><span class="name">식초·소스·드레싱</span></a></li>
-                                                <li><a class="sub"><span class="name">양념·액젓·장</span></a></li>
-                                                <li><a class="sub"><span class="name">식용유·참기름·오일</span></a></li>
-                                                <li><a class="sub"><span class="name">소금·설탕·향신료</span></a></li>
-                                                <li><a class="sub"><span class="name">밀가루·가루·믹스</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 면,양념,오일 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 생수,음료,우유,커피 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">생수·음료·우유·커피</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">생수·탄산수</span></a></li>
-                                                <li><a class="sub"><span class="name">음료·주스</span></a></li>
-                                                <li><a class="sub"><span class="name">우유·두유·요거트</span></a></li>
-                                                <li><a class="sub"><span class="name">커피</span></a></li>
-                                                <li><a class="sub"><span class="name">차</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 생수,음료,우유,커피 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 간식,과자,떡 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">간식·과자·떡</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">과자·스낵·쿠키</span></a></li>
-                                                <li><a class="sub"><span class="name">초콜릿·젤리·캔디</span></a></li>
-                                                <li><a class="sub"><span class="name">떡·한과</span></a></li>
-                                                <li><a class="sub"><span class="name">아이스크림</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 간식,과자,떡 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 베이커리,치즈,델리 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">베이커리·치즈·델리</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">식빵·빵류</span></a></li>
-                                                <li><a class="sub"><span class="name">잼·버터·스프레드</span></a></li>
-                                                <li><a class="sub"><span class="name">케이크·파이·디저트</span></a></li>
-                                                <li><a class="sub"><span class="name">치즈</span></a></li>
-                                                <li><a class="sub"><span class="name">델리</span></a></li>
-                                                <li><a class="sub"><span class="name">올리브·피클</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 베이커리,치즈,델리 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 건강식품 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">건강식품</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">영양제</span></a></li>
-                                                <li><a class="sub"><span class="name">유산균</span></a></li>
-                                                <li><a class="sub"><span class="name">홍삼·인삼·꿀</span></a></li>
-                                                <li><a class="sub"><span class="name">건강즙·건강음료</span></a></li>
-                                                <li><a class="sub"><span class="name">건강분말·건강환</span></a></li>
-                                                <li><a class="sub"><span class="name">다이어트·이너뷰티</span></a></li>
-                                                <li><a class="sub"><span class="name">유아동</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 건강식품 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 생활용품,리빙,캠핑 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">생활용품·리빙·캠핑</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">휴지·티슈</span></a></li>
-                                                <li><a class="sub"><span class="name">여성·위생용품</span></a></li>
-                                                <li><a class="sub"><span class="name">세제·정소용품</span></a></li>
-                                                <li><a class="sub"><span class="name">화훼·인테리어소품</span></a></li>
-                                                <li><a class="sub"><span class="name">의약외품·마스크</span></a></li>
-                                                <li><a class="sub"><span class="name">생활잡화·문구</span></a></li>
-                                                <li><a class="sub"><span class="name">캠핑용품</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 생활용품,리빙,캠핑 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 스킨케어,메이크업 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">스킨케어·메이크업</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">스킨·미스트·패드</span></a></li>
-                                                <li><a class="sub"><span class="name">에센스·앰플·로션</span></a></li>
-                                                <li><a class="sub"><span class="name">크림·오일</span></a></li>
-                                                <li><a class="sub"><span class="name">클렌징</span></a></li>
-                                                <li><a class="sub"><span class="name">마스크팩</span></a></li>
-                                                <li><a class="sub"><span class="name">선케어</span></a></li>
-                                                <li><a class="sub"><span class="name">메이크업</span></a></li>
-                                                <li><a class="sub"><span class="name">뷰티소품·기기</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 스킨케어,메이크업 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 헤어,바디,구강 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">헤어·바디·구강</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">구강·면도</span></a></li>
-                                                <li><a class="sub"><span class="name">샴푸·컨디셔너</span></a></li>
-                                                <li><a class="sub"><span class="name">트리트먼트·팩</span></a></li>
-                                                <li><a class="sub"><span class="name">헤어에센스·염모</span></a></li>
-                                                <li><a class="sub"><span class="name">바디워시·스크럽</span></a></li>
-                                                <li><a class="sub"><span class="name">바디로션·크림</span></a></li>
-                                                <li><a class="sub"><span class="name">핸드·립·데오</span></a></li>
-                                                <li><a class="sub"><span class="name">향수·디퓨저</span></a></li>
-                                                <li><a class="sub"><span class="name">헤어·바디소품</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 헤어,바디,구강 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 주방용품 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">주방용품</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">주방소모품·잡화</span></a></li>
-                                                <li><a class="sub"><span class="name">주방·조리도구</span></a></li>
-                                                <li><a class="sub"><span class="name">냄비·팬·솥</span></a></li>
-                                                <li><a class="sub"><span class="name">보관용기·텀블러</span></a></li>
-                                                <li><a class="sub"><span class="name">식기·테이블웨어</span></a></li>
-                                                <li><a class="sub"><span class="name">컵·잔·커피도구</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 주방용품 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 가전제품 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">가전제품</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">주방가전</span></a></li>
-                                                <li><a class="sub"><span class="name">생활가전</span></a></li>
-                                                <li><a class="sub"><span class="name">계절가전</span></a></li>
-                                                <li><a class="sub"><span class="name">디지털·PC</span></a></li>
-                                                <li><a class="sub"><span class="name">대형·설치가전</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 가전제품 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 베이비,키즈 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">베이비·키즈</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">분유·간편 이유식</span></a></li>
-                                                <li><a class="sub"><span class="name">이유식 재료</span></a></li>
-                                                <li><a class="sub"><span class="name">간식·음식·음료</span></a></li>
-                                                <li><a class="sub"><span class="name">건강식품</span></a></li>
-                                                <li><a class="sub"><span class="name">이유·수유용품</span></a></li>
-                                                <li><a class="sub"><span class="name">기저귀·물티슈</span></a></li>
-                                                <li><a class="sub"><span class="name">세제·위생용품</span></a></li>
-                                                <li><a class="sub"><span class="name">스킨·구강케어</span></a></li>
-                                                <li><a class="sub"><span class="name">완구·잡화류</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 베이비,키즈 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 반려동물 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">반려동물</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu">
-                                                <li><a class="sub"><span class="name">강아지 간식</span></a></li>
-                                                <li><a class="sub"><span class="name">강아지 주식</span></a></li>
-                                                <li><a class="sub"><span class="name">고양이 간식</span></a></li>
-                                                <li><a class="sub"><span class="name">고양이 주식</span></a></li>
-                                                <li><a class="sub"><span class="name">반려동물 용품</span></a></li>
-                                                <li><a class="sub"><span class="name">배변·위생</span></a></li>
-                                                <li><a class="sub"><span class="name">소용량·샘플</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- 반려동물 카테고리 끝--------------------------------------------------------------------------->
-                                        
-                                        <!-- 컬리의 추천 카테고리 시작--------------------------------------------------------------------------->
-                                        <li>
-                                            <a class="menu">
-                                                <span class="ico">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_off">
-                                                    <img src="#" alt="카테고리 아이콘" class="ico_on">
-                                                </span>
-                                                <span class="tit">
-                                                    <span class="txt">컬리의 추천</span>
-                                                </span>
-                                            </a>
-                                            <ul class="sub_menu recommend">
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">호텔 예약</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">홈캉스</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">식단관리</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">간편한 아침식사</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">재구매 BEST</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">3천원의 행복</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">컬리마트</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">대용량 상품</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">캠핑</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">1인 가구</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">비건</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">오프라인 맛집</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">컬리가 만든 상품</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">Kurly Only</span>
-                                                    </a>
-                                                </li><li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">KF365</span>
-                                                    </a>
-                                                </li><li>
-                                                    <a class="sub">
-                                                        <span class="thumb" style="background-image:url(#);"><img src="#"></span>
-                                                        <span class="name">1% Table</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- 컬리의 추천 카테고리 끝--------------------------------------------------------------------------->
-                                    </ul>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1293,29 +1294,35 @@
                             <div>
                                 <div class="main_type2">
                                     <div class="category_type">
-                                        <div class="tit_goods"><h3 class="title">MD의 추천</h3>
+                                        <div class="tit_goods"><h3 class="tit">MD의 추천</h3>
                                         </div>
-                                        <div class="category">
-                                            <ul class="list_category">
-                                                <li><a href="#" class="menu">채소</a></li>
-                                                <li><a href="#" class="menu">과일·견과·쌀</a></li>
-                                                <li><a href="#" class="menu">수산·해산·건어물</a></li>
-                                                <li><a href="#" class="menu">정육·계란</a></li>
-                                                <li><a href="#" class="menu">국·반찬·메인요리</a></li>
-                                                <li><a href="#" class="menu">샐러드·간편식</a></li>
-                                                <li><a href="#" class="menu">면·양념·오일</a></li>
-                                                <li><a href="#" class="menu">생수·음료·우유·커피</a></li>
-                                                <li><a href="#" class="menu">간식·과자·떡</a></li>
-                                                <li><a href="#" class="menu">베이커리·치즈·델리</a></li>
-                                                <li><a href="#" class="menu">건강식품</a></li>
-                                                <li><a href="#" class="menu">생활용품·리빙·캠핑</a></li>
-                                                <li><a href="#" class="menu">스킨케어·메이크업</a></li>
-                                                <li><a href="#" class="menu">헤어·바디·구강</a></li>
-                                                <li><a href="#" class="menu">주방용품</a></li>
-                                                <li><a href="#" class="menu">가전제품</a></li>
-                                                <li><a href="#" class="menu">베이비·키즈</a></li>
-                                                <li><a href="#" class="menu">반려동물</a></li>
-                                            </ul>
+                                        <div class="category_menu">
+                                            <div class="bg_category">
+                                                <span class="bg_shadow shadow_bofore"></span>
+                                                <span class="bg_shadow shadow_after"></span>
+                                            </div>
+                                            <div class="category">
+                                                <ul class="list_category">
+                                                    <li data-start="33" data-end="75"><a data-no="907" href="#" class="menu">채소</a></li>
+                                                    <li data-start="100" data-end="188"><a data-no="908" href="#" class="menu">과일·견과·쌀</a></li>
+                                                    <li data-start="213" data-end="327"><a data-no="909" href="#" class="menu">수산·해산·건어물</a></li>
+                                                    <li data-start="353" data-end="424"><a data-no="910" href="#" class="menu">정육·계란</a></li>
+                                                    <li data-start="449" data-end="563"><a data-no="911" href="#" class="menu">국·반찬·메인요리</a></li>
+                                                    <li data-start="588" data-end="685"><a data-no="912" href="#" class="menu">샐러드·간편식</a></li>
+                                                    <li data-start="710" data-end="798"><a data-no="913" href="#" class="menu">면·양념·오일</a></li>
+                                                    <li data-start="823" data-end="954"><a data-no="914" href="#" class="menu cut">생수·음료·우유·커피</a></li>
+                                                    <li data-start="979" data-end="1067"><a data-no="249" href="#" class="menu">간식·과자·떡</a></li>
+                                                    <li data-start="1092" data-end="1219"><a data-no="915" href="#" class="menu">베이커리·치즈·델리</a></li>
+                                                    <li data-start="1243" data-end="1311"><a data-no="032" href="#" class="menu">건강식품</a></li>
+                                                    <li data-start="1336" data-end="1463"><a data-no="918" href="#" class="menu">생활용품·리빙·캠핑</a></li>
+                                                    <li data-start="1488" data-end="1611"><a data-no="233" href="#" class="menu">스킨케어·메이크업</a></li>
+                                                    <li data-start="1636" data-end="1737"><a data-no="012" href="#" class="menu">헤어·바디·구강</a></li>
+                                                    <li data-start="1762" data-end="1830"><a data-no="916" href="#" class="menu">주방용품</a></li>
+                                                    <li data-start="1854" data-end="1922"><a data-no="085" href="#" class="menu">가전제품</a></li>
+                                                    <li data-start="1947" data-end="2031"><a data-no="919" href="#" class="menu">베이비·키즈</a></li>
+                                                    <li data-start="2056" data-end="2124"><a data-no="991" href="#" class="menu">반려동물</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div class="list_goods">
                                             <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
@@ -1391,17 +1398,19 @@
                                                         </li>
                                                     </ul>
                                                 </div>
+                                                <div class="bx-controls bx-controls-direction">
+                                                    <div class="bx-controls-direction">
+                                                        <a class="bx-prev">Prev</a>
+                                                        <a class="bx-next disabled">Next</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                                        <div class="bx-controls bx-controls-direction">
-                                                            <div class="bx-controls-direction">
-                                                                <a class="bx-prev">Prev</a>
-                                                                <a class="bx-next disabled">Next</a>
-                                                            </div>
-                                                        </div>
                                         </div>
                                     <!--↓↓↓↓↓↓md추천의 카테고리를 누르면 버튼의 텍스트가 해당카테고리 이름으로 변함↓↓↓↓-->
                                         <div class="link_cate">
-
+                                            <a class="link">
+                                                <span class="ico">채소</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1420,20 +1429,572 @@
                         <div class="main_type2">
                             <div class="product_list">
                                 <div class="tit_goods">
-                                    <h3><a href="#" class="name"><span class="ico">지금 가장 핫한 상품</span> </a></h3>
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">지금 가장 핫한 상품</span>
+                                        </a>
+                                    </h3>
                                 </div>
                                 <div class="list_goods">
-
+                                    <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="지금 가장 핫한 상품" ata-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <span class="global_sticker">
+                                                            <span class="inner_sticker">
+                                                                <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;">
+                                                                <span class="txt_sticker">
+                                                                    <span>
+                                                                        <span class="emph_sticker">최초특가</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <img src="./img/bean_curd.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634887936221l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[최초특가][종가집] 국산콩 두부 반모 200g (부침/찌개 겸용)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">30%</span>
+                                                            1,540원
+                                                        </span>
+                                                        <span class="cost">2,200원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <span class="global_sticker">
+                                                            <span class="inner_sticker">
+                                                                <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;">
+                                                                <span class="txt_sticker">
+                                                                    <span>
+                                                                        <span class="emph_sticker">최초특가</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <img src="./img/fish_cake_soup.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634878670787l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[최초특가][와카메] 어묵탕 모듬세트</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">35%</span>
+                                                            5,135원
+                                                        </span>
+                                                        <span class="cost">7,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/goosedown.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1632974139245l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[더 조선호텔] 헝가리 사계절 구스다운 3종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">5%</span>
+                                                            817,000원
+                                                        </span>
+                                                        <span class="cost">860,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/rib.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1592281489516l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[한일관 X 백년가게] 순살갈비</a>
+                                                        </span>
+                                                        <span class="price">                                                            
+                                                            29,000원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class data-name="theme_goods_21 "style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/tangerine.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634620472411l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">'햇' 조생 노지 감귤 2.5kg</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">16%</span>
+                                                            9,912원
+                                                        </span>
+                                                        <span class="cost">11,800원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/fish_roe_soup.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1629180148342l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[프레시지] 연안식당 알폭탄 알탕</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">17%</span>
+                                                            15,590원
+                                                        </span>
+                                                        <span class="cost">18,900원</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev" href>Prev</a>
+                                                <a class="bx-next disabled" href>Next</a>                                            
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- 가장 핫한 상품 끝 -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <!-- 추위가 두렵지 않도록, 계절 가전 시작 -->
+                    <div>
+                        <div class="main_type2 bg" style="background-color:background-color: rgb(247, 247, 247);">
+                            <div class="product_list">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <spa class="ico">추위가 두럽지 않도록, 계절 가전</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="추위가 두렵지 않도록, 계절 가전" data-section="theme_goods_9" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);" >
+                                                <li data-index="1" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/air_purifier.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1586421154704l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[아이큐에어] 헬스프로 공기청정기 2종 (HP100/HP250)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">5%</span>
+                                                            1,188,450원 
+                                                        </span>
+                                                        <span class="cost">1,251,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/humidifier.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1604380767765l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[듀플렉스] 간편세척 초음파 가습기 3.2L DP-6090UH</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">10%</span>
+                                                            26,820원
+                                                        </span>
+                                                        <span class="cost">29,800원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/hot_water_mat.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1632987091414l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[경동나비엔] 프리미엄 온수매트 EQM540-KS 킹사이즈</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">3%</span>
+                                                            354,050원
+                                                        </span>
+                                                        <span class="cost">365,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/kettle.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1610589625936l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[라쿠진] 오리엔탈 티팟 2종 LCZ2001</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">5%<span>
+                                                            75,050원
+                                                        </span>
+                                                        <span class="cost">79,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/electricity.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1602051645978l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[보국] 프리미엄 극세사 에어프릴 안심세탁 워셔블 전기요 2종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">5%<span>
+                                                            84,550원
+                                                        </span>
+                                                        <span class="cost">89,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/heater.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634569529317l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[한일] 세라믹 온풍기 히터 HEF-1495</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">5%<span>
+                                                            61,750원
+                                                        </span>
+                                                        <span class="cost">65,000원</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                    <a class="bx-next" href>Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 추위가 두렵지 않도록, 계절 가전 끝 -->
+                    <!-- 365일 최저가 도전 시작 -->
+                    <div>
+                        <div class="main_tyep_2 bg" style="background-color: rgb(247, 247, 247);">
+                            <div class="product_list">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">365일 최저가 도전</span>
+                                            <span class="tit_desc">최저가 도전, 365일 언제나 알뜰하게</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="365일 최저가 도전" data-section="theme_goods_11" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/salmon.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1576818398674l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[은하수산] 노르웨이 생연어회 120g (냉장)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">20%</span>
+                                                            8,800원
+                                                        </span>
+                                                        <span class="cost">11,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/abalone.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1591679368159l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[바븐] 완도 전복 260g 내외 (5마리) (생물)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">15%</span>
+                                                            12,750원
+                                                        </span>
+                                                        <span class="cost">15,000원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/bagel.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1626076681146l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[밀크앤허니] 간편한 베이글 3종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            1,300원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/radish.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1629785470976l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[KF365] 무 1통</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            1,680원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/garlic.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1613703436357l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[KF365] 깐마늘 200g</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            2,660원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/socks.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634796251205l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[KF365] 벗겨지지 않는 페이크삭스 양말 6종(10개입)</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            <span class="dc">33%</span>
+                                                            9,900원
+                                                        </span>
+                                                        <span class="cost">14,000원</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                <a class="bx-next" href>Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 365일 최저가 도전 끝 -->
+                    <!-- 오프라인 맛집 시작 -->
+                    <div>
+                        <div class="main_type2">
+                            <div class="product_list">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">오프라인 맛집</span>
+                                            <span class="tit_desc">유명 맛집의 그 맛을 집에서 그대로 편안하게</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="오프라인 맛집" data-section="theme_goods_12" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/brownie_cookie.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1630564157943l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[노티드] 브라우니 2종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            5,200원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/coffee_beans.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1603946084400l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[노티드] 브라우니 2종</a>
+                                                        </span>
+                                                        <span class="price">
+                                                            16,000원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/dumpling.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1573458950506l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[창화당] 호호 불어먹는 고기왕만두</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            <span class="dc">8%</span>
+                                                            7,268원                           
+                                                        </span> 
+                                                        <span class="cost">7,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class="" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/red_fish_cake" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1627441344214l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[제천빨간오뎅] 빨간오뎅 세트</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            6,900원
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class="" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/strong_noodles.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1625711479454l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[쮸즈] 탄탄면</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            <span class="dc">10%</span>
+                                                            6,210원                            
+                                                        </span> 
+                                                        <span class="cost">6,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/blend_beans.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1631767904882l0.jpg);">
+                                                    </a> 
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[블루보틀: Fall Poetry] 리컬렉션 블렌드 원두</a>
+                                                        </span> 
+                                                        <span class="price">
+                                                            29,000원                            
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev" href="">Prev</a>
+                                                <a class="bx-next disabled" href="">Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 오프라인 맛집 끝 -->
+                    <!-- 컬리의 레시피 시작 -->
+                    <div>
+                        <div class="main_type3">
+                            <div class="main_recipe">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">컬리의 레시피</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
+                                            <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list" style="width: 715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_1.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">시나몬 배 조림 & 카나페</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_2.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">쏨땀</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_3.png" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">굴 크림 스튜</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_4.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">과일 버터 2종</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/main_v2_5.jpg" alt="상품이미지" class="thumb">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <div class="inner_info">
+                                                            <span class="name">
+                                                                <a class="txt">베이컨 체커보드 토스트</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                <a class="bx-next" href>Next</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 컬리의 레시피 끝 -->
                     <!-- 인스타그램 고객 후기 시작 -->
                     <div>
                         <div class="main_type4">
