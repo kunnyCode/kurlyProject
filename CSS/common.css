@@ -322,13 +322,33 @@ header > #gnb > #gnbMenu {
     text-align: left;
 }
 
-#gnb .gnb_main .hover a:hover {
+#gnb .gnb_main .hover>a:hover {
     color: #5f0080;
     text-decoration: underline;
 }
 
-#gnb .gnb_main .menu1 a:hover .gnb_sub{
-    display: inline-block;
+#gnb .gnb_main .menu1 .gnb_sub{
+    display: none
+}
+
+#gnb .gnb_main .menu1 a:hover+div{
+    display: block;
+}
+
+#gnb .gnb_main .menu1 a+div:hover{
+    display: block;
+}
+
+.tit {
+    font-size: 13px;
+}
+
+.icon {
+    margin-left: 7px;
+}
+
+.menu {
+    background-color: aquamarine;
 }
 
 #gnb .gnb_search .inp_search {
@@ -518,9 +538,13 @@ text-align: center;
 
 /* 예린 */
 #gnb .gnb_main .menu1 a {
-    width: 168px;
+    width: 200px;
     text-align: left;
-    margin-left: 5px;
+    background: #fff;
+}
+
+#gnb .gnb_main .menu1 a:hover {
+    background: #d8d8d8;
 }
 
 #gnb .gnb_main .gnb a .txt {
@@ -536,7 +560,7 @@ text-align: center;
     width: 315px;
     padding: 18px 18px 19px 20px;
     border: 1px
- solid #ddd;
+    solid #ddd;
     background-color: #fff;
 }
 
