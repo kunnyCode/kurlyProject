@@ -1442,20 +1442,12 @@
                                                 <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <span class="global_sticker">
-                                                            <span class="inner_sticker">
-                                                                <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;">
-                                                                <span class="txt_sticker">
-                                                                    <span>
-                                                                        <span class="emph_sticker">최초특가</span>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
                                                         </span>
                                                         <img src="./img/bean_curd.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634887936221l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
-                                                            <a class="txt">[최초특가][종가집] 국산콩 두부 반모 200g (부침/찌개 겸용)</a>
+                                                            <a class="txt">[종가집] 국산콩 두부 반모 200g (부침/찌개 겸용)</a>
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">30%</span>
@@ -1467,20 +1459,12 @@
                                                 <li data-index="2" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <span class="global_sticker">
-                                                            <span class="inner_sticker">
-                                                                <span class="bg_sticker" style="background-color: rgb(189, 118, 255); opacity: 0.9;">
-                                                                <span class="txt_sticker">
-                                                                    <span>
-                                                                        <span class="emph_sticker">최초특가</span>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
                                                         </span>
                                                         <img src="./img/fish_cake_soup.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1634878670787l0.jpg);">
                                                     </a>
                                                     <div class="info_goods">
                                                         <span class="name">
-                                                            <a class="txt">[최초특가][와카메] 어묵탕 모듬세트</a>
+                                                            <a class="txt">[와카메] 어묵탕 모듬세트</a>
                                                         </span>
                                                         <span class="price">
                                                             <span class="dc">35%</span>
@@ -1682,7 +1666,7 @@
                     <!-- 추위가 두렵지 않도록, 계절 가전 끝 -->
                     <!-- 365일 최저가 도전 시작 -->
                     <div>
-                        <div class="main_tyep_2 bg" style="background-color: rgb(247, 247, 247);">
+                        <div class="main_type2 bg" style="background-color: rgb(247, 247, 247);">
                             <div class="product_list">
                                 <div class="tit_goods">
                                     <h3 class="tit">

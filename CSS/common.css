@@ -992,6 +992,109 @@ page_main .list_goods a {
 /* } */
 
 
+/*  365일 최저가 : 채현 작성*/
+.page_main .tit_goods .name {
+    position: relative;
+    font-weight: 700;
+}
+
+.page_main .tit_goods a {
+    cursor: pointer;
+}
+
+.page_main .tit_goods .name .ico {
+    padding: 0 31px;
+    background: url(https://res.kurly.com/pc/service/main/1908/ico_title_link_x1.png) no-repeat 100% 50%;
+    font-weight: 700;
+}
+
+.page_main .tit_goods .tit_desc {
+    display: block;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main_type2 .list_goods {
+    width: 1050px;
+    height: 506px;
+    margin: 0 auto;
+}
+.main_type2 .list_goods .thumb_goods {
+    position: relative;
+    background-color: #eee;
+}
+.page_main .list_goods .thumb_goods {
+    display: block;
+    overflow: hidden;
+}
+.page_main .list_goods a {
+    cursor: pointer;
+}
+
+.main_type2 .list_goods .thumb {
+    width: 249px;
+    height: 320px;
+}
+.page_main .list_goods .thumb_goods .thumb {
+    display: block;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+img, video, canvas {
+    max-width: 100%;
+}
+img {
+    border: 0;
+}
+.main_type2 .list_goods .thumb {
+    width: 249px;
+    height: 320px;
+}
+
+.main_type2 .list_goods .name {
+    display: block;
+    overflow: hidden;
+    max-height: 50px;
+    margin-top: 12px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+.main_type2 .list_goods .txt {
+    font-size: 16px;
+    line-height: 23px;
+}
+.page_main .list_goods a {
+    cursor: pointer;
+}
+li{
+    word-break: break-all;
+}
+.page_aticle button, .page_aticle input, .page_aticle select, .page_aticle * {
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.main_type2 .list_goods .txt {
+    font-size: 16px;
+    line-height: 23px;
+}
+
 /* 컬리의 레시피 : 현이 작성 */
 
 .page_main .list_goods .thumb_goods:hover .thumb {
