@@ -1084,17 +1084,20 @@ page_main .list_goods a {
     vertical-align: top;
 }
 
-#qnb .link_menu {
-    display: block;
-    height: 21.5px;
-    padding-top: 7px;
+#qnb .side_menu {
+    width: 80px;
     border: 1px solid #ddd;
-    border-top: none;
-    text-align: center;
+    border-top: 0 none;
     background-color: #fff;
 }
 
-#qnb .link_menu:first-child { border-top: 1px solid #ddd;;}
+#qnb .link_menu {
+    display: block;
+    height: 29px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
 
 #qnb .link_menu:hover,
 #qnb .link_menu.on { color: #5f0080; }
@@ -1228,7 +1231,7 @@ page_main .list_goods a {
 }
 
 #footer .cc_bulkorder .tit, #footer .cc_kakao .tit, #footer .cc_qna .tit {
-    height: 30px;
+    height: 40px;
     padding-top: 7px;
     margin-top: 3px;
     border: 1px solid #e3e3e3;
