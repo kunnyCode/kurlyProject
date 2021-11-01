@@ -700,13 +700,108 @@
                 <div class="page_section">
                   <div class="head_aticle">
                     <h2 class="tit">"공시사항"<span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span></h2>
-                  </div>                 
+                 </div>                 
                 </div>
-                scri
+                <script></script>
               </div>
             </div>
 
+            <div id="layerDSR">
+                <div class="bg_dim"></div>
+                <div class="in_layer">
+                    <div class="inner_layer layer_star"><strong class="dsr_result">샛별배송 지역입니다.</strong></div>
+                    <div class="inner_layer layer_normal"><strong class="dsr_result">택배배송 지역입니다.</strong></div>
+                    <div class="inner_layer layer_none"><strong class="dsr_result">배송 불가 지역입니다.</strong></div>
+                    <div class="layer_btn1">
+                    <button type="button" class="btn_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인</button>
+                    </div>
+                    <button type="button" class="layer_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
+                </div>
+            </div>
+            <!-- main 끝 -------------------------------------------------------->
+            <!--footer 시작 ----------------------------------------------->
+            <div id="footer">
+                <div class="inner_footer">
+                    <div class="footer_cc">
+                        <h2 class="tit_cc">고객행복센터</h2>
+                        <div class="cc_view cc_call">
+                            <h3><span class="tit">1644-1107</span></h3>
+                            <dl class="list">
+                                <dt>365고객센터</dt>
+                                <dd>오전 7시 ~ 오후7시</dd>
+                            </dl>
+                        </div>
+                        <div class="cc_view cc_kakao">
+                            <h3><span class="tit">1644-1107</span></h3>
+                            <dl class="list">
+                                <dt>365고객센터</dt>
+                                <dd>오전7시~ 오후 7시</dd>
+                            </dl>
+                        </div>
+                        <div class="cc_view cc_qna">
+                            <h3><a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a></h3>
+                            <dl class="list">
+                                <dt>24시간 접수 가능</dt>
+                                <dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
+                            </dl>
+                        </div>
+                        <div class="cc_view cc_bulkorder">
+                            <h3><a href="/shop/main/html.php?htmid=mypage/bulk_order.htm" class="tit">대량주문 문의</a></h3>
+                            <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
+                        </div>
+                    </div>
 
+                    <div class="company">
+                        <ul class="list">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        "법인명(상호) : 주식회사 컬리"
+                        <span class="bar">|</span>
+                        "사업자등록번호 : 261-81-23567"
+                        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&amp;apv_perm_no=" target="_blank" class="link">사업자정보 확인</a>
+                        <br>
+                        "통신판매업 : 제 2018- 서울강남 -01646호"
+                        <span class="bar">|</span>
+                        "개인정보보호책임자 : 이원준"
+                        <br>
+                        "주소 : 서울특별시 강남구  테헤란로 133,18층(연삼동)"
+                        <span class="bar">|</span>
+                        "대표이사 : 김슬아"
+                        <br>
+                        "입정문의"
+                        <a href="https://forms.gle/oKMAe1SaicqMX3SC9" target="_blank" class="link">입점문의하기</a>
+                        <span class="bar">|</span>
+                        "제휴문의:"
+                        <a href="mailto:business@kurlycorp.com" class="link">business@kurlycorp.com</a>
+                        <br>
+                        "채용문의"
+                        <a href="mailto:recruit@kurlycorp.com" class="link">recruit@kurlycorp.com</a>
+                        <br>
+                        "팩스 : 070 - 7500 - 6098"
+                        <span class="bar">|</span>
+                        "이메일 : "
+                        <a href="mailto:help@kurlycorp.com" class="link">help@kurlycorp.com</a>
+                        <br>
+                        "대량주문 문의"
+                        <a href="mailto:kurlygift@kurlycorp.com" class="link">kurlygift@kurlycorp.com</a>
+                        <em class="copy">© KURLY CORP. ALL RIGHTS RESERVED</em>
+
+                        <ul class="list_sns">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_link"></div>
+            </div>
 
 
 
