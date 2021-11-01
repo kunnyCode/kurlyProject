@@ -136,6 +136,7 @@ header > #userMenu> .listMenu {
 }
 
 
+
 #userMenu .menu_login .link_menu {
     padding: 0 16px 0 15px;
 }
@@ -150,6 +151,7 @@ header > #userMenu> .listMenu {
     background: url(../img/ico_down_8x5.png) no-repeat 0 0;
 }
 
+
 /* #userMenu .menu:before {
     content: "";
     position: absolute;
@@ -159,6 +161,7 @@ header > #userMenu> .listMenu {
 } */
 
 
+/* 고객센터 글씨 */
 header > #userMenu > .listMenu> li > .linkMenu{
     float: left;
     height: 37px;
@@ -168,9 +171,10 @@ header > #userMenu > .listMenu> li > .linkMenu{
     white-space: nowrap;
 }
 
-/* header > #userMenu > .listMenu> li >.회원가입 { 
+/* 회원가입 부분글씨색 변경
+#userMenu .menu .link_menu {
     color: #5f0080;
-/* } */
+} */
 
 
 #userMenu .lst .sub {
@@ -187,6 +191,7 @@ header > #userMenu > .listMenu> li > .linkMenu{
     border: 1px solid #ddd;
     background-color: #fff;
 }
+/* 드롭다운바 끝 */
 
 header > #headerLogo{
     position: relative;
@@ -208,6 +213,7 @@ header > #headerLogo .logo {
     height: 79px;
     margin: 0 auto;
 }
+/* 새벽배송 */
 header > #headerLogo > .logo > a > span > img{
     width: 103px;
     height: 79px;
@@ -219,11 +225,13 @@ header > #headerLogo > .bnr_delivery > img{
     height: 22px;
 }
 
+/* headerLogo 끝 */
 
 header > #gnb {
     height:56px;
 }
 
+/* main */
 header > #gnb .gnb_main{
     overflow:hidden;
     width:1050px;
@@ -237,7 +245,17 @@ header  .gnb_main .gnb a {
     height: 55px;
     /* padding: 16px 0 0; */
     font-size: 16px;
-    color: #333;
+    color:#333;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* 상단바 */
+
+/* <<<<<<< HEAD */
+#gnb .gnb_main .gnb a:hover {
+    font-size: 16px;
+    color: #5f0080;
     line-height: 20px;
     text-align: center;
 }
@@ -253,6 +271,7 @@ a:-webkit-any-link {
 span.ico:hover{
     color: #5f0080;
 }
+/* >>>>>>> main */
 
 header > #gnb .inner_gnbkurly {
     position: relative;
@@ -390,10 +409,7 @@ header > #gnb > #gnbMenu {
     opacity: 0;
 }
 
-/* DK */
-#gnb .gnb_search .btn_search:hover {
-    color: #5f0080;
-}
+
 
 #gnb .btn_location {
     overflow: hidden;
@@ -412,8 +428,15 @@ header > #gnb > #gnbMenu {
     background-image: url(../img/ico_delivery_setting.svg);
 }
 
-#gnb .gnb_location.on:hover {
-    color: #5f0080;
+
+#gnb .btn_location.on:hover {
+    background-image: url(../img/ico_delivery_setting.svg);
+    filter: invert(14%) sepia(25%) saturate(7147%) hue-rotate(272deg) brightness(57%) contrast(127%);
+}
+
+#gnb .gnb_sub:hover{
+    box-sizing: border-box;
+    
 }
 
 #gnb .cart_count {
@@ -429,6 +452,12 @@ header > #gnb > #gnbMenu {
     background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%;
 
 }
+
+#gnb .cart_count .btn_cart:hover {
+    background-image: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg);
+    filter: invert(14%) sepia(25%) saturate(7147%) hue-rotate(272deg) brightness(57%) contrast(127%);
+}
+
 #gnb .cart_count .inner_cartcount {
     text-align: center;
     font-weight: 400;
@@ -459,6 +488,11 @@ header > #gnb > #gnbMenu {
     height: 14px;
     margin: 5px 14px 0 0;
     background: url(../img/ico_gnb_all_off.png) no-repeat;
+}
+
+#gnb .gnb_main .menu1 .ico:hover {
+    background-image: url(../img/ico_gnb_all_off.png);
+    filter: invert(14%) sepia(25%) saturate(7147%) hue-rotate(272deg) brightness(57%) contrast(127%);
 }
 /* 바디 -------------------------------------------------*/
 
@@ -560,7 +594,12 @@ text-align: center;
     width: 315px;
     padding: 18px 18px 19px 20px;
     border: 1px
-    solid #ddd;
+
+/* <<<<<<< HEAD */
+solid #ddd;
+
+    /* solid #ddd; */
+/* >>>>>>> main */
     background-color: #fff;
 }
 
@@ -872,6 +911,9 @@ page_main .list_goods a {
 }
 /* } */
 
+/* <<<<<<< HEAD */
+/* footer */
+
 
 /* 여건작성 {*/
 /* MD추천 */
@@ -949,6 +991,109 @@ page_main .list_goods a {
 }
 /* } */
 
+
+/*  365일 최저가 : 채현 작성*/
+.page_main .tit_goods .name {
+    position: relative;
+    font-weight: 700;
+}
+
+.page_main .tit_goods a {
+    cursor: pointer;
+}
+
+.page_main .tit_goods .name .ico {
+    padding: 0 31px;
+    background: url(https://res.kurly.com/pc/service/main/1908/ico_title_link_x1.png) no-repeat 100% 50%;
+    font-weight: 700;
+}
+
+.page_main .tit_goods .tit_desc {
+    display: block;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main_type2 .list_goods {
+    width: 1050px;
+    height: 506px;
+    margin: 0 auto;
+}
+.main_type2 .list_goods .thumb_goods {
+    position: relative;
+    background-color: #eee;
+}
+.page_main .list_goods .thumb_goods {
+    display: block;
+    overflow: hidden;
+}
+.page_main .list_goods a {
+    cursor: pointer;
+}
+
+.main_type2 .list_goods .thumb {
+    width: 249px;
+    height: 320px;
+}
+.page_main .list_goods .thumb_goods .thumb {
+    display: block;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+img, video, canvas {
+    max-width: 100%;
+}
+img {
+    border: 0;
+}
+.main_type2 .list_goods .thumb {
+    width: 249px;
+    height: 320px;
+}
+
+.main_type2 .list_goods .name {
+    display: block;
+    overflow: hidden;
+    max-height: 50px;
+    margin-top: 12px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+.main_type2 .list_goods .txt {
+    font-size: 16px;
+    line-height: 23px;
+}
+.page_main .list_goods a {
+    cursor: pointer;
+}
+li{
+    word-break: break-all;
+}
+.page_aticle button, .page_aticle input, .page_aticle select, .page_aticle * {
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.main_type2 .list_goods .txt {
+    font-size: 16px;
+    line-height: 23px;
+}
 
 /* 컬리의 레시피 : 현이 작성 */
 
@@ -1042,17 +1187,20 @@ page_main .list_goods a {
     vertical-align: top;
 }
 
-#qnb .link_menu {
-    display: block;
-    height: 21.5px;
-    padding-top: 7px;
+#qnb .side_menu {
+    width: 80px;
     border: 1px solid #ddd;
-    border-top: none;
-    text-align: center;
+    border-top: 0 none;
     background-color: #fff;
 }
 
-#qnb .link_menu:first-child { border-top: 1px solid #ddd;;}
+#qnb .link_menu {
+    display: block;
+    height: 29px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
 
 #qnb .link_menu:hover,
 #qnb .link_menu.on { color: #5f0080; }
@@ -1127,6 +1275,7 @@ page_main .list_goods a {
 
 
 /* footer : 현이 작성*/
+/* >>>>>>> main */
 
 #footer {
     width: 1050px;
@@ -1185,7 +1334,7 @@ page_main .list_goods a {
 }
 
 #footer .cc_bulkorder .tit, #footer .cc_kakao .tit, #footer .cc_qna .tit {
-    height: 30px;
+    height: 40px;
     padding-top: 7px;
     margin-top: 3px;
     border: 1px solid #e3e3e3;
