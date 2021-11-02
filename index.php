@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
-    <!-- <script src="/js/jquery.bxslider.min.js"></script> -->
+    <script src="/js/jquery.bxslider.min.js"></script>
     <!-- bxSlider CSS file -->
     <!-- <link href="/lib/jquery.bxslider.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./CSS/common.css">
     <script>
     $(document).ready(function(){
-      $('.slider').bxSlider();
+        $('._slider').bxSlider();
     });
-  </script>
+    </script>
     <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 </head>
 <body>
@@ -767,9 +767,8 @@
                                         <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
                                             <!-- bx-viewport를 만들었어니 메인배너 모아짐 -->
                                             <div class="bx-viewport">
-                                                <!-- bxslider는 일단 원래 페이지에는 없는 클래스명으로 보입니다 -->
                                                 <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다. -->
-                                                <ul class="bxslider list" style="width: 1440px; margin: 0px auto;">
+                                                <ul class="bxslider list">
                                                     <!-- 이미지 비율 때문에 overflow: hidden 값 비활성화 : 여건 -->
                                                     <li data-index="11" class="bx-clone" data-name="main_banner" style="float: left; list-style: none; position: relative; width: 1440px; margin: 0 auto; overflow: hidden;">
                                                         <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
@@ -2300,9 +2299,9 @@
             pager: false, // 현재 위치 페이징 표시 여부 설정
             moveSlides: 1, // 슬라이드 이동시 개수
             slideWidth: 1900, // 슬라이드 너비
-            minSlides: 4, // 최소 노출 개수
-            maxSlides: 4, // 최대 노출 개수
-            slideMargin: 5, // 슬라이드간의 간격
+            minSlides: 1, // 최소 노출 개수
+            maxSlides: 1, // 최대 노출 개수
+            slideMargin: 0, // 슬라이드간의 간격
             auto: true, // 자동 실행 여부
             autoHover: true, // 마우스 호버시 정지 여부
             controls: true // 이전 다음 버튼 노출 여부 
