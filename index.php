@@ -687,14 +687,25 @@
                     <!-- 사이드 퀵 메뉴 시작 -->
                     <div id="qnb" class="quick-navigation" style="top: 70px;">
                         <div class="bnr_qnb" id="brnQuick">
-                            <a href="/shop/board/view.php?id=notice&no=64" id="brnQuickObj">
+                            <a href="#" id="brnQuickObj">
                                 <img class="thumb" src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송">
                             </a>
                         </div>
+                        <script>
+                            var brnQuick = {
+                                nowTime : function(){
+                                    $.ajax({
+                                        url : campaginUrl + 'pc/service/bnr_quick.html'
+                                    }).done(function(result){
+                                        $('#brnQuick').html(result);
+                                    });
+                                }
+                            }
+                        </script>
                         <div class="side_menu">
-                            <a href="/shop/board/html.php?htmid=event/kurly.htm&name=lovers" class="link_menu">등급별 혜택</a>
-                            <a href="/shop/board/list.php?id=recipe" class="link_menu">레시피</a>
-                            <a href="/shop/goods/goods_review_best.php">베스트 후기</a>
+                            <a href="#" class="link_menu">등급별 혜택</a>
+                            <a href="#" class="link_menu">레시피</a>
+                            <a href="#" class="link_menu">베스트 후기</a>
                         </div>
                         <div class="side_recent" style="display: none;">
                             <strong class="tit">최근 본 상품</strong>
@@ -704,6 +715,39 @@
                             <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
                             <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
                         </div>
+                        <script>
+                            var getGoodsRecent = (function(){
+                                var i, len, getGoodsRecent, item, _nowTime = '';
+
+                                _goodsRecent();
+                                function _goodsRecent(){
+                                    if(localStorage.getItem('goodsRecent') === null){
+                                        return false;
+                                    }
+                                    try{
+                                        getGoodsRecent = JSON.parse(localStorage.getItem("goodsRecent"));
+                                        len = getGoodsRecent.length;
+                                        if(addDays(getGoodsRecent[len - 1].time, 1) < _nowTime){
+                                            localStorage.removeItem('goodsRecent');
+                                        }else{
+                                            for(i = 0; 1 < len; i++){
+                                                item = '<li><a class="link_goods" href="/shop/goods/goods_view.php?goodsno=' + getGoodsRecent[i].no + '"><img src="' + getGoodsRecent[i].thumb + '" alt=""></a></li>';
+                                                $('.side_recent .list').append(item);
+                                            }
+                                            $('.side_recent').show();
+                                        }
+                                    } catch(e){
+                                        console.log("JSON parse error from the Quick menu goods list!!!", e);
+                                    }
+                                }
+
+                                function addDays(date, days){
+                                    var result = new Date(date);
+                                    result.setDate(result.getDate() + days);
+                                    return result.getTime();
+                                }
+                            })();
+                        </script>
                     </div>
                     <!-- 사이드 퀵 메뉴 끝 -->
                     
@@ -2132,7 +2176,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="/shop/main/html.php?htmid=mypage/bulk_order.htm" class="tit">대량주문 문의</a>
+                                <a href="#" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>
@@ -2140,7 +2184,7 @@
                     <div class="company">
                         <ul class="list">
                             <li>
-                                <a class="link" href="/shop/introduce/about_kurly.php">컬리소개</a>
+                                <a class="link" href="#">컬리소개</a>
                             </li>
                             <li>
                                 <a class="link" href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&showinfo=0&wmode=opaque&enablejsapi=1" onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a>
@@ -2149,13 +2193,13 @@
                                 <a class="link" href="https://marketkurly.recruiter.co.kr/appsite/company/index" target="_blank">인재채용</a>
                             </li>
                             <li>
-                                <a class="link" href="/shop/service/agreement.php">이용약관</a>
+                                <a class="link" href="#">이용약관</a>
                             </li>
                             <li>
-                                <a class="link emph" href="/shop/service/private.php">개인정보처리방침</a>
+                                <a class="link emph" href="#">개인정보처리방침</a>
                             </li>
                             <li>
-                                <a class="link" href="/shop/service/guide.php">이용안내</a>
+                                <a class="link" href="#">이용안내</a>
                             </li>
                         </ul>
                         법인명 (상호) : 주식회사 컬리
