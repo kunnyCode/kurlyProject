@@ -70,9 +70,9 @@
                                 </div>
                             </div>
                             <a class="info">
-                                <span class="name">상품명</span>
-                                <span class="cost"><span class="price">~~~~원</span></span>
-                                <span class="desc">상품설명</span>
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
                                 <span class="tag"></span>
                             </a>
                         </li>
