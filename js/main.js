@@ -5,16 +5,18 @@
 
 //HTML에서 변수를 가져온다
 let slider1 = document.querySelectorAll('.slider'), //ul태그
+
     slide0 = document.querySelectorAll('.s0 .slider li'), // 이상품
     slide1 = document.querySelectorAll('.s1 .slider li'), // 특가
     slide2 = document.querySelectorAll('.s2 .slider li'), // 놓치면
     slide3 = document.querySelectorAll('.s3 .slider li'), // MD
     slide4 = document.querySelectorAll('.s4 .slider li'), // 가장 핫한
     slide5 = document.querySelectorAll('.s5 .slider li'), // 추위가
-    slide6 = document.querySelectorAll('.s6 .slider li'), // 365
-    slide7 = document.querySelectorAll('.s7 .slider li'), // 오프라인
-    slide8 = document.querySelectorAll('.s8 .slider li'), // 컬리 레시피
-    slide9 = document.querySelectorAll('.s9 .slider li'), // 인스타그램
+    slide6 = document.querySelectorAll('.s6 .slider li'), // 컬리가
+    slide7 = document.querySelectorAll('.s7 .slider li'), // 365
+    slide8 = document.querySelectorAll('.s8 .slider li'), // 오프라인
+    slide9 = document.querySelectorAll('.s9 .slider li'), // 컬리 레시피
+    slide10 = document.querySelectorAll('.s10 .slider li'), // 인스타그램
     
     //slideCount = 0, //slide0.length, //끝인지 마지막인지 구분용도
     slideWidth = 249,
@@ -24,7 +26,9 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
     prevBtn = document.querySelectorAll('.bx-prev'),
     nextBtn = document.querySelectorAll('.bx-next');
 
-
+    
+    console.log(slider1.length);
+    console.log(nextBtn.length);
 
     let currentIdx0 = 0,
         currentIdx1 = 0,
@@ -36,6 +40,7 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
         currentIdx7 = 0,
         currentIdx8 = 0,
         currentIdx9 = 0;
+        currentIdx10 = 0;
 
 
     //ul width 값 설정
@@ -47,9 +52,9 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
     slider1[5].style.width = (slideWidth + slideMargin) * slide5.length +'px'; 
     slider1[6].style.width = (slideWidth + slideMargin) * slide6.length +'px'; 
     slider1[7].style.width = (slideWidth + slideMargin) * slide7.length +'px'; 
-    slider1[8].style.width = (slideWidth2 + slideMargin) * slide8.length +'px'; 
-    slider1[9].style.width = slideWidth3 * slide9.length +'px'; 
-
+    slider1[8].style.width = (slideWidth + slideMargin) * slide8.length +'px';
+    slider1[9].style.width = (slideWidth2 + slideMargin) * slide9.length +'px';  
+    slider1[10].style.width = (slideWidth3 * slide10.length) +'px';
 
     
     //nextBtn, prevBtn 버튼 클릭시 오는 파라미터를 통해 4페이지씩 롤링
@@ -236,7 +241,7 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
 
 
 
-        //365 최저가 도전
+        // 컬리가 만든 상품
         function moveSlide6(num){
             slider1[6].style.left = - num * 267 + 'px';
             currentIdx6 = num;
@@ -272,7 +277,7 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
 
 
 
-        //오프라인 맛집
+        //365 최저가 도전
         function moveSlide7(num){
             slider1[7].style.left = - num * 267 + 'px';
             currentIdx7 = num;
@@ -308,9 +313,9 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
 
 
 
-        //컬리의 레시피
+        //오프라인 맛집
         function moveSlide8(num){
-        slider1[8].style.left = - num * (338+18) + 'px';
+        slider1[8].style.left = - num * 267 + 'px';
         currentIdx8 = num;
 
         
@@ -343,16 +348,16 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
 
 
 
-    //인스타그램
+    // 컬리의 레시피 
     function moveSlide9(num){
-        slider1[9].style.left = - num * 175 + 'px';
+        slider1[9].style.left = - num * (338+18) + 'px';
         currentIdx9 = num;
 
         
             if(currentIdx9 == 0){
                 prevBtn[8].classList.add("disabled");
                 nextBtn[8].classList.remove("disabled");
-            }else if(currentIdx9 == 6){
+            }else if(currentIdx9 == 2){
                 nextBtn[8].classList.add("disabled");
                 prevBtn[8].classList.remove("disabled");
             }
@@ -362,18 +367,55 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
     
     nextBtn[8].addEventListener('click', function(){
         if(currentIdx9 < slide8.length - 4){
-            moveSlide9(currentIdx9 + 6);
+            moveSlide9(currentIdx9 + 2);
             //console.log(currentIdx9);
         }
     });
 
     
     prevBtn[8].addEventListener('click', function(){
-        if(currentIdx9 > slide8.length - 19){
-            moveSlide9(currentIdx9 - 6);
+        if(currentIdx9 > slide9.length - 19){
+            moveSlide9(currentIdx9 - 2);
             //console.log(currentIdx9); 
         }
     });
+
+
+
+
+
+
+    // 인스타그램
+    function moveSlide10(num){
+        slider1[10].style.left = - num * 175 + 'px';
+        currentIdx10 = num;
+
+        
+            if(currentIdx10 == 0){
+                prevBtn[9].classList.add("disabled");
+                nextBtn[9].classList.remove("disabled");
+            }else if(currentIdx10 == 6){
+                nextBtn[9].classList.add("disabled");
+                prevBtn[9].classList.remove("disabled");
+            }
+        }
+        
+
+    
+    nextBtn[9].addEventListener('click', function(){
+        if(currentIdx10 < slide10.length - 4){
+            moveSlide10(currentIdx10 + 6);
+            //console.log(currentIdx10);
+        }
+    });
+    
+        
+        prevBtn[9].addEventListener('click', function(){
+            if(currentIdx10 > slide10.length - 7){
+                moveSlide10(currentIdx10 - 6);
+                //console.log(currentIdx10); 
+            }
+        });
 
     // console.log(slider1);
     // console.log(slide0.length);
