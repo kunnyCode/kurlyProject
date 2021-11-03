@@ -85,7 +85,7 @@
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
                                                         <a class="menu">
-                                                            <span class="icon" style="margin-left: 7px">
+                                                            <span class="icon">
                                                                 <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
@@ -96,7 +96,7 @@
                                                         <ul class="sub_menu">
                                                             <li><a class="sub"><span class="name">친환경</span></a></li>
                                                             <li><a class="sub"><span class="name">고구마·감자·당근</span></a></li>
-                                                            <li><a class="sub"><span class="name">치금치·쌈채소·나물</span></a></li>
+                                                            <li><a class="sub"><span class="name">시금치·쌈채소·나물</span></a></li>
                                                             <li><a class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
                                                             <li><a class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
                                                             <li><a class="sub"><span class="name">오이·호박·고추</span></a></li>                                                
