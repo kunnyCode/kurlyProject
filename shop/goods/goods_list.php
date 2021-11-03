@@ -76,6 +76,108 @@
                                 <span class="tag"></span>
                             </a>
                         </li>
+
+                        <li class="item">
+                            <div class="thumb">
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                <div class="group_btn">
+                                    <button type="button" class="btn btn_cart">
+                                        <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="info">
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                <span class="tag"></span>
+                            </a>
+                        </li>
+
+                        <li class="item">
+                            <div class="thumb">
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                <div class="group_btn">
+                                    <button type="button" class="btn btn_cart">
+                                        <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="info">
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                <span class="tag"></span>
+                            </a>
+                        </li>
+
+                        <li class="item">
+                            <div class="thumb">
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                <div class="group_btn">
+                                    <button type="button" class="btn btn_cart">
+                                        <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="info">
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                <span class="tag"></span>
+                            </a>
+                        </li>
+
+                        <li class="item">
+                            <div class="thumb">
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                <div class="group_btn">
+                                    <button type="button" class="btn btn_cart">
+                                        <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="info">
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                <span class="tag"></span>
+                            </a>
+                        </li>
+
+                        <li class="item">
+                            <div class="thumb">
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                <div class="group_btn">
+                                    <button type="button" class="btn btn_cart">
+                                        <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="info">
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                <span class="tag"></span>
+                            </a>
+                        </li>
+
+                        <li class="item">
+                            <div class="thumb">
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                <div class="group_btn">
+                                    <button type="button" class="btn btn_cart">
+                                        <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a class="info">
+                                <span class="name">장흥 표고 버섯 가루 70g</span>
+                                <span class="cost"><span class="price">5,490원</span></span>
+                                <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                <span class="tag"></span>
+                            </a>
+                        </li>
                         <!--상품리스트 안에서 반복되는 li 구조 끝-------------------------------------------->
                     </ul>
                 </div>
@@ -91,8 +193,8 @@
                     <span><a class="layout-pagination-button layout-pagination-number">3</a></span>
                     <span><a class="layout-pagination-button layout-pagination-number">4</a></span>
                     <span><a class="layout-pagination-button layout-pagination-number">5</a></span>
-                    <a href="#" class="layout-pagination-button layout-pagination-first-page">다음 페이지로 가기</a>
-                    <a href="#" class="layout-pagination-button layout-pagination-prev-page">맨 끝 페이지로 가기</a>
+                    <a href="#" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
+                    <a href="#" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
                 </div>
             </div>
         </div>

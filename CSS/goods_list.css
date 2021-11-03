@@ -149,6 +149,7 @@
 
 #goodsList .list_goods {
     overflow: hidden;
+    width: 1050px;
 }
 
 #goodsList .list_goods .inner_listgoods {
@@ -265,4 +266,59 @@
     display: block;
     padding: 12px 10px 10px 0;
     cursor: default;
+}
+
+.layout-pagination {
+    margin: 60px 0 0;
+    text-align: center;
+}
+
+.page_aticle .layout-pagination {
+    font-size: 0;
+}
+
+.layout-pagination-first-page {
+    background-image: url(../img/goods_list/icon-pagination-first.webp); 
+}
+
+.layout-pagination-first-page, .layout-pagination-prev-page,
+.layout-pagination-next-page, .layout-pagination-last-page {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-indent: -9999px;
+}
+
+.page_aticle .layout-pagination-first-page:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.page_aticle .layout-pagination a {
+    cursor: pointer;
+}
+
+.page_aticle .layout-pagination a, .page_aticle .layout-pagination strong {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.layout-pagination-number:hover, .layout-pagination-number.__active {
+    background-color: #f7f7f7;
+    color: #5f0080;
+}
+
+.layout-pagination-number {
+     line-height: 34px;
+}
+
+.layout-pagination-button {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+    vertical-align: top;
+}
+
+.layout-pagination-last-page {
+    background-image: url(../img/goods_list/icon-pagination-last.webp);
 }
