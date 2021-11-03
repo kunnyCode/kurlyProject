@@ -800,12 +800,32 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer_link"></div>
+                <div class="footer_link">
+                    <div class="authentication">
+                        <a href="#none" onclick="popup('https://res.kurly.com/pc/img/1909/img_isms.jpg',550,700);return false;" class="mark" target="_blank">
+                            <img src="https://res.kurly.com/pc/ico/2001/logo_isms.png" alt="isms 로고" class="logo">
+                        <p class="txt">
+                        [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영<br>
+                        [유효기간] 2019.04.01 ~ 2022.03.31
+                        </p>
+                        </a>
+                        <a href="#none" onclick="popup('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&amp;certNum=2021-EP-R003',527,720);return false;" class="mark" target="_blank">
+                            <img src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
+                        <p class="txt">
+                        개인정보보호 우수 웹사이트 ·<br>
+                        개인정보처리시스템 인증 (ePRIVACY PLUS)
+                        </p>
+                        </a>
+                        <a href="#none" onclick="popup('http://pgweb.uplus.co.kr/ms/escrow/s_escrowYn.do?mertid=go_thefarmers',460,550);return false;" class="mark lguplus" target="_blank">
+                        <img src="https://res.kurly.com/pc/service/main/2009/logo_payments.png" alt="payments 로고" class="logo">
+                        <p class="txt">
+                        고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br>
+                        토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+                        </p>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-
-
-
     </div>
   </div>
 </body>
