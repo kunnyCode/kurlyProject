@@ -685,7 +685,7 @@
             <main id="main">
                 <section id="content">
                     <!-- 사이드 퀵 메뉴 시작 -->
-                    <div id="qnb" class="quick-navigation" style="top: 70px;">
+                    <div id="qnb" class="quick-navigation" style="top: 516px;">
                         <div class="bnr_qnb" id="brnQuick">
                             <a href="#" id="brnQuickObj">
                                 <img class="thumb" src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송">
