@@ -522,6 +522,13 @@ header > #gnb > #gnbMenu {
 .bx-wrapper {
     margin: 0 auto;
 }
+
+.bx-wrapper .bx-viewport .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease-out;
+}
 /* }*/
 
 .bx-viewport {
