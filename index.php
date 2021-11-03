@@ -13,6 +13,8 @@
     <!-- bxSlider CSS file -->
     <!-- <link href="/lib/jquery.bxslider.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./CSS/common.css">
+    <script defer src="./js/main.js"></script>
+    
     <script>
     $(document).ready(function(){
         $('._slider').bxSlider();
@@ -84,7 +86,7 @@
                                                 <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
-                                                        <a class="menu">
+                                                        <a class="menu" href="./shop/goods/goods_list.php">
                                                             <span class="icon" style="margin-left: 7px">
                                                                 <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
@@ -96,7 +98,7 @@
                                                         <ul class="sub_menu">
                                                             <li><a class="sub"><span class="name">친환경</span></a></li>
                                                             <li><a class="sub"><span class="name">고구마·감자·당근</span></a></li>
-                                                            <li><a class="sub"><span class="name">치금치·쌈채소·나물</span></a></li>
+                                                            <li><a class="sub"><span class="name">시금치·쌈채소·나물</span></a></li>
                                                             <li><a class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
                                                             <li><a class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
                                                             <li><a class="sub"><span class="name">오이·호박·고추</span></a></li>                                                
@@ -685,7 +687,7 @@
             <main id="main">
                 <section id="content">
                     <!-- 사이드 퀵 메뉴 시작 -->
-                    <div id="qnb" class="quick-navigation" style="top: 70px;">
+                    <div id="qnb" class="quick-navigation" style="top: 516px;">
                         <div class="bnr_qnb" id="brnQuick">
                             <a href="#" id="brnQuickObj">
                                 <img class="thumb" src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송">
@@ -767,8 +769,8 @@
                                         <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
                                             <!-- bx-viewport를 만들었어니 메인배너 모아짐 -->
                                             <div class="bx-viewport">
-                                                <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다. -->
-                                                <ul class="bxslider list">
+                                                <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다., ul list 클래스 삭제 -->
+                                                <ul class="bxslider">
                                                     <!-- 이미지 비율 때문에 overflow: hidden 값 비활성화 : 여건 -->
                                                     <li data-index="11" class="bx-clone" data-name="main_banner" style="float: left; list-style: none; position: relative; width: 1440px; margin: 0 auto; overflow: hidden;">
                                                         <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
@@ -832,8 +834,8 @@
                                         </div>
                                         <div class="list_goods">
                                             <div class="bx-wrapper" style="max-width: 1050px; margin: 0 auto;">
-                                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                                    <ul data-title="이 상품 어때요?" data-section="today_recommendation" class="list" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <div class="bx-viewport s0" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                                    <ul data-title="이 상품 어때요?" data-section="today_recommendation" class="list slider" style="width: 2215%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                         <li data-index="1" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
                                                                 <!--↓↓↓↓ <img> 홈페이지에서는 249px에 320px로 렌더가 되는데 여기는 왜 실제 크기인 109px에 145px로 나올까요오?!? -->
@@ -893,7 +895,7 @@
                                                         </li>
                                                         <li data-index="5" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -907,7 +909,7 @@
                                                         </li>
                                                         <li data-index="6" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -921,7 +923,7 @@
                                                         </li>
                                                         <li data-index="7" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -935,7 +937,7 @@
                                                         </li>
                                                         <li data-index="8" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -949,7 +951,7 @@
                                                         </li>
                                                         <li data-index="9" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -963,7 +965,7 @@
                                                         </li>
                                                         <li data-index="10" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -977,7 +979,7 @@
                                                         </li>
                                                         <li data-index="11" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -991,7 +993,7 @@
                                                         </li>
                                                         <li data-index="12" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1005,7 +1007,7 @@
                                                         </li>
                                                         <li data-index="13" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1019,7 +1021,7 @@
                                                         </li>
                                                         <li data-index="14" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1033,7 +1035,7 @@
                                                         </li>
                                                         <li data-index="15" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1047,7 +1049,7 @@
                                                         </li>
                                                         <li data-index="16" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1061,7 +1063,7 @@
                                                         </li>
                                                         <li data-index="17" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1075,7 +1077,7 @@
                                                         </li>
                                                         <li data-index="18" class="cut" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1089,7 +1091,7 @@
                                                         </li>
                                                         <li data-index="19" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1103,7 +1105,7 @@
                                                         </li>
                                                         <li data-index="20" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
-                                                                <img src="" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
+                                                                <img src="./img/ssuk.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1623912428897l0.jpg);">
                                                             </a>
                                                             <div class="info_goods">
                                                                 <span class="name">
@@ -1119,8 +1121,8 @@
                                                 </div>
                                                 <div class="bx-controls bx-has-controls-direction">
                                                     <div class="bx-controls-direction">
-                                                        <a href="#" class="bx-prev disabled">Prev</a>
-                                                        <a href="#" class="bx-next">Next</a>
+                                                        <a class="bx-prev prev disabled">Prev</a>
+                                                        <a class="bx-next next">Next</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1141,8 +1143,8 @@
                                                 </a>
                                             </h3>
                                         </div>
-                                        <div class="list_goods">
-                                            <ul data-title="특가/혜택" data-selection="event" class="list">
+                                        <div class="list_goods s1">
+                                            <ul data-title="특가/혜택" data-selection="event" class="list slider">
                                                 <li data-index="1">
                                                     <a class="thumb_goods">
                                                         <!-- 338px * 338px -->
@@ -1209,8 +1211,8 @@
                                         </div>
                                         <div class="list_goods">
                                             <div class="bx-wrapper" style="max-width: 1050px; margin: 0 auto;">
-                                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                                    <ul data-title="놓치면 후회할 가격" data-section="today_recommendation" class="list" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <div class="bx-viewport s2" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                                    <ul data-title="놓치면 후회할 가격" data-section="today_recommendation" class="list slider" style="width: 2215%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                         <li data-index="1" class="" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
                                                                 <span class="global_sticker">
@@ -1308,8 +1310,8 @@
                                                 </div>
                                                 <div class="bx-controls bx-has-controls-direction">
                                                     <div class="bx-controls-direction">
-                                                        <a href="#" class="bx-prev disabled">bx-prev</a>
-                                                        <a href="#" class="bx-next">Next</a>
+                                                        <a  class="bx-prev disabled">bx-prev</a>
+                                                        <a  class="bx-next">Next</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1346,31 +1348,31 @@
                                             </div>
                                             <div class="category">
                                                 <ul class="list_category">
-                                                    <li data-start="33" data-end="75"><a data-no="907" href="#" class="menu">채소</a></li>
-                                                    <li data-start="100" data-end="188"><a data-no="908" href="#" class="menu">과일·견과·쌀</a></li>
-                                                    <li data-start="213" data-end="327"><a data-no="909" href="#" class="menu">수산·해산·건어물</a></li>
-                                                    <li data-start="353" data-end="424"><a data-no="910" href="#" class="menu">정육·계란</a></li>
-                                                    <li data-start="449" data-end="563"><a data-no="911" href="#" class="menu">국·반찬·메인요리</a></li>
-                                                    <li data-start="588" data-end="685"><a data-no="912" href="#" class="menu">샐러드·간편식</a></li>
-                                                    <li data-start="710" data-end="798"><a data-no="913" href="#" class="menu">면·양념·오일</a></li>
-                                                    <li data-start="823" data-end="954"><a data-no="914" href="#" class="menu cut">생수·음료·우유·커피</a></li>
-                                                    <li data-start="979" data-end="1067"><a data-no="249" href="#" class="menu">간식·과자·떡</a></li>
-                                                    <li data-start="1092" data-end="1219"><a data-no="915" href="#" class="menu">베이커리·치즈·델리</a></li>
-                                                    <li data-start="1243" data-end="1311"><a data-no="032" href="#" class="menu">건강식품</a></li>
-                                                    <li data-start="1336" data-end="1463"><a data-no="918" href="#" class="menu">생활용품·리빙·캠핑</a></li>
-                                                    <li data-start="1488" data-end="1611"><a data-no="233" href="#" class="menu">스킨케어·메이크업</a></li>
-                                                    <li data-start="1636" data-end="1737"><a data-no="012" href="#" class="menu">헤어·바디·구강</a></li>
-                                                    <li data-start="1762" data-end="1830"><a data-no="916" href="#" class="menu">주방용품</a></li>
-                                                    <li data-start="1854" data-end="1922"><a data-no="085" href="#" class="menu">가전제품</a></li>
-                                                    <li data-start="1947" data-end="2031"><a data-no="919" href="#" class="menu">베이비·키즈</a></li>
-                                                    <li data-start="2056" data-end="2124"><a data-no="991" href="#" class="menu">반려동물</a></li>
+                                                    <li data-start="33" data-end="75"><a data-no="907" class="menu">채소</a></li>
+                                                    <li data-start="100" data-end="188"><a data-no="908" class="menu">과일·견과·쌀</a></li>
+                                                    <li data-start="213" data-end="327"><a data-no="909" class="menu">수산·해산·건어물</a></li>
+                                                    <li data-start="353" data-end="424"><a data-no="910"  class="menu">정육·계란</a></li>
+                                                    <li data-start="449" data-end="563"><a data-no="911"  class="menu">국·반찬·메인요리</a></li>
+                                                    <li data-start="588" data-end="685"><a data-no="912"  class="menu">샐러드·간편식</a></li>
+                                                    <li data-start="710" data-end="798"><a data-no="913"  class="menu">면·양념·오일</a></li>
+                                                    <li data-start="823" data-end="954"><a data-no="914"  class="menu cut">생수·음료·우유·커피</a></li>
+                                                    <li data-start="979" data-end="1067"><a data-no="249"  class="menu">간식·과자·떡</a></li>
+                                                    <li data-start="1092" data-end="1219"><a data-no="915"  class="menu">베이커리·치즈·델리</a></li>
+                                                    <li data-start="1243" data-end="1311"><a data-no="032"  class="menu">건강식품</a></li>
+                                                    <li data-start="1336" data-end="1463"><a data-no="918"  class="menu">생활용품·리빙·캠핑</a></li>
+                                                    <li data-start="1488" data-end="1611"><a data-no="233"  class="menu">스킨케어·메이크업</a></li>
+                                                    <li data-start="1636" data-end="1737"><a data-no="012"  class="menu">헤어·바디·구강</a></li>
+                                                    <li data-start="1762" data-end="1830"><a data-no="916"  class="menu">주방용품</a></li>
+                                                    <li data-start="1854" data-end="1922"><a data-no="085"  class="menu">가전제품</a></li>
+                                                    <li data-start="1947" data-end="2031"><a data-no="919"  class="menu">베이비·키즈</a></li>
+                                                    <li data-start="2056" data-end="2124"><a data-no="991"  class="menu">반려동물</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="list_goods">
                                             <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 462px;">
-                                                    <ul data-title="MD의 추천" data-section="md-choice" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <div class="bx-viewport s3" style="width: 100%; overflow: hidden; position: relative; height: 462px;">
+                                                    <ul data-title="MD의 추천" data-section="md-choice" class="list slider" style="width: 815%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                         <li data-index="1" class="" data-name="md_choice" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                             <a class="thumb_goods">
                                                                 <img src="./img/sweetp.jpg" alt="상품이미지" class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1605512383246l0.jpg&quot;);">
@@ -1443,8 +1445,8 @@
                                                 </div>
                                                 <div class="bx-controls bx-controls-direction">
                                                     <div class="bx-controls-direction">
-                                                        <a class="bx-prev">Prev</a>
-                                                        <a class="bx-next disabled">Next</a>
+                                                        <a class="bx-prev disabled">Prev</a>
+                                                        <a class="bx-next">Next</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1480,8 +1482,8 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="지금 가장 핫한 상품" data-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <div class="bx-viewport s4" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="지금 가장 핫한 상품" ata-section="theme_goods_21" class="list slider" style="width: 815%; position: relative;  transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <span class="global_sticker">
@@ -1578,8 +1580,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev" href>Prev</a>
-                                                <a class="bx-next disabled" href>Next</a>                                            
+                                                <a class="bx-prev disabled">Prev</a>
+                                                <a class="bx-next">Next</a>                                            
                                             </div>
                                         </div>
                                     </div>
@@ -1601,8 +1603,8 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="추위가 두렵지 않도록, 계절 가전" data-section="theme_goods_9" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);" >
+                                        <div class="bx-viewport s5" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="추위가 두렵지 않도록, 계절 가전" data-section="theme_goods_9" class="list slider" style="width: 815%; position: relative; transform: translate3d(0px, 0px, 0px);" >
                                                 <li data-index="1" class data-name="theme_goods_9" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <img src="./img/air_purifier.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1586421154704l0.jpg);">
@@ -1697,8 +1699,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev disabled" href>Prev</a>
-                                                    <a class="bx-next" href>Next</a>
+                                                <a class="bx-prev disabled">Prev</a>
+                                                    <a class="bx-next" >Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1720,8 +1722,8 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="컬리가 만든 상품" data-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <div class="bx-viewport s6" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="컬리가 만든 상품" data-section="theme_goods_21" class="list slider" style="width: 815%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <img src="./img/shrimp_cutlet.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1604913852328l0.jpg);">
@@ -1792,8 +1794,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev disabled" href>Prev</a>
-                                                <a class="bx-next" href>Next</a>                                            
+                                                <a class="bx-prev disabled">Prev</a>
+                                                <a class="bx-next">Next</a>                                            
                                             </div>
                                         </div>
                                     </div>
@@ -1815,9 +1817,9 @@
                                     </h3>
                                 </div>
                                 <div class="list_goods">
-                                    <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="365일 최저가 도전" data-section="theme_goods_11" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="bx-wrapper " style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport s7" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="365일 최저가 도전" data-section="theme_goods_11" class="list slider" style="width: 815%; position: relative;  transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <img src="./img/salmon.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1576818398674l0.jpg);">
@@ -1906,8 +1908,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev disabled" href>Prev</a>
-                                                <a class="bx-next" href>Next</a>
+                                                <a class="bx-prev disabled">Prev</a>
+                                                <a class="bx-next">Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1930,8 +1932,8 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="오프라인 맛집" data-section="theme_goods_12" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <div class="bx-viewport s8" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="오프라인 맛집" data-section="theme_goods_12" class="list slider" style="width: 815%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <img src="./img/brownie_cookie.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1630564157943l0.jpg);">
@@ -2018,8 +2020,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev" href="">Prev</a>
-                                                <a class="bx-next disabled" href="">Next</a>
+                                                <a class="bx-prev disabled">Prev</a>
+                                                <a class="bx-next">Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -2041,8 +2043,8 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
-                                            <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list" style="width: 715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <div class="bx-viewport s9" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
+                                            <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list slider" style="width: 715%; position: relative;  transform: translate3d(0px, 0px, 0px);">
                                                 <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <img src="./img/main_v2_1.jpg" alt="상품이미지" class="thumb">
@@ -2107,8 +2109,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev disabled" href>Prev</a>
-                                                <a class="bx-next" href>Next</a>
+                                                <a class="bx-prev disabled" >Prev</a>
+                                                <a class="bx-next" >Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -2125,8 +2127,8 @@
                             </div>
                             <div class="list_goods">
                                 <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                    <div class="bx-viewport" style="width: 100%; height: 175px; overflow: hidden; position: relative; ">
-                                        <ul data-title="인스타그램 고객 후기" data-section="instagram" class="list" style="width: 2715%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="bx-viewport s10" style="width: 100%; height: 175px; overflow: hidden; position: relative; ">
+                                        <ul data-title="인스타그램 고객 후기" data-section="instagram" class="list slider" style="width: 2715%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                             <li data-index="1" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
                                                 <a target="_blank" class="thumb_goods">
                                                     <img src="./img/insta_list1.jpg" alt="상품이미지" class="thumb">
@@ -2191,8 +2193,8 @@
                                     </div>
                                     <div class="bx-controls bx-has-controls-direction">
                                         <div class="bx-controls-direction">
-                                            <a class="bx-prev disabled" href>Prev</a>
-                                            <a class="bx-next" href>Next</a>
+                                            <a class="bx-prev disabled">Prev</a>
+                                            <a class="bx-next">Next</a>
                                         </div>
                                     </div>
                                 </div>
