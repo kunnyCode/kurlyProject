@@ -1722,8 +1722,8 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="컬리가 만든 상품" data-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                        <div class="bx-viewport s6" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="컬리가 만든 상품" data-section="theme_goods_21" class="list slider" style="width: 815%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <img src="./img/shrimp_cutlet.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1604913852328l0.jpg);">
@@ -1794,8 +1794,8 @@
                                         </div>
                                         <div class="bx-controls bx-has-controls-direction">
                                             <div class="bx-controls-direction">
-                                                <a class="bx-prev disabled" href>Prev</a>
-                                                <a class="bx-next" href>Next</a>                                            
+                                                <a class="bx-prev disabled">Prev</a>
+                                                <a class="bx-next">Next</a>                                            
                                             </div>
                                         </div>
                                     </div>
@@ -1817,8 +1817,8 @@
                                     </h3>
                                 </div>
                                 <div class="list_goods">
-                                    <div class="bx-wrapper s6" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                    <div class="bx-wrapper " style="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport s7" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
                                             <ul data-title="365일 최저가 도전" data-section="theme_goods_11" class="list slider" style="width: 815%; position: relative;  transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_11" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
@@ -1932,7 +1932,7 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport s7" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                        <div class="bx-viewport s8" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
                                             <ul data-title="오프라인 맛집" data-section="theme_goods_12" class="list slider" style="width: 815%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_12" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
@@ -2043,7 +2043,7 @@
                                 </div>
                                 <div class="list_goods">
                                     <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                        <div class="bx-viewport s8" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
+                                        <div class="bx-viewport s9" style="width: 100%; overflow: hidden; position: relative; height: 303px;">
                                             <ul data-title="컬리의 레시피" data-section="kurly_recipe" class="list slider" style="width: 715%; position: relative;  transform: translate3d(0px, 0px, 0px);">
                                                 <li style="float: left; list-style: none; position: relative; width: 338px; margin-right: 18px;">
                                                     <a class="thumb_goods">
@@ -2127,7 +2127,7 @@
                             </div>
                             <div class="list_goods">
                                 <div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-                                    <div class="bx-viewport s9" style="width: 100%; height: 175px; overflow: hidden; position: relative; ">
+                                    <div class="bx-viewport s10" style="width: 100%; height: 175px; overflow: hidden; position: relative; ">
                                         <ul data-title="인스타그램 고객 후기" data-section="instagram" class="list slider" style="width: 2715%; position: relative; transform: translate3d(0px, 0px, 0px);">
                                             <li data-index="1" data-name="instagram" style="float: left; list-style: none; position: relative; width: 175px;">
                                                 <a target="_blank" class="thumb_goods">
