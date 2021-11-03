@@ -654,6 +654,7 @@ solid #ddd;
 
 .page_main .bx-controls-direction .disabled {
     opacity: 0;
+    display: none;
 }
 /* } */
 
