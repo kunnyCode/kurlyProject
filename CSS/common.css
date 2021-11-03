@@ -347,9 +347,6 @@ header > #gnb > #gnbMenu {
     margin-left: 7px;
 }
 
-.menu {
-    background-color: aquamarine;
-}
 
 #gnb .gnb_search .inp_search {
     width: 242px;
