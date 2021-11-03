@@ -98,7 +98,7 @@
                                                         <ul class="sub_menu">
                                                             <li><a class="sub"><span class="name">친환경</span></a></li>
                                                             <li><a class="sub"><span class="name">고구마·감자·당근</span></a></li>
-                                                            <li><a class="sub"><span class="name">치금치·쌈채소·나물</span></a></li>
+                                                            <li><a class="sub"><span class="name">시금치·쌈채소·나물</span></a></li>
                                                             <li><a class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
                                                             <li><a class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
                                                             <li><a class="sub"><span class="name">오이·호박·고추</span></a></li>                                                
