@@ -1,0 +1,170 @@
+*{ font-family: noto sans;}
+
+#content {
+    min-width: 1050px;
+    padding-bottom: 60px;
+}
+
+#content > .page_aticle {
+    width: 1050px;
+    margin: 0 auto;
+    font-family: noto sans;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+#content > .page_aticle > #lnbMenu {
+    padding-top: 26px;
+}
+
+#lnbMenu .inner_lnb {
+    position: relative;
+}
+
+#bnrCategory {
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+#lnbMenu .tit {
+    padding-top: 23px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+    line-height: 35px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+/* 용도가 뭔지모르겠어서 일단 주석처리 */
+/* #lnbMenu .list.on {
+    display: block;
+} */
+
+#lnbMenu .list {
+    overflow: hidden;
+    margin-top: 23px;
+    padding: 12px 0 29px;
+    border: 1px solid #e2e2e2;
+}
+
+#lnbMenu li {
+    float: left;
+    width: 250px;
+    padding: 16px 44px 0 36px;
+}
+
+#lnbMenu li a {
+    overflow: hidden;
+    float: left;
+    max-width: 180px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+#lnbMenu li a:hover, #lnbMenu li .on {
+    font-weight: 700;
+    color: #5f0080;
+}
+
+
+#goodsList .sort_menu {
+    padding-top: 19px;
+}
+
+#goodsList .count {
+    float: left;
+}
+
+#goodsList .count .inner_count {
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+}
+
+#goodsList .sort_menu .name_select {
+    display: none;
+}
+
+#goodsList .sort_menu .list {
+    float: right;
+}
+
+#goodsList .sort_menu .list li {
+    position: relative;
+    z-index: 2;
+    float: left;
+    padding: 0 10px 0 8px;
+}
+
+#goodsList .sort_menu .list li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 1px;
+    height: 10px;
+    background-color: #e5e5e5;
+}
+
+#goodsList .sort_menu .list a {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+    letter-spacing: -.3px;
+    cursor: pointer;
+}
+
+#goodsList .sort_menu .list a.on, #goodsList .sort_menu .list a:hover {
+    color: #333;
+}
+
+
+#goodsList .sort_menu .recommend {
+    position: relative;
+    float: right;
+}
+
+#goodsList .sort_menu .layer_recommend {
+    display: none;
+    position: absolute;
+    left: -50px;
+    top: 27px;
+    min-width: 272px;
+    padding: 13px 14px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+#goodsList .list_goods {
+    overflow: hidden;
+}
+
+#goodsList .list_goods .inner_listgoods {
+    overflow: hidden;
+    width: 1050px;
+}
+
+#goodsList .list_goods .list {
+    overflow: hidden;
+    width: 1070px;
+    margin-top: -10px;
+}
+
+#goodsList .list_goods li {
+    float: left;
+    width: 356px;
+    height: 682px;
+    padding: 25px 18px 0 0;
+}
