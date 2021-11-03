@@ -753,7 +753,7 @@
 
                     <div class="company">
                         <ul class="list">
-                            <li></li>
+                            <li><a class="link" href="/shop/introduce/about_kurly.php">컬리소개</a></li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -792,11 +792,11 @@
                         <em class="copy">© KURLY CORP. ALL RIGHTS RESERVED</em>
 
                         <ul class="list_sns">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a href="https://instagram.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="마켓컬리 인스타그램 바로가기"></a></li>
+                            <li><a href="https://www.facebook.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="마켓컬리 페이스북 바로가기"></a></li>
+                            <li><a href="http://blog.naver.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기"></a></li>
+                            <li><a href="https://m.post.naver.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="마켓컬리 유튜브 바로가기"></a></li>
+                            <li<a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" class="link_sns lst" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="마켓컬리 유튜브 바로가기"></a>></li>
                         </ul>
                     </div>
                 </div>
