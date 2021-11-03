@@ -436,3 +436,454 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
     
 
     
+
+
+    //여건 작성
+    // MD 추천 구현
+    // 노다가 코딩 햇는데 혹시 더 효율적으로 코딩하실 수 잇으시다면 변경해주셔도 좋습니다!!
+    let menu = document.querySelectorAll('.category .list_category .menu');
+    let btnBottom = document.querySelector('.category_type .link_cate .link .ico');
+
+
+    function swt (i){
+        if(i==0){
+            menu[0].classList.add("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==1){
+            menu[0].classList.remove("on");
+            menu[1].classList.add("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==2){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.add("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==3){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.add("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==4){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.add("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==5){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.add("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==6){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.add("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==7){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.add("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==8){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.add("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==9){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.add("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==10){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.add("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==11){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.add("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==12){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.add("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==13){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.add("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==14){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.add("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==15){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.add("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.remove("on");
+        }else if(i==16){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.add("on");
+            menu[17].classList.remove("on");
+        }else if(i==17){
+            menu[0].classList.remove("on");
+            menu[1].classList.remove("on");
+            menu[2].classList.remove("on");
+            menu[3].classList.remove("on");
+            menu[4].classList.remove("on");
+            menu[5].classList.remove("on");
+            menu[6].classList.remove("on");
+            menu[7].classList.remove("on");
+            menu[8].classList.remove("on");
+            menu[9].classList.remove("on");
+            menu[10].classList.remove("on");
+            menu[11].classList.remove("on");
+            menu[12].classList.remove("on");
+            menu[13].classList.remove("on");
+            menu[14].classList.remove("on");
+            menu[15].classList.remove("on");
+            menu[16].classList.remove("on");
+            menu[17].classList.add("on");
+        }
+    }
+
+    menu[0].addEventListener('click', function(){
+        btnBottom.innerHTML="채소 전체보기"
+        swt(0);
+        //menu[0].classList.add("on");
+        // menu[0].style.backgroundColor = ("#5f0080");
+        // menu[0].style.color = ("#fff");
+    });
+ 
+    menu[1].addEventListener('click', function(){
+        btnBottom.innerHTML="과일·견과·쌀 전체보기"
+        swt(1);
+    });
+
+    menu[2].addEventListener('click', function(){
+        btnBottom.innerHTML="수산·해산·건어물 전체보기"
+        swt(2);
+    });
+
+    menu[3].addEventListener('click', function(){
+        btnBottom.innerHTML="정육·계란 전체보기"
+        swt(3);
+    });
+
+    menu[4].addEventListener('click', function(){
+        btnBottom.innerHTML="국·반찬·메인요리 전체보기"
+        swt(4);
+    });
+
+    menu[5].addEventListener('click', function(){
+        btnBottom.innerHTML="샐러드·간편식 전체보기"
+        swt(5);
+    });
+
+    menu[6].addEventListener('click', function(){
+        btnBottom.innerHTML="면·양념·오일 전체보기"
+        swt(6);
+    });
+
+    menu[7].addEventListener('click', function(){
+        btnBottom.innerHTML="생수·음료·우유·커피 전체보기"
+        swt(7);
+    });
+
+    menu[8].addEventListener('click', function(){
+        btnBottom.innerHTML="간식·과자·떡 전체보기"
+        swt(8);
+    });
+
+    menu[9].addEventListener('click', function(){
+        btnBottom.innerHTML="베이커리·치즈·델리 전체보기"
+        swt(9);
+    });
+
+    menu[10].addEventListener('click', function(){
+        btnBottom.innerHTML="건강식품 전체보기"
+        swt(10);
+    });
+
+    menu[11].addEventListener('click', function(){
+        btnBottom.innerHTML="생활용품·리빙·캠핑 전체보기"
+        swt(11);
+    });
+
+    menu[12].addEventListener('click', function(){
+        btnBottom.innerHTML="스킨케어·메이크업 전체보기"
+        swt(12);
+    });
+
+    menu[13].addEventListener('click', function(){
+        btnBottom.innerHTML="헤어·바디·구강 전체보기"
+        swt(13);
+    });
+
+    menu[14].addEventListener('click', function(){
+        btnBottom.innerHTML="주방용품 전체보기"
+        swt(14);
+    });
+
+    menu[15].addEventListener('click', function(){
+        btnBottom.innerHTML="가전제품 전체보기"
+        swt(15);
+    });
+
+    menu[16].addEventListener('click', function(){
+        btnBottom.innerHTML="베이비·키즈 전체보기"
+        swt(16);
+    });
+
+    menu[17].addEventListener('click', function(){
+        btnBottom.innerHTML="반려동물 전체보기"
+        swt(17);
+    });
+
+    console.log(menu);
+    console.log(btnBottom.innerHTML);
+    

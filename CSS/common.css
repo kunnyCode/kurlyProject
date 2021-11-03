@@ -953,6 +953,12 @@ page_main .list_goods a {
     line-height: 18px;
 }
 
+.category_type .category .list_category .menu:hover {
+    background-color: #f6ecfa;
+    opacity: 0.8;
+    color: #5f0080;
+}
+
 .category_type .category .list_category .on:hover, .category_type .category .list_category .on {
     border: 1px solid #5f0081;
     background-color: #5f0080;

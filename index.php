@@ -1348,24 +1348,24 @@
                                             </div>
                                             <div class="category">
                                                 <ul class="list_category">
-                                                    <li data-start="33" data-end="75"><a data-no="907" href="#" class="menu">채소</a></li>
-                                                    <li data-start="100" data-end="188"><a data-no="908" href="#" class="menu">과일·견과·쌀</a></li>
-                                                    <li data-start="213" data-end="327"><a data-no="909" href="#" class="menu">수산·해산·건어물</a></li>
-                                                    <li data-start="353" data-end="424"><a data-no="910" href="#" class="menu">정육·계란</a></li>
-                                                    <li data-start="449" data-end="563"><a data-no="911" href="#" class="menu">국·반찬·메인요리</a></li>
-                                                    <li data-start="588" data-end="685"><a data-no="912" href="#" class="menu">샐러드·간편식</a></li>
-                                                    <li data-start="710" data-end="798"><a data-no="913" href="#" class="menu">면·양념·오일</a></li>
-                                                    <li data-start="823" data-end="954"><a data-no="914" href="#" class="menu cut">생수·음료·우유·커피</a></li>
-                                                    <li data-start="979" data-end="1067"><a data-no="249" href="#" class="menu">간식·과자·떡</a></li>
-                                                    <li data-start="1092" data-end="1219"><a data-no="915" href="#" class="menu">베이커리·치즈·델리</a></li>
-                                                    <li data-start="1243" data-end="1311"><a data-no="032" href="#" class="menu">건강식품</a></li>
-                                                    <li data-start="1336" data-end="1463"><a data-no="918" href="#" class="menu">생활용품·리빙·캠핑</a></li>
-                                                    <li data-start="1488" data-end="1611"><a data-no="233" href="#" class="menu">스킨케어·메이크업</a></li>
-                                                    <li data-start="1636" data-end="1737"><a data-no="012" href="#" class="menu">헤어·바디·구강</a></li>
-                                                    <li data-start="1762" data-end="1830"><a data-no="916" href="#" class="menu">주방용품</a></li>
-                                                    <li data-start="1854" data-end="1922"><a data-no="085" href="#" class="menu">가전제품</a></li>
-                                                    <li data-start="1947" data-end="2031"><a data-no="919" href="#" class="menu">베이비·키즈</a></li>
-                                                    <li data-start="2056" data-end="2124"><a data-no="991" href="#" class="menu">반려동물</a></li>
+                                                    <li data-start="33" data-end="75"><a data-no="907" class="menu">채소</a></li>
+                                                    <li data-start="100" data-end="188"><a data-no="908" class="menu">과일·견과·쌀</a></li>
+                                                    <li data-start="213" data-end="327"><a data-no="909" class="menu">수산·해산·건어물</a></li>
+                                                    <li data-start="353" data-end="424"><a data-no="910"  class="menu">정육·계란</a></li>
+                                                    <li data-start="449" data-end="563"><a data-no="911"  class="menu">국·반찬·메인요리</a></li>
+                                                    <li data-start="588" data-end="685"><a data-no="912"  class="menu">샐러드·간편식</a></li>
+                                                    <li data-start="710" data-end="798"><a data-no="913"  class="menu">면·양념·오일</a></li>
+                                                    <li data-start="823" data-end="954"><a data-no="914"  class="menu cut">생수·음료·우유·커피</a></li>
+                                                    <li data-start="979" data-end="1067"><a data-no="249"  class="menu">간식·과자·떡</a></li>
+                                                    <li data-start="1092" data-end="1219"><a data-no="915"  class="menu">베이커리·치즈·델리</a></li>
+                                                    <li data-start="1243" data-end="1311"><a data-no="032"  class="menu">건강식품</a></li>
+                                                    <li data-start="1336" data-end="1463"><a data-no="918"  class="menu">생활용품·리빙·캠핑</a></li>
+                                                    <li data-start="1488" data-end="1611"><a data-no="233"  class="menu">스킨케어·메이크업</a></li>
+                                                    <li data-start="1636" data-end="1737"><a data-no="012"  class="menu">헤어·바디·구강</a></li>
+                                                    <li data-start="1762" data-end="1830"><a data-no="916"  class="menu">주방용품</a></li>
+                                                    <li data-start="1854" data-end="1922"><a data-no="085"  class="menu">가전제품</a></li>
+                                                    <li data-start="1947" data-end="2031"><a data-no="919"  class="menu">베이비·키즈</a></li>
+                                                    <li data-start="2056" data-end="2124"><a data-no="991"  class="menu">반려동물</a></li>
                                                 </ul>
                                             </div>
                                         </div>
