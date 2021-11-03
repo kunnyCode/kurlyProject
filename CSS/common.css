@@ -497,7 +497,6 @@ header > #gnb > #gnbMenu {
 /* 바디 -------------------------------------------------*/
 
 #main {
-    height: 7995px;
     border-bottom: 1px solid #f7f7f7;
 }
 
@@ -1319,8 +1318,9 @@ li{
     margin: 0 auto;
     padding-bottom: 60px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: -.2px;
     font-family: noto sans;
+    opacity: 0;
 }
 
 #footer strong { font-weight: 700; }
@@ -1423,7 +1423,7 @@ li{
     display: block;
     padding-top: 16px;
     font-style: normal;
-    font-size: 11px;
+    font-size: 10px;
     color: #949296;
     line-height: 22px;
     letter-spacing: 0;
@@ -1469,7 +1469,7 @@ li{
     vertical-align: top;
 }
 
-#footer .link_sns img {
+#footer .link_sns img { /* 추가 작성 */
     width: 30px;
     height: 30px;
 }

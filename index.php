@@ -1481,7 +1481,7 @@
                                 <div class="list_goods">
                                     <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
                                         <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-                                            <ul data-title="지금 가장 핫한 상품" ata-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                            <ul data-title="지금 가장 핫한 상품" data-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                 <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
                                                     <a class="thumb_goods">
                                                         <span class="global_sticker">
@@ -1707,6 +1707,101 @@
                         </div>
                     </div>
                     <!-- 추위가 두렵지 않도록, 계절 가전 끝 -->
+                    <!-- 컬리가 만든 상품 시작 -->
+                    <div>
+                        <div class="main_type2">
+                            <div class="product_list">
+                                <div class="tit_goods">
+                                    <h3 class="tit">
+                                        <a class="name">
+                                            <span class="ico">컬리가 만든 상품</span>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="list_goods">
+                                    <div class="bx-wrapper" tyle="max-width: 1050px; margin: 0px auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+                                            <ul data-title="컬리가 만든 상품" data-section="theme_goods_21" class="list" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li data-index="1" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/shrimp_cutlet.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1604913852328l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[Kurly's] 간편하게 바삭, 새우까스</a>
+                                                        </span>
+                                                        <span class="price">4,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="2" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/wet_tissue.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1610532035693l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[Kurly's] 시그니처 물티슈 2종</a>
+                                                        </span>
+                                                        <span class="price">1,850원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="3" class="cut" data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/kimchi.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1621993224201l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[Kurly's] 시원한 배추김치</a>
+                                                        </span>
+                                                        <span class="price">10,800원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="4" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/ham.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1596462655754l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[Kurly's] 돈육햄 200g</a>
+                                                        </span>
+                                                        <span class="price">3,200원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="5" class data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/seaweed_rolls.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1622531502246l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[Kurly's] 간편하게 바삭, 야채 김말이</a>
+                                                        </span>
+                                                        <span class="price">2,900원</span>
+                                                    </div>
+                                                </li>
+                                                <li data-index="6" class="cut" data-name="theme_goods_21" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;">
+                                                    <a class="thumb_goods">
+                                                        <img src="./img/vanilla_latte.jpg" alt="상품이미지" class="thumb" style="background-image: url(https://img-cf.kurly.com/shop/data/goods/1626166688105l0.jpg);">
+                                                    </a>
+                                                    <div class="info_goods">
+                                                        <span class="name">
+                                                            <a class="txt">[Kurly's] 에브리빈 바닐라라떼 파우치(190mL X 10팩)</a>
+                                                        </span>
+                                                        <span class="price">12,000원</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bx-controls bx-has-controls-direction">
+                                            <div class="bx-controls-direction">
+                                                <a class="bx-prev disabled" href>Prev</a>
+                                                <a class="bx-next" href>Next</a>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 컬리가 만든 상품 끝 -->
                     <!-- 365일 최저가 도전 시작 -->
                     <div>
                         <div class="main_type2 bg" style="background-color: rgb(247, 247, 247);">
