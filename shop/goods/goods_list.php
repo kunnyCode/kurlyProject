@@ -62,7 +62,7 @@
                         <!--상품리스트 안에서 반복되는 li 구조 시작-------------------------------------------->
                         <li class="item">
                             <div class="thumb">
-                                <a href="" class="img"><img src="" alt=""></a>
+                                <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
                                 <div class="group_btn">
                                     <button type="button" class="btn btn_cart">
                                         <span class="screen_out"><!--알 수 없는 숫자--></span>
