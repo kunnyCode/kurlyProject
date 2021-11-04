@@ -702,7 +702,6 @@
                     <h2 class="tit">"공시사항"<span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span></h2>
                  </div>                 
                 </div>
-                <script></script>
               </div>
             </div>
 
