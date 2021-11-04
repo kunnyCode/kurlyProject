@@ -754,11 +754,11 @@
                     <div class="company">
                         <ul class="list">
                             <li><a class="link" href="/shop/introduce/about_kurly.php">컬리소개</a></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a class="link" href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;enablejsapi=1" onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a></li>
+                            <li><a class="link" href="https://marketkurly.recruiter.co.kr/appsite/company/index" target="_blank">인재채용</a></li>
+                            <li><a class="link" href="/shop/service/agreement.php">이용약관</a></li>
+                            <li><a class="link emph" href="/shop/service/private.php">개인정보처리방침</a></li>
+                            <li><a class="link" href="/shop/service/guide.php">이용안내</a></li>
                         </ul>
                         "법인명(상호) : 주식회사 컬리"
                         <span class="bar">|</span>
