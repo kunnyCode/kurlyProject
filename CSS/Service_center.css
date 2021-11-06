@@ -1,0 +1,44 @@
+body, input, select, textarea, button {
+  font-family: noto sans, malgun gothic,AppleGothic, dotum;
+  line-height :1;
+  letter-spacing: -.05em;
+  color :#4c4c4c;
+  font-size: 12px;
+  max-width: 100%;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  margin:0;
+}
+
+*,*:after,*:before{
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+  display:block;
+}
+
+/* inherited from html */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Pseudo :: before element */
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin : 0;
+  padding: 0;
+}
+
+/*Pseudo :: after  element */
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin : 0;
+  padding: 0;
+}
