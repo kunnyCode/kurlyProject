@@ -702,7 +702,6 @@
                     <h2 class="tit">"공시사항"<span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span></h2>
                  </div>                 
                 </div>
-                <script></script>
               </div>
             </div>
 
@@ -753,12 +752,12 @@
 
                     <div class="company">
                         <ul class="list">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a class="link" href="/shop/introduce/about_kurly.php">컬리소개</a></li>
+                            <li><a class="link" href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;enablejsapi=1" onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a></li>
+                            <li><a class="link" href="https://marketkurly.recruiter.co.kr/appsite/company/index" target="_blank">인재채용</a></li>
+                            <li><a class="link" href="/shop/service/agreement.php">이용약관</a></li>
+                            <li><a class="link emph" href="/shop/service/private.php">개인정보처리방침</a></li>
+                            <li><a class="link" href="/shop/service/guide.php">이용안내</a></li>
                         </ul>
                         "법인명(상호) : 주식회사 컬리"
                         <span class="bar">|</span>
@@ -792,20 +791,40 @@
                         <em class="copy">© KURLY CORP. ALL RIGHTS RESERVED</em>
 
                         <ul class="list_sns">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a href="https://instagram.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="마켓컬리 인스타그램 바로가기"></a></li>
+                            <li><a href="https://www.facebook.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="마켓컬리 페이스북 바로가기"></a></li>
+                            <li><a href="http://blog.naver.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기"></a></li>
+                            <li><a href="https://m.post.naver.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="마켓컬리 유튜브 바로가기"></a></li>
+                            <li<a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" class="link_sns lst" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="마켓컬리 유튜브 바로가기"></a>></li>
                         </ul>
                     </div>
                 </div>
-                <div class="footer_link"></div>
+                <div class="footer_link">
+                    <div class="authentication">
+                        <a href="#none" onclick="popup('https://res.kurly.com/pc/img/1909/img_isms.jpg',550,700);return false;" class="mark" target="_blank">
+                            <img src="https://res.kurly.com/pc/ico/2001/logo_isms.png" alt="isms 로고" class="logo">
+                        <p class="txt">
+                        [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영<br>
+                        [유효기간] 2019.04.01 ~ 2022.03.31
+                        </p>
+                        </a>
+                        <a href="#none" onclick="popup('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&amp;certNum=2021-EP-R003',527,720);return false;" class="mark" target="_blank">
+                            <img src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
+                        <p class="txt">
+                        개인정보보호 우수 웹사이트 ·<br>
+                        개인정보처리시스템 인증 (ePRIVACY PLUS)
+                        </p>
+                        </a>
+                        <a href="#none" onclick="popup('http://pgweb.uplus.co.kr/ms/escrow/s_escrowYn.do?mertid=go_thefarmers',460,550);return false;" class="mark lguplus" target="_blank">
+                        <img src="https://res.kurly.com/pc/service/main/2009/logo_payments.png" alt="payments 로고" class="logo">
+                        <p class="txt">
+                        고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br>
+                        토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+                        </p>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-
-
-
     </div>
   </div>
 </body>
