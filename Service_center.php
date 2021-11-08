@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고객센터</title>
-  <link rel="Stylesheet" href="./CSS/Service_center.css"
+  <meta name="title" content="마켓컬리 :: 내일의 장보기, 마켓컬리">
+  <meta name="description" content="Love Food, Love Life. 마켓컬리! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!">
+  <meta property="og:title" content="마켓컬리 :: 내일의 장보기, 마켓컬리">
+  <meta property="og:description" content="Love Food, Love Life. 마켓컬리! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!">
+  <meta property="og:image" content="https://res.kurly.com/images/marketkurly/logo/logo_sns_marketkurly.jpg">
+  <meta property="og:url" content="https://www.kurly.com/shop/board/list.php?id=notice">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="www.kurly.com">
+  <meta name="keywords" content="다이어트, 식단, 닭가슴살, 요리, 치아바타, 레시피, 요리, 상차림, 다이어트음식, 이유식, 건강이유식">
+  <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="naver-site-verification" content="58ff7c242d41178131208256bfec0c2f93426a1d">
+  <meta name="facebook-domain-verification" content="tyur3wmoos7t63tpkb7zosur6p98m1">
+  <script async="" src="https://cdn.branch.io/branch-latest.min.js"></script>
+  <script type="text/javascript" integrity="sha384-vYYnQ3LPdp/RkQjoKBTGSq0X5F73gXU3G2QopHaIfna0Ct1JRWzwrmEz115NzOta" crossorigin="anonymous" async="" src="https://cdn.amplitude.com/libs/amplitude-5.8.0-min.gz.js"></script>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <script src="https://js.sentry-cdn.com/c1f07ee4a3fd45d5aa2ef4983ca9ad43.min.js" crossorigin="anonymous"></script>
+  <link rel="Stylesheet" href="./CSS/Service_center.css">
+  <script>
+      
+  var environment = 'production';
+
+Sentry.onLoad(function() {
+  Sentry.init({
+    environment: environment,
+    denyUrls: [
+      /localhost/i,
+      /dev\.kurly\.com/i
+    ],
+    traceSampler: function(samplingContext) {
+      if (
+                  samplingContext.location.pathname === '/shop/mypage/mypage_coupon.php'
+              ) {
+                  return 1;
+              } else {
+          return 0.01;
+              }
+    },
+  });
+});
+  </script>
+  <script type="text/javascript" src="https://res.kurly.com/js/lib/jquery-1.10.2.min.js"></script>
+  <link rel="shortcut icon" href="https://res.kurly.com/images/marketkurly/logo/favicon_v2.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://res.kurly.com/images/marketkurly/logo/ico_57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://res.kurly.com/images/marketkurly/logo/ico_60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://res.kurly.com/images/marketkurly/logo/ico_72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://res.kurly.com/images/marketkurly/logo/ico_76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://res.kurly.com/images/marketkurly/logo/ico_114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://res.kurly.com/images/marketkurly/logo/ico_120.png">
+  
 </head>
 <body >
   <div id="wrap">
