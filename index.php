@@ -30,6 +30,7 @@
                 <div id="userMenu">
                     <ul class="listMenu">
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
+                        <p><input type="button" value="확인" onclick="location.href='C:\Dakyunglee\PHP\kurlyProject-main\shop\Signup.php'"></p>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
                             <a href="./img/ico_down_8x5.png" class="linkMenu">고객센터</a>
