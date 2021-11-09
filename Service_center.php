@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고객센터</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터</title>
+    <link rel="stylesheet" href="./CSS/common.css">
 </head>
 <body >
-  <div id="wrap">
+<div id="wrap">
     <div id="pos_scroll"></div>
     <div id="container">
-                  <!-- 헤더 시작-------------------------------------------------------------------->
-                  <header id="header">
+        <!-- 헤더 시작-------------------------------------------------------------------->
+            <header id="header">
                 <div id="userMenu">
                     <ul class="listMenu">
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
@@ -668,164 +669,550 @@
             </header>
             <!-- 헤더 끝-------------------------------------------------------------------->
 
-            <!--mail 시작 --------------------------------------------------->
+            <!--main 시작 --------------------------------------------------->
             <div id="main">
-              <div id="content">
-              <div id="qnb" class="quick-navigation" style="top: 70px;"></div>
-              <div class="bnr_qnb" id="brnQuick">
-                <a href="/shop/board/view.php?id=notice&amp;no=64" id="brnQuickObj">
-                  <img class="thumb" src="https://res.kurly.com/pc/service/main/1904/bnr_quick_20190403.png" alt="퀄리티있게 샛별배송">
-                </a>
-              </div>
-              <div class="side_menu">
-              <a href="/shop/main/html.php?htmid=event/kurly.htm&amp;name=lovers" class="link_menu ">등급별 혜택</a>
-              <a href="/shop/board/list.php?id=recipe" class="link_menu ">레시피</a>
-              <a href="/shop/goods/goods_review_best.php" class="link_menu ">베스트 후기</a>
-              </div>
-              <div class="page_aticle aticle_type2">
-                <div id="snb" class="snb_cc">
-                  <h2 class="tit_snb">고객센터</h2>
-                  <div class="inner_snb">
-                    <ul class="list_menu">
-                      <li class="on"><a href="#none" onclick="KurlyTrackerLink('/shop/board/list.php?id=notice', 'select_service_notice_list')">공지사항</a></li>
-                      <li><a href="#none" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a></li>
-                      <li><a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1 문의</a></li>
-                      <li><a href="#none" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a></li>
-                      <li><a href="#none" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a></li>
-                      <li><a href="#none" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a></li>
-                    </ul>
-                  </div>
-                  <a href="/shop/mypage/mypage_qna_register.php?mode=add_qna" class="link_inquire"><span class="emph">도움이 필요하신가요 ?</span> 1:1 문의하기</a>
-                </div>
-                <div class="page_section">
-                  <div class="head_aticle">
-                    <h2 class="tit">"공시사항"<span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span></h2>
-                 </div>                 
-                </div>
-              </div>
-            </div>
+                <div id="content">
+                    <!-- 사이드 퀵 메뉴 시작 -->
+                    <div id="qnb" class="quick-navigation" style="top: 516px;">
+                        <div class="bnr_qnb" id="brnQuick">
+                            <a href="#" id="brnQuickObj">
+                                <img class="thumb" src="./img/bnr_quick.png" alt="퀄리티있게 샛별배송">
+                            </a>
+                        </div>
+                        <script>
+                            var brnQuick = {
+                                nowTime : function(){
+                                    $.ajax({
+                                        url : campaginUrl + 'pc/service/bnr_quick.html'
+                                    }).done(function(result){
+                                        $('#brnQuick').html(result);
+                                    });
+                                }
+                            }
+                        </script>
+                        <div class="side_menu">
+                            <a href="#" class="link_menu">등급별 혜택</a>
+                            <a href="#" class="link_menu">레시피</a>
+                            <a href="#" class="link_menu">베스트 후기</a>
+                        </div>
+                        <div class="side_recent" style="display: none;">
+                            <strong class="tit">최근 본 상품</strong>
+                            <div class="list_goods" data-height="209" style="height: 0px;">
+                                <ul class="list"></ul>
+                            </div>
+                            <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
+                            <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
+                        </div>
+                        <script>
+                            var getGoodsRecent = (function(){
+                                var i, len, getGoodsRecent, item, _nowTime = '';
 
+                                _goodsRecent();
+                                function _goodsRecent(){
+                                    if(localStorage.getItem('goodsRecent') === null){
+                                        return false;
+                                    }
+                                    try{
+                                        getGoodsRecent = JSON.parse(localStorage.getItem("goodsRecent"));
+                                        len = getGoodsRecent.length;
+                                        if(addDays(getGoodsRecent[len - 1].time, 1) < _nowTime){
+                                            localStorage.removeItem('goodsRecent');
+                                        }else{
+                                            for(i = 0; 1 < len; i++){
+                                                item = '<li><a class="link_goods" href="/shop/goods/goods_view.php?goodsno=' + getGoodsRecent[i].no + '"><img src="' + getGoodsRecent[i].thumb + '" alt=""></a></li>';
+                                                $('.side_recent .list').append(item);
+                                            }
+                                            $('.side_recent').show();
+                                        }
+                                    } catch(e){
+                                        console.log("JSON parse error from the Quick menu goods list!!!", e);
+                                    }
+                                }
+
+                                function addDays(date, days){
+                                    var result = new Date(date);
+                                    result.setDate(result.getDate() + days);
+                                    return result.getTime();
+                                }
+                            })();
+                        </script>
+                    </div>
+                    <!-- 사이드 퀵 메뉴 끝 -->
+
+                    <div class="page_aticle aticle_type2">
+                        <!-- 좌측 고객센터 목록 시작 -->
+                        <div id="snb" class="snb_cc">
+                            <h2 class="tit_snb">고객센터</h2>
+                            <div class="inner_snb">
+                                <ul class="list_menu">
+                                    <li class="on">
+                                        <a href="#" onclick="KurlyTrackerLink('/shop/board/list.php?id=notice', 'select_service_notice_list')">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/shop/mypage/mypage_qna_register.php?mode=add_qna" class="link_inquire">
+                                <span class="emph">도움이 필요하신가요 ?</span>
+                                " 1:1 문의하기"
+                            </a>
+                        </div>
+                        <!-- 좌측 고객센터 목록 끝 -->
+
+                        <!-- 공지사항 게시판 시작 -->
+                        <div class="page_section">
+                            <div class="head_aticle">
+                                <h2 class="tit">
+                                    "공지사항 "
+                                    <span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span>
+                                </h2>
+                            </div>
+                            <form name="frmList" action="/shop/board/list.php?&" onsubmit="return chkFormList(this)">
+                                <input type="hidden" name="id" value="notice">
+                                <style>
+                                    .notice .layout-pagination { margin: 0; }
+                                    .eng2 { color: #939393 }
+                                    .xans-board-listheader { font-size: 12px }
+                                </style>
+                                <table width="100%" align="center" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="xans-element- xans-myshop xans-myshop-couponserial">
+                                                    <table width="100%" class="xans-board-listheader jh" cellpadding="0" cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>번호</th>
+                                                                <th>제목</th>
+                                                                <th>작성자</th>
+                                                                <th>작성일</th>
+                                                                <th>조회</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 공지 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1051">
+                                                                        <b>[마켓컬리] 택배배송 주문 시간 확대 안내</b>
+                                                                    </a>
+                                                                    <b> </b>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-09-13</td>
+                                                                <td width="30" nowrap align="center" class="eng2">14334</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 공지 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=931">
+                                                                        <b>[마켓컬리] 종이박스 회수 서비스 안내</b>
+                                                                    </a>
+                                                                    <b> </b>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-06-18</td>
+                                                                <td width="30" nowrap align="center" class="eng2">22708</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 947 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1127">[마켓컬리] 근무자 코로나19 확진 관련 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-09</td>
+                                                                <td width="30" nowrap align="center" class="eng2">17</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 946 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1125">[가격인상공지] [송월타월] 면100%수건 5종 (2021. 11. 12 ~)</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-09</td>
+                                                                <td width="30" nowrap align="center" class="eng2">17</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 945 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1124">[가격인상공지] [페넬로페] 씬씬씬 플러스 팬티기저귀 특대 28매*4팩 (여아용) 외 12건 (2021. 11. 11 ~)</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-09</td>
+                                                                <td width="30" nowrap align="center" class="eng2">5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 944 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1123">주식회사 컬리페이 전자지급 결제대행 서비스 이용약관 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-03</td>
+                                                                <td width="30" nowrap align="center" class="eng2">184</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 943 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1119">[마켓컬리] 수퍼세이브위크 10/31 11시 ~ 11/1 00시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-01</td>
+                                                                <td width="30" nowrap align="center" class="eng2">1708</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 942 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1118">[마켓컬리] 수퍼세이브위크 10/30 11시 ~ 10/31 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-01</td>
+                                                                <td width="30" nowrap align="center" class="eng2">931</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 941 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1115">[마켓컬리] 수퍼세이브위크 10/29 11시 ~ 10/30 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-11-01</td>
+                                                                <td width="30" nowrap align="center" class="eng2">716</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 941 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1109">[마켓컬리] 수퍼세이브위크 10/28 11시 ~ 10/29 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-10-29</td>
+                                                                <td width="30" nowrap align="center" class="eng2">2629</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 941 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1107">[마켓컬리] 수퍼세이브위크 10/27 11시 ~ 10/28 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-10-28</td>
+                                                                <td width="30" nowrap align="center" class="eng2">10930</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="50" nowrap align="center"> 941 </td>
+                                                                <td style="padding-left: 10px; text-align: left; color: #999">
+                                                                    <a href="view.php?id=notice&no=1103">[마켓컬리] 수퍼세이브위크 10/26 11시 ~ 10/27 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
+                                                                </td>
+                                                                <td width="100" nowrap align="center"> MarketKurly </td>
+                                                                <td width="100" nowrap align="center" class="eng2">2021-10-27</td>
+                                                                <td width="30" nowrap align="center" class="eng2">12830</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="layout-pagination">
+                                    <div class="pagediv">
+                                        <a href="#" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
+                                        <strong class="layout-pagination-button layout-pagination-number __active">1</strong>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">2</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">3</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">4</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">5</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">6</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">7</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">8</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">9</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-number">10</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
+                                        <a href="#" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+                                    </div>
+                                </div>
+                                <table class="xans-board-search xans-board-search2">
+                                    <tbody>
+                                        <tr>
+                                            <td class="input_txt">
+                                                <img src="./img/ico_function.gif">
+                                                "검색어"
+                                            </td>
+                                            <td class="stxt">
+                                                <input type="checkbox" name="search[name]">
+                                                "이름 "
+                                                <input type="checkbox" name="search[subject]">
+                                                "제목 "
+                                                <input type="checkbox" name="search[contents]">
+                                                "내용&nbsp; "
+                                            </td>
+                                            <td class="input_txt">&nbsp;</td>
+                                            <td>
+                                                <div class="search_bt">
+                                                    <a href="javascript:document.frmList.submit()">
+                                                        <img src="./img/search1.png" align="absmiddle">
+                                                    </a>
+                                                    <input type="text" name="search[word]" value required>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <!-- 공지사항 게시판 끝 -->
+                        ::after
+                    </div>
+                </div>
+            </div>
+            <!--main 끝 --------------------------------------------------->
+
+            <!-- layerDSR 시작 ------------------------------------------->
             <div id="layerDSR">
                 <div class="bg_dim"></div>
                 <div class="in_layer">
-                    <div class="inner_layer layer_star"><strong class="dsr_result">샛별배송 지역입니다.</strong></div>
-                    <div class="inner_layer layer_normal"><strong class="dsr_result">택배배송 지역입니다.</strong></div>
-                    <div class="inner_layer layer_none"><strong class="dsr_result">배송 불가 지역입니다.</strong></div>
+                    <div class="inner_layer layer_star">
+                        <strong class="dsr_result">샛별배송 지역입니다.</strong>
+                        <div class="ani">
+                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_kurly.png" src="./img/bg_1x1.png" alt="샛별배송 이미지">
+                        </div>
+                        <p class="dsr_desc default_cutoff_23_7">
+                            <strong class="emph">오늘 밤 11시 전</strong>
+                            "까지 주문시"
+                            <br>
+                            <strong class="emph">다음날 아침 7시</strong>
+                            " 이전 도착합니다! "
+                        </p>
+                        <p class="dsr_desc early_cutoff_20_8">
+                            <strong class="emph">오늘 밤 8시 전</strong>
+                            "까지 주문시"
+                            <br>
+                            <strong class="emph">다음날 아침 8시</strong>
+                            " 이전 도착합니다! "
+                        </p>
+                    </div>
+                    <div class="inner_layer layer_normal">
+                        <strong class="dsr_result">택배배송 지역입니다.</strong>
+                        <div class="ani">
+                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_car.png" src="./img/bg_1x1.png" alt="택배배송 이미지">
+                        </div>
+                        <p class="dsr_desc old_eight">
+                            <strong class="emph">밤 8시 전</strong>
+                            "까지 주문시"
+                            <br>
+                            <strong class="emph">다음날</strong>
+                            " 도착합니다! "
+                        </p>
+                        <p class="dsr_desc new_ten">
+                            <strong class="emph">밤 10시 전</strong>
+                            "까지 주문시"
+                            <br>
+                            <strong class="emph">다음날</strong>
+                            " 도착합니다! "
+                        </p>
+                        <p class="dsr_notice">일요일은 배송 휴무로 토요일에는 주문 불가</p>
+                    </div>
+                    <div class="inner_layer layer_none">
+                        <strong class="dsr_result">베송 불가 지역입니다.</strong>
+                        <div class="ani">
+                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_none.png" src="./img/bg_1x1.png" alt="배송불가 이미지">
+                        </div>
+                        <p class="dsr_desc">
+                            <strong class="emph">도로명 주소</strong>
+                            "로 검색하셨다면,"
+                            <br>
+                            <strong class="emph">지번 주소(구 주소)</strong>
+                            "로 다시 시도해 주세요. "
+                        </p>
+                        <p class="dsr_notice">배송지역을 확장하도록 노력하겠습니다!</p>
+                    </div>
                     <div class="layer_btn1">
-                    <button type="button" class="btn_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인</button>
+                        <button type="button" class="btn_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인</button>
                     </div>
                     <button type="button" class="layer_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
                 </div>
             </div>
-            <!-- main 끝 -------------------------------------------------------->
-            <!--footer 시작 ----------------------------------------------->
-            <div id="footer">
+            <!-- layerDSR 끝 ------------------------------------------->
+
+            <!-- 푸터 시작 -->
+            <footer id="footer" style="opacity: 1;">
                 <div class="inner_footer">
                     <div class="footer_cc">
                         <h2 class="tit_cc">고객행복센터</h2>
                         <div class="cc_view cc_call">
-                            <h3><span class="tit">1644-1107</span></h3>
+                            <h3>
+                                <span class="tit">1644-1107</span>
+                            </h3>
                             <dl class="list">
                                 <dt>365고객센터</dt>
-                                <dd>오전 7시 ~ 오후7시</dd>
+                                <dd>오전 7시 - 오후 7시</dd>
                             </dl>
                         </div>
                         <div class="cc_view cc_kakao">
-                            <h3><span class="tit">1644-1107</span></h3>
+                            <h3>
+                                <a class="tit" href="#none">카카오톡 문의</a>
+                            </h3>
+                            <script type="text/javascript">
+                                $('.cc_kakao .tit').on('click',function(e){
+                                    e.preventDefault();
+                    KurlyTracker.setAction('select_bottom_kakao_button').sendData();
+                                    $.ajax({
+                                        type: "GET",
+                                        url: apiDomain+'/v1/mypage/asks/confirm/kakao',
+                                        dataType: 'json',
+                                        success: function(data) {
+                                            if(data.data.ok_button_action_url.indexOf('https://api.happytalk.io/') > -1){
+                                                if(confirm('['+data.data.title+'] '+data.data.message)) window.open(data.data.ok_button_action_url,'_blank');
+                                            }else{
+                                                alert(data.data.title+'\n'+data.data.message);
+                                            }
+                                        }
+                                    })
+                                });                          
+                            </script>
                             <dl class="list">
                                 <dt>365고객센터</dt>
-                                <dd>오전7시~ 오후 7시</dd>
+                                <dd>오전 7시 - 오후 7시</dd>
                             </dl>
                         </div>
                         <div class="cc_view cc_qna">
-                            <h3><a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a></h3>
+                            <h3>
+                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                            </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
                                 <dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
                             </dl>
                         </div>
                         <div class="cc_view cc_bulkorder">
-                            <h3><a href="/shop/main/html.php?htmid=mypage/bulk_order.htm" class="tit">대량주문 문의</a></h3>
+                            <h3>
+                                <a href="#" class="tit">대량주문 문의</a>
+                            </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>
                     </div>
-
                     <div class="company">
                         <ul class="list">
-                            <li><a class="link" href="/shop/introduce/about_kurly.php">컬리소개</a></li>
-                            <li><a class="link" href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;enablejsapi=1" onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a></li>
-                            <li><a class="link" href="https://marketkurly.recruiter.co.kr/appsite/company/index" target="_blank">인재채용</a></li>
-                            <li><a class="link" href="/shop/service/agreement.php">이용약관</a></li>
-                            <li><a class="link emph" href="/shop/service/private.php">개인정보처리방침</a></li>
-                            <li><a class="link" href="/shop/service/guide.php">이용안내</a></li>
+                            <li>
+                                <a class="link" href="#">컬리소개</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&showinfo=0&wmode=opaque&enablejsapi=1" onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://marketkurly.recruiter.co.kr/appsite/company/index" target="_blank">인재채용</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#">이용약관</a>
+                            </li>
+                            <li>
+                                <a class="link emph" href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#">이용안내</a>
+                            </li>
                         </ul>
-                        "법인명(상호) : 주식회사 컬리"
+                        법인명 (상호) : 주식회사 컬리
                         <span class="bar">|</span>
-                        "사업자등록번호 : 261-81-23567"
-                        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&amp;apv_perm_no=" target="_blank" class="link">사업자정보 확인</a>
+                        사업자등록번호 : 261-81-23567
+                        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&apv_perm_no=" target="_blank" class="link">사업자정보 확인</a>
                         <br>
-                        "통신판매업 : 제 2018- 서울강남 -01646호"
+                        통신판매업 : 제 2018-서울강남-01646 호
                         <span class="bar">|</span>
-                        "개인정보보호책임자 : 이원준"
+                        개인정보보호책임자 : 이원준
                         <br>
-                        "주소 : 서울특별시 강남구  테헤란로 133,18층(연삼동)"
+                        주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
                         <span class="bar">|</span>
-                        "대표이사 : 김슬아"
+                        대표이사 : 김슬아
                         <br>
-                        "입정문의"
+                        입점문의 : 
                         <a href="https://forms.gle/oKMAe1SaicqMX3SC9" target="_blank" class="link">입점문의하기</a>
                         <span class="bar">|</span>
-                        "제휴문의:"
+                        제휴문의 : 
                         <a href="mailto:business@kurlycorp.com" class="link">business@kurlycorp.com</a>
                         <br>
-                        "채용문의"
+                        채용문의 : 
                         <a href="mailto:recruit@kurlycorp.com" class="link">recruit@kurlycorp.com</a>
                         <br>
-                        "팩스 : 070 - 7500 - 6098"
+                        팩스 : 070 - 7500 - 6098
                         <span class="bar">|</span>
-                        "이메일 : "
+                        이메일 : 
                         <a href="mailto:help@kurlycorp.com" class="link">help@kurlycorp.com</a>
                         <br>
-                        "대량주문 문의"
+                        대량주문 문의 : 
                         <a href="mailto:kurlygift@kurlycorp.com" class="link">kurlygift@kurlycorp.com</a>
                         <em class="copy">© KURLY CORP. ALL RIGHTS RESERVED</em>
-
                         <ul class="list_sns">
-                            <li><a href="https://instagram.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="마켓컬리 인스타그램 바로가기"></a></li>
-                            <li><a href="https://www.facebook.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="마켓컬리 페이스북 바로가기"></a></li>
-                            <li><a href="http://blog.naver.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기"></a></li>
-                            <li><a href="https://m.post.naver.com/marketkurly" class="link_sns" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_naverpost.png" alt="마켓컬리 유튜브 바로가기"></a></li>
-                            <li<a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" class="link_sns lst" target="_blank"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="마켓컬리 유튜브 바로가기"></a>></li>
+                            <li>
+                                <a href="https://instagram.com/marketkurly/" class="link_sns" target="_blank">
+                                    <img src="./img/ico_instagram.png" alt="마켓컬리 인스타그램 바로가기">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/marketkurly" class="link_sns" target="_blank">
+                                    <img src="./img/ico_fb.png" alt="마켓컬리 페이스북 바로가기">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.naver.com/marketkurly" class="link_sns" target="_blank">
+                                    <img src="./img/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.post.naver.com/marketkurly" class="link_sns" target="_blank">
+                                    <img src="./img/ico_naverpost.png" alt="마켓컬리 포스트 바로가기">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" class="link_sns lst" target="_blank">
+                                    <img src="./img/ico_youtube.png" alt="마켓컬리 유튜브 바로가기">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer_link">
                     <div class="authentication">
                         <a href="#none" onclick="popup('https://res.kurly.com/pc/img/1909/img_isms.jpg',550,700);return false;" class="mark" target="_blank">
-                            <img src="https://res.kurly.com/pc/ico/2001/logo_isms.png" alt="isms 로고" class="logo">
-                        <p class="txt">
-                        [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영<br>
-                        [유효기간] 2019.04.01 ~ 2022.03.31
-                        </p>
+                            <img src="./img/logo_isms.png" alt="isms 로고" class="logo">
+                            <p class="txt">
+                                [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영
+                                <br>
+                                [유효기간] 2019.04.01 ~ 2022.03.31
+                            </p>
                         </a>
-                        <a href="#none" onclick="popup('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&amp;certNum=2021-EP-R003',527,720);return false;" class="mark" target="_blank">
-                            <img src="https://res.kurly.com/pc/ico/2001/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
-                        <p class="txt">
-                        개인정보보호 우수 웹사이트 ·<br>
-                        개인정보처리시스템 인증 (ePRIVACY PLUS)
-                        </p>
+                        <a href="#none" onclick="popup('https://www.eprivary.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&certNum=2021-EP-R003',527,720);return false;" class="mark" target="_blank">
+                            <img src="./img/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
+                            <p class="txt">
+                                개인정보보호 우수 웹사이트 · 
+                                <br>
+                                개인정보처리시스템 인증 (ePRIVACY PLUS)
+                            </p>
                         </a>
                         <a href="#none" onclick="popup('http://pgweb.uplus.co.kr/ms/escrow/s_escrowYn.do?mertid=go_thefarmers',460,550);return false;" class="mark lguplus" target="_blank">
-                        <img src="https://res.kurly.com/pc/service/main/2009/logo_payments.png" alt="payments 로고" class="logo">
-                        <p class="txt">
-                        고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br>
-                        토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
-                        </p>
+                            <img src="./img/logo_payments.png" alt="payments 로고" class="logo">
+                            <p class="txt">
+                                고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
+                                <br>
+                                토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+                            </p>
                         </a>
                     </div>
                 </div>
-            </div>
+            </footer>
+            <!-- 푸터 끝 -->
     </div>
-  </div>
+</div>
 </body>
 </html>
