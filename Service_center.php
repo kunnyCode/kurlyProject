@@ -52,7 +52,7 @@ Sentry.onLoad(function() {
   <link rel="apple-touch-icon" sizes="76x76" href="https://res.kurly.com/images/marketkurly/logo/ico_76.png">
   <link rel="apple-touch-icon" sizes="114x114" href="https://res.kurly.com/images/marketkurly/logo/ico_114.png">
   <link rel="apple-touch-icon" sizes="120x120" href="https://res.kurly.com/images/marketkurly/logo/ico_120.png">
-  
+
 </head>
 <body >
   <div id="wrap">
@@ -716,7 +716,7 @@ Sentry.onLoad(function() {
             </header>
             <!-- 헤더 끝-------------------------------------------------------------------->
 
-            <!--mail 시작 --------------------------------------------------->
+            <!--main시작 --------------------------------------------------->
             <div id="main">
               <div id="content">
               <div id="qnb" class="quick-navigation" style="top: 70px;"></div>
