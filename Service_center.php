@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고객센터</title>
     <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/Service_center.css">
 </head>
 <body >
 <div id="wrap">
@@ -18,7 +19,7 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="./img/ico_down_8x5.png" class="linkMenu">고객센터</a>
+                            <a href="Service_center.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
                                 <li><a href="#" onClick="">공지사항</a></li>
                                 <li><a href="#" onClick="">자주하는 질문</a></li>
