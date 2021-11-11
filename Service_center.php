@@ -756,7 +756,15 @@ Sentry.onLoad(function() {
             <div id="layerDSR">
                 <div class="bg_dim"></div>
                 <div class="in_layer">
-                    <div class="inner_layer layer_star"><strong class="dsr_result">샛별배송 지역입니다.</strong></div>
+                    <div class="inner_layer layer_star"><strong class="dsr_result">샛별배송 지역입니다.</strong>
+                    <div class="ani"><img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_kurly.png" src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="샛별배송 이미지"></div>
+                    <p class="dsr_desc default_cutoff_23_7">
+                        <strong class="emph">오늘 밤 11시 전</strong>"까지 주문시"<br><strong class="emph">다음날 아침 7시</strong>"이전 도착합니다!"
+                    </p>
+                    <p class="dsr_desc early_cutoff_20_8">
+                        <strong class="emph">오늘 밤 8시 전</strong>"까지 주문시"<br><strong class="emph">다음날 아침 8시</strong>"이전 도착힙니다!"
+                    </p>
+                </div>
                     <div class="inner_layer layer_normal"><strong class="dsr_result">택배배송 지역입니다.</strong></div>
                     <div class="inner_layer layer_none"><strong class="dsr_result">배송 불가 지역입니다.</strong></div>
                     <div class="layer_btn1">
