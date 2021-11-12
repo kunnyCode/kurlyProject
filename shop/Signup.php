@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
+    <link rel="stylesheet" href="./CSS/Signup.css">
     <h2>회원가입</h2>
     <p>
         <span class="ico">*</span>필수입력사항
         <div>::after</div>
     </p>
-    <td></td>
+
 </head>
 <body>
     <div id="content">
+        <div class="form_phone"></div>
         <td>
             <p><label>아이디<span class="ico">*</span> <input type="text" name="userid" id="userid" maxlength="20" size="35" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" ></label></p>
             <input type="hidden" name="checkid" id="checkid" required="아이디중복체크"><a href="#">중복확인</a>
@@ -44,6 +46,7 @@
     <p><label>이메일<span class="ico">*</span> <input type="text" name="email" id="email" maxlength="20" size="30" placeholder="예:marketkurly@kurly.com"></label></p>
     <p><label>휴대폰<span class="ico">*</span> <input type="text" name="phone" id="phone" maxlength="20" size="30" placeholder="숫자만 입력해주세요"></label>
             <input type="text" name="numb" maxlength="10" size="10" placeholder="인증번호 받기"></p>
+    </div>
     <p><label>주소<span class="ico">*</span> <input type="text" name="adress_search" id="adress_search" maxlength="20" size="30" placeholder="주소 검색"></label></p>
     <ul>배송지에 따라 상품 정보가 달라질 수 있습니다.</ul>
 <!-- 주소 끝 -->
