@@ -748,7 +748,190 @@ Sentry.onLoad(function() {
                 <div class="page_section">
                   <div class="head_aticle">
                     <h2 class="tit">"공시사항"<span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span></h2>
-                 </div>                 
+                 </div>     
+                    <form name="frmList" action="/shop/board/list.php?&amp;" onsubmit="return chkFormList(this)">
+                    <input type="hidden" name="id" value="notice">
+                    <style>
+                        .notice .layout-pagination{margin: 0}
+                        .eng2{color: #939393}
+                        .xans-board-listheader{font-size:12px}
+                    </style>
+                    <table width="100%" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                        <td>
+                         <div class="xans-element- xans-myshop xans-myshop-couponserial ">
+                           <table width="100%" class="xans-board-listheader jh" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        공지 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1051"><b>[마켓컬리] 택배배송 주문 시간 확대 안내</b></a><b>
+                        </b></td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-09-13</td>
+                        <td width="30" nowrap="" align="center" class="eng2">15986</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        공지 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=931"><b>[마켓컬리] 종이박스 회수 서비스 안내</b></a><b>
+                        </b></td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-06-18</td>
+                        <td width="30" nowrap="" align="center" class="eng2">23494</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        955 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1135">[가격인상공지] HALO/로투스 (2021 11. 19 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-15</td>
+                        <td width="30" nowrap="" align="center" class="eng2">38</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        954 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1134">[가격인상공지] [해태] 홈런볼 초코 4번들 184g (2021 11. 19 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-15</td>
+                        <td width="30" nowrap="" align="center" class="eng2">37</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        953 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1133">[가격인상공지] 연세우유 가격 변동의 건 (2021 11. 18 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-12</td>
+                        <td width="30" nowrap="" align="center" class="eng2">98</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        952 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1132">[가격인상공지] [곤트란 쉐리에] 소금버터빵 외 10건 (2021 11. 16 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-12</td>
+                        <td width="30" nowrap="" align="center" class="eng2">123</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        951 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1131">[가격인상공지] [LOTS OF LOVE] 차돌듬뿍 묵은지볶음밥 (2021 11. 16 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-12</td>
+                        <td width="30" nowrap="" align="center" class="eng2">74</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        950 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1130">[가격인상공지] [바켄] 브라우니 외 3건 (2021 11. 12 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-11</td>
+                        <td width="30" nowrap="" align="center" class="eng2">79</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        949 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1129">[가격변경공지] [라보에이치] 탈모증상완화 샴푸 두피강화 400ml 외 38건 (2021. 11. 11 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly  </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-11</td>
+                        <td width="30" nowrap="" align="center" class="eng2">62</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        948 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1128">[가격인상공지] [네스프레소] 시티즈 체리레드 외 8건 (2021 11. 15 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-11</td>
+                        <td width="30" nowrap="" align="center" class="eng2">59</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        947 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1127">[마켓컬리] 근무자 코로나19 확진 관련 안내</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-09</td>
+                        <td width="30" nowrap="" align="center" class="eng2">516</td>
+                    </tr>
+                    <tr>
+                        <td width="50" nowrap="" align="center">
+                        946 </td>
+                        <td style="padding-left:10px; text-align:left; color:#999">
+                        <a href="view.php?id=notice&amp;no=1125">[가격인상공지] [송월타월] 면100%수건 5종 (2021 11. 12 ~)</a>
+                        </td>
+                        <td width="100" nowrap="" align="center">
+                        MarketKurly </td>
+                        <td width="100" nowrap="" align="center" class="eng2">2021-11-09</td>
+                        <td width="30" nowrap="" align="center" class="eng2">170</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="layout-pagination"><div class="pagediv"><a href="list.php?id=notice&amp;page=1" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a><a href="list.php?id=notice&amp;page=1" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a><strong class="layout-pagination-button layout-pagination-number __active">1</strong><a href="list.php?id=notice&amp;page=2" class="layout-pagination-button layout-pagination-number">2</a><a href="list.php?id=notice&amp;page=3" class="layout-pagination-button layout-pagination-number">3</a><a href="list.php?id=notice&amp;page=4" class="layout-pagination-button layout-pagination-number">4</a><a href="list.php?id=notice&amp;page=5" class="layout-pagination-button layout-pagination-number">5</a><a href="list.php?id=notice&amp;page=6" class="layout-pagination-button layout-pagination-number">6</a><a href="list.php?id=notice&amp;page=7" class="layout-pagination-button layout-pagination-number">7</a><a href="list.php?id=notice&amp;page=8" class="layout-pagination-button layout-pagination-number">8</a><a href="list.php?id=notice&amp;page=9" class="layout-pagination-button layout-pagination-number">9</a><a href="list.php?id=notice&amp;page=10" class="layout-pagination-button layout-pagination-number">10</a><a href="list.php?id=notice&amp;page=2" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a><a href="list.php?id=notice&amp;page=96" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+                    </div>
+                    </div>
+                    <table class="xans-board-search xans-board-search2">
+                    <tbody><tr>
+                    <td class="input_txt"><img src="/shop/data/skin/designgj/images/board/ico_function.gif">검색어</td>
+                    <td class="stxt">
+                    <input type="checkbox" name="search[name]">이름
+                    <input type="checkbox" name="search[subject]">제목
+                    <input type="checkbox" name="search[contents]">내용&nbsp;
+                    </td>
+                    <td class="input_txt">&nbsp;</td>
+                    <td>
+                    <div class="search_bt">
+                    <a href="javascript:document.frmList.submit()"><img src="/shop/data/skin/designgj/images/board/search.png" align="absmiddle"></a>
+                    <input type="text" name="search[word]" value="" required="">
+                    </div>
+                    </td>
+                    </tr>
+                    </tbody></table>
+                    </form>         
                 </div>
               </div>
             </div>
@@ -765,11 +948,29 @@ Sentry.onLoad(function() {
                         <strong class="emph">오늘 밤 8시 전</strong>"까지 주문시"<br><strong class="emph">다음날 아침 8시</strong>"이전 도착힙니다!"
                     </p>
                 </div>
-                    <div class="inner_layer layer_normal"><strong class="dsr_result">택배배송 지역입니다.</strong></div>
-                    <div class="inner_layer layer_none"><strong class="dsr_result">배송 불가 지역입니다.</strong></div>
-                    <div class="layer_btn1">
-                    <button type="button" class="btn_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인</button>
+
+                    <div class="inner_layer layer_normal"><strong class="dsr_result">택배배송 지역입니다.</strong>
+                        <div class="ani"><img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_car.png" src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="택배배송 이미지"></div>
+                        <p class="dsr_desc old_eight">
+                        <strong class="emph">밤 8시 전</strong>"까지 주문시"<br><strong class="emph">다음날</strong>"도착합니다!"
+                        </p>
+                        <p class="dsr_notice">일요일은 배송 휴무로 토요일에는 주문 불가</p>
                     </div>
+
+                    <div class="inner_layer layer_none"><strong class="dsr_result">배송 불가 지역입니다.</strong>
+                        <div class="ani">
+                        <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_none.png" src="https://res.kurly.com/mobile/service/common/bg_1x1.png" alt="배송불가 이미지">
+                        </div>
+                        <p class="dsr_desc">
+                        <strong class="emph">도로명 주소</strong>"로 검색하셨다면,"<br><strong class="emph">지번 주소(구 주소)</strong>"로 다시 시도해주세요."
+                        </p>
+                        <p class="dsr_notice">배송지역을 확장하도록 노력하겠습니다!</p>
+                    </div>
+
+                    <div class="layer_btn1">
+                        <button type="button" class="btn_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인</button>
+                    </div>
+
                     <button type="button" class="layer_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
                 </div>
             </div>
