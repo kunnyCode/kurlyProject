@@ -1,5 +1,14 @@
 *{ font-family: noto sans;}
 
+/* 여건 작성 */
+/* { */
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+/* } */
+
 #content {
     min-width: 1050px;
     padding-bottom: 60px;
@@ -440,9 +449,3 @@
 #layerDSR .layer_star .dsr_result { font-size:25px; }
 
 #layerDSR .dsr_result .emph{ color:#5f0080 ;}
-
-
-
-
-
-
