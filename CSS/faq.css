@@ -29,9 +29,9 @@ img, video, canvas {
     letter-spacing: -.5px;
 }
 
-.search_data .btn_layer on {
+/* .search_data .btn_layer on {
 
-}
+} */
 
 .search_data .btn_layer::after {
     content: "";
@@ -101,3 +101,6 @@ td, th {
     float: right;
     position: relative;
 }
+
+
+
