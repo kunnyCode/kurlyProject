@@ -748,7 +748,7 @@
                             <div class="inner_snb">
                                 <ul class="list_menu">
                                     <li>
-                                        <a href="service_center.php">공지사항</a>
+                                        <a href="list.php">공지사항</a>
                                     </li>
                                     <li class="on">
                                         <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
@@ -809,7 +809,7 @@
                                     </ul>
                                     <input type="hidden" name="sitemcd" value>
                                 </div>
-                                    <div class="xans-element- xans-myshop xans-myshop-couponserial">
+                                <div class="xans-element- xans-myshop xans-myshop-couponserial">
                                         <table width="100%" class="xans-board-listheader">
                                             <tbody>
                                                 <tr>
@@ -1486,34 +1486,33 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <div style="padding: 1px; border-top: 1px solid #e6e6e6;"></div>
-                                    <div class="layout-pagination">
-                                        <div class="pagediv">
-                                            <a href="/shop/service/FAQ.php?&amp;page=1" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
-                                            <a href="/shop/service/FAQ.php?&amp;page=1" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
-                                            <strong class="layout-pagination-button layout-pagination-number __active">1</strong>
-                                            <a href="/shop/service/FAQ.php?&amp;page=2" class="layout-pagination-button layout-pagination-number">2</a>
-                                            <a href="/shop/service/FAQ.php?&amp;page=3" class="layout-pagination-button layout-pagination-number">3</a>
-                                            <a href="/shop/service/FAQ.php?&amp;page=4" class="layout-pagination-button layout-pagination-number">4</a>
-                                            <a href="/shop/service/FAQ.php?&amp;page=5" class="layout-pagination-button layout-pagination-number">5</a>
-                                            <a href="/shop/service/FAQ.php?&amp;page=2" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
-                                            <a href="/shop/service/FAQ.php?&amp;page=5" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+                                        <div style="padding: 1px; border-top: 1px solid #e6e6e6;"></div>
+                                        <div class="layout-pagination">
+                                            <div class="pagediv">
+                                                <a href="/shop/service/FAQ.php?&amp;page=1" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=1" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
+                                                <strong class="layout-pagination-button layout-pagination-number __active">1</strong>
+                                                <a href="/shop/service/FAQ.php?&amp;page=2" class="layout-pagination-button layout-pagination-number">2</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=3" class="layout-pagination-button layout-pagination-number">3</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=4" class="layout-pagination-button layout-pagination-number">4</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=5" class="layout-pagination-button layout-pagination-number">5</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=2" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=5" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <table class="xans-board-search xans-board-search2">
-                                        <tbody>
-                                            <tr>
-                                                <td class="input_txt">&nbsp;</td>
-                                                <td>
-                                                    <div class="search_bt">
-                                                        <input type="image" src="../../img/boardimg/search.webp" align="abmiddle">
-                                                        <input type="text" name="sword" value required>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
+                                        <table class="xans-board-search xans-board-search2">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="input_txt">&nbsp;</td>
+                                                    <td>
+                                                        <div class="search_bt">
+                                                            <input type="image" src="../../img/boardimg/search.webp" align="abmiddle">
+                                                            <input type="text" name="sword" value required>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                 </div>
                             </div>
                         </form>
