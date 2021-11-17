@@ -34,9 +34,9 @@
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <a href="./goods/Signup.php"></a>
                         <li class="menu lst">
-                            <a href="./shop/board/service_center.php" class="linkMenu">고객센터</a>
+                            <a href="./shop/board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="./shop/board/service_center.php" onClick="">공지사항</a></li>
+                                <li><a href="./shop/board/list.php" onClick="">공지사항</a></li>
                                 <li><a href="#" onClick="">자주하는 질문</a></li>
                                 <li><a href="#" onClick="">1:1 문의</a></li>
                                 <li><a href="#" onClick="">대량주문 문의</a></li>
