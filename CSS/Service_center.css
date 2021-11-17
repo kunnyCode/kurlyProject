@@ -18,6 +18,7 @@ a {
     border-bottom: 1px solid #f7f7f7;
 }
 
+/* list.php 시작 */
 /* 좌측 고객센터 목록 : 현이 */
 #snb {
     float: left;
@@ -274,6 +275,11 @@ a {
     font-size: 0;
 }
 
+/* 추가함 */
+.page_aticle .layout-pagination * {
+    color: #333;
+}
+
 .page_aticle .layout-pagination a:hover {
     background-color: #f7f7f7;
 }
@@ -449,3 +455,190 @@ a {
 #layerDSR .layer_star .dsr_result { font-size:25px; }
 
 #layerDSR .dsr_result .emph{ color:#5f0080 ;}
+
+
+
+
+
+
+
+/* list_view.php 시작 */
+/* 공지사항(고객센터) 게시글 타이틀 : 현이 */
+.tit_page { 
+    overflow: hidden;
+    width: 1050px;
+    margin: 0 auto;
+    /* padding: 50px 0 51px; */
+    padding: 110px 0 51px;
+}
+
+.tit_page h2.tit {
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.tit_page .sub {
+    font-family: noto sans;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+    letter-spacing: -.3px;
+    text-align: center;
+}
+
+
+
+/* 공지사항 게시글 : 현이 */
+.layout-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    /* background: #fff; */
+    /* padding: 20px;
+    line-height: 17px; */
+    position: relative;
+    height: 100%;
+}
+
+.boardView {
+    table-layout: fixed;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #f4f4f4;
+    color: #333;
+    line-height: 180%;
+    /* margin-top: 20px; */
+    margin-top: 200px;
+}
+
+.boardView th {
+    width: 130px;
+    padding: 13px 0 13px 20px;
+    background-color: #f7f5f8;
+    border-top: 1px solid #f4f4f4;
+    text-align: left;
+}
+
+.boardView td {
+    width: auto;
+    padding: 13px 0 13px 23px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.boardView tr.etcArea td {
+    padding: 0;
+    border: 0;
+}
+
+.boardView tr.etcArea ul {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid #f4f4f4;
+}
+
+.boardView tr.etcArea ul li { float: left; }
+
+.boardView tr.etcArea ul .th {
+    float: left;
+    padding: 13px 0 13px 20px;
+    width: 130px;
+    background-color: #f7f5f8;
+}
+
+.boardView tr.etcArea ul .td {
+    float: left;
+    padding: 13px 0 13px 20px;
+    width: 180px;
+}
+
+.xans-element-.xans-myshop.xans-myshop-couponserial td#contents span {
+    line-height: 25px;
+}
+
+.xans-element-.xans-myshop.xans-myshop-couponserial td#contents p {
+    line-height: 25px;
+}
+
+.xans-element-.xans-myshop.xans-myshop-couponserial td#contents .board_view_content {
+    line-height: 25px;
+}
+
+.xans-element-.xans-myshop.xans-myshop-couponserial td#contents .board_view_content div {
+    line-height: 25px;
+}
+
+.xans-element-.xans-myshop.xans-myshop-couponserial .eng {
+    display: none;
+}
+
+
+
+.bhs_button {
+    width: 150px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    background-color: #795b8f;
+    border: 1px solid #5f0080;
+    color: #fff;
+    font-size: 15px;
+    /* float: right; */
+    margin-left: 2px;
+    font-size: 13px;
+}
+
+.bhs_button.yb:hover {
+    background-color: #5f0080;
+    color: #fff;
+}
+
+.bhs_button.active:hover {
+    background-color: #5f0080;
+    color: #fff;
+}
+
+.bhs_button.yb {
+    background-color: #795b8f;
+    color: #fff;
+}
+
+
+
+.xans-board-movement {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin: 20px 0;
+}
+
+.xans-board-movement li {
+    overflow: hidden;
+    padding: 0 20px;
+    border-bottom: 1px solid #f4f4f4;
+    line-height: 140%;
+    color: #333;
+}
+
+.xans-board-movement li strong {
+    width: 6%;
+    padding-left: 15px;
+    border-right: 1px solid #f4f4f4;
+    font-weight: 400;
+    background: url(../img/ico_move_prev.gif) no-repeat 0 15px;
+}
+
+.xans-board-movement li a, .xans-board-movement li strong {
+    float: left;
+    padding: 10px;
+    color: #333;
+}
+
+.xans-board-movement li.next { border: 0; }
+
+.xans-board-movement li.next strong {
+    background: url(../img/ico_move_next.gif) no-repeat 0 15px;
+}
+

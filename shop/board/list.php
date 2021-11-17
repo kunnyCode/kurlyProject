@@ -19,9 +19,9 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="service_center.php" class="linkMenu">고객센터</a>
+                            <a href="list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="service_center.php" onClick="">공지사항</a></li>
+                                <li><a href="list.php" onClick="">공지사항</a></li>
                                 <li><a href="#" onClick="">자주하는 질문</a></li>
                                 <li><a href="#" onClick="">1:1 문의</a></li>
                                 <li><a href="#" onClick="">대량주문 문의</a></li>
@@ -747,7 +747,7 @@
                             <div class="inner_snb">
                                 <ul class="list_menu">
                                     <li class="on">
-                                        <a href="service_center.php">공지사항</a>
+                                        <a href="list.php">공지사항</a>
                                     </li>
                                     <li>
                                         <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
@@ -768,7 +768,7 @@
                             </div>
                             <a href="/shop/mypage/mypage_qna_register.php?mode=add_qna" class="link_inquire">
                                 <span class="emph">도움이 필요하신가요 ?</span>
-                                " 1:1 문의하기"
+                                1:1 문의하기
                             </a>
                         </div>
                         <!-- 좌측 고객센터 목록 끝 -->
@@ -777,7 +777,7 @@
                         <div class="page_section">
                             <div class="head_aticle">
                                 <h2 class="tit">
-                                    "공지사항 "
+                                    공지사항
                                     <span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span>
                                 </h2>
                             </div>
@@ -948,15 +948,15 @@
                                         <tr>
                                             <td class="input_txt">
                                                 <img src="../../img/ico_function.gif">
-                                                "검색어"
+                                                검색어
                                             </td>
                                             <td class="stxt">
                                                 <input type="checkbox" name="search[name]">
-                                                "이름 "
+                                                이름
                                                 <input type="checkbox" name="search[subject]">
-                                                "제목 "
+                                                제목
                                                 <input type="checkbox" name="search[contents]">
-                                                "내용&nbsp; "
+                                                내용&nbsp;
                                             </td>
                                             <td class="input_txt">&nbsp;</td>
                                             <td>
@@ -973,7 +973,7 @@
                             </form>
                         </div>
                         <!-- 공지사항 게시판 끝 -->
-                        ::after
+                        <!-- ::after -->
                     </div>
                 </div>
             </div>
