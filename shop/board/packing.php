@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고객센터</title>
+    <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
     <link rel="stylesheet" href="../../CSS/common.css">
-    <link rel="stylesheet" href="../../CSS/service_center.css">
+    <link rel="stylesheet" href="../../CSS/Service_center.css">
+    <link rel="stylesheet" href="../../CSS/faq.css">
 </head>
 <body >
 <div id="wrap">
@@ -674,7 +675,7 @@
             <div id="main">
                 <div id="content">
                     <!-- 사이드 퀵 메뉴 시작 -->
-                    <div id="qnb" class="quick-navigation" style="top: 516px;">
+                    <div id="qnb" class="quick-navigation" style="top: 70px;">
                         <div class="bnr_qnb" id="brnQuick">
                             <a href="#" id="brnQuickObj">
                                 <img class="thumb" src="../../img/bnr_quick.png" alt="퀄리티있게 샛별배송">
@@ -746,23 +747,23 @@
                             <h2 class="tit_snb">고객센터</h2>
                             <div class="inner_snb">
                                 <ul class="list_menu">
-                                    <li class="on">
-                                        <a href="service_center.php">공지사항</a>
+                                    <li>
+                                        <a href="list.php">공지사항</a>
                                     </li>
                                     <li>
-                                        <a href="#" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
+                                        <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
                                     <li>
-                                        <a href="#" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
+                                        <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
                                     <li>
                                         <a href="#" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
                                     </li>
                                     <li>
-                                        <a href="#" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
+                                        <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
-                                    <li>
-                                        <a href="#" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                    <li class="on">
+                                        <a href="./packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
                                     </li>
                                 </ul>
                             </div>
@@ -774,207 +775,106 @@
                         <!-- 좌측 고객센터 목록 끝 -->
 
                         <!-- 공지사항 게시판 시작 -->
-                        <div class="page_section">
+                        <div class="page_section section_offer">
                             <div class="head_aticle">
                                 <h2 class="tit">
-                                    "공지사항 "
-                                    <span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span>
+                                    에코포장 피드백
                                 </h2>
                             </div>
-                            <form name="frmList" action="/shop/board/list.php?&" onsubmit="return chkFormList(this)">
-                                <input type="hidden" name="id" value="notice">
-                                <style>
-                                    .notice .layout-pagination { margin: 0; }
-                                    .eng2 { color: #939393 }
-                                    .xans-board-listheader { font-size: 12px }
-                                </style>
-                                <table width="100%" align="center" cellpadding="0" cellspacing="0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="xans-element- xans-myshop xans-myshop-couponserial">
-                                                    <table width="100%" class="xans-board-listheader jh" cellpadding="0" cellspacing="0">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>번호</th>
-                                                                <th>제목</th>
-                                                                <th>작성자</th>
-                                                                <th>작성일</th>
-                                                                <th>조회</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 공지 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1051">
-                                                                        <b>[마켓컬리] 택배배송 주문 시간 확대 안내</b>
-                                                                    </a>
-                                                                    <b> </b>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-09-13</td>
-                                                                <td width="30" nowrap align="center" class="eng2">14334</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 공지 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=931">
-                                                                        <b>[마켓컬리] 종이박스 회수 서비스 안내</b>
-                                                                    </a>
-                                                                    <b> </b>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-06-18</td>
-                                                                <td width="30" nowrap align="center" class="eng2">22708</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 947 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1127">[마켓컬리] 근무자 코로나19 확진 관련 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-09</td>
-                                                                <td width="30" nowrap align="center" class="eng2">17</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 946 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1125">[가격인상공지] [송월타월] 면100%수건 5종 (2021. 11. 12 ~)</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-09</td>
-                                                                <td width="30" nowrap align="center" class="eng2">17</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 945 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1124">[가격인상공지] [페넬로페] 씬씬씬 플러스 팬티기저귀 특대 28매*4팩 (여아용) 외 12건 (2021. 11. 11 ~)</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-09</td>
-                                                                <td width="30" nowrap align="center" class="eng2">5</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 944 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1123">주식회사 컬리페이 전자지급 결제대행 서비스 이용약관 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-03</td>
-                                                                <td width="30" nowrap align="center" class="eng2">184</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 943 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1119">[마켓컬리] 수퍼세이브위크 10/31 11시 ~ 11/1 00시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-01</td>
-                                                                <td width="30" nowrap align="center" class="eng2">1708</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 942 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1118">[마켓컬리] 수퍼세이브위크 10/30 11시 ~ 10/31 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-01</td>
-                                                                <td width="30" nowrap align="center" class="eng2">931</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 941 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1115">[마켓컬리] 수퍼세이브위크 10/29 11시 ~ 10/30 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-11-01</td>
-                                                                <td width="30" nowrap align="center" class="eng2">716</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 941 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1109">[마켓컬리] 수퍼세이브위크 10/28 11시 ~ 10/29 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-10-29</td>
-                                                                <td width="30" nowrap align="center" class="eng2">2629</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 941 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1107">[마켓컬리] 수퍼세이브위크 10/27 11시 ~ 10/28 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-10-28</td>
-                                                                <td width="30" nowrap align="center" class="eng2">10930</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td width="50" nowrap align="center"> 941 </td>
-                                                                <td style="padding-left: 10px; text-align: left; color: #999">
-                                                                    <a href="view.php?id=notice&no=1103">[마켓컬리] 수퍼세이브위크 10/26 11시 ~ 10/27 11시 추가 적립금 응모자 대상 이벤트 당첨 안내</a>
-                                                                </td>
-                                                                <td width="100" nowrap align="center"> MarketKurly </td>
-                                                                <td width="100" nowrap align="center" class="eng2">2021-10-27</td>
-                                                                <td width="30" nowrap align="center" class="eng2">12830</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="layout-pagination">
-                                    <div class="pagediv">
-                                        <a href="#" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
-                                        <strong class="layout-pagination-button layout-pagination-number __active">1</strong>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">2</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">3</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">4</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">5</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">6</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">7</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">8</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">9</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-number">10</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
-                                        <a href="#" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
-                                    </div>
+                            <ul class="list_type1">
+                                <li>
+                                    <span class="ico">·</span>
+                                    <p class="txt">에코 박스에 대한 피드백이나 새로운 포장재에 대한 제안을 남겨주세요.</p>
+                                </li>
+                                <li>
+                                    <span class="ico">·</span>
+                                    <p class="txt">더욱 세심하게 포장되었으면 하는 상품이 있다면 언제든 말씀주세요.</p>
+                                </li>
+                                <li>
+                                    <span class="ico">·</span>
+                                    <p class="txt">제안해 주신 의견은 담당자가 실시간으로 모니터링할 예정이나 별도 답변 안내는 되지 않음을 양해 부탁드립니다.</p>
+                                </li>
+                                <li>
+                                    <span class="ico">·</span>
+                                    <p class="txt">배송관련, 주문(취소/교환/환불)관련 문의 및 요청 사항은 1:1문의/카카오톡/고객센터(1644-1107)로 문의 바랍니다.</p>
+                                </li>
+                            </ul>
+                            <table width="100%" class="xans-board-listheader">
+                                <tbody>
+                                    <tr class="input_txt">
+                                        <th width="8%">번호</th>
+                                        <th width="15%">카테고리</th>
+                                        <th>제목</th>
+                                        <th width="12%">작성자</th>
+                                        <th width="12%">작성일</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="no_data" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;">
+                                상품 제안 내역이 존재하지 않습니다.
+                            </div>
+                            <div style="position: relative;">
+                                <div style="position: absolute; right: 0; top: 60px;">
+                                    <a href="javascript:popup_register( 'add_offer' );">
+                                        <span class="bhs_buttonsm yb" style="float: none;">글쓰기</span>
+                                    </a>
                                 </div>
-                                <table class="xans-board-search xans-board-search2">
-                                    <tbody>
-                                        <tr>
-                                            <td class="input_txt">
-                                                <img src="../../img/ico_function.gif">
-                                                "검색어"
-                                            </td>
-                                            <td class="stxt">
-                                                <input type="checkbox" name="search[name]">
-                                                "이름 "
-                                                <input type="checkbox" name="search[subject]">
-                                                "제목 "
-                                                <input type="checkbox" name="search[contents]">
-                                                "내용&nbsp; "
-                                            </td>
-                                            <td class="input_txt">&nbsp;</td>
-                                            <td>
-                                                <div class="search_bt">
-                                                    <a href="javascript:document.frmList.submit()">
-                                                        <img src="../../img/search1.png" align="absmiddle">
-                                                    </a>
-                                                    <input type="text" name="search[word]" value required>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
+                            </div>
+                            <div class="layout-pagination">
+                                <div class="pagediv"></div>
+                            </div>
                         </div>
                         <!-- 공지사항 게시판 끝 -->
-                        ::after
                     </div>
+                    <script type="text/javascript">
+                        function popup_register( mode, sno )
+                        {
+                            // KMF-299 1:1문의 글쓰기 버튼 트래킹
+                            if (mode === 'add_qna') {
+                            KurlyTracker.setAction('select_my_kurly_add_personal_inquiry').sendData();
+                            }
+
+                            if ( mode == 'del_qna' )  var win = window.open("../mypage/mypage_qna_del.php?mode=" + mode + "&sno=" + sno,"qna_register","width=400,height=200");
+                            else parent.location.href = ("../mypage/mypage_qna_register.php?mode=" + mode + "&sno=" + sno);
+
+                        }
+
+                        var preContent;
+
+                        function view_content(obj)
+                        {
+                            var div = obj.parentNode;
+
+                            for (var i=1, m=div.childNodes.length;i<m;i++) {
+                                if (div.childNodes[i].nodeType != 1) continue;	// text node.
+                                else if (obj == div.childNodes[ i ]) continue;
+
+                                obj = div.childNodes[ i ];
+                                break;
+                            }
+
+                            if (preContent && obj!=preContent){
+                                obj.style.display = "block";
+                                preContent.style.display = "none";
+                                preCheck = false
+                            }else if (preContent && obj==preContent){
+                                preContent.style.display = ( preContent.style.display == "none" ? "block" : "none" );
+                            }else if (preContent == null ){
+                                obj.style.display = "block";
+                            }
+
+                            preContent = obj;
+
+                            if(preContent.style.display === 'block'){
+                                KurlyTracker.setScreenName('personal_inquiry_detail');
+                            }else{
+                                KurlyTracker.setScreenName('personal_inquiry_history');
+                            }
+                        }
+
+                        // KM-1483 Amplitude 연동
+                        KurlyTracker.setScreenName('personal_inquiry_history');
+                    </script>
                 </div>
             </div>
             <!--main 끝 --------------------------------------------------->

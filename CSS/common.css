@@ -263,7 +263,8 @@ header .gnb_main .gnb a {
 /* DK */
 
 a:-webkit-any-link {
-    color: -webkit-link;
+    /* color: -webkit-link; */
+    /* 여건 비활성화(다른 모든 페이지에 a태그가 파란색으로 변경되어 일단 비활성화 시켰습니다.) */
     cursor: pointer;
 }
 
