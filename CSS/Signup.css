@@ -1,102 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+*{padding: 0px; margin: 5px;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{cursor: pointer;}
 
 /* 회원가입 */
-.content.form_phone{
-    width: 130px;
-    height: 40px;
+.login_form.h2_tit{
+    width: 100%;
+    font-weight: 300px;
+    font-size: 30px;
+    color: #3333;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+/* ico * */
+.page_main .page_line span.ico{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #EE6A7B;
+    box-sizing: border-box;
+    text-align: left;
+    height: 6.55px;
+    padding: 20.8px;
+}
+
+#body.content{
+    font-family: sans-serif;
     font-size: 13px;
-    border-radius: 3px;
-    background-color: #fff;
+    color: #3333;
+    width: 100%; height: 450px;
+    box-sizing: border-box;
 }
 
-
-
-/* ul li::after{
-    display: block;
-    position: absolute;
-    background-color: transparent;
-    text-decoration: none;
-
-} */
-
-
-
-.main_login.content{
-    display: inline-block; 
-    width: 63px; 
-    font-size: 13px; 
-    color: #464646;}
-
-/* 아이디,비밀번호 */
-.main_login.content input.tbl_form  input[type="text"], input[type="password"] {
-    width: 332px; 
-    height: 44px;
-    font-size: 12px;
-    border-radius: 3px;
-    background-color: #E8F0FE;
-    padding: 0px 14px;
-}
-
-/* 아이디 중복확인 */
-.main_login.content input.tbl_form.id_again [type="text"]{
-    width: 120px;
-    height: 44px;
-    border-radius: 3px;
-    border-color: #5F0080;
-    font-size: 14px;
-    background-color: white;
-
-}
-::before
-.main_login.content.tbl_form.ul.li{
-    width: 332px;
-    height: 17.6px;
+.tit_page.page_line{
     color: #6666;
+    font-family: sans-serif;
     font-size: 12px;
-    font-family: "noto sans";
-}
-::after
-.main_login.content.tbl_form.ul.li{
+    padding: 0px 0px 10px;
+    margin: 640px;
+    height: 27px;
     
-    width: 332px;
-    height: 17.6px;
-    color: #0F851A;
-    font-size: 12px;
-    font-family: "noto sans";
 }
 
-/* 비밀번호 확인-휴대폰 */
-.main_login.content input.tbl_form2 input[type="text"]{
-    width: 332px;
-    height: 44px;
-    font-size: 12px;
-    border-radius: 3px;
-    background-color: #fff;
-    padding: 0px 14px;
+/* 아이디-휴대폰 */ 
+.content.form input[type=text], input[number]{
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 2px;
+    display: block;
+    width: 100%; height: 50px;
+    margin-bottom: 25px;
+    border:none; background-color: white;
+    padding: 0 14px;
+    box-sizing: border-box;
 }
 
-/* 인증번호 받기 확인 */
-.main_login.content input.tbl_form2 input[type="hidden"]{
-    width: 120px;
-    height: 44px;
-    font: "noto sans";
-    border-radius: 3px;
+/* 중복확인 */
+.content .input[type=hidden]{
+    font-family: sans-serif;
     font-size: 14px;
-    color: lightgray;
+    text-align: center;
+    background-color: #ffff;
+    color: #5f0080;
     margin: 0px 0px 0px 5px;
+    border-radius: 2px;
+    border-color: #5f0080;
+    height: 30px;
+    line-height: 30px;
 }
-::after{
-    border-color: #5F0080;
+
+/* 인증번호 받기 */
+content .input[type=text]{
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffff;
+    color: #dddd;
+    margin: 0px 0px 0px 5px;
+    border-radius: 2px;
+    border-color: #dddd;
+    height: 120px;
+    line-height: 44px;
+}
+.content .form .ul.li{
+    width: 100%;
+    text-align: left;
+
 }
 
+.content .sex_radio input[type=radio]{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 100%;
+    background-color: white;
+}
+.content .sex_radio input[type=radio]:checked{
+    border: 1px solid #5f0080;
+    background-color: #5f0080;
+    margin: 0px 12px 0px 0px;
+    height: 24px;
+    padding: 24px;
+}
 
-
-/* 주소검색 */
-.tb1_form2.address input[type="text"]{
-    width: 332px;
-    height: 44px;
-    font-size: 12px;
-    background-color: #fff;
-    border-radius: 3px;
-    border-color: #5F0080;
+.content .birth_radio input[type=radio]{
+    background-color: white;
+    margin: 0px 12px 0px 0px;
+    height: 24px;
+    padding: 24px;
 }
