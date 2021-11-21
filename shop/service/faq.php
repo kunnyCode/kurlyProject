@@ -748,22 +748,22 @@
                             <div class="inner_snb">
                                 <ul class="list_menu">
                                     <li>
-                                        <a href="list.php">공지사항</a>
+                                        <a href="../board/list.php">공지사항</a>
+                                    </li>
+                                    <li class="on">
+                                        <a href="./faq.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
                                     <li>
-                                        <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
-                                    </li>
-                                    <li>
-                                        <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
+                                        <a href="../mypage/mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
                                     <li>
                                         <a href="../main/bulk_order.php" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
                                     </li>
-                                    <li> 
-                                        <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
+                                    <li>
+                                        <a href="../mypage/offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
                                     <li>
-                                        <a href="packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                        <a href="../mypage/echo_packing" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
                                     </li>
                                 </ul>
                             </div>
@@ -775,88 +775,749 @@
                         <!-- 좌측 고객센터 목록 끝 -->
 
                         <!-- 공지사항 게시판 시작 -->
-                        <div class="page_section section_qna">
-                            <div class="head_aticle">
-                                <h2 class="tit">
-                                    1:1 문의
-                                </h2>
-                            </div>
-                            <table width="100%" class="xans-board-listheader">
-                                <tbody>
-                                    <tr class="input_txt">
-                                        <th width="8%">번호</th>
-                                        <th width="15%">카테고리</th>
-                                        <th>제목</th>
-                                        <th width="12%">작성자</th>
-                                        <th width="12%">작성일</th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="no_data" style="padding: 150px 0 148px; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; font-size: 12px; color: #4c4c4c">
-                                1:1 문의 내역이 존재하지 않습니다.
-                            </div>
-                            <div style="position: relative;">
-                                <div style="position: absolute; right: 0; top: 60px;">
-                                    <a href="javascript:popup_register( 'add_qna' );">
-                                        <span class="bhs_buttonsm yb" style="float: none;">글쓰기</span>
+                        <form name="frmList" id="form" method="get"  action="?">
+                            <div class="page_section">
+                                <div class="head_aticle">
+                                    <h2 class="tit">
+                                        자주하는 질문
+                                        <span class="tit_sub">고객님들께서 가장 자주하시는 질문을 모았습니다.</span>
+                                    </h2>
+                                </div>
+                                <div class="search_data">
+                                    <a href="#none" class="btn_layer">
+                                        선택
                                     </a>
+                                    <ul class="layer_search" style="display: none;">
+                                        <li>
+                                            <a href="#none" @click="searchResult" data-value="01" data-selected="">회원</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" @click="searchResult" data-value="02" data-selected="">주문 · 결제 · 대량주문</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" @click="searchResult" data-value="03" data-selected="">취소 · 교환 · 반품</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" @click="searchResult" data-value="04" data-selected="">배송 · 포장 · 상품</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" @click="searchResult" data-value="05" data-selected="">이벤트 · 쿠폰 · 적립금</a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" @click="searchResult" data-value="07" data-selected="">서비스 이용</a>
+                                        </li>
+                                    </ul>
+                                    <input type="hidden" name="sitemcd" value>
+                                </div>
+                                <div class="xans-element- xans-myshop xans-myshop-couponserial">
+                                        <table width="100%" class="xans-board-listheader">
+                                            <tbody>
+                                                <tr>
+                                                    <th width="70" class="input_txt">번호</th>
+                                                    <th width="135" class="input_txt">카테고리</th>
+                                                    <th class="input_txt">제목</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq7">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">66</td>
+                                                            <td width="135" align="center">회원</td>
+                                                            <td style="cursor: pointer">아이디, 비밀번호를 잊어버렸습니다.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 아이디, 비밀번호 찾기 안내"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 하기 경로를 통해 아이디 및 비밀번호 찾기가 가능하며, 임시 비밀번호의 경우 회원가입 시 등록한 이메일 주소로 발송 됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 상단 [로그인] > 화면 아래 [아이디 찾기] [비밀번호 찾기]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 아래 탭에서 [마이컬리] > 로그인 화면 아래 [아이디 찾기] [비밀번호 찾기]"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 가입시 기재한 메일 주소가 기억나지 않으시거나 오류가 발생하는 경우 고객센터로 문의 바랍니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 상담시에는 고객님의 개인정보보호를 위해 기존에 사용하시던 비밀번호는 안내가 불가하며, 개인정보 확인 후 임시비밀번호를 설정해드립니다.""
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_123">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">65</td>
+                                                            <td width="135" align="center">서비스 이용</td>
+                                                            <td style="cursor: pointer">1:1 게시판으로 문의 남기는 방법은 없나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 1:1게시판 상담 문의 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 하기 경로를 통해 문의/불만 내용을 남겨주시면 상담사 확인하여 빠르게 도움 드리도록 하겠습니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 상단 고객센터 클릭 > 1:1 문의 하기"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 마이컬리 > 주문 내역"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    ▣ 제품 하자/ 제품 이상 등으로 반품(환불)이 필요한 경우 사진과 함께 구체적은 내용을 남겨주세요
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_126">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">64</td>
+                                                            <td width="135" align="center">이벤트 · 쿠폰 · 적립금</td>
+                                                            <td style="cursor: pointer">쿠폰이 있는데 "사용할 수 있는 쿠폰이 없습니다" 라고 없다고 뜹니다.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 쿠폰 사용 오류 발생 시"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 간혹, 모바일 네트워크가 불안정한 경우, 쿠폰을 불러오는 동안 해당 문구가 노출될 수 있습니다. "
+                                                                    <br>
+                                                                    <br>
+                                                                    " 쿠폰이 불러오는 동안 조금 기다려 주시고, 이후에도 동일한 문제가 발생할 경우 고객센터로 문의 바랍니다."
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_128">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">63</td>
+                                                            <td width="135" align="center">주문 · 결제 · 대량주문</td>
+                                                            <td style="cursor: pointer">(회원) 주문 내역 조회는 어디서 하나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 주문 내역 조회"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 하기 경로를 통해 구매하신 주문건의 이력을 확인할 수 있습니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 상단 [회원명] 클릭 > 주문 내역"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 마이컬리 > 주문 내역"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_159">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">62</td>
+                                                            <td width="135" align="center">배송 · 포장 · 상품</td>
+                                                            <td style="cursor: pointer">대형/설치 가전은 어떻게 구매하나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 상품 구매 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 구매 희망 상품 클릭 > 구매 진행 > 구매 완료 후, 판매처 해피콜 안내 > 상세 배송일정 조율 > 배송/설치 진행"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " * 결제 이 후, 상품 배송 관련 문의는 상세페이지 내 판매처로 문의 부탁드립니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 아래 탭에서 [마이컬리] > 로그인 화면 아래 [아이디 찾기] [비밀번호 찾기]"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 상품 모아보기"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 > 상품 카테고리 > 가전제품 > 대형.설치 가전"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_166">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">61</td>
+                                                            <td width="135" align="center">취소 · 교환 · 반품</td>
+                                                            <td style="cursor: pointer">교환(반품) 진행 시, 배송비가 부과 되나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 교환(반품) 진행 시, 배송비 안내"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 단숨변심에 의한 교환/반품 시 배송비 6,000원 (주문건 배송비를 낸 경우, 3,000원)을 고객님께서 부담하셔야합니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▶ 가공식품 및 일부 비식품류에 한해서만 반품 가능"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ① 상품에 이상이 없거나 상품의 특성적인 부분인 경우"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ② 단순 변심에 의해 교환 및 반품하는 경우"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ③ 옵션 및 상품을 잘못 선택하여 잘못 주문했을 경우"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▶ 판매자 과실 등 상품에 문제로 인해 교환 시 판매자 부담"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ① 수령한 상품이 불량인 경우"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ① 수령한 상품이 불량인 경우"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ② 수령한 상품이 파손된 경우 "
+                                                                    <br>
+                                                                    <br>
+                                                                    " ③ 상품이 상품상세정보와 다른 경우"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ④ 주문한 상품과 다른 상품이 배송된 경우 등"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_9">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">60</td>
+                                                            <td width="135" align="center">회원</td>
+                                                            <td style="cursor: pointer">회원정보를 바꾸고 싶습니다.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 회원정보 변경 안내"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 아래 경로를 통해 회원정보를 직접 변경하실 수 있습니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 수정가능 항목: 비밀번호/이름/이메일주소/휴대폰번호/생년월일/성별 (아이디 불가)"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 아래 탭에서 [마이컬리] > 로그인 화면 아래 [아이디 찾기] [비밀번호 찾기]"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 상단 (회원명) > 마이컬리 > 개인 정보 수정"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 아래 탭 마이컬리 > 개인정보 수정 "
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    "[참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 배송지 수정은 [마켓컬리/배송지 관리] 에서 직접 수정하실 수 있습니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 구매 이후, 주문건에 대한 배송지 변경은 고객센터로 문의 바랍니다."
+                                                                    <br>
+                                                                    └ 샛별 : 배송일 전날밤 11시 / 택배 : 배송일 전날 밤 10시
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_109">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">59</td>
+                                                            <td width="135" align="center">서비스 이용</td>
+                                                            <td style="cursor: pointer">장바구니에 담은 상품들은 계속 보존되나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 장바구니 담기 저장 유효기간 안내"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 상품을 담은 시점부터 최대 90일간 저장 가능"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " 90일 동안 구매하지 않을 경우, 순차로 장바구니에서 자동 소명되오니 이용해 참고 부탁드립니다."
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_125">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">58</td>
+                                                            <td width="135" align="center">이벤트 · 쿠폰 · 적립금</td>
+                                                            <td style="cursor: pointer">발급 받은 쿠폰은 어디서 확인할 수 있나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 발급쿠폰 확인 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 로그인 후, 아래 경로를 통해 확인 하실 수 있습니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 홈페이지 상단 [회원명] 클릭 > 마이컬리 > 쿠폰"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 마이컬리 > 쿠폰"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 적립금/쿠폰 등은 컬리 회원대상으로 지급되는 서비스 입니다."
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_127">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">57</td>
+                                                            <td width="135" align="center">주문 · 결제 · 대량주문</td>
+                                                            <td style="cursor: pointer">(회원) 구매하는 방법이 궁금합니다</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 상품 구매 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 희망 상품 클랙 > 수량 체크 > 장바구니 담기 > 장바구니 확인 > 결제"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 예약일 수령 상품은 바로 구매로 이어지므로 장바구니 담기가 불가합니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 당일 추가 주문 시 합주문은 불가하므로 추가 주문건에 배송비가 부여 될 경우 고객센터로 문의 주세요"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_158">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">56</td>
+                                                            <td width="135" align="center">배송 · 포장 · 상품</td>
+                                                            <td style="cursor: pointer">호텔/리조트 예약 상품은 어떻게 이용하나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 상품 구매 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 예약 희망 상품 클릭 > 예약 희망 일자 패키지 옵션 클릭 > 구매하기 > 예약완료"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " * 결제 이 후, 예약관련 문의는 상세페이지 내 판매처로 문의 부탁드립니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 예약상품 마다, 지점마다 조금씩 혜택 옵션이 다를 수 있습니다. 구매 전에 상품 페이지 확인 부탁드립니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 상품 모아보기"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 > 상품 카테고리 > 맨 마지막 "컬리의 추천" > 호텔예약 클릭"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 컬리APP > 상품 카테고리 > 맨 마지막 "컬리의 추천" > 호텔예약 클릭"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_165">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">55</td>
+                                                            <td width="135" align="center">취소 · 교환 · 반품</td>
+                                                            <td style="cursor: pointer">교환(반품) 어떻게 진행 되나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 교환(반품) 진행 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 받으신 상품을 교환(반품) 하실 경우, 교환 사유+문제가 발생한 부분을 확인할 수 있는 사진과 함께 고객센터로 문의 바랍니다. "
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 상담사를 통한 상담 이 후, 교환(반품) 절차가 진행 됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 홈페이지 상단 고객센터 > 1:1 문의 또는 홈페이지 하단 1:1문의"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 마이컬리 > 1:1 문의 또는 마이컬리 > 1:1 문의 또는 카카오톡 문의"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_74">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">54</td>
+                                                            <td width="135" align="center">회원</td>
+                                                            <td style="cursor: pointer">문자(메일) 수신 거부하고 싶습니다.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 문자/메일 수신 거부 방법 안내"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 상단 [회원명] > 마이컬리 > 개인정보수정 > SMS 수신여부 - 수신안함 > 수정"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 마이컬리 > 개인정보수정 > SMS수신여부 - 수신안함 > 수정"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 직접 변경이 어려우시다면 고객센터로 문의 바랍니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 다만, 수신거부를 하시더라도 주문한 상품에 대한 결제정보, 배송정보와 같이 반드시 필요한 정보를 포함한 문자는 자동으로 발송됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 따라서 모든 문자에 대한 수신 거부를 원하시는 경우, 고객님 개인 휴대폰에서 수신거부 (스팸등록) 등 직접 설정해주셔야 합니다."
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_122">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">53</td>
+                                                            <td width="135" align="center">서비스 이용</td>
+                                                            <td style="cursor: pointer">주문 내역은 어떻게 확인하나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 구매이력 확인 방법"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 주문하신 이력은 하기 경로로 확인 가능합니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " (PC) 컬리홈 > 상단의 (이름) 클릭 > 주문 내역 조회"
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 컬리APP > 하단 마이컬리 > 주문 내역 조회"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 비회원의 경우, 모바일 APP 또는 고객센터를 통해 주문이력을 조회하실 수 있습니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " * PC에서는 조회가 불가합니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " (모바일) 컬리APP > 하단 마이컬리 > 비회원 주문 조회 { 주문자명, 주문번호}"
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <table width="100%" class="table_faq" onclick="view_content(this)" id="faq_124">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70" align="center">52</td>
+                                                            <td width="135" align="center">이벤트 · 쿠폰 · 적립금</td>
+                                                            <td style="cursor: pointer">적립금은 어넺 지급 되나요?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="display: none; padding: 30px; border-top: 1px solid #e6e6e6;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <th style="color: #0000bf; width: 40px; padding-top: 1px;">
+                                                                    <img src="../../img/boardimg/faq_a.webp" alt="#">
+                                                                </th>
+                                                                <td>
+                                                                    "■ 적립금 지금 시점"
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 주문 결제 : 배송완료 이 후, 일괄 적립금이 지급 됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 후기 작성 : 후기 작성 이 후, 영업일 2~3일 내에 지급 됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " - 이벤트 참여 : 이벤트 참여 후, 별도 고지 된 일정에 지급 됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    " [참고]"
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 주문 결제 적립금 : 배송비르 제외한 결제금액에 각 고객등급별 적립률을 곱한 금액으로 지급 됩니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 컬리 회원 대상으로 제한 된 서비스 입니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 1원 단위부터 주문서에서 사용 가능 합니다."
+                                                                    <br>
+                                                                    <br>
+                                                                    " ▣ 일부 상품의 경우 적립금 미지급품목이므로 구매 시 참고 바랍니다."
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 1px; border-top: 1px solid #e6e6e6;"></div>
+                                        <div class="layout-pagination">
+                                            <div class="pagediv">
+                                                <a href="/shop/service/FAQ.php?&amp;page=1" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=1" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
+                                                <strong class="layout-pagination-button layout-pagination-number __active">1</strong>
+                                                <a href="/shop/service/FAQ.php?&amp;page=2" class="layout-pagination-button layout-pagination-number">2</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=3" class="layout-pagination-button layout-pagination-number">3</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=4" class="layout-pagination-button layout-pagination-number">4</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=5" class="layout-pagination-button layout-pagination-number">5</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=2" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
+                                                <a href="/shop/service/FAQ.php?&amp;page=5" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+                                            </div>
+                                        </div>
+                                        <table class="xans-board-search xans-board-search2">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="input_txt">&nbsp;</td>
+                                                    <td>
+                                                        <div class="search_bt">
+                                                            <input type="image" src="../../img/boardimg/search.webp" align="abmiddle">
+                                                            <input type="text" name="sword" value required>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                 </div>
                             </div>
-                            <div class="layout-pagination">
-                                <div class="pagediv"></div>
-                            </div>
-                        </div>
+                        </form>
                         <!-- 공지사항 게시판 끝 -->
                     </div>
-                    <script type="text/javascript">
-                        function popup_register( mode, sno )
-                        {
-                            // KMF-299 1:1문의 글쓰기 버튼 트래킹
-                            if (mode === 'add_qna') {
-                            KurlyTracker.setAction('select_my_kurly_add_personal_inquiry').sendData();
-                            }
-
-                            if ( mode == 'del_qna' )  var win = window.open("../mypage/mypage_qna_del.php?mode=" + mode + "&sno=" + sno,"qna_register","width=400,height=200");
-                            else parent.location.href = ("../mypage/mypage_qna_register.php?mode=" + mode + "&sno=" + sno);
-
-                        }
-
-                        var preContent;
-
-                        function view_content(obj)
-                        {
-                            var div = obj.parentNode;
-
-                            for (var i=1, m=div.childNodes.length;i<m;i++) {
-                                if (div.childNodes[i].nodeType != 1) continue;	// text node.
-                                else if (obj == div.childNodes[ i ]) continue;
-
-                                obj = div.childNodes[ i ];
-                                break;
-                            }
-
-                            if (preContent && obj!=preContent){
-                                obj.style.display = "block";
-                                preContent.style.display = "none";
-                                preCheck = false
-                            }else if (preContent && obj==preContent){
-                                preContent.style.display = ( preContent.style.display == "none" ? "block" : "none" );
-                            }else if (preContent == null ){
-                                obj.style.display = "block";
-                            }
-
-                            preContent = obj;
-
-                            if(preContent.style.display === 'block'){
-                                KurlyTracker.setScreenName('personal_inquiry_detail');
-                            }else{
-                                KurlyTracker.setScreenName('personal_inquiry_history');
-                            }
-                        }
-
-                        // KM-1483 Amplitude 연동
-                        KurlyTracker.setScreenName('personal_inquiry_history');
-                    </script>
                 </div>
             </div>
             <!--main 끝 --------------------------------------------------->
