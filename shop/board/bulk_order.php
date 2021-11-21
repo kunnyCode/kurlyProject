@@ -897,12 +897,20 @@
                                         </tbody>
                                       </table>
                                   </div>
+                                  <p class="txt_service">* 서비스 제공을 위해서 필요한 최소한의 개인정보입니다. 동의를 해 주셔야 서비스를 이용하실 수 있으며, 동의하지 않으실 경우 서비스에 제한이 있을 수 있습니다.</p>
+                                  <button type="button">
+                                  <span class="screen_out">레이어 닫기</span>
+                                  </button>
                                   </div>
                                 </div>
                               </div>
+                              <hr class="hr_grey">
+                              <div class="center">
+                                <button class="bhs_button">문의하기</button>
+                              </div>
                             </div>
-                            </div>
-                            </form>
+                           </div>
+                          </form>
 
 
 
