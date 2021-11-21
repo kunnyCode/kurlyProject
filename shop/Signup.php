@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel="stylesheet" href="./CSS/Signup.css">
-    <h2>회원가입</h2>
-    <p>
-        <span class="ico">*</span>필수입력사항
-        <div>::after</div>
-    </p>
-
+        <link rel="stylesheet" href="./Signup.css">
+    <style>
+        body{
+            font-family:'Noto Sans KR' sans=serif ;
+            font-size: 13px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            background-size: auto;
+            margin:0;
+            
+        }
+    </style>
+    <div class="tit_page">
+            <div class="login_form">
+            <h2 class="tit">회원가입</h2></div>
+    
+    <div class="page_main">
+        <p class="page_line">
+            <span class="ico">*</span>필수입력사항
+        </p>
+    </div>
+    <span ico="#">ㅡ</span>
 </head>
 <body>
     <div id="content">
-        <div class="form_phone"></div>
+        <div id="form">
         <td>
-            <p><label>아이디<span class="ico">*</span> <input type="text" name="userid" id="userid" maxlength="20" size="35" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" ></label></p>
-            <input type="hidden" name="checkid" id="checkid" required="아이디중복체크"><a href="#">중복확인</a>
+            <label>아이디<span class="ico">*</span> <input type="text" name="userid" id="userid" maxlength="20" size="35" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" ></label>
+            <!-- 확인 -->
+            <input type="text" name="numb" maxlength="10" size="5" placeholder="중복 확인"></p>
             
                 <ul>
                     <li>6자 이상의 영문 혹은 영문과 숫자를 조합</li>
@@ -26,8 +46,7 @@
                 </ul>
         </td>
 
-
-    <p><label>비밀번호<span class="ico">*</span> <input type="text" name="userpw" id="userpw" maxlength="20" size="30" placeholder="비밀번호를 입력해주세요"></label></p>
+    <p><label>비밀번호<span class="ico">*</span> <input type="number" name="userpw" id="userpw" maxlength="20" size="30" placeholder="비밀번호를 입력해주세요"></label></p>
 
     <input type="hidden" name="checkid" id="checkid" required="비밀번호조합">
     <ul>
@@ -43,13 +62,20 @@
     <!-- 비밀번호 끝 -->
 
     <p><label>이름<span class="ico">*</span> <input type="text" name="user_name" id="user_name" maxlength="20" size="30" placeholder="이름을 입력해주세요"></label></p>
-    <p><label>이메일<span class="ico">*</span> <input type="text" name="email" id="email" maxlength="20" size="30" placeholder="예:marketkurly@kurly.com"></label></p>
+
+    <label>이메일<span class="ico">*</span> <input type="text" name="email" id="email" maxlength="20" size="30" placeholder="예:marketkurly@kurly.com"></label>
+    <!-- 확인 -->
+    <input type="text" name="numb" maxlength="10" size="5" placeholder="중복 확인"></p>
+
     <p><label>휴대폰<span class="ico">*</span> <input type="text" name="phone" id="phone" maxlength="20" size="30" placeholder="숫자만 입력해주세요"></label>
-            <input type="text" name="numb" maxlength="10" size="10" placeholder="인증번호 받기"></p>
-    </div>
+        <!-- 확인 -->
+            <input type="text" name="numb" maxlength="10" size="8" placeholder="인증번호 받기"></p></div>
+
     <p><label>주소<span class="ico">*</span> <input type="text" name="adress_search" id="adress_search" maxlength="20" size="30" placeholder="주소 검색"></label></p>
     <ul>배송지에 따라 상품 정보가 달라질 수 있습니다.</ul>
 <!-- 주소 끝 -->
+<div class="sex_radio">
+    :checked
 <tr>
     <th>성별</th>
         <td>
@@ -65,8 +91,10 @@
             
         </td>
 </tr>
-
+</div>
+<div class="birth_radio">
     <p><label>생년월일 <input type="text" name="birth" id="birth" maxlength="20" size="20" placeholder="YYYY / MM /  DD"></label></p>
+</div>
 
 <!-- 추가입력 사항 -->
     <th>추가입력 사항</th>
@@ -127,16 +155,22 @@
             <input type="radio" name="email" id="email" checked>
             <label>이메일</label>
             <ul>ㄴ 동의 시 한 달간[5%적립]+[무제한 무료배송]</ul>
-            <span class="(첫 주문 후 적용)"></span>    
+            <span class="(첫 주문 후 적용)"></span>
+
+            
         </p>
             
+
         <p>
             <input type="radio" name="adult" id="adult" checked>
             <label>본인은 만 14세 이상입니다.</label>
             <span class="ico">(필수)</span>
         </p>
+
+
     </td>
-    
+</div>
+</div>   
 </div>
 </body>
 </html>

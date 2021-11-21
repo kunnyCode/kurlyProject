@@ -1,92 +1,117 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+*{padding: 0px; margin: 5px;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{cursor: pointer;}
 
 /* 회원가입 */
-.content.form_phone{
-    width: 130px;
-    height: 40px;
-    font-size: 13px;
-    border-radius: 3px;
-    background-color: #fff;
+.login_form.h2_tit{
+    width: 100%;
+    font-weight: 300px;
+    font-size: 30px;
+    color: #3333;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: normal;
 }
 
-/* 아이디중복확인 */
-/* .content.form_phone input[type=text]{
-
-} */
-
-/* ul li::after{
-    display: block;
-    position: absolute;
-    background-color: transparent;
-    text-decoration: none;
-
-} */
-
-
-
-/* 로그인 화면 */
-*{margin: 0; padding: 0; box-sizing: border-box;}
-body{
-    font-family:'Noto Sans KR' sans=serif ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
-    background-size: auto;
+/* ico * */
+.page_main .page_line span.ico{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #EE6A7B;
+    box-sizing: border-box;
+    text-align: left;
+    height: 6.55px;
+    padding: 20.8px;
 }
 
-
-
-/* 아이디를 입력하세요 */
-.content_form.login_form input[type=login],input[type=password]{
-    width: 130px;
-    height: 40px;
-    font-size: 13px;
-    border-radius: 3px;
-    line-height: 20px;
-    background-color: #fff;
-
-}
-
-
-.checkbox_search.search_idpw
-[type=checkbox]{
-    position: absolute;
-    left: 0;
-    top: 3px;
-    opacity: 0;
-
-}
-
-.checkbox_search.search_idpw{
-    font-family: 'Noto Sans KR' sans=serif ;
+#body.content{
+    font-family: sans-serif;
     font-size: 13px;
     color: #3333;
+    width: 100%; height: 450px;
+    box-sizing: border-box;
 }
 
-
-.submit_form{margin-top: 15px;}
-.submit_form.btn_num1{
-            width: 130px;
-            height: 40px;
-            border-radius: 3px;
-            background-color: #5F0080;
-            color: #fff;
-            font-size: 16px;
-            margin: 20px;
-            border: 5px;
-            cursor: pointer;
+.tit_page.page_line{
+    color: #6666;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 0px 0px 10px;
+    margin: 640px;
+    height: 27px;
+    
 }
 
-.submit_form.btn_num2{
-            width: 160px;
-            height: 40px;
-            border-radius: 3px;
-            background-color: white;
-            color: #5F0080;
-            padding: 0;
-            margin: 20px;
-            cursor: pointer;
-            border: 5px;
+/* 아이디-휴대폰 */ 
+.content.form input[type=text], input[number]{
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 2px;
+    display: block;
+    width: 100%; height: 50px;
+    margin-bottom: 25px;
+    border:none; background-color: white;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+/* 중복확인 */
+.content .input[type=hidden]{
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffff;
+    color: #5f0080;
+    margin: 0px 0px 0px 5px;
+    border-radius: 2px;
+    border-color: #5f0080;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 인증번호 받기 */
+content .input[type=text]{
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffff;
+    color: #dddd;
+    margin: 0px 0px 0px 5px;
+    border-radius: 2px;
+    border-color: #dddd;
+    height: 120px;
+    line-height: 44px;
+}
+.content .form .ul.li{
+    width: 100%;
+    text-align: left;
+
+}
+
+.content .sex_radio input[type=radio]{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 100%;
+    background-color: white;
+}
+.content .sex_radio input[type=radio]:checked{
+    border: 1px solid #5f0080;
+    background-color: #5f0080;
+    margin: 0px 12px 0px 0px;
+    height: 24px;
+    padding: 24px;
+}
+
+.content .birth_radio input[type=radio]{
+    background-color: white;
+    margin: 0px 12px 0px 0px;
+    height: 24px;
+    padding: 24px;
 }
