@@ -27,7 +27,7 @@
                 </ul>
             </div>
         </div>
-        <div id="goodsList" class="page_section section_goodslist">
+        <div id="goodsList_1" class="page_section section_goodslist">
             <div class="list_ability">
                 <div class="sort_menu">
                     <div>
