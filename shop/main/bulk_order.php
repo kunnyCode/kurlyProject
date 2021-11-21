@@ -753,12 +753,12 @@
                                     <li>
                                         <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
-                                    <li class="on">
+                                    <li>
                                         <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
-                                    <li>
+                                    <li class="on">
                                         <a href="https://www.kurly.com/shop/main/html.php?htmid=mypage/bulk_order.htm" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
-                                    </li>
+                                    </class=>
                                     <li> 
                                         <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
