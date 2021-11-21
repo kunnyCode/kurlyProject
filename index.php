@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
-    <script src="/js/jquery.bxslider.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
     <!-- bxSlider CSS file -->
     <!-- <link href="/lib/jquery.bxslider.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./CSS/common.css">
@@ -30,11 +30,13 @@
                 <div id="userMenu">
                     <ul class="listMenu">
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
+                        <!-- <link rel="login_form" href="./CSS/Signup.css"> -->
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
+                        <a href="./goods/Signup.php"></a>
                         <li class="menu lst">
-                            <a href="./img/ico_down_8x5.png" class="linkMenu">고객센터</a>
+                            <a href="./shop/board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="#" onClick="">공지사항</a></li>
+                                <li><a href="./shop/board/list.php" onClick="">공지사항</a></li>
                                 <li><a href="#" onClick="">자주하는 질문</a></li>
                                 <li><a href="#" onClick="">1:1 문의</a></li>
                                 <li><a href="#" onClick="">대량주문 문의</a></li>
@@ -772,7 +774,7 @@
                                                 <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다., ul list 클래스 삭제 -->
                                                 <ul class="bxslider">
                                                     <!-- 이미지 비율 때문에 overflow: hidden 값 비활성화 : 여건 -->
-                                                    <li data-index="11" class="bx-clone" data-name="main_banner" style="float: left; list-style: none; position: relative; width: 1440px; margin: 0 auto; overflow: hidden;">
+                                                    <li data-index="11" data-name="main_banner">
                                                         <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
                                                     </li>
                                                     <li data-index="1" data-name="main_banner">
@@ -2401,7 +2403,9 @@
             slideMargin: 0, // 슬라이드간의 간격
             auto: true, // 자동 실행 여부
             autoHover: true, // 마우스 호버시 정지 여부
-            controls: true // 이전 다음 버튼 노출 여부 
+            controls: true, // 이전 다음 버튼 노출 여부
+            infiniteLoop : true,
+            useCSS :false,
             });
         });
     </script>

@@ -887,3 +887,22 @@ let slider1 = document.querySelectorAll('.slider'), //ul태그
     console.log(menu);
     console.log(btnBottom.innerHTML);
     
+
+
+
+// 현이 작성
+// 사이드 퀵 메뉴
+$(document).ready(function() {
+
+    var floatPosition = parseInt($("#qnb").css('top'), 10);
+
+    $(window).scroll(function() {
+
+        var height = $(window).scrollTop() - $("#header").height()/0.5 ;
+        var newPosition = height + floatPosition + "px";
+
+        $("#qnb").stop().animate( {
+            "top" : newPosition
+        }, 500);
+    }).scrollfixed();
+});
