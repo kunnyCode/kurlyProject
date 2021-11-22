@@ -7,9 +7,9 @@
     box-sizing: border-box;
 }
 body, input, select, textarea, button {
-    font-family: noto sans, malgun gothic,AppleGothic, dotum;
+    font-family: 'Noto Sans';
     line-height: 1;
-    letter-spacing: -.05em;
+    letter-spacing: -0.5em;
     color: #4c4c4c;
     font-size: 12px;
     max-width: 100%;
@@ -70,9 +70,9 @@ header{
 }
 
 #userMenu * {
-    font-family: noto sans;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-    letter-spacing: -.3px;
+    letter-spacing: -0.3px;
 }
 
 header > #userMenu{
@@ -273,36 +273,48 @@ span.ico:hover{
 }
 /* >>>>>>> main */
 
-header > #gnb .inner_gnbkurly {
+#header > #gnb .inner_gnbkurly {
     position: relative;
     width: 1050px;
     height: 56px;
     margin: 0 auto;
 }
 
-header > #gnb > .gnb_kurly {
-    content: "";
-    position: absolute;
+#header > #gnb > .gnb_kurly {
+    position: relative;
     z-index: 299;
     left: 0;
     top: 56px;
     width: 100%;
     height: 9px;
+    font-family: 'Noto Sans';
+    letter-spacing: -0.3px;
 }
 
-header > #gnb > .gnb_main{ 
+
+
+#header > #gnb > .gnb_main{ 
     width: 1050px;
     height: inherit;
     overflow: hidden;
     margin: 0 auto;
 }
 
-header > #gnb > .gnb_main .gnb{ 
+#header > #gnb > .gnb_main .gnb{ 
     float:left;
     width: 100%;
 }
 
-header > #gnb > .inner_gnbKurly{
+
+/*  마켓컬리 사이트와 다른부분. 
+#gnb .gnb_kurly:after{
+    content:"";position:absolute;z-index:299;
+    left:0;top:56px;width:100%;height:9px;
+    background:url(https://res.kurly.com/pc/service/common/1902/bg_1x9.png) repeat-x 0 100%}
+#gnb .inner_gnbkurly{position:relative;width:1050px;height:56px;margin:0 auto} */
+
+
+#header > #gnb > .inner_gnbKurly{
     margin: 0 auto;
     background-color: #fff;
 }
@@ -315,7 +327,7 @@ header > #gnb > .inner_gnbKurly{
     padding-top: 16px;  
 }
 
-header > #gnb > #gnbMenu {
+#header > #gnb > #gnbMenu {
     position: relative;
     width: 100%;
     height: 56px;

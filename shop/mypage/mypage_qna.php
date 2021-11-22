@@ -748,22 +748,22 @@
                             <div class="inner_snb">
                                 <ul class="list_menu">
                                     <li>
-                                        <a href="list.php">공지사항</a>
+                                        <a href="../board/list.php">공지사항</a>
                                     </li>
                                     <li>
-                                        <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
+                                        <a href="../service/faq.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
                                     <li>
-                                        <a href="./mypage_qna.ph" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
+                                        <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
                                     <li>
                                         <a href="../main/bulk_order.php" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
                                     </li>
-                                    <li class="on">
+                                    <li> 
                                         <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
                                     <li>
-                                        <a href="./packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                        <a href="./echo_packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
                                     </li>
                                 </ul>
                             </div>
@@ -775,30 +775,12 @@
                         <!-- 좌측 고객센터 목록 끝 -->
 
                         <!-- 공지사항 게시판 시작 -->
-                        <div class="page_section section_offer">
+                        <div class="page_section section_qna">
                             <div class="head_aticle">
                                 <h2 class="tit">
-                                    상품 제안
+                                    1:1 문의
                                 </h2>
                             </div>
-                            <ul class="list_type1">
-                                <li>
-                                    <span class="ico">·</span>
-                                    <p class="txt">마켓컬리에서 추가적으로 판매되면 좋을 상품을 제안해주세요.</p>
-                                </li>
-                                <li>
-                                    <span class="ico">·</span>
-                                    <p class="txt">고객님의 의견을 발 빠르게 반영하여 더욱 편리한 마켓컬리가 되겠습니다.</p>
-                                </li>
-                                <li>
-                                    <span class="ico">·</span>
-                                    <p class="txt">주의)알콜 제품은 법령상 온라인 판매가 불가하오니, 이 점 참고하여 작성부탁드립니다.</p>
-                                </li>
-                                <li>
-                                    <span class="ico">·</span>
-                                    <p class="txt">담당 MD가 제안해주신 의견을 실시간으로 모니터링할 예정이나, 별도 답변 안내는 되지 않음을 양해부탁드립니다.</p>
-                                </li>
-                            </ul>
                             <table width="100%" class="xans-board-listheader">
                                 <tbody>
                                     <tr class="input_txt">
@@ -810,12 +792,12 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="no_data" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;">
-                                상품 제안 내역이 존재하지 않습니다.
+                            <div class="no_data" style="padding: 150px 0 148px; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; font-size: 12px; color: #4c4c4c">
+                                1:1 문의 내역이 존재하지 않습니다.
                             </div>
                             <div style="position: relative;">
                                 <div style="position: absolute; right: 0; top: 60px;">
-                                    <a href="javascript:popup_register( 'add_offer' );">
+                                    <a href="javascript:popup_register( 'add_qna' );">
                                         <span class="bhs_buttonsm yb" style="float: none;">글쓰기</span>
                                     </a>
                                 </div>
