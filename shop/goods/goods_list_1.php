@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!-- 전체카테고리 > 채소 의 goodsList입니다. --------------------------------------------------------->
@@ -80,7 +80,7 @@
                                                 <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
-                                                        <a class="menu" href="./shop/goods/goods_list.php">
+                                                        <a class="menu" href="../shop/goods/goods_list.php">
                                                             <span class="icon" style="margin-left: 7px">
                                                                 <img src="../../img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="../../img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
@@ -130,7 +130,7 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="../../mg/3.fish_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/3.fish_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="../../img/3.fish.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
@@ -267,8 +267,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/9.snack_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/9.snack.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/9.snack_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/9.snack.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">간식·과자·떡</span>
@@ -287,14 +287,14 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/10.bakery_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/10.bakery.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/10.bakery_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/10.bakery.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">베이커리·치즈·델리</span>
                                                             </span>
                                                         </a>
-                                                        <ul class="fsub_menu">
+                                                        <ul class="sub_menu">
                                                             <li><a class="sub"><span class="name">식빵·빵류</span></a></li>
                                                             <li><a class="sub"><span class="name">잼·버터·스프레드</span></a></li>
                                                             <li><a class="sub"><span class="name">케이크·파이·디저트</span></a></li>
@@ -309,8 +309,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/11.healthyfood_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/11.healthyfood.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/11.healthyfood_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/11.healthyfood.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">건강식품</span>
@@ -332,8 +332,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/12.softener_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/12.softener.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/12.softener_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/12.softener.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">생활용품·리빙·캠핑</span>
@@ -355,8 +355,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/13.makeup_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/13.makeup.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/13.makeup_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/13.makeup.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">스킨케어·메이크업</span>
@@ -379,8 +379,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/14.hair.body.tooth_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/14.hair.body.tooth.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/14.hair.body.tooth_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/14.hair.body.tooth.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">헤어·바디·구강</span>
@@ -404,8 +404,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/15.kitchen_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/15.kitchen.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/15.kitchen.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/15.kitchen_b.png" alt="카테고리 아이콘" class="ico_off">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">주방용품</span>
@@ -426,8 +426,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/16.home appliances_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/16.home appliances.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/16.home appliances_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/16.home appliances.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">가전제품</span>
@@ -447,8 +447,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/17.feeding-bottle_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/17.feeding-bottle_b.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/17.feeding-bottle_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/17.feeding-bottle_b.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">베이비·키즈</span>
@@ -472,8 +472,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/18.pet-food_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/18.pet-food.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/18.pet-food_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/18.pet-food.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">반려동물</span>
@@ -495,8 +495,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="./img/19.best_b.png" alt="카테고리 아이콘" class="ico_off">
-                                                                <img src="./img/19.best.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/19.best_b.png" alt="카테고리 아이콘" class="ico_off">
+                                                                <img src="../../img/19.best.png" alt="카테고리 아이콘" class="ico_on">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">컬리의 추천</span>
@@ -626,7 +626,7 @@
                                         <input type="hidden" name="hid_link_url" value>
                                         <input type="hidden" id="edit" name="edit" value>
                                         <input type="sword" type="text" id="sword" value required="required" label="검색어" placeholder="검색어를 입력해주세요." class="inp_search">
-                                        <input type="image" src="./img/ico_search_x2.png" class="btn_search">
+                                        <input type="image" src="../../img/ico_search_x2.png" class="btn_search">
                                         <div class="init"><button type="button" id="searchInit" class="btn_delete">검색어 삭제하기</button></div>
                                     </form>
                                 </div>
@@ -640,7 +640,7 @@
                                     <div id="addMsgCart" class="msg_cart">
                                         <span class="point"></span>
                                         <div class="inner_msgcart">
-                                            <img src="./img/ico_cart.png" alt="#" class="thumb">
+                                            <img src="../../img/ico_cart.png" alt="#" class="thumb">
                                             <p id="msgReaddedItem" class="desc">
                                                 <span class="tit"></span>
                                                 <span class="txt">
@@ -871,7 +871,7 @@
                 </div>
             </div>
         </div>
-    <!-- 이자리에 쪼개진 footer내용 담은 php파일 include -->
+    <!-- footer ------------------------------------------------------------------------------------------>
     <footer id="footer" style="opacity: 1;">
                 <div class="inner_footer">
                     <div class="footer_cc">
@@ -892,7 +892,7 @@
                             <script type="text/javascript">
                                 $('.cc_kakao .tit').on('click',function(e){
                                     e.preventDefault();
-                    KurlyTracker.setAction('select_bottom_kakao_button').sendData();
+                                    KurlyTracker.setAction('select_bottom_kakao_button').sendData();
                                     $.ajax({
                                         type: "GET",
                                         url: apiDomain+'/v1/mypage/asks/confirm/kakao',
@@ -914,7 +914,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="#none" onclick="KurlyTrackerLink('../shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -1011,7 +1011,7 @@
                 <div class="footer_link">
                     <div class="authentication">
                         <a href="#none" onclick="popup('https://res.kurly.com/pc/img/1909/img_isms.jpg',550,700);return false;" class="mark" target="_blank">
-                            <img src="./img/logo_isms.png" alt="isms 로고" class="logo">
+                            <img src="../../img/logo_isms.png" alt="isms 로고" class="logo">
                             <p class="txt">
                                 [인증범위] 마켓컬리 쇼핑몰 서비스 개발 · 운영
                                 <br>
@@ -1019,7 +1019,7 @@
                             </p>
                         </a>
                         <a href="#none" onclick="popup('https://www.eprivary.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&certNum=2021-EP-R003',527,720);return false;" class="mark" target="_blank">
-                            <img src="./img/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
+                            <img src="../../img/logo_eprivacyplus.png" alt="eprivacy plus 로고" class="logo">
                             <p class="txt">
                                 개인정보보호 우수 웹사이트 · 
                                 <br>
@@ -1027,7 +1027,7 @@
                             </p>
                         </a>
                         <a href="#none" onclick="popup('http://pgweb.uplus.co.kr/ms/escrow/s_escrowYn.do?mertid=go_thefarmers',460,550);return false;" class="mark lguplus" target="_blank">
-                            <img src="./img/logo_payments.png" alt="payments 로고" class="logo">
+                            <img src="../../img/logo_payments.png" alt="payments 로고" class="logo">
                             <p class="txt">
                                 고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
                                 <br>
