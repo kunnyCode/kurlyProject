@@ -7,9 +7,9 @@
     box-sizing: border-box;
 }
 body, input, select, textarea, button {
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans KR', sans-serif;
     line-height: 1;
-    letter-spacing: -0.5em;
+    letter-spacing: -0.5px;
     color: #4c4c4c;
     font-size: 12px;
     max-width: 100%;
@@ -81,7 +81,7 @@ header > #userMenu{
     background-color: #fff;
     margin: 0 auto;
     font-weight: 400;
-    letter-spacing: -.3px;
+    letter-spacing: -0.3px;
 }
 
 /* DK */
@@ -1389,7 +1389,7 @@ li{
     margin: 0 auto;
     padding-bottom: 60px;
     font-weight: 400;
-    letter-spacing: -.2px;
+    letter-spacing: -0.2px;
     font-family: noto sans;
     opacity: 0;
 }
@@ -1437,7 +1437,7 @@ li{
     font-size: 28px;
     color: #333;
     line-height: 36px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     white-space: nowrap;
 }
 
@@ -1458,7 +1458,7 @@ li{
     font-size: 14px;
     color: #333;
     line-height: 22px;
-    letter-spacing: -.2px;
+    letter-spacing: -0.2px;
 }
 
 #footer .footer_cc .list dt {
@@ -1570,7 +1570,7 @@ li{
     font-size: 10px;
     color: #999;
     line-height: 16px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     white-space: nowrap;
 }
 
