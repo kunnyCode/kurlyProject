@@ -88,7 +88,7 @@
                                                 <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
-                                                        <a class="menu" href="./shop/goods/goods_list.php">
+                                                        <a class="menu" href="./shop/goods/goods_list_1.php">
                                                             <span class="icon" style="margin-left: 7px">
                                                                 <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">

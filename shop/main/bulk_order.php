@@ -753,12 +753,12 @@
                                     <li>
                                         <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
-                                    <li class="on">
+                                    <li>
                                         <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
-                                    <li>
-                                        <a href="#" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
-                                    </li>
+                                    <li class="on">
+                                        <a href="../main/bulk_order.php" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
+                                    </class=>
                                     <li> 
                                         <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
@@ -897,12 +897,20 @@
                                         </tbody>
                                       </table>
                                   </div>
+                                  <p class="txt_service">* 서비스 제공을 위해서 필요한 최소한의 개인정보입니다. 동의를 해 주셔야 서비스를 이용하실 수 있으며, 동의하지 않으실 경우 서비스에 제한이 있을 수 있습니다.</p>
+                                  <button type="button">
+                                  <span class="screen_out">레이어 닫기</span>
+                                  </button>
                                   </div>
                                 </div>
                               </div>
+                              <hr class="hr_grey">
+                              <div class="center">
+                                <button class="bhs_button">문의하기</button>
+                              </div>
                             </div>
-                            </div>
-                            </form>
+                           </div>
+                          </form>
 
 
 
