@@ -585,23 +585,19 @@ span.ico:hover{
 /* .bxslider > li {
     width: 1900px;
 } */
-.bx-viewport {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 370px;
-}
 
 /* 여건 작성 {*/
 .bx-wrapper {
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.bx-wrapper .bx-viewport .slider {
+.bx-wrapper .bx-viewport .list {
     position: absolute;
     left: 0;
     top: 0;
     transition: left 0.5s ease-out;
+    float: left;
 }
 /* }*/
 
@@ -723,23 +719,34 @@ solid #ddd;
 
 /* 여건작성 {*/
 /* 메인배너 페이지 이동 버튼 */
-.main_type1 .bx-controls-direction .bx-next, .main_type1 .bx-controls-direction .bx-prev {
-    bottom: 159px;
-    width: 52px;
-    height: 52px;
-    /* opacity: 0; */
+.main_type1 .list_goods {
+    position: relative;
 }
 
-.main_type1 .bx-controls-direction .bx-next:hover, .main_type1 .bx-controls-direction .bx-next {
+
+.main_type1 .bx-controls-direction .m-bx-next:hover, .main_type1 .bx-controls-direction .m-bx-next {
     right: -91px;
     background: url(../img/ico_next1_x1.webp) no-repeat 50% 50%;
     transition: opacity 0.5s;
 }
 
-.main_type1 .bx-controls-direction .bx-prev:hover, .main_type1 .bx-controls-direction .bx-prev {
+.main_type1 .bx-controls-direction .m-bx-prev:hover, .main_type1 .bx-controls-direction .m-bx-prev {
     left: -91px;
     background: url(../img/ico_prev1_x1.webp) no-repeat 50% 50%;
     transition: opacity 0.5s;
+}
+
+.page_main .bx-controls-direction .m-bx-next, .page_main .bx-controls-direction .m-bx-prev {
+    overflow: hidden;
+    position: absolute;
+    bottom: 159px;
+    width: 52px;
+    height: 52px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    transition: 0.5s;
 }
 /* } */
 
