@@ -862,3 +862,14 @@ a {
     margin: 4px 3px 0 0;
 }
 
+
+
+.user_wrap .user_form th {
+    width: 120px;
+    height: 33p;
+    font: 14px "Noto Sans";
+    font-weight: 700;
+    vertical-align: top;
+    color: #000;
+    letter-spacing: -0.6px;
+}
