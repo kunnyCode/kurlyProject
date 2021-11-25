@@ -6,6 +6,11 @@
 ol, ul {
   list-style-type: none;
 }
+
+.page_aticle .list_type1 .ico {
+  float: left;
+  margin: 4px 3px 0 0;
+}
 .page_aticle .list_type1 .ico {
   float: left;
   margin: 4px 3px 0 0;
