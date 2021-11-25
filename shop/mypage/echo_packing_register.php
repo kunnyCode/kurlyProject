@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/Service_center.css">
     <link rel="stylesheet" href="../../CSS/faq.css">
-    <link rel="stylesheet" href="../../CSS/bulk_order.css">
 </head>
 <body >
 <div id="wrap">
@@ -775,12 +774,10 @@
                         </div>
                         <!-- 좌측 고객센터 목록 끝 -->
 
-                        <!-- 에코포장 피드백 시작 -->
+                        <!-- 에코포장 피드백 글쓰기 시작 -->
                         <div class="page_section section_echo">
                             <div class="head_aticle">
-                                <h2 class="tit">
-                                    에코포장 피드백
-                                </h2>
+                                <h2 class="tit">에코포장 피드백</h2>
                             </div>
                             <ul class="list_type1">
                                 <li>
@@ -800,81 +797,142 @@
                                     <p class="txt">배송관련, 주문(취소/교환/환불)관련 문의 및 요청 사항은 1:1문의/카카오톡/고객센터(1644-1107)로 문의 바랍니다.</p>
                                 </li>
                             </ul>
-                            <table width="100%" class="xans-board-listheader">
-                                <tbody>
-                                    <tr class="input_txt">
-                                        <th width="8%">번호</th>
-                                        <th width="15%">카테고리</th>
-                                        <th>제목</th>
-                                        <th width="12%">작성자</th>
-                                        <th width="12%">작성일</th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="no_data" style="border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;">
-                                상품 제안 내역이 존재하지 않습니다.
-                            </div>
-                            <div style="position: relative;">
-                                <div style="position: absolute; right: 0; top: 60px;">
-                                    <a href="javascript:popup_register( 'add_offer' );">
-                                        <span class="bhs_buttonsm yb" style="float: none;">글쓰기</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="layout-pagination">
-                                <div class="pagediv"></div>
+                            <div class="xans-board-write">
+                                <form name="fm" id="fm" method="post" action="/shop/mypage/indb.php" enctype="multipart/form-data" onsubmit="return chkForm(this)" style="height: 100%;">
+                                    <input type="hidden" name="mode" value="add_ep">
+                                    <input type="hidden" name="itemcd" value>
+                                    <input type="hidden" name="sno" value="undefined">
+                                    <table id="table_after" class="boardWrite2" width="100%">
+                                        <colgroup>
+                                            <col width="14%" align="right">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="input_txt">제목</th>
+                                                <td>
+                                                    <select name="itemcd" required fld_esssential label="질문유형" class="select" style="width: 100px">
+                                                        <option value>선택해주세요.</option>
+                                                        <option value="01">디자인</option>
+                                                        <option value="02">사이즈</option>
+                                                        <option value="03">신선도</option>
+                                                        <option value="04">완충성</option>
+                                                        <option value="05">분리수거</option>
+                                                        <option value="06">포장재제안</option>
+                                                        <option value="99">기타</option>
+                                                    </select>
+                                                    <br>
+                                                    <input type="text" name="subject" style="width: 100%" required fld_esssential label="제목" value>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">상품명</th>
+                                                <td>
+                                                    <input type="text" name="goodsnm" style="width: 100%" label="상품명" value>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">내용</th>
+                                                <td>
+                                                    <textarea name="contents" style="width: 100%; height: 140px;" required fld_esssential label="내용"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">이미지</th>
+                                                <td>
+                                                    <table width="95%" id="table" cellpadding="0" cellspacing="0" border="0" style="border: solid 1px #f4f4f4; border-collapse: collapse;">
+                                                        <tbody>
+                                                            <tr id="tr_0">
+                                                                <td width="20" nowrap align="center">1</td>
+                                                                <td width="100%">
+                                                                    <input type="file" name="file[]" style="width: 50%" class="linebg">
+                                                                    <a href="javascript:add()">
+                                                                        <img src="../../img/btn_upload_plus.gif" align="absmiddle">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div width="100%" style="padding: 5px;" class="stxt">
+                                                        - 파일은 최대 5개까지 업로드가 지원됩니다.
+                                                        <br>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="right" style="padding-top: 5px; border: none;" id="avoidDbl" class="btn_save">
+                                                    <input type="submit" class="bhs_button yb" value="등록" style="float: none;">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
                             </div>
                         </div>
-                        <!-- 에코포장 피드백 끝 -->
+                        <!-- 에코포장 피드백 글쓰기 끝 -->
                     </div>
-                    <script type="text/javascript">
-                        function popup_register( mode, sno )
-                        {
-                            // KMF-299 1:1문의 글쓰기 버튼 트래킹
-                            if (mode === 'add_qna') {
-                            KurlyTracker.setAction('select_my_kurly_add_personal_inquiry').sendData();
-                            }
-
-                            if ( mode == 'del_qna' )  var win = window.open("../mypage/mypage_qna_del.php?mode=" + mode + "&sno=" + sno,"qna_register","width=400,height=200");
-                            else parent.location.href = ("../mypage/mypage_qna_register.php?mode=" + mode + "&sno=" + sno);
-
+                    <iframe id="ifm_order" frameborder="0" scrolling="no" style="display: none; background-color: #ffffff; border-style: solid; border-width: 1px; border-color: #000000;">
+                        #document
+                            <html>
+                                <head></head>
+                                <body></body>
+                            </html>
+                    </iframe>
+                    <script language="javascript">
+                        function order_open(){
+                            var divEl = document.getElementById('ifm_order');
+                            divEl.style.display = "block";
+                            divEl.style.left = "20px";
+                            divEl.style.top = "165px";
+                            divEl.style.width = "560px";
+                            divEl.style.height = "380px";
+                            divEl.style.position = "absolute";
+                            if( divEl.src == '' ) divEl.src = "offer_order.php";
                         }
 
-                        var preContent;
-
-                        function view_content(obj)
-                        {
-                            var div = obj.parentNode;
-
-                            for (var i=1, m=div.childNodes.length;i<m;i++) {
-                                if (div.childNodes[i].nodeType != 1) continue;	// text node.
-                                else if (obj == div.childNodes[ i ]) continue;
-
-                                obj = div.childNodes[ i ];
-                                break;
-                            }
-
-                            if (preContent && obj!=preContent){
-                                obj.style.display = "block";
-                                preContent.style.display = "none";
-                                preCheck = false
-                            }else if (preContent && obj==preContent){
-                                preContent.style.display = ( preContent.style.display == "none" ? "block" : "none" );
-                            }else if (preContent == null ){
-                                obj.style.display = "block";
-                            }
-
-                            preContent = obj;
-
-                            if(preContent.style.display === 'block'){
-                                KurlyTracker.setScreenName('personal_inquiry_detail');
-                            }else{
-                                KurlyTracker.setScreenName('personal_inquiry_history');
-                            }
+                        function order_close(){
+                            var divEl = document.getElementById('ifm_order');
+                            divEl.style.display = "none";
                         }
 
-                        // KM-1483 Amplitude 연동
-                        KurlyTracker.setScreenName('personal_inquiry_history');
+                        function order_put( ordno ){
+                            document.fm.ordno.value = ordno;
+                            order_close();
+                        }
+
+                        function add(){
+                            var table = document.getElementById('table');
+                            var reviewFileNum = "5";
+                            if (table.rows.length>=parseInt(reviewFileNum)){
+                                alert("업로드는 최대 "+reviewFileNum+"개만 지원합니다");
+                                return;
+                            }
+                            var tr_num = table.rows.length;
+                            oTr		= table.insertRow( table.rows.length );
+                            oTr.id	= "tr_"+(tr_num);
+                            oTd1		= oTr.insertCell(0);
+                            oTd1.style.textAlign = "center";
+                            oTd2		= oTr.insertCell(1);
+                            tmpHTML = "<input type=file name='file[]' style='width:50%' class=line> <a href=\"javascript:del('"+"tr_"+(tr_num)+"')\"><img src='/shop/data/skin/designgj/img/common/btn_upload_minus.gif' align=absmiddle></a>";
+                            oTd2.innerHTML = tmpHTML;
+                            calcul();
+                        }
+                        function del(index,ncode)
+                        {
+                            var table = document.getElementById('table');
+                            for (i=0;i<table.rows.length;i++) if (index==table.rows[i].id) table.deleteRow(i);
+                            calcul();
+                        }
+                        function calcul()
+                        {
+                            var table = document.getElementById('table');
+                            for (i=0;i<table.rows.length;i++){
+                                table.rows[i].cells[0].innerHTML = i+1;
+                            }
+                        }
                     </script>
                 </div>
             </div>
