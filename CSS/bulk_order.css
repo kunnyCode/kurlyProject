@@ -1,0 +1,60 @@
+
+/*대량주문 문의 메인*/
+.reg_bulkorder{
+  margin:32px 0 40px;
+  padding: 10px 0 16px;
+  border-top:2px solid #333;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color:inherit;
+}
+
+/*Inherited from tbody.user_form*/
+.user_wrap .user_form{
+  width:100%;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.use_form{
+  margin: 0 auto;
+  font-family: noto sans;
+  font-weight: 400;
+}
+
+td, th{
+  padding:0;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  display:table;
+  text-indent: initial;
+  border-color:grey;
+}
+/*Inherited from div.reg_bulkorder*/
+div,th,td,li,dt,dd,p{
+  word-break: break-all;
+}
+/*Inherited from div.user_wrap*/
+.user_wrap{
+  width:820px;
+  float:right;
+  color:#000;
+}
+
+/*Inherited from body.main-html*/
+body,input,select, textarea,button{
+  line-height: 1;
+  font-size: 12px;
+  max-width: 100%;
+}
+/*Inherited from html*/
+html{
+  -webkit-text-size-adjust: 100%;
+}
