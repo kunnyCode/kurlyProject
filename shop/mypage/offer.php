@@ -20,14 +20,14 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="service_center.php" class="linkMenu">고객센터</a>
+                            <a href="../board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="service_center.php" onClick="">공지사항</a></li>
-                                <li><a href="#" onClick="">자주하는 질문</a></li>
-                                <li><a href="#" onClick="">1:1 문의</a></li>
-                                <li><a href="#" onClick="">대량주문 문의</a></li>
-                                <li><a href="#" onClick="">상품 제안</a></li>
-                                <li><a href="#" onClick="">에코포장 피드백</a></li>
+                                <li><a href="../board/list.php" onClick="">공지사항</a></li>
+                                <li><a href="../service/faq.php" onClick="">자주하는 질문</a></li>
+                                <li><a href="./mypage_qna.php" onClick="">1:1 문의</a></li>
+                                <li><a href="../main/bulk_order.php" onClick="">대량주문 문의</a></li>
+                                <li><a href="./offer.php" onClick="">상품 제안</a></li>
+                                <li><a href="./echo_packing.php" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -748,10 +748,10 @@
                             <div class="inner_snb">
                                 <ul class="list_menu">
                                     <li>
-                                        <a href="list.php">공지사항</a>
+                                        <a href="../board/list.php">공지사항</a>
                                     </li>
                                     <li>
-                                        <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
+                                        <a href="../service/faq.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
                                     <li>
                                         <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
@@ -759,15 +759,15 @@
                                     <li>
                                         <a href="../main/bulk_order.php" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
                                     </li>
-                                    <li>
+                                    <li class="on">
                                         <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
-                                    <li class="on">
-                                        <a href="./packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                    <li>
+                                        <a href="./echo_packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/shop/mypage/mypage_qna_register.php?mode=add_qna" class="link_inquire">
+                            <a href="./mypage_qna_register.php" class="link_inquire">
                                 <span class="emph">도움이 필요하신가요 ?</span>
                                 " 1:1 문의하기"
                             </a>
@@ -778,25 +778,25 @@
                         <div class="page_section section_offer">
                             <div class="head_aticle">
                                 <h2 class="tit">
-                                    에코포장 피드백
+                                    상품 제안
                                 </h2>
                             </div>
                             <ul class="list_type1">
                                 <li>
                                     <span class="ico">·</span>
-                                    <p class="txt">에코 박스에 대한 피드백이나 새로운 포장재에 대한 제안을 남겨주세요.</p>
+                                    <p class="txt">마켓컬리에서 추가적으로 판매되면 좋을 상품을 제안해주세요.</p>
                                 </li>
                                 <li>
                                     <span class="ico">·</span>
-                                    <p class="txt">더욱 세심하게 포장되었으면 하는 상품이 있다면 언제든 말씀주세요.</p>
+                                    <p class="txt">고객님의 의견을 발 빠르게 반영하여 더욱 편리한 마켓컬리가 되겠습니다.</p>
                                 </li>
                                 <li>
                                     <span class="ico">·</span>
-                                    <p class="txt">제안해 주신 의견은 담당자가 실시간으로 모니터링할 예정이나 별도 답변 안내는 되지 않음을 양해 부탁드립니다.</p>
+                                    <p class="txt">주의)알콜 제품은 법령상 온라인 판매가 불가하오니, 이 점 참고하여 작성부탁드립니다.</p>
                                 </li>
                                 <li>
                                     <span class="ico">·</span>
-                                    <p class="txt">배송관련, 주문(취소/교환/환불)관련 문의 및 요청 사항은 1:1문의/카카오톡/고객센터(1644-1107)로 문의 바랍니다.</p>
+                                    <p class="txt">담당 MD가 제안해주신 의견을 실시간으로 모니터링할 예정이나, 별도 답변 안내는 되지 않음을 양해부탁드립니다.</p>
                                 </li>
                             </ul>
                             <table width="100%" class="xans-board-listheader">
@@ -989,7 +989,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="./mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -998,7 +998,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="#" class="tit">대량주문 문의</a>
+                                <a href="../main/bulk_order.php" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>

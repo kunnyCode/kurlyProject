@@ -7,9 +7,9 @@
     box-sizing: border-box;
 }
 body, input, select, textarea, button {
-    font-family: noto sans, malgun gothic,AppleGothic, dotum;
+    font-family: 'Noto Sans KR', sans-serif;
     line-height: 1;
-    letter-spacing: -.05em;
+    letter-spacing: -0.5px;
     color: #4c4c4c;
     font-size: 12px;
     max-width: 100%;
@@ -70,9 +70,9 @@ header{
 }
 
 #userMenu * {
-    font-family: noto sans;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-    letter-spacing: -.3px;
+    letter-spacing: -0.3px;
 }
 
 header > #userMenu{
@@ -81,7 +81,7 @@ header > #userMenu{
     background-color: #fff;
     margin: 0 auto;
     font-weight: 400;
-    letter-spacing: -.3px;
+    letter-spacing: -0.3px;
 }
 
 /* DK */
@@ -273,36 +273,48 @@ span.ico:hover{
 }
 /* >>>>>>> main */
 
-header > #gnb .inner_gnbkurly {
+#header > #gnb .inner_gnbkurly {
     position: relative;
     width: 1050px;
     height: 56px;
     margin: 0 auto;
 }
 
-header > #gnb > .gnb_kurly {
-    content: "";
-    position: absolute;
+#header > #gnb > .gnb_kurly {
+    position: relative;
     z-index: 299;
     left: 0;
     top: 56px;
     width: 100%;
     height: 9px;
+    font-family: 'Noto Sans';
+    letter-spacing: -0.3px;
 }
 
-header > #gnb > .gnb_main{ 
+
+
+#header > #gnb > .gnb_main{ 
     width: 1050px;
     height: inherit;
     overflow: hidden;
     margin: 0 auto;
 }
 
-header > #gnb > .gnb_main .gnb{ 
+#header > #gnb > .gnb_main .gnb{ 
     float:left;
     width: 100%;
 }
 
-header > #gnb > .inner_gnbKurly{
+
+/*  마켓컬리 사이트와 다른부분. 
+#gnb .gnb_kurly:after{
+    content:"";position:absolute;z-index:299;
+    left:0;top:56px;width:100%;height:9px;
+    background:url(https://res.kurly.com/pc/service/common/1902/bg_1x9.png) repeat-x 0 100%}
+#gnb .inner_gnbkurly{position:relative;width:1050px;height:56px;margin:0 auto} */
+
+
+#header > #gnb > .inner_gnbKurly{
     margin: 0 auto;
     background-color: #fff;
 }
@@ -315,7 +327,7 @@ header > #gnb > .inner_gnbKurly{
     padding-top: 16px;  
 }
 
-header > #gnb > #gnbMenu {
+#header > #gnb > #gnbMenu {
     position: relative;
     width: 100%;
     height: 56px;
@@ -573,23 +585,19 @@ header > #gnb > #gnbMenu {
 /* .bxslider > li {
     width: 1900px;
 } */
-.bx-viewport {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 370px;
-}
 
 /* 여건 작성 {*/
 .bx-wrapper {
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.bx-wrapper .bx-viewport .slider {
+.bx-wrapper .bx-viewport .list {
     position: absolute;
     left: 0;
     top: 0;
     transition: left 0.5s ease-out;
+    float: left;
 }
 /* }*/
 
@@ -711,23 +719,34 @@ solid #ddd;
 
 /* 여건작성 {*/
 /* 메인배너 페이지 이동 버튼 */
-.main_type1 .bx-controls-direction .bx-next, .main_type1 .bx-controls-direction .bx-prev {
-    bottom: 159px;
-    width: 52px;
-    height: 52px;
-    /* opacity: 0; */
+.main_type1 .list_goods {
+    position: relative;
 }
 
-.main_type1 .bx-controls-direction .bx-next:hover, .main_type1 .bx-controls-direction .bx-next {
+
+.main_type1 .bx-controls-direction .m-bx-next:hover, .main_type1 .bx-controls-direction .m-bx-next {
     right: -91px;
     background: url(../img/ico_next1_x1.webp) no-repeat 50% 50%;
     transition: opacity 0.5s;
 }
 
-.main_type1 .bx-controls-direction .bx-prev:hover, .main_type1 .bx-controls-direction .bx-prev {
+.main_type1 .bx-controls-direction .m-bx-prev:hover, .main_type1 .bx-controls-direction .m-bx-prev {
     left: -91px;
     background: url(../img/ico_prev1_x1.webp) no-repeat 50% 50%;
     transition: opacity 0.5s;
+}
+
+.page_main .bx-controls-direction .m-bx-next, .page_main .bx-controls-direction .m-bx-prev {
+    overflow: hidden;
+    position: absolute;
+    bottom: 159px;
+    width: 52px;
+    height: 52px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    transition: 0.5s;
 }
 /* } */
 
@@ -1377,7 +1396,7 @@ li{
     margin: 0 auto;
     padding-bottom: 60px;
     font-weight: 400;
-    letter-spacing: -.2px;
+    letter-spacing: -0.2px;
     font-family: noto sans;
     opacity: 0;
 }
@@ -1425,7 +1444,7 @@ li{
     font-size: 28px;
     color: #333;
     line-height: 36px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     white-space: nowrap;
 }
 
@@ -1446,7 +1465,7 @@ li{
     font-size: 14px;
     color: #333;
     line-height: 22px;
-    letter-spacing: -.2px;
+    letter-spacing: -0.2px;
 }
 
 #footer .footer_cc .list dt {
@@ -1558,7 +1577,7 @@ li{
     font-size: 10px;
     color: #999;
     line-height: 16px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     white-space: nowrap;
 }
 
