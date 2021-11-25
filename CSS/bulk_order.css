@@ -40,6 +40,19 @@ td, th{
   padding:0;
 }
 
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+.user_wrap .user_form td input[type=text] {
+  width: 200px;
+  height: 33px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+}
 table{
   border-collapse: collapse;
   border-spacing: 0;
