@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/Service_center.css">
     <link rel="stylesheet" href="../../CSS/faq.css">
-    <link rel="stylesheet" href="../../CSS/bulk_order.css">
 </head>
 <body >
 <div id="wrap">
@@ -775,7 +774,7 @@
                         </div>
                         <!-- 좌측 고객센터 목록 끝 -->
 
-                        <!-- 공지사항 게시판 시작 -->
+                        <!-- 상품제안 내용 시작 -->
                         <div class="page_section section_offer">
                             <div class="head_aticle">
                                 <h2 class="tit">
@@ -825,7 +824,7 @@
                                 <div class="pagediv"></div>
                             </div>
                         </div>
-                        <!-- 공지사항 게시판 끝 -->
+                        <!-- 상품제안 내용 끝 -->
                     </div>
                     <script type="text/javascript">
                         function popup_register( mode, sno )
