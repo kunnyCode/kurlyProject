@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/Service_center.css">
     <link rel="stylesheet" href="../../CSS/faq.css">
+    <link rel="stylesheet" href="../../CSS/faq.css"
 </head>
 <body >
 <div id="wrap">
