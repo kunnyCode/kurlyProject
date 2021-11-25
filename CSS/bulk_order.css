@@ -150,3 +150,139 @@ no-repeat #fff;
   font-size: 12px;
   color: #572276;
 }
+
+.reg_agree .layer {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 440px;
+  margin: 0 0 0 -220px;
+  border-radius: 12px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.user_form .reg_agree .inner_layer {
+  position: relative;
+  width: 440px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.user_form .reg_agree .layer .tit_layer {
+  height: 132px;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px 88px 0 30px;
+  line-height: 40px;
+  color: #333;
+}
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /*font-weight: bold;*/
+}
+
+.user_form .reg_agree .layer .box_tbl {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-size: 12px;
+  color: #333;
+}
+.user_form .reg_agree .layer .txt_service {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.user_form .reg_agree .layer .btn_ok {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  border: 0;
+  border-top: 1px;
+  solid: #f7f7f7;
+  border-radius: 3px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5f0080;
+  line-height: 20px;
+  text-align: center;
+}
+button {
+  outline: none;
+  overflow: visible;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: flex-start;
+  border-radius: 0;
+}
+body, input, select, textarea, button {
+  /* font-family: noto sans,malgun gothic,AppleGothic,dotum;
+  line-height: 1;
+  letter-spacing: -.05em;
+  color: #4c4c4c;
+  font-size: 12px; */
+  max-width: 100%;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button, select {
+  text-transform: none;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.user_form .reg_agree .layer .btn_close {
+  position: absolute;
+  right: 26px;
+  top: 36px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: url(https://res.kurly.com/pc/ico/1908/ico_layer_close.png) no-repeat 0 0;
+}
+body, input, select, textarea, button {
+  /* font-family: noto sans,malgun gothic,AppleGothic,dotum; */
+  line-height: 1;
+  /* letter-spacing: -.05em; */
+  color: #4c4c4c;
+  font-size: 12px;
+  max-width: 100%;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.user_wrap .hr_grey {
+  height: 1px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  background-color: #ddd;
+  outline: 0;
+  border: none;
+}
+.user_wrap .bhs_button {
+  border-radius: 0;
+}
