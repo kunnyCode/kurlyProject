@@ -873,3 +873,8 @@ a {
     color: #000;
     letter-spacing: -0.6px;
 }
+.user_wrap .user_form td {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.6px;
+}
