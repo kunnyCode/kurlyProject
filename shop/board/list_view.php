@@ -7,6 +7,7 @@
     <title>고객센터</title>
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/service_center.css">
+    <link rel="stylesheet" href="../../CSS/bulk_order.css"> 
 </head>
 <body >
 <div id="wrap">
