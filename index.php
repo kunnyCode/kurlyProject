@@ -36,11 +36,11 @@
                             <a href="./shop/board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
                                 <li><a href="./shop/board/list.php" onClick="">공지사항</a></li>
-                                <li><a href="#" onClick="">자주하는 질문</a></li>
-                                <li><a href="#" onClick="">1:1 문의</a></li>
-                                <li><a href="#" onClick="">대량주문 문의</a></li>
-                                <li><a href="#" onClick="">상품 제안</a></li>
-                                <li><a href="#" onClick="">에코포장 피드백</a></li>
+                                <li><a href="./shop/service/faq.php" onClick="">자주하는 질문</a></li>
+                                <li><a href="./shop/mypage/mypage_qna.php" onClick="">1:1 문의</a></li>
+                                <li><a href="./shop/main/bulk_order.php" onClick="">대량주문 문의</a></li>
+                                <li><a href="./shop/mypage/offer.php" onClick="">상품 제안</a></li>
+                                <li><a href="./shop/mypage/echo_packing.php" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -2273,7 +2273,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="./shop/mypage/mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -2282,7 +2282,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="#" class="tit">대량주문 문의</a>
+                                <a href="./shop/main/bulk_order.php" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>

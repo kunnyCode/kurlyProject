@@ -20,14 +20,14 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="service_center.php" class="linkMenu">고객센터</a>
+                            <a href="../board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="service_center.php" onClick="">공지사항</a></li>
-                                <li><a href="#" onClick="">자주하는 질문</a></li>
-                                <li><a href="#" onClick="">1:1 문의</a></li>
-                                <li><a href="#" onClick="">대량주문 문의</a></li>
-                                <li><a href="#" onClick="">상품 제안</a></li>
-                                <li><a href="#" onClick="">에코포장 피드백</a></li>
+                                <li><a href="../board/list.php" onClick="">공지사항</a></li>
+                                <li><a href="../service/faq.php" onClick="">자주하는 질문</a></li>
+                                <li><a href="./mypage_qna.php" onClick="">1:1 문의</a></li>
+                                <li><a href="../main/bulk_order.php" onClick="">대량주문 문의</a></li>
+                                <li><a href="./offer.php" onClick="">상품 제안</a></li>
+                                <li><a href="./echo_packing.php" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -753,7 +753,7 @@
                                     <li>
                                         <a href="../service/faq.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
-                                    <li>
+                                    <li class="on">
                                         <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
                                     <li>
@@ -767,7 +767,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/shop/mypage/mypage_qna_register.php?mode=add_qna" class="link_inquire">
+                            <a href="./mypage_qna_register.php" class="link_inquire">
                                 <span class="emph">도움이 필요하신가요 ?</span>
                                 " 1:1 문의하기"
                             </a>
@@ -971,7 +971,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="./mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -980,7 +980,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="#" class="tit">대량주문 문의</a>
+                                <a href="../main/bulk_order.php" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>
