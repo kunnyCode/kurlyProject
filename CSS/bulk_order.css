@@ -214,8 +214,7 @@ p {
   height: 60px;
   margin-top: 30px;
   border: 0;
-  border-top: 1px;
-  solid: #f7f7f7;
+  border-top: 1px solid: #f7f7f7;
   border-radius: 3px;
   background-color: #fff;
   font-weight: 700;
