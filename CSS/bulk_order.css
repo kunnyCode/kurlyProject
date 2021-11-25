@@ -1,5 +1,15 @@
 
 /*대량주문 문의 메인*/
+.page_aticle .head_aticle {
+  padding-bottom: 20px;
+}
+ol, ul {
+  list-style-type: none;
+}
+.page_aticle .list_type1 .ico {
+  float: left;
+  margin: 4px 3px 0 0;
+}
 .reg_bulkorder{
   margin:32px 0 40px;
   padding: 10px 0 16px;
@@ -82,6 +92,19 @@ html{
   font-family: noto sans;
   font-weight: 400;
   letter-spacing: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
 }
 
 hr{
