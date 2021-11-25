@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
     <link rel="stylesheet" href="../../CSS/common.css">
-    <link rel="stylesheet" href="../../CSS/service_center.css">
+    <link rel="stylesheet" href="../../CSS/service_center.css"> 
+    <link rel="stylesheet" href="../../CSS/bulk_order.css"> 
 </head>
 <body >
 <div id="wrap">
