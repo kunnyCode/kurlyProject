@@ -911,16 +911,7 @@
                               </div>
                             </div>
                            </div>
-                          </form>
-
-
-
-
-
-
-
-
-                            
+                          </form>               
                             <div class="layout-pagination">
                                 <div class="pagediv"></div>
                             </div>
