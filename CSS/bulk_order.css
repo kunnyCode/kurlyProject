@@ -122,9 +122,7 @@ hr{
   padding: 1px 21px 10px 5px;
 }
 .user_form .label_check {
-  background: url(https://res.kurly.com/pc/service/order/1711/ico_checkbox_16x16.png) 0 3
-px
-no-repeat #fff;
+  background: url(https://res.kurly.com/pc/service/order/1711/ico_checkbox_16x16.png) 0.3px  no-repeat #fff;
 }
 
 .user_form input[type=radio], .user_form input[type=checkbox] {
