@@ -795,7 +795,7 @@
                                   <tbody>
                                     <tr>
                                     <th scope="row">신청하는 분 이름 <span class="ico">*</span></th>
-                                    <td><input type="text" name="name" label="이름" class="inp_area" placeholder="신청하는 분 이름을 입력해주세요." value=""></td>
+                                    <input type="text" name="name" label="이름" class="inp_area" placeholder="신청하는 분 이름을 입력해주세요." value="">
                                     </tr>
                                     <tr>
                                     <th scope="row">신청하는 분 연락처 <span class="ico">*</span></th>
@@ -813,7 +813,7 @@
                                     <td>
                                       <div class="btn_calendar">
                                       <span class="select_calendar">
-                                        <img src="//res.kurly.com/pc/ico/1117/btn_calendar.png" width="20" height="20" class="ico_calendar">
+                                        <img src="../../img/btn_calendar.webp" width="20" height="20" class="ico_calendar">
                                         <span class="txt_calendar" onclick="calendar(event)">&nbsp;</span>
                                         <a href="#none" onclick="calendar(event)" id="receive_date_anchor" class="calendar_selected_area"></a>
                                         <input type="hidden" name="receive_date" id="receive_date" value="">
