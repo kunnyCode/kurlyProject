@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/Service_center.css">
     <link rel="stylesheet" href="../../CSS/faq.css">
-    <!-- <link rel="stylesheet" href="../../CSS/bulk_order.css" -->
+    <link rel="stylesheet" href="../../CSS/bulk_order.css"
 </head>
 <body >
 <div id="wrap">
