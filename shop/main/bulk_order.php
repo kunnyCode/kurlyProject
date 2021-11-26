@@ -795,12 +795,16 @@
                                   <tbody>
                                     <tr>
                                     <th scope="row">신청하는 분 이름 <span class="ico">*</span></th>
-                                    <input type="text" name="name" label="이름" class="inp_area" placeholder="신청하는 분 이름을 입력해주세요." value="">
+                                       <td>
+                                       <input type="text" name="name" label="이름" class="inp_area" placeholder="신청하는 분 이름을 입력해주세요." value="">
+                                       </td>
                                     </tr>
+
                                     <tr>
                                     <th scope="row">신청하는 분 연락처 <span class="ico">*</span></th>
                                     <td><input type="text" name="phoneOrder" label="연락처" class="inp_area" placeholder="'-' 없이 숫자만"></td>
                                     </tr>
+
                                     <tr>
                                     <th scope="row">신청하는 분 이메일 <span class="ico">*</span></th>
                                     <td>
