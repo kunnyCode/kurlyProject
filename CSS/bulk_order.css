@@ -15,10 +15,20 @@ ol, ul {
   color: #000;
   letter-spacing: -0.6px;
 }
-.page_aticle .list_type1{
+.page_aticle .list_type1.li{
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  
+}
+
+.user_wrap .user_form .ico {
+  color: #f03f40;
+}
+
+.user_wrap .user_form tr {
+  display: block;
+  line-height: 33px;
+  margin-top: 16px;
 }
 /* .page_aticle .list_type1 .ico {
   float: left;
@@ -51,8 +61,14 @@ tbody{
   font-weight: 400;
 }
 
+
 td, th{
   padding:0;
+}
+.user_wrap .user_form td {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: -0.6px;
 }
 
 th {
@@ -68,6 +84,23 @@ th {
   padding: 0 10px;
   border: 1px solid #ddd;
 }
+
+.user_wrap .btn_calendar {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #ddd;
+}
+
+.user_wrap .txt_warning {
+  color: #f03f40;
+  display: block;
+  letter-spacing: -.2px;
+  line-height: 18px;
+  padding: 4px 0;
+}
+
 table{
   border-collapse: collapse;
   border-spacing: 0;
