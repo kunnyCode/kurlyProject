@@ -6,7 +6,15 @@
 ol, ul {
   list-style-type: none;
 }
-
+.user_wrap .user_form th {
+  width: 120px;
+  height: 33px;
+  font: 14px "Noto Sans";
+  font-weight: 700;
+  vertical-align: top;
+  color: #000;
+  letter-spacing: -0.6px;
+}
 .page_aticle .list_type1 .ico {
   float: left;
   margin: 4px 3px 0 0;
@@ -246,6 +254,13 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+*, *:after, *:before {
+  /* -webkit-box-sizing: border-box; */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .user_form .reg_agree .layer .btn_ok {
   display: block;
