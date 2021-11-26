@@ -15,9 +15,10 @@ ol, ul {
   color: #000;
   letter-spacing: -0.6px;
 }
-.page_aticle .list_type1 li{
+.page_aticle .list_type1{
   display: flex;
   align-items: center;
+  border: 1px solid red;
 }
 /* .page_aticle .list_type1 .ico {
   float: left;
