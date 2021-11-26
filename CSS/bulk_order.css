@@ -101,6 +101,35 @@ th {
   padding: 4px 0;
 }
 
+.user_wrap .delivery_way {
+  height: 33px;
+  padding-top: 6px;
+}
+
+.user_form .label_radio.checked {
+  background: url(https://res.kurly.com/pc/service/order/1711/ico_radio_16x16_checked.png) 0 3px no-repeat #fff;
+}
+.user_form .label_radio {
+  /* background: url(https://res.kurly.com/pc/service/order/1711/ico_radio_16x16.png) 0 3px
+no-repeat #fff; */
+  vertical-align: top;
+}
+.user_form .label_check, .user_form .label_radio {
+  padding: 0 21px 0 5px;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+}
+
+.user_form input[type=radio], .user_form input[type=checkbox] {
+  position: relative;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.user_wrap .txt_lst li {
+  padding-bottom: 8px;
+}
 table{
   border-collapse: collapse;
   border-spacing: 0;
@@ -129,7 +158,20 @@ body,input,select, textarea,button{
 html{
   -webkit-text-size-adjust: 100%;
 }
+.user_wrap .user_textarea {
+  width: 600px;
+  height: 72px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
 
+.user_wrap .txt_lst.type_hyphen {
+  padding-top: 8px;
+}
+.user_wrap .txt_lst.type_hyphen li {
+  font-size: 12px;
+  line-height: 12px;
+}
 .user-wrap .tit_head {
   margin-bottom: 15px;
   font-size: 20px;
