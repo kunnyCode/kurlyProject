@@ -15,7 +15,7 @@ ol, ul {
   color: #000;
   letter-spacing: -0.6px;
 }
-.page_aticle .list_type1 .item{
+.page_aticle .list_type1 li{
   display: flex;
   align-items: center;
 }
