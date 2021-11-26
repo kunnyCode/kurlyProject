@@ -182,6 +182,15 @@ html{
   color:#808080;
   letter-spacing: -0.3px;
 }
+h1 {
+  display: block;
+  /* font-size: 2em; */
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+}
 
 .user_wrap .hr_purple {
   height: 2px;
@@ -223,6 +232,10 @@ hr{
 
 .page_section .user_wrap .order_agree {
   padding-bottom: 4px;
+}
+.page_section .user_wrap .order_agree .link_agree {
+  top: 5px;
+  color: #5f0080;
 }
 
 .reg_agree .bg_dim {
@@ -302,14 +315,14 @@ hr{
   line-height: 40px;
   color: #333;
 }
-h4 {
+/* h4 {
   display: block;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  /*font-weight: bold;*/
-}
+  /*font-weight: bold;
+ }  */
 
 .user_form .reg_agree .layer .box_tbl {
   margin-top: 20px;
@@ -324,7 +337,9 @@ h4 {
   line-height: 20px;
   color: #333;
 }
-
+colgroup {
+  display: table-column-group;
+}
 
 *, *:after, *:before {
   /* -webkit-box-sizing: border-box; */
