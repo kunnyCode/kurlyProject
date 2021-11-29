@@ -1,5 +1,40 @@
 
 /*대량주문 문의 메인*/
+.page_aticle .head_aticle {
+  padding-bottom: 20px;
+}
+ol, ul {
+  list-style-type: none;
+}
+.user_wrap .user_form th {
+  width: 120px;
+  height: 33px;
+  font: 14px "Noto Sans";
+  font-weight: 700;
+  vertical-align: top;
+  color: #000;
+  letter-spacing: -0.6px;
+}
+.page_aticle .list_type1.li{
+  display: flex;
+  align-items: center;
+  
+}
+
+.user_wrap .user_form .ico {
+  color: #f03f40;
+}
+
+.user_wrap .user_form tr {
+  display: block;
+  line-height: 33px;
+  margin-top: 16px;
+}
+/* .page_aticle .list_type1 .ico {
+  float: left;
+  margin: 4px 3px 0 0;
+} */
+
 .reg_bulkorder{
   margin:32px 0 40px;
   padding: 10px 0 16px;
@@ -26,10 +61,75 @@ tbody{
   font-weight: 400;
 }
 
+
 td, th{
   padding:0;
 }
+.user_wrap .user_form td {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: -0.6px;
+}
 
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+.user_wrap .user_form td input[type=text] {
+  width: 200px;
+  height: 33px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+}
+
+.user_wrap .btn_calendar {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #ddd;
+}
+
+.user_wrap .txt_warning {
+  color: #f03f40;
+  display: block;
+  letter-spacing: -.2px;
+  line-height: 18px;
+  padding: 4px 0;
+}
+
+.user_wrap .delivery_way {
+  height: 33px;
+  padding-top: 6px;
+}
+
+.user_form .label_radio.checked {
+  background: url(https://res.kurly.com/pc/service/order/1711/ico_radio_16x16_checked.png) 0 3px no-repeat #fff;
+}
+.user_form .label_radio {
+  /* background: url(https://res.kurly.com/pc/service/order/1711/ico_radio_16x16.png) 0 3px
+no-repeat #fff; */
+  vertical-align: top;
+}
+.user_form .label_check, .user_form .label_radio {
+  padding: 0 21px 0 5px;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+}
+
+.user_form input[type=radio], .user_form input[type=checkbox] {
+  position: relative;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.user_wrap .txt_lst li {
+  padding-bottom: 8px;
+}
 table{
   border-collapse: collapse;
   border-spacing: 0;
@@ -58,7 +158,20 @@ body,input,select, textarea,button{
 html{
   -webkit-text-size-adjust: 100%;
 }
+.user_wrap .user_textarea {
+  width: 600px;
+  height: 72px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
 
+.user_wrap .txt_lst.type_hyphen {
+  padding-top: 8px;
+}
+.user_wrap .txt_lst.type_hyphen li {
+  font-size: 12px;
+  line-height: 12px;
+}
 .user-wrap .tit_head {
   margin-bottom: 15px;
   font-size: 20px;
@@ -68,6 +181,15 @@ html{
   font-weight: 700;
   color:#808080;
   letter-spacing: -0.3px;
+}
+h1 {
+  display: block;
+  /* font-size: 2em; */
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
 }
 
 .user_wrap .hr_purple {
@@ -84,6 +206,19 @@ html{
   letter-spacing: 0;
 }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
 hr{
   box-sizing: content-box;
   display: block;
@@ -97,6 +232,10 @@ hr{
 
 .page_section .user_wrap .order_agree {
   padding-bottom: 4px;
+}
+.page_section .user_wrap .order_agree .link_agree {
+  top: 5px;
+  color: #5f0080;
 }
 
 .reg_agree .bg_dim {
@@ -176,14 +315,14 @@ hr{
   line-height: 40px;
   color: #333;
 }
-h4 {
+/* h4 {
   display: block;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  /*font-weight: bold;*/
-}
+  /*font-weight: bold;
+ }  */
 
 .user_form .reg_agree .layer .box_tbl {
   margin-top: 20px;
@@ -198,13 +337,16 @@ h4 {
   line-height: 20px;
   color: #333;
 }
+colgroup {
+  display: table-column-group;
+}
 
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+*, *:after, *:before {
+  /* -webkit-box-sizing: border-box; */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .user_form .reg_agree .layer .btn_ok {
   display: block;

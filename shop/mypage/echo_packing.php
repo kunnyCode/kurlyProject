@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/Service_center.css">
     <link rel="stylesheet" href="../../CSS/faq.css">
-    <link rel="stylesheet" href="../../CSS/bulk_order.css">
 </head>
 <body >
 <div id="wrap">
@@ -775,8 +774,8 @@
                         </div>
                         <!-- 좌측 고객센터 목록 끝 -->
 
-                        <!-- 공지사항 게시판 시작 -->
-                        <div class="page_section section_offer">
+                        <!-- 에코포장 피드백 시작 -->
+                        <div class="page_section section_echo">
                             <div class="head_aticle">
                                 <h2 class="tit">
                                     에코포장 피드백
@@ -825,7 +824,7 @@
                                 <div class="pagediv"></div>
                             </div>
                         </div>
-                        <!-- 공지사항 게시판 끝 -->
+                        <!-- 에코포장 피드백 끝 -->
                     </div>
                     <script type="text/javascript">
                         function popup_register( mode, sno )

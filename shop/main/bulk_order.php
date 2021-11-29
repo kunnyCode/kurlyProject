@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/Service_center.css">
     <link rel="stylesheet" href="../../CSS/faq.css">
-    <link rel="stylesheet" href="../../CSS/bulk_order.css"
+    <link rel="stylesheet" href="../../CSS/bulk_order.css">
 </head>
 <body >
 <div id="wrap">
@@ -783,9 +783,9 @@
                                 </h2>
                             </div>
                             <ul class="list_type1">
-                              <li><span class="ico">·</span><p class="txt">최소 구매금액 100만원 이상 시 해당 서비스를 이용하실 수 있습니다. ( 기준 충족 시 다중 배송 가능 )</p></li>
-                              <li><span class="ico">·</span><p class="txt">여러 주소지에 배송 주문 시, 주소지 1곳 당 결제금액이 4만원 미만일 경우 주소지당 개별 배송비가 발생 됩니다.</p></li>
-                              <li><span class="ico">·</span><p class="txt">문의를 남겨주시면 빠른 시간 내에 상담 전화 드립니다. ( ☎ 1644 - 1108, 메일 : <a href="mailto:kurlygift@kurlycorp.com" class="txt_mail">kurlygift@kurlycorp.com</a> )</p></li>
+                              <li class='item'><span class="ico">·</span><p class="txt">최소 구매금액 100만원 이상 시 해당 서비스를 이용하실 수 있습니다. ( 기준 충족 시 다중 배송 가능 )</p></li>
+                              <li class='item'><span class="ico">·</span><p class="txt">여러 주소지에 배송 주문 시, 주소지 1곳 당 결제금액이 4만원 미만일 경우 주소지당 개별 배송비가 발생 됩니다.</p></li>
+                              <li class='item'><span class="ico">·</span><p class="txt">문의를 남겨주시면 빠른 시간 내에 상담 전화 드립니다. ( ☎ 1644 - 1108, 메일 : <a href="mailto:kurlygift@kurlycorp.com" class="txt_mail">kurlygift@kurlycorp.com</a> )</p></li>
                             </ul>
 
                             <form name="frm" method="post" enctype="multipart/form-data" action="/api/bulk_order/action.php" onsubmit="return checkRequied()">
@@ -795,12 +795,18 @@
                                   <tbody>
                                     <tr>
                                     <th scope="row">신청하는 분 이름 <span class="ico">*</span></th>
-                                    <td><input type="text" name="name" label="이름" class="inp_area" placeholder="신청하는 분 이름을 입력해주세요." value=""></td>
+                                       <td>
+                                       <input type="text" name="name" label="이름" class="inp_area" placeholder="신청하는 분 이름을 입력해주세요." value="">
+                                       </td>
                                     </tr>
+
                                     <tr>
                                     <th scope="row">신청하는 분 연락처 <span class="ico">*</span></th>
-                                    <td><input type="text" name="phoneOrder" label="연락처" class="inp_area" placeholder="'-' 없이 숫자만"></td>
+                                      <td>
+                                        <input type="text" name="phoneOrder" label="연락처" class="inp_area" placeholder="'-' 없이 숫자만">
+                                      </td>
                                     </tr>
+
                                     <tr>
                                     <th scope="row">신청하는 분 이메일 <span class="ico">*</span></th>
                                     <td>
@@ -808,12 +814,13 @@
                                     <p class="txt_info_email">이메일 주소를 작성해주시면 원활한 소통이 가능합니다.</p>
                                     </td>
                                     </tr>
+                                    
                                     <tr>
                                     <th scope="row">수령 희망일 <span class="ico">*</span></th>
                                     <td>
                                       <div class="btn_calendar">
                                       <span class="select_calendar">
-                                        <img src="//res.kurly.com/pc/ico/1117/btn_calendar.png" width="20" height="20" class="ico_calendar">
+                                        <img src="../../img/btn_calendar.webp" width="20" height="20" class="ico_calendar">
                                         <span class="txt_calendar" onclick="calendar(event)">&nbsp;</span>
                                         <a href="#none" onclick="calendar(event)" id="receive_date_anchor" class="calendar_selected_area"></a>
                                         <input type="hidden" name="receive_date" id="receive_date" value="">
@@ -911,16 +918,7 @@
                               </div>
                             </div>
                            </div>
-                          </form>
-
-
-
-
-
-
-
-
-                            
+                          </form>               
                             <div class="layout-pagination">
                                 <div class="pagediv"></div>
                             </div>
