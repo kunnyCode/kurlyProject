@@ -655,6 +655,151 @@ a {
 }
 
 
+
+
+
+
+/* mypage_qna_register.php 시작 */
+/* 1:1문의 글쓰기 : 현이 */
+.xans-board-write .boardWrite2 {
+    table-layout: fixed;
+    border-top: 2px solid #333;
+    line-height: 180%;
+}
+
+.xans-board-write table th {
+    width: 110px;
+    padding: 15px 0 15px 20px;
+    background-color: #f7f5f8;
+    border-bottom: 1px solid #f4f4f4;
+    text-align: left;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.xans-board-write table td {
+    width: auto;
+    padding: 15px 0 15px 10px;
+    height: 23px;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.xans-board-write table input[type=text], .xans-board-write table input[type=password] {
+    height: 25px;
+    padding: 3px;
+}
+
+.xans-board-write table #subject { width: 630px; }
+
+.xans-board-write table input[type=text], .xans-board-write table input[type=password], .xans-board-write table textarea {
+    height: 30px;
+    line-height: 25px;
+    border: 1px solid #d9d9d9;
+    color: #202020;
+}
+
+.xans-board-write table select {
+    padding: 6px 5px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 5px;
+    color: #202020;
+}
+
+.xans-board-write .boardWrite2 input[type=text].read_only{ color: #949296; }
+
+.boardWrite2 .smalle { position: relative; }
+
+.boardWrite2 .smalle input[type=checkbox] {
+    position: relative;
+    right: 2px;
+    vertical-align: middle;
+}
+
+#qnaNotice {
+    padding-bottom: 20px;
+    font: 12px/20px 'Noto Sans';
+    color: #4c4c4c;
+}
+
+#qnaNotice .tit {
+    display: block;
+    padding: 4px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: noto sans;
+    font-weight: 700;
+}
+
+#qnaNotice .list { padding-top: 10px; }
+
+#qnaNotice dt {
+    font-family: noto sans;
+    font-weight: 700;
+}
+
+#qnaNotice .list span {
+    display: block;
+    position: relative;
+    padding-left: 9px;
+}
+
+#qnaNotice .list span:before {
+    content: "- ";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#qnaNotice .list .info { color: #5f0080; }
+
+
+
+
+
+
+
+/* offer_register.php 시작 */
+/* 상품제안 글쓰기 : 현이 */
+.section_offer .xans-board-write table .btn_save { text-align: center; }
+
+.section_offer .xans-board-write table .btn_save .bhs_button {
+    margin-top: 50px;
+    background-color: #5f0080;
+}
+
+.section_offer .xans-board-write table .btn_save .bhs_button:hover {
+    background-color: #401661;
+}
+
+
+
+
+
+
+/* echo_packing_register.php 시작 */
+/* 에코포장 피드백 글쓰기 : 현이 */
+.section_echo .list_type1 { padding-bottom: 33px; }
+
+.section_echo .xans-board-write table .btn_save { text-align: center; }
+
+.section_echo .xans-board-write table .btn_save .bhs_button {
+    margin-top: 50px;
+    background-color: #5f0080;
+}
+
+.section_echo .xans-board-write table .btn_save .bhs_button:hover {
+    background-color: #401661;
+}
+
+
+
+
+
+
+
 /* mypage_qna CSS */
 /* 여건 작성 */
 
@@ -695,3 +840,41 @@ a {
     letter-spacing: -.3px;
 }
 
+
+
+
+/*Nami 대량주문 문의*/
+
+.page_aticle .list_type1 li {
+    overflow: hidden;
+    width: 100%;
+}
+
+.page_aticle .list_type1 .txt {
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    letter-spacing: -.3px;
+}
+.page_aticle .list_type1 .ico {
+    float: left;
+    margin: 4px 3px 0 0;
+}
+
+
+
+.user_wrap .user_form th {
+    width: 120px;
+    height: 33p;
+    font: 14px "Noto Sans";
+    font-weight: 700;
+    vertical-align: top;
+    color: #000;
+    letter-spacing: -0.6px;
+}
+.user_wrap .user_form td {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -0.6px;
+}

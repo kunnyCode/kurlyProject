@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
     <link rel="stylesheet" href="../../CSS/common.css">
-    <link rel="stylesheet" href="../../CSS/service_center.css">
+    <link rel="stylesheet" href="../../CSS/service_center.css"> 
+    <link rel="stylesheet" href="../../CSS/bulk_order.css"> 
 </head>
 <body >
 <div id="wrap">
@@ -19,14 +20,14 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="list.php" class="linkMenu">고객센터</a>
+                            <a href="./list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="list.php" onClick="">공지사항</a></li>
-                                <li><a href="#" onClick="">자주하는 질문</a></li>
-                                <li><a href="#" onClick="">1:1 문의</a></li>
-                                <li><a href="#" onClick="">대량주문 문의</a></li>
-                                <li><a href="#" onClick="">상품 제안</a></li>
-                                <li><a href="#" onClick="">에코포장 피드백</a></li>
+                                <li><a href="./list.php" onClick="">공지사항</a></li>
+                                <li><a href="../service/faq.php" onClick="">자주하는 질문</a></li>
+                                <li><a href="../mypage/mypage_qna.php" onClick="">1:1 문의</a></li>
+                                <li><a href="../main/bulk_order.php" onClick="">대량주문 문의</a></li>
+                                <li><a href="../mypage/offer.php" onClick="">상품 제안</a></li>
+                                <li><a href="../mypage/echo_packing.php" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -674,7 +675,7 @@
             <div id="main">
                 <div id="content">
                     <!-- 사이드 퀵 메뉴 시작 -->
-                    <div id="qnb" class="quick-navigation" style="top: 516px;">
+                    <div id="qnb" class="quick-navigation" style="top: 70px;">
                         <div class="bnr_qnb" id="brnQuick">
                             <a href="#" id="brnQuickObj">
                                 <img class="thumb" src="../../img/bnr_quick.png" alt="퀄리티있게 샛별배송">
@@ -750,23 +751,23 @@
                                         <a href="list.php">공지사항</a>
                                     </li>
                                     <li>
-                                        <a href="./FAQ.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
+                                        <a href="../service/faq.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
                                     </li>
                                     <li>
-                                        <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
+                                        <a href="../mypage/mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
                                     </li>
                                     <li>
                                         <a href="../main/bulk_order.php" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
                                     </li>
                                     <li>
-                                        <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
+                                        <a href="../mypage/offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
                                     </li>
                                     <li>
-                                        <a href="packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                        <a href="../mypage/echo_packing" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/shop/mypage/mypage_qna_register.php?mode=add_qna" class="link_inquire">
+                            <a href="../mypage/mypage_qna_register.php" class="link_inquire">
                                 <span class="emph">도움이 필요하신가요 ?</span>
                                 1:1 문의하기
                             </a>
@@ -1089,7 +1090,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="../mypage/mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -1098,7 +1099,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="#" class="tit">대량주문 문의</a>
+                                <a href="../main/bulk_order.php" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>

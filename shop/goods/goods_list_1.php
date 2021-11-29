@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고객센터</title>
-    <link rel="stylesheet" href="../../CSS/common.css">
-    <link rel="stylesheet" href="../../CSS/service_center.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 전체카테고리 > 채소 의 goodsList입니다. --------------------------------------------------------->
+<link rel="stylesheet" href="../../CSS/common.css">
+<link rel="stylesheet" href="../../CSS/goods_list.css">
+<title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 </head>
-<body >
-<div id="wrap">
-    <div id="pos_scroll"></div>
-    <div id="container">
-        <!-- 헤더 시작-------------------------------------------------------------------->
+<body>
+    <main id="main">
+        <section id="content">
+            <!-- 헤더 시작-------------------------------------------------------------------->
             <header id="header">
                 <div id="userMenu">
                     <ul class="listMenu">
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
+                        <!-- <link rel="login_form" href="./CSS/Signup.css"> -->
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
+                        <a href="../Signup.php"></a>
                         <li class="menu lst">
-                            <a href="./list.php" class="linkMenu">고객센터</a>
+                            <a href="../board/service_center.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="./list.php" onClick="">공지사항</a></li>
-                                <li><a href="../service/faq.php" onClick="">자주하는 질문</a></li>
-                                <li><a href="../mypage/mypage_qna.php" onClick="">1:1 문의</a></li>
-                                <li><a href="../main/bulk_order.php" onClick="">대량주문 문의</a></li>
-                                <li><a href="../mypage/offer.php" onClick="">상품 제안</a></li>
-                                <li><a href="../mypage/echo_packing.php" onClick="">에코포장 피드백</a></li>
+                                <li><a href="../board/service_center.php" onClick="">공지사항</a></li>
+                                <li><a href="#" onClick="">자주하는 질문</a></li>
+                                <li><a href="#" onClick="">1:1 문의</a></li>
+                                <li><a href="#" onClick="">대량주문 문의</a></li>
+                                <li><a href="#" onClick="">상품 제안</a></li>
+                                <li><a href="#" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -48,7 +55,7 @@
                 </style>
                 <div id="headerLogo" class="layout-wrapper">
                     <h1 class="logo">
-                        <a href="#" class="link_main">
+                        <a href="../../index.php" class="link_main">
                             <span id="gnbLogoContainer">
                                 <img src="../../img/kurlyLogo_x2.png" alt="마켓컬리 로고">
                             </span>
@@ -73,7 +80,7 @@
                                                 <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
-                                                        <a class="menu">
+                                                        <a class="menu" href="../shop/goods/goods_list.php">
                                                             <span class="icon" style="margin-left: 7px">
                                                                 <img src="../../img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="../../img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
@@ -85,7 +92,7 @@
                                                         <ul class="sub_menu">
                                                             <li><a class="sub"><span class="name">친환경</span></a></li>
                                                             <li><a class="sub"><span class="name">고구마·감자·당근</span></a></li>
-                                                            <li><a class="sub"><span class="name">치금치·쌈채소·나물</span></a></li>
+                                                            <li><a class="sub"><span class="name">시금치·쌈채소·나물</span></a></li>
                                                             <li><a class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
                                                             <li><a class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
                                                             <li><a class="sub"><span class="name">오이·호박·고추</span></a></li>                                                
@@ -397,8 +404,8 @@
                                                     <li>
                                                         <a class="menu">
                                                             <span class="icon">
-                                                                <img src="../../img/15.kitchen_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="../../img/15.kitchen.png" alt="카테고리 아이콘" class="ico_on">
+                                                                <img src="../../img/15.kitchen_b.png" alt="카테고리 아이콘" class="ico_off">
                                                             </span>
                                                             <span class="tit">
                                                                 <span class="txt">주방용품</span>
@@ -667,298 +674,205 @@
                         </div>
                     </div>
                 </div>
-                <!-- 공지사항(고객센터) 게시글 타이틀 시작 -->
-                <div class="tit_page">
-                    <h2 class="tit">공지사항</h2>
-                    <p class="sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</p>
-                </div>
-                <!-- 공지사항(고객센터) 게시글 타이틀 끝 -->
             </header>
-            <!-- 헤더 끝-------------------------------------------------------------------->
 
-            <!--main 시작 --------------------------------------------------->
-            <div id="main">
-                <div id="content">
-                    <!-- 사이드 퀵 메뉴 시작 -->
-                    <div id="qnb" class="quick-navigation" style="top: 70px;">
-                        <div class="bnr_qnb" id="brnQuick">
-                            <a href="#" id="brnQuickObj">
-                                <img class="thumb" src="../../img/bnr_quick.png" alt="퀄리티있게 샛별배송">
-                            </a>
-                        </div>
-                        <script>
-                            var brnQuick = {
-                                nowTime : function(){
-                                    $.ajax({
-                                        url : campaginUrl + 'pc/service/bnr_quick.html'
-                                    }).done(function(result){
-                                        $('#brnQuick').html(result);
-                                    });
-                                }
-                            }
-                        </script>
-                        <div class="side_menu">
-                            <a href="#" class="link_menu">등급별 혜택</a>
-                            <a href="#" class="link_menu">레시피</a>
-                            <a href="#" class="link_menu">베스트 후기</a>
-                        </div>
-                        <div class="side_recent" style="display: none;">
-                            <strong class="tit">최근 본 상품</strong>
-                            <div class="list_goods" data-height="209" style="height: 0px;">
-                                <ul class="list"></ul>
-                            </div>
-                            <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
-                            <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
-                        </div>
-                        <script>
-                            var getGoodsRecent = (function(){
-                                var i, len, getGoodsRecent, item, _nowTime = '';
-
-                                _goodsRecent();
-                                function _goodsRecent(){
-                                    if(localStorage.getItem('goodsRecent') === null){
-                                        return false;
-                                    }
-                                    try{
-                                        getGoodsRecent = JSON.parse(localStorage.getItem("goodsRecent"));
-                                        len = getGoodsRecent.length;
-                                        if(addDays(getGoodsRecent[len - 1].time, 1) < _nowTime){
-                                            localStorage.removeItem('goodsRecent');
-                                        }else{
-                                            for(i = 0; 1 < len; i++){
-                                                item = '<li><a class="link_goods" href="/shop/goods/goods_view.php?goodsno=' + getGoodsRecent[i].no + '"><img src="' + getGoodsRecent[i].thumb + '" alt=""></a></li>';
-                                                $('.side_recent .list').append(item);
-                                            }
-                                            $('.side_recent').show();
-                                        }
-                                    } catch(e){
-                                        console.log("JSON parse error from the Quick menu goods list!!!", e);
-                                    }
-                                }
-
-                                function addDays(date, days){
-                                    var result = new Date(date);
-                                    result.setDate(result.getDate() + days);
-                                    return result.getTime();
-                                }
-                            })();
-                        </script>
+            <!-- 헤더 끝 ---------------------------------------------------------------------------------------------------------->
+        <div class="page_aticle">
+            <div id="lnbMenu" class="lnb_menu">
+                <div id="bnrCategory" class="bnt_category">
+                    <div class="thumb">
+                        <img src="../../img/goods_list/vege_bnr.webp" alt="카테고리 배너">
                     </div>
-                    <!-- 사이드 퀵 메뉴 끝 -->
-
-                    <!-- 게시글 시작 -->
-                    <div class="layout-wrapper">
-                        <div class="xans-element- xans-myshop xans-myshop-couponserial ">
-                            <table width="100%" align="center" cellpadding="0" cellspacing="0">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <table width="100%">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <table class="boardView" width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th scope="row" style="border:none;">제목</th>
-                                                                        <td>[마켓컬리] 택배배송 주문 시간 확대 안내</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">작성자</th>
-                                                                        <td>MarketKurly</td>
-                                                                    </tr>
-                                                                    <tr class="etcArea">
-                                                                        <td colspan="2">
-                                                                            <ul>
-                                                                                <li class="date ">
-                                                                                    <strong class="th">작성일</strong>
-                                                                                    <span class="td">2021-10-13</span>
-                                                                                </li>
-                                                                                <li class="hit ">
-                                                                                    <strong class="th">조회수</strong>
-                                                                                    <span class="td">130613</span>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right" class="eng" style="padding: 5px;"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="padding: 10px;" height="200" valign="top" id="contents">
-                                                            <table width="100%" style="table-layout: fixed;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="board_view_content" style="word-wrap:break-word;word-break:break-all" id="contents_1051" valign="top">
-                                                                            <div>안녕하세요. 고객님. 마켓컬리입니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>마켓컬리 택배배송 주문 시간이 확대되어 안내드립니다.&nbsp;</div>
-                                                                            <div>아래 내용 확인하셔서, 즐겁고 편리한 컬리 이용되시기를 바랍니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>[ 택배배송 주문 시간 ]</div>
-                                                                            <div>◼︎ 기존 : 밤 8시 전 주문 시, 다음날 밤 12시까지 배송&nbsp;</div>
-                                                                            <div>◼︎ 확대 : 밤 10시 전 주문 시, 다음날 밤 12시까지 배송&nbsp; (2021년 9월 13일 주문건부터 적용)&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>※ 주문마감 이후, 밤 10시 ~ 밤 11시까지는 주문이 제한되는 점 이용에 참고 부탁드립니다.</div>
-                                                                            <div>※ 금요일 밤 10시부터 토요일 밤 11시까지는 일요일 택배 배송 불가로 토요일 주문이 제한되는 점 양해부탁드립니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>앞으로도 더 나은 서비스를 드리기 위해 최선을 다하겠습니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>감사합니다.</div>
-                                                                            <div>마켓컬리 드림.</div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td height="1" bgcolor="#f4f4f4"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <br>
-                                            <table width="100%" style="table-layout: fixed;" cellpadding="0" cellspacing="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="center" style="padding-top: 10px;">
-                                                            <table width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="right">
-                                                                            <a href="./list.php">
-                                                                                <span class="bhs_button yb" style="float: none;">목록</span>
-                                                                            </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="xans-element- xans-board xans-board-movement-1002 xans-board-movement xans-board-1002">
-                                                <ul>
-                                                    <li class="prev ">
-                                                        <strong>이전글</strong>
-                                                        <a href="#"></a>
-                                                        <a href="#">[가격인상공지] [Kurly's] 동물복지 우유 900ml (2021. 9. 16 ~)</a>
-                                                    </li>
-                                                    <li class="next ">
-                                                        <strong>다음글</strong>
-                                                        <a href="#"></a>
-                                                        <a href="#">[가격인상공지] [도제] 앙버터산도 등 4건 (2021. 9. 17 ~)</a>
-                                                    </li>
-                                                </ul>
+                </div>
+                <div class="inner_lnb">
+                    <h3 class="tit">채소</h3>
+                    <ul class="list on">
+                        <li><a href="#">전체보기</a></li>
+                        <li><a href="#">친환경</a></li>
+                        <li><a href="#">고구마·감자·당근</a></li>
+                        <li><a href="#">시금치·쌈채소·나물</a></li>
+                        <li><a href="#">브로콜리·파프리카·양배추</a></li>
+                        <li><a href="#">양파·대파·마늘·배추</a></li>
+                        <li><a href="#">오이·호박·고추</a></li>
+                        <li><a href="#">냉동·이색·간편채소</a></li>
+                        <li><a href="#">콩나물·버섯</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="goodsList" class="page_section section_goodslist">
+                <div class="list_ability">
+                    <div class="sort_menu">
+                        <div>
+                            <p class="count"><span class="inner_count">총 120개</span></p>
+                            <div class="select_type">
+                                <a href="#" class="name_select">추천순</a> <!--display:none-->
+                                <ul class="list">
+                                    <li class="item_recommend">
+                                        <a class="on">추천순</a>
+                                        <div class="recommend">
+                                            <div id="layerRecommend" class="layer_recommend">
+                                                <p class="desc">
+                                                    "검색어 적합성과 소비자 인기도(판매량,판매금액,"
+                                                    <br>"조회수 등)를 종합적으로 고려한 순서입니다."
+                                                </p>
                                             </div>
-                                            <br>
-                                            <table width="100%" cellpadding="5" cellspacing="0">
-                                                <colgroup>
-                                                    <col width="100" align="right" bgcolor="#f7f7f7" style="padding-right: 10px;">
-                                                    <col style="padding-left: 10px;">
-                                                </colgroup>
-                                            </table>
-                                            <p>
-                                                <br>
-                                                <textarea id="examC_1051" style="display: none; width: 100%; height: 300px;">
-                                                    "<div>안녕하세요. 고객님. 마켓컬리입니다.&nbsp;</div><div><br></div><div>마켓컬리 택배배송 주문 시간이 확대되어 안내드립니다.&nbsp;</div><div>아래 내용 확인하셔서, 즐겁고 편리한 컬리 이용되시기를 바랍니다.&nbsp;</div><div><br></div><div>[ 택배배송 주문 시간 ]</div><div>◼︎ 기존 : 밤 8시 전 주문 시, 다음날 밤 12시까지 배송&nbsp;</div><div>◼︎ 확대 : 밤 10시 전 주문 시, 다음날 밤 12시까지 배송&nbsp; (2021년 9월 13일 주문건부터 적용)&nbsp;</div><div><br></div><div>※ 주문마감 이후, 밤 10시 ~ 밤 11시까지는 주문이 제한되는 점 이용에 참고 부탁드립니다.</div><div>※ 금요일 밤 10시부터 토요일 밤 11시까지는 일요일 택배 배송 불가로 토요일 주문이 제한되는 점 양해부탁드립니다.&nbsp;</div><div><br></div><div>앞으로도 더 나은 서비스를 드리기 위해 최선을 다하겠습니다.&nbsp;</div><div><br></div><div>감사합니다.</div><div>마켓컬리 드림.</div>"
-                                                </textarea>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        </div>
+                                    </li>
+                                    <li><a>신상품순</a></li>
+                                    <li><a>인기상품순</a></li>
+                                    <li><a>혜택순</a></li>
+                                    <li><a>낮은 가격순</a></li>
+                                    <li><a>높은 가격순</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <!-- 게시글 끝 -->
+                </div>
+                <div class="list_goods">
+                    <div class="inner_listgoods">
+                        <ul class="list">
+                            <!--상품리스트 안에서 반복되는 li 구조 시작-------------------------------------------->
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+
+                            <li class="item">
+                                <div class="thumb">
+                                    <a class="img" style="background-image: url(../../img/goods_list/mushPowder.jpg);"><img src="../../img/goods_list/mushPowder.jpg" alt="표고버섯가루"></a>
+                                    <div class="group_btn">
+                                        <button type="button" class="btn btn_cart">
+                                            <span class="screen_out"><!--알 수 없는 숫자--></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="info">
+                                    <span class="name">장흥 표고 버섯 가루 70g</span>
+                                    <span class="cost"><span class="price">5,490원</span></span>
+                                    <span class="desc">솔솔 뿌리는 표고의 감칠맛</span>
+                                    <span class="tag"></span>
+                                </a>
+                            </li>
+                            <!--상품리스트 안에서 반복되는 li 구조 끝-------------------------------------------->
+                        </ul>
+                    </div>
+                </div>
+                <div class="layout-pagination">
+                    <div class="pagediv">
+                        <a href="#" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
+                        <a href="#" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
+                        <!-- span > a 구조가 페이지 넘버마다 반복되는데 현재페이지는 자동으로 strong처리됨
+                            한 페이지당 최대 10개의 페이지 넘버가 존재 -->
+                        <span><a class="layout-pagination-button layout-pagination-number">1</a></span>
+                        <span><a class="layout-pagination-button layout-pagination-number">2</a></span>
+                        <span><a class="layout-pagination-button layout-pagination-number">3</a></span>
+                        <span><a class="layout-pagination-button layout-pagination-number">4</a></span>
+                        <span><a class="layout-pagination-button layout-pagination-number">5</a></span>
+                        <a href="#" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
+                        <a href="#" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+                    </div>
                 </div>
             </div>
-            <!--main 끝 --------------------------------------------------->
-    </div>
-
-            <!-- layerDSR 시작 ------------------------------------------->
-            <div id="layerDSR">
-                <div class="bg_dim"></div>
-                <div class="in_layer">
-                    <div class="inner_layer layer_star">
-                        <strong class="dsr_result">샛별배송 지역입니다.</strong>
-                        <div class="ani">
-                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_kurly.png" src="../../img/bg_1x1.png" alt="샛별배송 이미지">
-                        </div>
-                        <p class="dsr_desc default_cutoff_23_7">
-                            <strong class="emph">오늘 밤 11시 전</strong>
-                            "까지 주문시"
-                            <br>
-                            <strong class="emph">다음날 아침 7시</strong>
-                            " 이전 도착합니다! "
-                        </p>
-                        <p class="dsr_desc early_cutoff_20_8">
-                            <strong class="emph">오늘 밤 8시 전</strong>
-                            "까지 주문시"
-                            <br>
-                            <strong class="emph">다음날 아침 8시</strong>
-                            " 이전 도착합니다! "
-                        </p>
-                    </div>
-                    <div class="inner_layer layer_normal">
-                        <strong class="dsr_result">택배배송 지역입니다.</strong>
-                        <div class="ani">
-                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_car.png" src="../../img/bg_1x1.png" alt="택배배송 이미지">
-                        </div>
-                        <p class="dsr_desc old_eight">
-                            <strong class="emph">밤 8시 전</strong>
-                            "까지 주문시"
-                            <br>
-                            <strong class="emph">다음날</strong>
-                            " 도착합니다! "
-                        </p>
-                        <p class="dsr_desc new_ten">
-                            <strong class="emph">밤 10시 전</strong>
-                            "까지 주문시"
-                            <br>
-                            <strong class="emph">다음날</strong>
-                            " 도착합니다! "
-                        </p>
-                        <p class="dsr_notice">일요일은 배송 휴무로 토요일에는 주문 불가</p>
-                    </div>
-                    <div class="inner_layer layer_none">
-                        <strong class="dsr_result">베송 불가 지역입니다.</strong>
-                        <div class="ani">
-                            <img data-src="https://res.kurly.com/mobile/img/1908/img_delivery_none.png" src="../../img/bg_1x1.png" alt="배송불가 이미지">
-                        </div>
-                        <p class="dsr_desc">
-                            <strong class="emph">도로명 주소</strong>
-                            "로 검색하셨다면,"
-                            <br>
-                            <strong class="emph">지번 주소(구 주소)</strong>
-                            "로 다시 시도해 주세요. "
-                        </p>
-                        <p class="dsr_notice">배송지역을 확장하도록 노력하겠습니다!</p>
-                    </div>
-                    <div class="layer_btn1">
-                        <button type="button" class="btn_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();">확인</button>
-                    </div>
-                    <button type="button" class="layer_close" onclick="$('#layerDSR').hide();$(this).parent().find('.inner_layer').hide();"></button>
-                </div>
-            </div>
-            <!-- layerDSR 끝 ------------------------------------------->
-
-            <!-- 푸터 시작 -->
-            <footer id="footer" style="opacity: 1;">
+        </div>
+    <!-- footer ------------------------------------------------------------------------------------------>
+    <footer id="footer" style="opacity: 1;">
                 <div class="inner_footer">
                     <div class="footer_cc">
                         <h2 class="tit_cc">고객행복센터</h2>
@@ -978,7 +892,7 @@
                             <script type="text/javascript">
                                 $('.cc_kakao .tit').on('click',function(e){
                                     e.preventDefault();
-                    KurlyTracker.setAction('select_bottom_kakao_button').sendData();
+                                    KurlyTracker.setAction('select_bottom_kakao_button').sendData();
                                     $.ajax({
                                         type: "GET",
                                         url: apiDomain+'/v1/mypage/asks/confirm/kakao',
@@ -1000,7 +914,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="../mypage/mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="#none" onclick="KurlyTrackerLink('../shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -1009,7 +923,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="../main/bulk_order.php" class="tit">대량주문 문의</a>
+                                <a href="#" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>
@@ -1068,27 +982,27 @@
                         <ul class="list_sns">
                             <li>
                                 <a href="https://instagram.com/marketkurly/" class="link_sns" target="_blank">
-                                    <img src="../../img/ico_instagram.png" alt="마켓컬리 인스타그램 바로가기">
+                                    <img src="./img/ico_instagram.png" alt="마켓컬리 인스타그램 바로가기">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/marketkurly" class="link_sns" target="_blank">
-                                    <img src="../../img/ico_fb.png" alt="마켓컬리 페이스북 바로가기">
+                                    <img src="./img/ico_fb.png" alt="마켓컬리 페이스북 바로가기">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://blog.naver.com/marketkurly" class="link_sns" target="_blank">
-                                    <img src="../../img/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기">
+                                    <img src="./img/ico_blog.png" alt="마켓컬리 네이버블로그 바로가기">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://m.post.naver.com/marketkurly" class="link_sns" target="_blank">
-                                    <img src="../../img/ico_naverpost.png" alt="마켓컬리 포스트 바로가기">
+                                    <img src="./img/ico_naverpost.png" alt="마켓컬리 포스트 바로가기">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" class="link_sns lst" target="_blank">
-                                    <img src="../../img/ico_youtube.png" alt="마켓컬리 유튜브 바로가기">
+                                    <img src="./img/ico_youtube.png" alt="마켓컬리 유튜브 바로가기">
                                 </a>
                             </li>
                         </ul>
@@ -1123,8 +1037,6 @@
                     </div>
                 </div>
             </footer>
-            <!-- 푸터 끝 -->
-    </div>
-</div>
+        </section>
+    </main>
 </body>
-</html>

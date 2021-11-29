@@ -1,0 +1,427 @@
+
+/*대량주문 문의 메인*/
+.page_aticle .head_aticle {
+  padding-bottom: 20px;
+}
+ol, ul {
+  list-style-type: none;
+}
+.user_wrap .user_form th {
+  width: 120px;
+  height: 33px;
+  font: 14px "Noto Sans";
+  font-weight: 700;
+  vertical-align: top;
+  color: #000;
+  letter-spacing: -0.6px;
+}
+.page_aticle .list_type1.li{
+  display: flex;
+  align-items: center;
+  
+}
+
+.user_wrap .user_form .ico {
+  color: #f03f40;
+}
+
+.user_wrap .user_form tr {
+  display: block;
+  line-height: 33px;
+  margin-top: 16px;
+}
+/* .page_aticle .list_type1 .ico {
+  float: left;
+  margin: 4px 3px 0 0;
+} */
+
+.reg_bulkorder{
+  margin:32px 0 40px;
+  padding: 10px 0 16px;
+  border-top:2px solid #333;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color:inherit;
+}
+
+/*Inherited from tbody.user_form*/
+.user_wrap .user_form{
+  width:100%;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.use_form{
+  margin: 0 auto;
+  font-family: noto sans;
+  font-weight: 400;
+}
+
+
+td, th{
+  padding:0;
+}
+.user_wrap .user_form td {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: -0.6px;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+.user_wrap .user_form td input[type=text] {
+  width: 200px;
+  height: 33px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+}
+
+.user_wrap .btn_calendar {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #ddd;
+}
+
+.user_wrap .txt_warning {
+  color: #f03f40;
+  display: block;
+  letter-spacing: -.2px;
+  line-height: 18px;
+  padding: 4px 0;
+}
+
+.user_wrap .delivery_way {
+  height: 33px;
+  padding-top: 6px;
+}
+
+.user_form .label_radio.checked {
+  background: url(https://res.kurly.com/pc/service/order/1711/ico_radio_16x16_checked.png) 0 3px no-repeat #fff;
+}
+.user_form .label_radio {
+  /* background: url(https://res.kurly.com/pc/service/order/1711/ico_radio_16x16.png) 0 3px
+no-repeat #fff; */
+  vertical-align: top;
+}
+.user_form .label_check, .user_form .label_radio {
+  padding: 0 21px 0 5px;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+}
+
+.user_form input[type=radio], .user_form input[type=checkbox] {
+  position: relative;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.user_wrap .txt_lst li {
+  padding-bottom: 8px;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  display:table;
+  text-indent: initial;
+  border-color:grey;
+}
+/*Inherited from div.reg_bulkorder*/
+div,th,td,li,dt,dd,p{
+  word-break: break-all;
+}
+/*Inherited from div.user_wrap*/
+.user_wrap{
+  width:820px;
+  float:right;
+  color:#000;
+}
+
+/*Inherited from body.main-html*/
+body,input,select, textarea,button{
+  line-height: 1;
+  font-size: 12px;
+  max-width: 100%;
+}
+/*Inherited from html*/
+html{
+  -webkit-text-size-adjust: 100%;
+}
+.user_wrap .user_textarea {
+  width: 600px;
+  height: 72px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.user_wrap .txt_lst.type_hyphen {
+  padding-top: 8px;
+}
+.user_wrap .txt_lst.type_hyphen li {
+  font-size: 12px;
+  line-height: 12px;
+}
+.user-wrap .tit_head {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  color:#808080;
+  letter-spacing: -0.3px;
+}
+h1 {
+  display: block;
+  /* font-size: 2em; */
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* font-weight: bold; */
+}
+
+.user_wrap .hr_purple {
+  height: 2px;
+  margin-bottom: 20px;
+  background-color: #512772;
+  outline:0;
+  border:none;
+}
+
+.page_aticle button, .page_aticle input, .page_aticle select, .page_aticle * {
+  font-family: noto sans;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+hr{
+  box-sizing: content-box;
+  display: block;
+  unicode-bidi:isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  scroll-margin-inline-end: auto;
+  overflow: hidden;
+}
+
+.page_section .user_wrap .order_agree {
+  padding-bottom: 4px;
+}
+.page_section .user_wrap .order_agree .link_agree {
+  top: 5px;
+  color: #5f0080;
+}
+
+.reg_agree .bg_dim {
+  display: none;
+  position: fixed;
+  z-index: 9998;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+}
+
+.page_section .user_wrap .order_agree .check_view {
+  margin-left: 0;
+  position:relative;
+}
+.user_wrap .reg_agree .check .inp_check {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 1px 21px 10px 5px;
+}
+.user_form .label_check {
+  background: url(https://res.kurly.com/pc/service/order/1711/ico_checkbox_16x16.png) 0.3px  no-repeat #fff;
+}
+
+.user_form input[type=radio], .user_form input[type=checkbox] {
+  position: relative;
+  vertical-align: middle;
+  opacity: 0;
+}
+.user_form input, .user_form select, .user_form textarea, .user_form button {
+  font-family: noto sans;
+  font-weight: 400;
+}
+.page_section .user_wrap .order_agree .txt_checkbox {
+  font-size: 12px;
+}
+.page_section .user_wrap .order_agree .link_agree {
+  top: 5px;
+  color: #5f0080;
+}
+.user_wrap .reg_agree .link_agree {
+  position: absolute;
+  top: 1px;
+  left: 180px;
+  font-size: 12px;
+  color: #572276;
+}
+
+.reg_agree .layer {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 440px;
+  margin: 0 0 0 -220px;
+  border-radius: 12px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.user_form .reg_agree .inner_layer {
+  position: relative;
+  width: 440px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.user_form .reg_agree .layer .tit_layer {
+  height: 132px;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px 88px 0 30px;
+  line-height: 40px;
+  color: #333;
+}
+/* h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /*font-weight: bold;
+ }  */
+
+.user_form .reg_agree .layer .box_tbl {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-size: 12px;
+  color: #333;
+}
+.user_form .reg_agree .layer .txt_service {
+  margin-top: 20px;
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+colgroup {
+  display: table-column-group;
+}
+
+*, *:after, *:before {
+  /* -webkit-box-sizing: border-box; */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.user_form .reg_agree .layer .btn_ok {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  border: 0;
+  border-top: 1px solid #f7f7f7;
+  border-radius: 3px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5f0080;
+  line-height: 20px;
+  text-align: center;
+}
+button {
+  outline: none;
+  overflow: visible;
+  /* -webkit-writing-mode: horizontal-tb !important;  에러 뜸 */    
+  text-rendering: auto;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: flex-start;
+  border-radius: 0;
+}
+body, input, select, textarea, button {
+  /* font-family: noto sans,malgun gothic,AppleGothic,dotum;
+  line-height: 1;
+  letter-spacing: -.05em;
+  color: #4c4c4c;
+  font-size: 12px; */
+  max-width: 100%;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button, select {
+  text-transform: none;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.user_form .reg_agree .layer .btn_close {
+  position: absolute;
+  right: 26px;
+  top: 36px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: url(https://res.kurly.com/pc/ico/1908/ico_layer_close.png) no-repeat 0 0;
+}
+body, input, select, textarea, button {
+  /* font-family: noto sans,malgun gothic,AppleGothic,dotum; */
+  line-height: 1;
+  /* letter-spacing: -.05em; */
+  color: #4c4c4c;
+  font-size: 12px;
+  max-width: 100%;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.user_wrap .hr_grey {
+  height: 1px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  background-color: #ddd;
+  outline: 0;
+  border: none;
+}
+.user_wrap .bhs_button {
+  border-radius: 0;
+}

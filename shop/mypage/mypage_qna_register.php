@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고객센터</title>
+    <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
     <link rel="stylesheet" href="../../CSS/common.css">
-    <link rel="stylesheet" href="../../CSS/service_center.css">
+    <link rel="stylesheet" href="../../CSS/Service_center.css">
+    <link rel="stylesheet" href="../../CSS/faq.css">
 </head>
 <body >
 <div id="wrap">
@@ -19,14 +20,14 @@
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
                         <li class="menu lst">
-                            <a href="./list.php" class="linkMenu">고객센터</a>
+                            <a href="../board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
-                                <li><a href="./list.php" onClick="">공지사항</a></li>
+                                <li><a href="../board/list.php" onClick="">공지사항</a></li>
                                 <li><a href="../service/faq.php" onClick="">자주하는 질문</a></li>
-                                <li><a href="../mypage/mypage_qna.php" onClick="">1:1 문의</a></li>
+                                <li><a href="./mypage_qna.php" onClick="">1:1 문의</a></li>
                                 <li><a href="../main/bulk_order.php" onClick="">대량주문 문의</a></li>
-                                <li><a href="../mypage/offer.php" onClick="">상품 제안</a></li>
-                                <li><a href="../mypage/echo_packing.php" onClick="">에코포장 피드백</a></li>
+                                <li><a href="./offer.php" onClick="">상품 제안</a></li>
+                                <li><a href="./echo_packing.php" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -667,12 +668,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- 공지사항(고객센터) 게시글 타이틀 시작 -->
-                <div class="tit_page">
-                    <h2 class="tit">공지사항</h2>
-                    <p class="sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</p>
-                </div>
-                <!-- 공지사항(고객센터) 게시글 타이틀 끝 -->
             </header>
             <!-- 헤더 끝-------------------------------------------------------------------->
 
@@ -746,149 +741,342 @@
                     </div>
                     <!-- 사이드 퀵 메뉴 끝 -->
 
-                    <!-- 게시글 시작 -->
-                    <div class="layout-wrapper">
-                        <div class="xans-element- xans-myshop xans-myshop-couponserial ">
-                            <table width="100%" align="center" cellpadding="0" cellspacing="0">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <table width="100%">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <table class="boardView" width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th scope="row" style="border:none;">제목</th>
-                                                                        <td>[마켓컬리] 택배배송 주문 시간 확대 안내</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">작성자</th>
-                                                                        <td>MarketKurly</td>
-                                                                    </tr>
-                                                                    <tr class="etcArea">
-                                                                        <td colspan="2">
-                                                                            <ul>
-                                                                                <li class="date ">
-                                                                                    <strong class="th">작성일</strong>
-                                                                                    <span class="td">2021-10-13</span>
-                                                                                </li>
-                                                                                <li class="hit ">
-                                                                                    <strong class="th">조회수</strong>
-                                                                                    <span class="td">130613</span>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="right" class="eng" style="padding: 5px;"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="padding: 10px;" height="200" valign="top" id="contents">
-                                                            <table width="100%" style="table-layout: fixed;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="board_view_content" style="word-wrap:break-word;word-break:break-all" id="contents_1051" valign="top">
-                                                                            <div>안녕하세요. 고객님. 마켓컬리입니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>마켓컬리 택배배송 주문 시간이 확대되어 안내드립니다.&nbsp;</div>
-                                                                            <div>아래 내용 확인하셔서, 즐겁고 편리한 컬리 이용되시기를 바랍니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>[ 택배배송 주문 시간 ]</div>
-                                                                            <div>◼︎ 기존 : 밤 8시 전 주문 시, 다음날 밤 12시까지 배송&nbsp;</div>
-                                                                            <div>◼︎ 확대 : 밤 10시 전 주문 시, 다음날 밤 12시까지 배송&nbsp; (2021년 9월 13일 주문건부터 적용)&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>※ 주문마감 이후, 밤 10시 ~ 밤 11시까지는 주문이 제한되는 점 이용에 참고 부탁드립니다.</div>
-                                                                            <div>※ 금요일 밤 10시부터 토요일 밤 11시까지는 일요일 택배 배송 불가로 토요일 주문이 제한되는 점 양해부탁드립니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>앞으로도 더 나은 서비스를 드리기 위해 최선을 다하겠습니다.&nbsp;</div>
-                                                                            <div>
-                                                                                <br>
-                                                                            </div>
-                                                                            <div>감사합니다.</div>
-                                                                            <div>마켓컬리 드림.</div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td height="1" bgcolor="#f4f4f4"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <br>
-                                            <table width="100%" style="table-layout: fixed;" cellpadding="0" cellspacing="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="center" style="padding-top: 10px;">
-                                                            <table width="100%">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="right">
-                                                                            <a href="./list.php">
-                                                                                <span class="bhs_button yb" style="float: none;">목록</span>
-                                                                            </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="xans-element- xans-board xans-board-movement-1002 xans-board-movement xans-board-1002">
-                                                <ul>
-                                                    <li class="prev ">
-                                                        <strong>이전글</strong>
-                                                        <a href="#"></a>
-                                                        <a href="#">[가격인상공지] [Kurly's] 동물복지 우유 900ml (2021. 9. 16 ~)</a>
-                                                    </li>
-                                                    <li class="next ">
-                                                        <strong>다음글</strong>
-                                                        <a href="#"></a>
-                                                        <a href="#">[가격인상공지] [도제] 앙버터산도 등 4건 (2021. 9. 17 ~)</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <br>
-                                            <table width="100%" cellpadding="5" cellspacing="0">
-                                                <colgroup>
-                                                    <col width="100" align="right" bgcolor="#f7f7f7" style="padding-right: 10px;">
-                                                    <col style="padding-left: 10px;">
-                                                </colgroup>
-                                            </table>
-                                            <p>
-                                                <br>
-                                                <textarea id="examC_1051" style="display: none; width: 100%; height: 300px;">
-                                                    "<div>안녕하세요. 고객님. 마켓컬리입니다.&nbsp;</div><div><br></div><div>마켓컬리 택배배송 주문 시간이 확대되어 안내드립니다.&nbsp;</div><div>아래 내용 확인하셔서, 즐겁고 편리한 컬리 이용되시기를 바랍니다.&nbsp;</div><div><br></div><div>[ 택배배송 주문 시간 ]</div><div>◼︎ 기존 : 밤 8시 전 주문 시, 다음날 밤 12시까지 배송&nbsp;</div><div>◼︎ 확대 : 밤 10시 전 주문 시, 다음날 밤 12시까지 배송&nbsp; (2021년 9월 13일 주문건부터 적용)&nbsp;</div><div><br></div><div>※ 주문마감 이후, 밤 10시 ~ 밤 11시까지는 주문이 제한되는 점 이용에 참고 부탁드립니다.</div><div>※ 금요일 밤 10시부터 토요일 밤 11시까지는 일요일 택배 배송 불가로 토요일 주문이 제한되는 점 양해부탁드립니다.&nbsp;</div><div><br></div><div>앞으로도 더 나은 서비스를 드리기 위해 최선을 다하겠습니다.&nbsp;</div><div><br></div><div>감사합니다.</div><div>마켓컬리 드림.</div>"
-                                                </textarea>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="page_aticle aticle_type2">
+                        <!-- 좌측 고객센터 목록 시작 -->
+                        <div id="snb" class="snb_cc">
+                            <h2 class="tit_snb">고객센터</h2>
+                            <div class="inner_snb">
+                                <ul class="list_menu">
+                                    <li>
+                                        <a href="../board/list.php">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../service/faq.php" onclick="KurlyTrackerLink('/shop/service/faq.php', 'select_service_frequently_qna')">자주하는 질문</a>
+                                    </li>
+                                    <li class="on">
+                                        <a href="./mypage_qna.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna.php', 'select_service_personal_inquiry_history')">1:1문의</a>
+                                    </li>
+                                    <li>
+                                        <a href="../main/bulk_order.php" onclick="KurlyTrackerLink('/shop/main/html.php?htmid=mypage/bulk_order.htm', 'select_service_bulk_order')">대량주문 문의</a>
+                                    </li>
+                                    <li> 
+                                        <a href="./offer.php" onclick="KurlyTrackerLink('/shop/mypage/offer.php', 'select_service_product_offer')">상품 제안</a>
+                                    </li>
+                                    <li>
+                                        <a href="./echo_packing.php" onclick="KurlyTrackerLink('/shop/mypage/echo_packing.php', 'select_service_eco_packing_feedback')">에코포장 피드백</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="./mypage_qna_register.php" class="link_inquire">
+                                <span class="emph">도움이 필요하신가요 ?</span>
+                                " 1:1 문의하기"
+                            </a>
                         </div>
+                        <!-- 좌측 고객센터 목록 끝 -->
+
+                        <!-- 1:1문의 글쓰기 시작 -->
+                        <div class="page_section section_qna">
+                            <div class="head_aticle">
+                                <h2 class="tit">1:1 문의</h2>
+                            </div>
+                            <div class="xans-board-write">
+                                <form name="fm" id="fm" method="post" action="/shop/mypage/indb.php" enctype="multipart/form-data" onsubmit="return chkSubmitData(this)" style="height: 100%;">
+                                    <input type="hidden" name="mode" value="add_qna">
+                                    <input type="hidden" name="itemcd" value>
+                                    <input type="hidden" name="sno" value="0">
+                                    <table id="table_after" class="boardWrite2" width="100%">
+                                        <colgroup>
+                                            <col width="14%" align="rigth">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="input_txt">제목</th>
+                                                <td>
+                                                    <select name="itemcd" required fld_esssential label="질문유형" class="select" onclick="KurlyTracker.setAction('select_personal_inquiry_case_list').sendData();" onchange="KurlyTracker.setAction('select_personal_inquiry_case_value').sendData();">
+                                                        <option value>선택해주세요.</option>
+                                                        <option value="01">배송지연/불만</option>
+                                                        <option value="11">컬리패스 (무료배송)</option>
+                                                        <option value="02">반품문의</option>
+                                                        <option value="03">A/S문의</option>
+                                                        <option value="06">환불문의</option>
+                                                        <option value="07">주문결제문의</option>
+                                                        <option value="08">회원정보문의</option>
+                                                        <option value="04">취소문의</option>
+                                                        <option value="05">교환문의</option>
+                                                        <option value="09">상품정보문의</option>
+                                                        <option value="10">기타문의</option>
+                                                    </select>
+                                                    <br>
+                                                    <input type="text" name="subject" style="width: 100%" required fld_esssential label="제목" value onfocus="KurlyTracker.setAction('select_personal_inquiry_title').sendData();">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">주문번호</th>
+                                                <td>
+                                                    <input type="text" name="ordno" style="width: 25%" value readonly="readonly" onclick="$(this).blur()" onfocus="$(this).blur()">
+                                                    <input onclick="order_open()" type="button" class="bhs_button yb" value="주문조회" style="float: none; line-height: 27px; width: 100px;">
+                                                    <div style="position: relative; z-index: 1">
+                                                        <iframe id="ifm_order" frameborder="0" scrolling="no" style="display: none; position: absolute; width: 560px; height: 380px; background-color: #fff; position: absolute; left: 0; top: 0; border: 1px solid #000">
+                                                            #document
+                                                                <html>
+                                                                    <head></head>
+                                                                    <body></body>
+                                                                </html>
+                                                        </iframe>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">이메일</th>
+                                                <td>
+                                                    <input type="text" name="email" value="#" size="26" readonly="readonly" class="read_only">
+                                                    <span class="noline smalle" style="padding-left: 10px">
+                                                        <input type="checkbox" name="mailling">
+                                                        <span style="font-size: 8pt;">답변수신을 이메일로 받겠습니다.</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">문자메시지</th>
+                                                <td>
+                                                    <input type="text" name="mobile[]" value="#" readonly="readonly" class="read_only">
+                                                    <span class="noline smalle" style="padding-left: 10px">
+                                                        <input type="checkbox" name="sms">
+                                                        <span style="font-size: 8pt;">답변수신을 문자메시지로 받겠습니다.</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">내용</th>
+                                                <td class="edit_area" style="position: relative;">
+                                                    <style>
+                                                        #qnaNotice .qna_goods{display: none}
+                                                    </style>
+                                                    <div id="qnaNotice">
+                                                        <div class="inner_qnaNotice">
+                                                            <div class="notice_qna">
+                                                                <strong class="tit qna_public">1:1 문의 작성 전 확인해주세요!</strong>
+                                                                <strong class="tit qna_goods">상품문의 작성 전 확인해 주세요!</strong>
+                                                                <dl class="list qna_goods">
+                                                                    <dd>
+                                                                        <span>답변은 영업일 기준 2~3일 소요됩니다.</span>
+                                                                        <span>해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</span>
+                                                                        <span>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</span>
+                                                                    </dd>
+                                                                </dl>
+                                                                <dl class="list qna_goods">
+                                                                    <dt>제품</dt>
+                                                                    <dd>
+                                                                        <span>입고일: 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다.(종 모양을 클릭하여, 재입고 알람 설정 가능)</span>
+                                                                        <span>제품 상세정보: 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세 이미지 또는 상세정보에서 확인 가능합니다.</span>
+                                                                    </dd>
+                                                                </dl>
+                                                                <dl class="list qna_public">
+                                                                    <dt>반품 / 환불</dt>
+                                                                    <dd>
+                                                                        <span>
+                                                                            제품 하자 혹은 이상으로 반품 (환불)이 필요한 경우 사진과 함께 구체적인 내용을 남겨주세요.
+                                                                        </span>
+                                                                    </dd>
+                                                                </dl>
+                                                                <dl class="list" id="branchByVersion15">
+                                                                    <dt>주문취소</dt>
+                                                                    <dd class="old" style="display:none">
+                                                                        <span>
+                                                                            샛별 지역 : 배송일 전날 19시까지 
+                                                                            <br>
+                                                                            택배 지역 : 배송일 전날 18시까지 
+                                                                            <br>
+                                                                            고객행복센터(1644-1107)/ 1:1문의 게시판/ 카카오톡(마켓컬리) 으로 취소 요청 바랍니다.
+                                                                        </span>
+                                                                        <span>생산이 시작된 이후에는 취소가 불가능 한 점 고객님의 양해 부탁드립니다.</span>
+                                                                        <span>일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.</span>
+                                                                        <span>주문상품의 부분 취소는 불가능합니다. 전체 주문 취소 후 재구매 해주세요.</span>
+                                                                        <span>비회원 주문건의 경우 1:1문의 게시판 접수가 불가하기에 고객행복센터(1644-1107), 카카오톡(마켓컬리) 로 취소 요청 부탁드립니다.</span>
+                                                                    </dd>
+                                                                    <dd class="new">
+                                                                        <span>
+                                                                            배송 단계별로 주문취소 방법이 상이합니다. 
+                                                                            <br>
+                                                                            [입금확인] 단계 :  [마이컬리 > 주문내역 상세페이지] 에서 직접 취소 가능 
+                                                                            <br>
+                                                                            [입금확인] 이후 단계 : 고객행복센터로 문의 
+                                                                        </span>
+                                                                        <br>
+                                                                        <span>
+                                                                            생산이 시작된 [상품 준비중] 이후에는 취소가 제한되는 점 고객님의 양해 부탁드립니다.
+                                                                        </span>
+                                                                        <span>
+                                                                            비회원은 모바일 App 또는 모바일 웹사이트에서 [마이컬리 > 비회원 주문 조회 페이지] 에서 취소가 가능합니다.
+                                                                        </span>
+                                                                        <span>
+                                                                            일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.
+                                                                        </span>
+                                                                        <span>
+                                                                            주문상품의 부분 취소는 불가능합니다. 전체 주문 취소 후 재구매 해주세요.
+                                                                        </span>
+                                                                    </dd>
+                                                                </dl>
+                                                                <dl class="list">
+                                                                    <dt>배송</dt>
+                                                                    <dd>
+                                                                        <span>
+                                                                            주문 완료 후 배송 방법(샛별 / 택배)은 변경이 불가능합니다.
+                                                                        </span>
+                                                                        <span>
+                                                                            배송일 및 배송시간 지정은 불가능합니다. (예약배송 포함)
+                                                                        </span>
+                                                                        <p class="info">※ 전화번호, 이메일, 주소, 계좌번호 등의 상세 개인정보가 문의 내용에 저장되지 않도록 주의해 주시기 바랍니다.</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        var qnaNotice = new Vue({
+                                                            el: '#qnaNotice',
+                                                            data: {
+                                                                getData : null,
+                                                                layerOn : true
+                                                            },
+                                                            methods: {
+                                                                update:function(){
+                                                                    var $self = this;
+                                                                    $.ajax({
+                                                                        type:'GET',
+                                                                        url: campaginUrl + 'pc/notice/qna_info.html',
+                                                                        datatype: 'html',
+                                                                        async : true,
+                                                                    }).done(function(result){
+                                                                        $self.getData = result;
+                                                                    });
+                                                                }
+                                                            }
+                                                        });
+                                                        $(document).ready(function(){
+                                                            qnaNotice.update();
+                                                        });
+                                                    </script>
+                                                    <textarea name="contents" style="width: 100%; height: 474px;" class="editing_area" required fld_esssential label="내용" onfocus="KurlyTracker.setAction('select_personal_inquiry_text').sendData();"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="input_txt">이미지</th>
+                                                <td>
+                                                    <table width="95%" id="table" cellpadding="0" cellspacing="0" border="0" style="border: solid 1px #f4f4f4; border-collapse: collapse;">
+                                                        <tbody>
+                                                            <tr id="tr_0">
+                                                                <td width="20" nowrap align="center">1</td>
+                                                                <td width="100%">
+                                                                    <input type="file" name="file[]" style="width: 50%" class="linebg">
+                                                                    <a href="javascript:add()">
+                                                                        <img src="../../img/btn_upload_plus.gif" align="absmiddle">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td height="2"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div width="100%" style="padding: 5px" class="stxt">
+                                                        - 파일은 최대 5개까지 업로드가 지원됩니다.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="right" style="padding-top: 5px; border: none;" id="avoidDbl">
+                                                    <input type="submit" class="bhs_button yb" value="저장" style="float: none;">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- 1:1문의 글쓰기 끝 -->
                     </div>
-                    <!-- 게시글 끝 -->
+                    <script type="text/javascript">
+                        function chkSubmitData(form) {
+                            if (chkForm(form)) {
+                            KurlyTracker.setAction('submit_personal_inquiry_success').sendData();
+                            return true;
+                            } else {
+                            return false;
+                            }
+                        }
+
+                        function order_open(){
+                            KurlyTracker.setAction('select_personal_inquiry_order_list').sendData();
+
+                            var divEl = document.getElementById('ifm_order');
+                            divEl.style.display = "block";
+                            if( divEl.src == '' ) divEl.src = "mypage_qna_order.php";
+
+                            // KM-1483 Amplitude 연동
+                            KurlyTracker.setScreenName('personal_inquiry_writing_order_history_selection');
+                        }
+
+                        function order_close(){
+                            var divEl = document.getElementById('ifm_order');
+                            divEl.style.display = "none";
+                        }
+
+                        function order_put( ordno ){
+                            // KMF-299 선택한 주문번호가 기존 주문 번호와 다를때만 트래킹 처리
+                            if (parseInt(document.fm.ordno.value, 10) !== parseInt(ordno, 10)) {
+                            KurlyTracker.setAction('select_personal_inquriry_order_number').sendData();
+                            }
+
+                            document.fm.ordno.value = ordno;
+                            order_close();
+                        }
+
+                        function add(){
+                            var table = document.getElementById('table');
+                            var reviewFileNum = "5";
+                            if (table.rows.length>=parseInt(reviewFileNum)){
+                                alert("업로드는 최대 "+reviewFileNum+"개만 지원합니다");
+                                return;
+                            }
+                            var tr_num = table.rows.length;
+                            oTr		= table.insertRow( table.rows.length );
+                            oTr.id	= "tr_"+(tr_num);
+                            oTd1		= oTr.insertCell(0);
+                            oTd1.style.textAlign = "center";
+                            oTd2		= oTr.insertCell(1);
+                            tmpHTML = "<input type=file name='file[]' style='width:50%' class=line> <a href=\"javascript:del('"+"tr_"+(tr_num)+"')\"><img src='/shop/data/skin/designgj/img/common/btn_upload_minus.gif' align=absmiddle></a>";
+                            oTd2.innerHTML = tmpHTML;
+                            calcul();
+                        }
+                        function del(index,ncode)
+                        {
+                            var table = document.getElementById('table');
+                            for (i=0;i<table.rows.length;i++) if (index==table.rows[i].id) table.deleteRow(i);
+                            calcul();
+                        }
+                        function calcul()
+                        {
+                            var table = document.getElementById('table');
+                            for (var i=0;i<table.rows.length;i++){
+                                table.rows[i].cells[0].innerHTML = i+1;
+                            }
+                        }
+
+                        // KM-1483 Amplitude 연동
+                        KurlyTracker.setScreenName('personal_inquiry_writing');
+                    </script>
                 </div>
             </div>
             <!--main 끝 --------------------------------------------------->
-    </div>
 
             <!-- layerDSR 시작 ------------------------------------------->
             <div id="layerDSR">
@@ -1000,7 +1188,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="../mypage/mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="./mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>

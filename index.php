@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
-    <script src="./js/jquery.bxslider.min.js"></script>
+    <!-- <script src="./js/jquery.bxslider.min.js"></script> -->
     <!-- bxSlider CSS file -->
     <!-- <link href="/lib/jquery.bxslider.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./CSS/common.css">
     <script defer src="./js/main.js"></script>
-    
     <script>
     $(document).ready(function(){
         $('._slider').bxSlider();
@@ -37,11 +36,11 @@
                             <a href="./shop/board/list.php" class="linkMenu">고객센터</a>
                             <ul class="sub">
                                 <li><a href="./shop/board/list.php" onClick="">공지사항</a></li>
-                                <li><a href="#" onClick="">자주하는 질문</a></li>
-                                <li><a href="#" onClick="">1:1 문의</a></li>
-                                <li><a href="#" onClick="">대량주문 문의</a></li>
-                                <li><a href="#" onClick="">상품 제안</a></li>
-                                <li><a href="#" onClick="">에코포장 피드백</a></li>
+                                <li><a href="./shop/service/faq.php" onClick="">자주하는 질문</a></li>
+                                <li><a href="./shop/mypage/mypage_qna.php" onClick="">1:1 문의</a></li>
+                                <li><a href="./shop/main/bulk_order.php" onClick="">대량주문 문의</a></li>
+                                <li><a href="./shop/mypage/offer.php" onClick="">상품 제안</a></li>
+                                <li><a href="./shop/mypage/echo_packing.php" onClick="">에코포장 피드백</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -88,7 +87,7 @@
                                                 <ul class="gnb_menu" style="height:20px;"> <!-- ul에 data속성 들어있었음.-->
                                                 <!-- 채소 카테고리 시작--------------------------------------------------------------------------->
                                                     <li>
-                                                        <a class="menu" href="./shop/goods/goods_list.php">
+                                                        <a class="menu" href="./shop/goods/goods_list_1.php">
                                                             <span class="icon" style="margin-left: 7px">
                                                                 <img src="./img/1.veg_b.png" alt="카테고리 아이콘" class="ico_off">
                                                                 <img src="./img/1.veg.png" alt="카테고리 아이콘" class="ico_on">
@@ -771,57 +770,66 @@
                                         <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
                                             <!-- bx-viewport를 만들었어니 메인배너 모아짐 -->
                                             <div class="bx-viewport">
-                                                <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다., ul list 클래스 삭제 -->
-                                                <ul class="bxslider">
+                                                <!-- 우선 롤링 어떻게 하는지 몰라서 임시적으로 해당 style="width: 1440px; margin: 0px auto;" 적어 넣었습니다.-->
+                                                <ul class="list">
                                                     <!-- 이미지 비율 때문에 overflow: hidden 값 비활성화 : 여건 -->
-                                                    <li data-index="11" data-name="main_banner">
-                                                        <img src = "./img/pc_img_1583112495.png" class="thumb_goods" >메인배너</a>
+                                                    <li data-index="0" data-name="main_banner">
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1583112495.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="1" data-name="main_banner">
-                                                        <img src ="./img/pc_img_1621561009.png" class="thumb_goods">메인배너</a>
+                                                        <!-- <img src ="./img/pc_img_1621561009.png" class="thumb_goods">메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1621561009.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="2" data-name="main_banner">
-                                                        <img src="./img/pc_img_1628583839.png" class="thumb_goods" alt="">메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1628583839.png" class="thumb_goods" alt="">메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1628583839.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="3" data-name="main_banner">
-                                                        <img src="./img/pc_img_1633501694.png" class="thumb_goods">메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1633501694.png" class="thumb_goods">메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1633501694.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="4"  data-name="main_banner">
-                                                        <img src="./img/pc_img_1634285707.png" class="thumb_goods" >메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1634285707.png" class="thumb_goods" >메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634285707.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="5"  data-name="main_banner">
-                                                        <img src="./img/pc_img_1634523002.png" class="thumb_goods" >메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1634523002.png" class="thumb_goods" >메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634523002.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="6" data-name="main_banner">
-                                                        <img src="./img/pc_img_1634640525.png" class="thumb_goods">메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1634640525.png" class="thumb_goods">메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634640525.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="7" data-name="main_banner">
-                                                        <img src="./img/pc_img_1634640530.png" class="thumb_goods">메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1634640530.png" class="thumb_goods">메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634640530.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="8"  data-name="main_banner">
-                                                        <img src="./img/pc_img_1634775416.png" class="thumb_goods" >메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1634775416.png" class="thumb_goods" >메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634775416.png)">메인배너</a>
                                                     </li>
                                                     <li data-index="9"  data-name="main_banner">
-                                                        <img src="./img/pc_img_1634805265.png" class="thumb_goods">메인배너</a>
+                                                        <!-- <img src="./img/pc_img_1634805265.png" class="thumb_goods">메인배너</a> -->
+                                                        <a class="thumb_goods" style="background-image: url(./img/pc_img_1634805265.png)">메인배너</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
+                                    <div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
                                         <div class="bx-controls-direction">
-                                            <a href="#" class="bx-prev">Prev</a>
-                                            <a href="#" class="bx-prev">Next</a>
+                                            <a class="m-bx-prev">Prev</a>
+                                            <a class="m-bx-next">Next</a>
                                         </div>
-                                        <div class="bx-has-controls-auto">
+                                        <!-- <div class="bx-has-controls-auto">
                                             <div class="box-controls-auto-item">
                                                 <a href="#" class="bx-start active">Start</a>
                                             </div>
                                             <div class="box-controls-auto-item">
                                                 <a href="#" class="bx-stop">Stop</a>
                                             </div>
-                                        </div>
-                                    </div> -->
+                                        </div> -->
+                                    </div>
                                 </div>
                             </div>
                             <!--롤링베너 끝 --------------------------------------------------------------------------------->
@@ -2303,7 +2311,7 @@
                         </div>
                         <div class="cc_view cc_qna">
                             <h3>
-                                <a href="#none" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
+                                <a href="./shop/mypage/mypage_qna_register.php" onclick="KurlyTrackerLink('/shop/mypage/mypage_qna_register.php?mode=add_qna', 'select_bottom_onebyone_button')" class="tit">1:1 문의</a>
                             </h3>
                             <dl class="list">
                                 <dt>24시간 접수 가능</dt>
@@ -2312,7 +2320,7 @@
                         </div>
                         <div class="cc_view cc_bulkorder">
                             <h3>
-                                <a href="#" class="tit">대량주문 문의</a>
+                                <a href="./shop/main/bulk_order.php" class="tit">대량주문 문의</a>
                             </h3>
                             <p class="txt">비회원의 경우 메일로 문의 바랍니다.</p>
                         </div>
@@ -2558,7 +2566,7 @@
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         $(document).ready(function(){ $('.bxslider').bxSlider( { mode: 'horizontal',// 가로 방향 수평 슬라이드
             speed: 500, // 이동 속도를 설정
             pager: false, // 현재 위치 페이징 표시 여부 설정
@@ -2574,7 +2582,7 @@
             useCSS :false,
             });
         });
-    </script>
+    </script> -->
 
 </body>
 </html>
