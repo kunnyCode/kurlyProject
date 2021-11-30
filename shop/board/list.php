@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/service_center.css"> 
     <link rel="stylesheet" href="../../CSS/bulk_order.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body >
 <div id="wrap">
@@ -779,7 +780,7 @@
                             <div class="head_aticle">
                                 <h2 class="tit">
                                     공지사항
-                                    <span class="tit_sub">컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span>
+                                    <span class="tit_sub">111컬리의 새로운 소식들과 유용한 정보들을 한곳에서 확인하세요.</span>
                                 </h2>
                             </div>
                             <form name="frmList" action="/shop/board/list.php?&" onsubmit="return chkFormList(this)">
