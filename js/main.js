@@ -1,8 +1,190 @@
 
 //여건 작성
+//메인배너
+
+let list = document.querySelector('.main_type1 .list_goods .bx-wrapper .bx-viewport .list'),  //ul
+    li = document.querySelectorAll('.main_type1 .list_goods .bx-wrapper .bx-viewport .list li'),//li
+    MainPrevBtn = document.querySelector('.m-bx-prev'); // 이전 버튼
+    MainNextBtn = document.querySelector('.m-bx-next'); // 다음 버튼
+    liIdx = 0;
+
+
+    // ul 가로값 재정의 및 css값 정의
+    list.style.float="left";
+    list.style.width=100 * (li.length + 2) + '%';
+    list.style.overflow='hidden';
+    list.style.position='relative';
+
+    makeClone(); //클론 만들기
+    setInitialPOs(); // 메인배너 1면으로 재조정
+    
+    setTimeout(function(){   // 처름 배너 화면 애니메이션 넘어가는거 안보이게
+        list.classList.add('animated');
+    },100);
+    
+
+    //버튼 누르면 슬라이드
+    MainPrevBtn.addEventListener('click' , function(){
+        setTimeout(function(){
+            MovSde(liIdx - 1);
+        },200);
+        
+    });
+
+    MainNextBtn.addEventListener('click' , function(){
+        setTimeout(function(){
+            MovSde(liIdx + 1);
+        },200);
+    });
+
+    //자동넘기기
+    // MovSdeInf();
+
+
+
+
+    let iterTime = null;
+
+    //iterTime = setInterval(MovSde(liIdx +1), 3000);
+
+
+
+    iterTime = setInterval(() => {
+        MovSde(liIdx + 1);
+
+
+    }, 3000);
+
+
+
+
+
+
+
+
+
+
+
+    //-------------------------함수------------------------------
+
+    //무한루프를 위한 클론 만들기 함수
+    //a.cloneNode() -> a 요소를 그대로 복사
+    //a.cloneNode(true) -> a요소의 하위요소까지 복사
+    //a.appendChild(b) -> a라는 부모요소 안에 있는 자식요소 맨 뒤에다 b요소를 넣는 것
+    //a.prepend(b) -> 앞에다 추가하는 것
+    function makeClone(){
+        let clone0 = li[0].cloneNode(true);
+        let clone9 = li[9].cloneNode(true);
+
+        clone0.classList.add('clone');
+        clone9.classList.add('clone');
+
+        list.appendChild(clone0);
+        list.prepend(clone9);
+
+        
+    }
+
+    //초기 위치를 잡는 함수
+    function setInitialPOs() {
+        list.style.transform='translateX(-8.33%)';
+    }
+
+
+
+    //버튼 누르면 슬라이드 + 무힌루프 함수
+    function MovSde(num){
+
+        list.style.left= - 100 * num + '%';
+        liIdx = num;
+
+        // console.log(num);        
+        if(liIdx == 10) {
+            setTimeout(function(){
+                list.classList.remove('animated');
+                list.style.left=0 +'%';
+                liIdx = 0;
+            },500);
+            setTimeout(function(){
+                list.classList.add('animated');
+            }, 600);
+        }
+        if(liIdx == -1) {
+            setTimeout(function(){
+                list.classList.remove('animated');
+                list.style.left=-900 +'%';
+                liIdx = 9;
+            },500);
+            setTimeout(function(){
+                list.classList.add('animated');
+            }, 600);
+        }
+    }
+
+    // function MovSdeInf(){
+    //     let iterTime = null;
+
+    //     iterTime = setInterval(() => {
+    //         MovSde(liIdx + 1)
+    //     }, 3000);
+    // }
+
+
+
+
+    //-------------------------함수끝------------------------------
+
+
+    //마우스 올리면 버튼 보이게 하기
+    //onmouseover 해당 객체에 마우스가 올라왔을 때 이벤트
+    //onmouseout 해당 객체에서 마우스가 나갔을 때 이벤트
+
+    list.onmouseover = function(){
+        MainPrevBtn.style.opacity="1";
+        MainNextBtn.style.opacity="1";
+    }
+
+    list.onmouseout = function(){
+        MainPrevBtn.style.opacity="0";
+        MainNextBtn.style.opacity="0";
+    }
+
+    MainPrevBtn.onmouseover = function(){
+        MainPrevBtn.style.opacity="1";
+        MainNextBtn.style.opacity="1";
+    }
+
+    MainNextBtn.onmouseover = function(){
+        MainPrevBtn.style.opacity="1";
+        MainNextBtn.style.opacity="1";
+    }
+
+
+
+
+
+
+
+
+    // MainPrevBtn
+    // MainNextBtn
+
+
+// console.log(list);
+// console.log(li);
+// console.log(MainPrevBtn);
+
+
+
+
+
+
+
+
+
+
 //이 상품 어때요?
 //4단 페이지 롤링
-
 //HTML에서 변수를 가져온다
 let slider1 = document.querySelectorAll('.slider'), //ul태그
 

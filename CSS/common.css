@@ -596,8 +596,12 @@ span.ico:hover{
     position: absolute;
     left: 0;
     top: 0;
-    transition: left 0.5s ease-out;
+    /* transition: left 0.5s ease-out; */
     float: left;
+}
+
+.bx-wrapper .bx-viewport .animated {
+    transition: 0.5s ease-in-out;
 }
 /* }*/
 
@@ -609,7 +613,7 @@ span.ico:hover{
 }
 
 .bx-wrapper>.bx-viewport>.list>li{
-    width: 2543px;
+    width: 8.33%;
     height:370px;
     float: left;
     list-style: none;
@@ -723,7 +727,6 @@ solid #ddd;
     position: relative;
 }
 
-
 .main_type1 .bx-controls-direction .m-bx-next:hover, .main_type1 .bx-controls-direction .m-bx-next {
     right: -91px;
     background: url(../img/ico_next1_x1.webp) no-repeat 50% 50%;
@@ -734,6 +737,10 @@ solid #ddd;
     left: -91px;
     background: url(../img/ico_prev1_x1.webp) no-repeat 50% 50%;
     transition: opacity 0.5s;
+}
+
+.main_type1 .bx-controls-direction .m-bx-prev, .main_type1 .bx-controls-direction .m-bx-next {
+    opacity: 0;
 }
 
 .page_main .bx-controls-direction .m-bx-next, .page_main .bx-controls-direction .m-bx-prev {

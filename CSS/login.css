@@ -1,39 +1,90 @@
+/* div 선택자 .login_form(div)/
+#id앞에는 #을 붙인다 ex)
+div#id2/ <p id="id1"> = #di1
+(login_id) */
 
-
-.login_form{
+.container{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+#login_form{
     text-align: center;
 }
 
-.login_form h1{
+.container .login .login_form .tit_login{
     font-size: 33px;
-    text-align:center;
-    font-weight: normal;
+    font-weight: 800;
+    line-height: 20px;
+    text-align: center;
+    font-style: bold;
+    margin-bottom: 40px;
 }
 
-    /* button css */
-
-.login_form.login_id input[type=text],.login_pw input[type=password]
+   /* button css */
+/* id & pw*/
+.container .login .login_form .class1 #login_id 
     {
-        display: block;
-        text-decoration: none;
-        width: 100%;
+        width: 350px;
         height: 54px;
-        padding: 0 19px;
+        padding: 10px;
+        text-align: left;
         border: 1px solid lightgray;
         border-radius: 2px;
         background-color: #fff;
         font-size: 13px;
         line-height: 20px;
         outline: none;
+        margin-top: 10px;
     }
 
-    .checkbox_double .checkbox {
+.container .login .login_form .class2 #login_pw {
+    width: 350px;
+    height: 54px;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    outline: none;
+    margin-top: 10px;
+}
+
+    .checkbox_double .lable_checkbox #chk_secuirty {
     background: url(https://res.kurly.com/pc/service/order/1908/ico_checkbox_on.png)no repeat 50% 50%;
+    text-align: left;
+    font-size: 15px;
+    color: 000000;
+    margin-top: 15px;
+    margin-bottom: 10px;
     }
 
+    /* search id & pw */
+    .checkbox_double .search_idpw #search_id{
+        box-sizing: border-box;
+        height: 54px;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+        outline: none;
+    }
+    .checkbox_double .search_idpw #search_pw {
+        text-align: right;
+        height: 54px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+        margin-top: 40px;
+        outline: none;
+    }
+
+    .search_idpw .ico
     
-    .submit_form.btn {
-        display: block;
+    .submit_form .btn {
+        /* display: block; */
         text-decoration: none;
         border: 1px solid lightgray;
         text-align: center;
@@ -42,16 +93,35 @@
         padding: 15px;
         margin-bottom: 10px;
     }
-    .submit_form.btn_num1{
+    .submit_form .btn_num1{
         background-color: #5f0080;
+        display: block;
         font-family: sans-serif;
         color: #ffff;
         font-size: 13px;
-
+        text-align: center;
+        width: 350px;
+        height: 54px;
+        padding: 10px;
+        border: 1px solid #5f0080;
+        text-decoration: none;
+        border-radius: 3px;
+        margin-top: 30px;
     }
-    .submit_form.btn_num2{
+
+    .submit_form .btn_num2{
         background-color: #ffff;
+        display: block;
         font-family: sans-serif;
         color: #5f0080;
         font-size: 13px;
+        text-align: center;
+        width: 350px;
+        height: 54px;
+        padding: 10px;
+        border: 1px solid #5f0080;
+        text-decoration: none;
+        word-break: break all;
+        border-radius: 3px;
+        margin-top: 10px;
     }
