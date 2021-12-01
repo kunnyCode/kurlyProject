@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=f, initial-scale=1.0">
-    <link rel="stylesheet" href="../../CSS/common.css">
-    <link rel="stylesheet" href="../../CSS/Service_center.css">
-    <link rel="stylesheet" href="../../CSS/login.css">
+    <link rel="stylesheet" href="CSS\common.css">
+    <link rel="stylesheet" href="CSS\Service_center.css">
+    <link rel="stylesheet" href="CSS\login.css">
     <title>로그인</title>
     <style>
         *{margin: 0; padding: 0; box-sizing: border-box;}
@@ -43,11 +43,11 @@
                         </label>
 
                         <!-- <div class="search_idpw"> -->
-                        <a href="./shop/service/login/find_id.php" class="link"onclick="#" id="search_id">아이디 찾기</a>
+                        <a href="shop\service\login\find_id.php" class="link"onclick="#" id="search_id">아이디 찾기</a>
 
                         <span class="ico">|</span>
 
-                        <a href="./shop/service/login/find_pw.php" class="link" id="search_pw">비밀번호 찾기</a>
+                        <a href="shop\service\login\find_pw.php" class="link" id="search_pw">비밀번호 찾기</a>
                     <!-- </div> -->
                 </div>
                     <div class="submit_form">
