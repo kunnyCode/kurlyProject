@@ -43,11 +43,11 @@
                         </label>
 
                         <!-- <div class="search_idpw"> -->
-                        <a href="#" class="link"onclick="#" id="search_id">아이디 찾기</a>
+                        <a href="./shop/service/login/find_id.php" class="link"onclick="#" id="search_id">아이디 찾기</a>
 
                         <span class="ico">|</span>
 
-                        <a href="#" class="link" id="search_pw">비밀번호 찾기</a>
+                        <a href="./shop/service/login/find_pw.php" class="link" id="search_pw">비밀번호 찾기</a>
                     <!-- </div> -->
                 </div>
                     <div class="submit_form">

@@ -30,7 +30,7 @@
                     <ul class="listMenu">
                         <li class="menu"><a href="#" class="linkMenu">회원가입</a></li>
                         <!-- <link rel="login_form" href="./CSS/Signup.css"> -->
-                        <li class="menu"><a href="#" class="linkMenu">로그인</a></li>
+                        <li class="menu"><a href="./shop/service/login/login.php" class="linkMenu">로그인</a></li>
                         <a href="./goods/Signup.php"></a>
                         <li class="menu lst">
                             <a href="./shop/board/list.php" class="linkMenu">고객센터</a>

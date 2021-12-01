@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디 찾기</title>
     <link rel="stylesheet" href="../../CSS/find_id2.css">
+    <link rel="stylesheet" href="../../CSS/common.css">
+    <link rel="stylesheet" href="../../CSS/Service_center.css">
     
 
 </head>
