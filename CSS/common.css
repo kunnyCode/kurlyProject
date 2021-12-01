@@ -592,6 +592,14 @@ span.ico:hover{
     margin: 0 auto;
 }
 
+.bx-wrapper .bx-viewport .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    float: left;
+}
+
 .bx-wrapper .bx-viewport .list {
     position: absolute;
     left: 0;
@@ -1075,7 +1083,7 @@ page_main .list_goods a {
 
 .category_type .link_cate .ico {
     padding: 0 18px;
-    background: url(../img/ico_more_link_x1.webp) no-repeat 100% -1.5px;
+    background: url(../img/ico_more_link_x1.webp) no-repeat 100% 3px;
     /* 원래 100% 옆에 -1.5px대신 3px 있었지요.. 아마 폰트 때문에 안 맞는 걸로 보임니당 */
 }
 /* } */
